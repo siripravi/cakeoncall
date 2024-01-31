@@ -4,7 +4,7 @@ use yii\bootstrap5\Nav;
 use yii\bootstrap5\NavBar;
 use yii\helpers\Html;
 use yii\helpers\Url;
-use app\modules\shopcart\widgets\CartIconWidget;
+use siripravi\shopcart\widgets\CartIconWidget;
 ?>
 <?php
 $menuItems = []; //<iconify-icon icon="mdi:user-outline" style="color: #123;" width="20" rotate="0deg"></iconify-icon>
