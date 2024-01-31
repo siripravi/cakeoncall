@@ -11,10 +11,10 @@ namespace app\modules\userauth\models;
 
 
 use app\models\User;
-use Chandra\Yii2Account\traits\ModuleTrait;
+use siripravi\authhelper\traits\ModuleTrait;
 use Yii;
 use yii\helpers\Url;
-use Chandra\Yii2Account\models\Token as BaseToken;
+use siripravi\authhelper\models\Token as BaseToken;
 
 /**
  * Token Active Record model.

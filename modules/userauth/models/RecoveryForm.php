@@ -12,8 +12,8 @@
  namespace app\modules\userauth\models;
 
 use app\models\User;
-use Chandra\Yii2Account\Finder;
-use Chandra\Yii2Account\Mailer;
+use siripravi\authhelper\Finder;
+use siripravi\authhelper\Mailer;
 use yii\base\Model;
 
 /**

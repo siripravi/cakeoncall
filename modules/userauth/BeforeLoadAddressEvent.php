@@ -1,9 +1,9 @@
 <?php
 
-namespace app\modules\shopcart;
+namespace siripravi\shopcart;
 
 use luya\forms\models\Form;
-use app\modules\shopcart\models\OrderForm;
+use siripravi\shopcart\models\OrderForm;
 use yii\base\Event;
 
 /**

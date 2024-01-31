@@ -10,11 +10,11 @@
 namespace app\modules\userauth\frontend\controllers;
 
 use app\components\events\ResetPasswordEvent;
-use Chandra\Yii2Account\Finder;
+use siripravi\authhelper\Finder;
 use app\models\RecoveryForm;
 use app\models\Token;
-use Chandra\Yii2Account\traits\AjaxValidationTrait;
-use Chandra\Yii2Account\traits\EventTrait;
+use siripravi\authhelper\traits\AjaxValidationTrait;
+use siripravi\authhelper\traits\EventTrait;
 use yii\filters\AccessControl;
 use yii\helpers\Url;
 use yii\web\Controller;
@@ -23,7 +23,7 @@ use yii\web\NotFoundHttpException;
 /**
  * RecoveryController manages password recovery process.
  *
- * @property \Chandra\Yii2Account\Module $module
+ * @property \siripravi\authhelper\Module $module
  *
  * @author Dmitry Erofeev <dmeroff@gmail.com>
  */
@@ -34,37 +34,37 @@ class RecoveryController extends Controller
 
     /**
      * Event is triggered before requesting password reset.
-     * Triggered with \Chandra\Yii2Account\events\FormEvent.
+     * Triggered with \siripravi\authhelper\events\FormEvent.
      */
     const EVENT_BEFORE_REQUEST = 'beforeRequest';
 
     /**
      * Event is triggered after requesting password reset.
-     * Triggered with \Chandra\Yii2Account\events\FormEvent.
+     * Triggered with \siripravi\authhelper\events\FormEvent.
      */
     const EVENT_AFTER_REQUEST = 'afterRequest';
 
     /**
      * Event is triggered before validating recovery token.
-     * Triggered with \Chandra\Yii2Account\events\ResetPasswordEvent. May not have $form property set.
+     * Triggered with \siripravi\authhelper\events\ResetPasswordEvent. May not have $form property set.
      */
     const EVENT_BEFORE_TOKEN_VALIDATE = 'beforeTokenValidate';
 
     /**
      * Event is triggered after validating recovery token.
-     * Triggered with \Chandra\Yii2Account\events\ResetPasswordEvent. May not have $form property set.
+     * Triggered with \siripravi\authhelper\events\ResetPasswordEvent. May not have $form property set.
      */
     const EVENT_AFTER_TOKEN_VALIDATE = 'afterTokenValidate';
 
     /**
      * Event is triggered before resetting password.
-     * Triggered with \Chandra\Yii2Account\events\ResetPasswordEvent.
+     * Triggered with \siripravi\authhelper\events\ResetPasswordEvent.
      */
     const EVENT_BEFORE_RESET = 'beforeReset';
 
     /**
      * Event is triggered after resetting password.
-     * Triggered with \Chandra\Yii2Account\events\ResetPasswordEvent.
+     * Triggered with \siripravi\authhelper\events\ResetPasswordEvent.
      */
     const EVENT_AFTER_RESET = 'afterReset';
 

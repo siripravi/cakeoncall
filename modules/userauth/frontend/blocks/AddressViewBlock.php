@@ -3,7 +3,7 @@
 namespace app\modules\userauth\frontend\blocks;
 
 use luya\cms\base\PhpBlock;
-use siripravi\catalog\frontend\blockgroups\BlockCollectionGroup;
+use siripravi\ecommerce\frontend\blockgroups\BlockCollectionGroup;
 use luya\helpers\StringHelper;
 use Yii;
 

@@ -15,7 +15,7 @@ use yii\widgets\ActiveForm;
 /*
  * @var yii\web\View $this
  * @var yii\widgets\ActiveForm $form
- * @var Chandra\Yii2Account\models\RecoveryForm $model
+ * @var siripravi\authhelper\models\RecoveryForm $model
  */
 
 $this->title = Yii::t('user', 'Reset your password');

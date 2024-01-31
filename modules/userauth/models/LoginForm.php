@@ -1,11 +1,11 @@
 <?php
 namespace app\modules\userauth\models;
 
-use Chandra\Yii2Account\Finder;
-use Chandra\Yii2Account\helpers\Password;
+use siripravi\authhelper\Finder;
+use siripravi\authhelper\helpers\Password;
 use Yii;
 use yii\base\Model;
-use Chandra\Yii2Account\traits\ModuleTrait;
+use siripravi\authhelper\traits\ModuleTrait;
 
 /**
  * This file is part of the Dektrium project.
@@ -38,7 +38,7 @@ class LoginForm extends Model
      */
     public $returnUrl;
 
-    /** @var \Chandra\Yii2Account\models\User */
+    /** @var \siripravi\authhelper\models\User */
     protected $user;
 
     /** @var Finder */

@@ -4,20 +4,20 @@ namespace app\modules\userauth\frontend\controllers;
 
 use app\modules\userauth\models\Profile;
 use app\modules\userauth\models\UserAddress;
-use Chandra\Yii2Account\controllers\SettingsController as BaseController;
+use siripravi\authhelper\controllers\SettingsController as BaseController;
 use yii\base\Exception;
 use yii\filters\AccessControl;
 use yii\filters\VerbFilter;
-use Chandra\Yii2Account\Finder;
+use siripravi\authhelper\Finder;
 use yii\helpers\Url;
 use yii\web\ForbiddenHttpException;
 
 /**
  * @author Albert Gainutdinov <xalbert.einsteinx@gmail.com>
- * This controller adds some actions for Chandra\Yii2Account\controllers\SettingsController
+ * This controller adds some actions for siripravi\authhelper\controllers\SettingsController
  * Its manage updating user settings (e.g. profile, email and password).
  *
- * @property \Chandra\Yii2Account\Module $module
+ * @property \siripravi\authhelper\Module $module
  *
  */
 class SettingsController extends BaseController
@@ -119,9 +119,7 @@ class SettingsController extends BaseController
      * @return string|\yii\web\Response
      */
     public function actionProfile()
-    {
-
-        
+    {        
         $model = $this->finder->findProfileById(\Yii::$app->user->identity->getId());
 
         if ($model == null) {

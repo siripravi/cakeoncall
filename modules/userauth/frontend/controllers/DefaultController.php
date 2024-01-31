@@ -1,6 +1,6 @@
 <?php
 namespace app\modules\userauth\frontend\controllers;
-use Chandra\Yii2Account\controllers\SecurityController as MainController;
+use siripravi\authhelper\controllers\SecurityController as MainController;
 use luya\cms\menu\QueryOperatorFieldInterface;
 use luya\helpers\Url;
 use app\modules\userauth\frontend\Module;

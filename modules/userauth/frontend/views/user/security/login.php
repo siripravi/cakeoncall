@@ -9,15 +9,15 @@
  * file that was distributed with this source code.
  */
 
-use Chandra\Yii2Account\helpers\FeatureHelper;
-use Chandra\Yii2Account\widgets\Connect;
+use siripravi\authhelper\helpers\FeatureHelper;
+use siripravi\authhelper\widgets\Connect;
 use yii\helpers\Html;
 use yii\bootstrap5\ActiveForm;
 
 /**
  * @var yii\web\View                   $this
- * @var Chandra\Yii2Account\models\LoginForm $model
- * @var Chandra\Yii2Account\Module           $module
+ * @var siripravi\authhelper\models\LoginForm $model
+ * @var siripravi\authhelper\Module           $module
  */
 
 $this->title = Yii::t('user', 'Sign in');

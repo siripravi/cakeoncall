@@ -7,11 +7,11 @@ use app\models\RegistrationForm;
 use app\models\User;
 use app\models\Token;
 use app\components\events\UserRegistrationEvent;
-use Chandra\Yii2Account\Finder;
+use siripravi\authhelper\Finder;
 
-use Chandra\Yii2Account\models\ResendForm;
-use Chandra\Yii2Account\traits\AjaxValidationTrait;
-use Chandra\Yii2Account\traits\EventTrait;
+use siripravi\authhelper\models\ResendForm;
+use siripravi\authhelper\traits\AjaxValidationTrait;
+use siripravi\authhelper\traits\EventTrait;
 use yii\base\Exception;
 use yii\filters\AccessControl;
 use yii\web\Controller;
@@ -21,7 +21,7 @@ use yii\web\NotFoundHttpException;
  * RegistrationController is responsible for all registration process, which includes registration of a new account,
  * resending confirmation tokens, email confirmation and registration via social networks.
  *
- * @property \Chandra\Yii2Account\Module $module
+ * @property \siripravi\authhelper\Module $module
  * @method StaticPageBehavior registerStaticSeoData
  *
  * @author Dmitry Erofeev <dmeroff@gmail.com>
@@ -33,49 +33,49 @@ class RegistrationController extends Controller
 
     /**
      * Event is triggered after creating RegistrationForm class.
-     * Triggered with \Chandra\Yii2Account\events\FormEvent.
+     * Triggered with \siripravi\authhelper\events\FormEvent.
      */
     const EVENT_BEFORE_REGISTER = 'beforeRegister';
 
     /**
      * Event is triggered after successful registration.
-     * Triggered with \Chandra\Yii2Account\events\FormEvent.
+     * Triggered with \siripravi\authhelper\events\FormEvent.
      */
     const EVENT_AFTER_REGISTER = 'afterRegister';
 
     /**
      * Event is triggered before connecting user to social account.
-     * Triggered with \Chandra\Yii2Account\events\UserEvent.
+     * Triggered with \siripravi\authhelper\events\UserEvent.
      */
     const EVENT_BEFORE_CONNECT = 'beforeConnect';
 
     /**
      * Event is triggered after connecting user to social account.
-     * Triggered with \Chandra\Yii2Account\events\UserEvent.
+     * Triggered with \siripravi\authhelper\events\UserEvent.
      */
     const EVENT_AFTER_CONNECT = 'afterConnect';
 
     /**
      * Event is triggered before confirming user.
-     * Triggered with \Chandra\Yii2Account\events\UserEvent.
+     * Triggered with \siripravi\authhelper\events\UserEvent.
      */
     const EVENT_BEFORE_CONFIRM = 'beforeConfirm';
 
     /**
      * Event is triggered before confirming user.
-     * Triggered with \Chandra\Yii2Account\events\UserEvent.
+     * Triggered with \siripravi\authhelper\events\UserEvent.
      */
     const EVENT_AFTER_CONFIRM = 'afterConfirm';
 
     /**
      * Event is triggered after creating ResendForm class.
-     * Triggered with \Chandra\Yii2Account\events\FormEvent.
+     * Triggered with \siripravi\authhelper\events\FormEvent.
      */
     const EVENT_BEFORE_RESEND = 'beforeResend';
 
     /**
      * Event is triggered after successful resending of confirmation email.
-     * Triggered with \Chandra\Yii2Account\events\FormEvent.
+     * Triggered with \siripravi\authhelper\events\FormEvent.
      */
     const EVENT_AFTER_RESEND = 'afterResend';
 

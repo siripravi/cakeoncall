@@ -1,8 +1,8 @@
 <?php
 namespace app\modules\userauth\frontend\controllers;
-use Chandra\Yii2Account\controllers\SecurityController as MainController;
+use siripravi\authhelper\controllers\SecurityController as MainController;
 use app\models\LoginForm;
-use app\modules\shopcart\models\Cart;
+use siripravi\shopcart\models\Cart;
 use yii\helpers\Url;
 use yii\web\Response;
 
@@ -22,11 +22,10 @@ class SecurityController extends MainController
      * @return string|Response
      */
     public function actionLogin()
-    {
-
+    {       
        
-        $cart = Cart::getCart();
         if (!\Yii::$app->user->isGuest) {
+           $cart = \Yii::$app->cart->getItems();
            if(!empty($cart))
                 \Yii::$app->getResponse()->redirect(Url::to(['/shopping-cart']));
              else
