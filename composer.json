@@ -42,6 +42,7 @@
         "unglue/client": "^1.5"
     },
     "config": {
+        "preferred-install": "source",
         "fxp-asset": {
             "enabled": false
         },
