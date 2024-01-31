@@ -6,23 +6,19 @@ use luya\web\Asset;
 class CakebakerAsset extends Asset
 {
     public $sourcePath = '@activeTheme/dist';
-    public $css = [  
-        "//cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css",
-      //  'flaticon.css',
-      //  'bootstrap.min.css',    
-      //  'style.css'
-      //!  'css/main.css'
-       'css/mdb.min.css',
-       'plugins/css/all.min.css',
+    public $css = [ 
+       // 'css/mdb.min.css',   
+      //!  'css/main.css' ,
+     //   'plugins/css/ecommerce-gallery.min.css'
+       'css/style.pink.css',
+       'css/custom.css'
 
     ];
 
-    public $js = [
-       // 'https://cdn.jsdelivr.net/gh/kmusiclife/lux.js@main/lux.min.js',
-        'js/mdb.min.js',
-        'plugins/js/all.min.js',
-     //  'js/ecommerce-gallery.min.js',
-      //  'main.js',
+    public $js = [     
+       // 'js/mdb.min.js',
+        'js/main.js',
+      //  'plugins/js/ecommerce-gallery.min.js'
     ];
     
     
@@ -33,7 +29,7 @@ class CakebakerAsset extends Asset
     public $depends = [
        // 'basepodapps\feathericons\FeatherIconsAsset',
         'yii\web\JqueryAsset',       
-       // 'yii\bootstrap5\BootstrapAsset' ,
+        'yii\bootstrap5\BootstrapAsset' ,
      //   'exocet\bootstrap5md\MaterialAsset',
         'yii\web\YiiAsset'       
     ];
