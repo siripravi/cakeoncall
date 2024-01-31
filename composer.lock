@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "143ab312c4bb1aa524fffd785c8bd1f4",
+    "content-hash": "aba78c47929ba07b72bb0ab006aea1e2",
     "packages": [
         {
             "name": "arturoliveira/yii2-checkoutprogressbar",
@@ -374,6 +374,24 @@
             ]
         },
         {
+            "name": "bower-asset/photoswipe",
+            "version": "v4.1.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dimsemenov/PhotoSwipe.git",
+                "reference": "80607e12542a1a54ecefa837649e862b35dffd25"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dimsemenov/PhotoSwipe/zipball/80607e12542a1a54ecefa837649e862b35dffd25",
+                "reference": "80607e12542a1a54ecefa837649e862b35dffd25"
+            },
+            "type": "bower-asset",
+            "license": [
+                "MIT"
+            ]
+        },
+        {
             "name": "bower-asset/picturefill",
             "version": "3.0.3",
             "source": {
@@ -511,34 +529,6 @@
                 "source": "https://github.com/cebe/markdown"
             },
             "time": "2018-03-26T11:24:36+00:00"
-        },
-        {
-            "name": "chandra/yii2-account",
-            "version": "dev-main",
-            "dist": {
-                "type": "path",
-                "url": "./yii2-account",
-                "reference": "3e230a4dfe36ad817ff6e731568c8c4721c6ddae"
-            },
-            "type": "yii2-extension",
-            "extra": {
-                "bootstrap": "Chandra\\Yii2Account\\Bootstrap"
-            },
-            "autoload": {
-                "psr-4": {
-                    "Chandra\\Yii2Account\\": "src/"
-                }
-            },
-            "authors": [
-                {
-                    "name": "siripravi",
-                    "email": "purnachandra.valluri@gmail.com"
-                }
-            ],
-            "description": "yii2 extension module for user account administration",
-            "transport-options": {
-                "relative": true
-            }
         },
         {
             "name": "components/flag-icon-css",
@@ -1150,16 +1140,16 @@
         },
         {
             "name": "giggsey/libphonenumber-for-php",
-            "version": "8.13.27",
+            "version": "8.13.29",
             "source": {
                 "type": "git",
                 "url": "https://github.com/giggsey/libphonenumber-for-php.git",
-                "reference": "033bea996defd39bddca9de22b9e9dbda419431c"
+                "reference": "b8fa0daf0c27bb6fdb5940e0288f203be7e5cfd4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/giggsey/libphonenumber-for-php/zipball/033bea996defd39bddca9de22b9e9dbda419431c",
-                "reference": "033bea996defd39bddca9de22b9e9dbda419431c",
+                "url": "https://api.github.com/repos/giggsey/libphonenumber-for-php/zipball/b8fa0daf0c27bb6fdb5940e0288f203be7e5cfd4",
+                "reference": "b8fa0daf0c27bb6fdb5940e0288f203be7e5cfd4",
                 "shasum": ""
             },
             "require": {
@@ -1218,7 +1208,7 @@
                 "issues": "https://github.com/giggsey/libphonenumber-for-php/issues",
                 "source": "https://github.com/giggsey/libphonenumber-for-php"
             },
-            "time": "2023-12-19T08:19:08+00:00"
+            "time": "2024-01-26T08:49:18+00:00"
         },
         {
             "name": "giggsey/locale",
@@ -1273,51 +1263,6 @@
                 "source": "https://github.com/giggsey/Locale/tree/2.5"
             },
             "time": "2023-11-01T17:19:48+00:00"
-        },
-        {
-            "name": "hscstudio/yii2-cart",
-            "version": "v2.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/hscstudio/yii2-cart.git",
-                "reference": "24c9ae8bddf82e63c4704e608567377f547982bd"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/hscstudio/yii2-cart/zipball/24c9ae8bddf82e63c4704e608567377f547982bd",
-                "reference": "24c9ae8bddf82e63c4704e608567377f547982bd",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.4.0",
-                "yiisoft/yii2": "*"
-            },
-            "type": "yii2-extension",
-            "autoload": {
-                "psr-4": {
-                    "hscstudio\\cart\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Hafid Mukhlasin",
-                    "email": "hafidmukhlasin@gmail.com"
-                }
-            ],
-            "description": "Yii2 extension that adds shopping cart functions",
-            "keywords": [
-                "shopping cart",
-                "yii"
-            ],
-            "support": {
-                "issues": "https://github.com/hscstudio/yii2-cart/issues",
-                "source": "https://github.com/hscstudio/yii2-cart/tree/master"
-            },
-            "time": "2016-01-17T23:24:26+00:00"
         },
         {
             "name": "imagine/imagine",
@@ -4275,48 +4220,6 @@
             ]
         },
         {
-            "name": "omnilight/yii2-shopping-cart",
-            "version": "1.3.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/omnilight/yii2-shopping-cart.git",
-                "reference": "afb9b29db3fc43871f4b57bfec34a9b2e8b73f8c"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/omnilight/yii2-shopping-cart/zipball/afb9b29db3fc43871f4b57bfec34a9b2e8b73f8c",
-                "reference": "afb9b29db3fc43871f4b57bfec34a9b2e8b73f8c",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.4.0",
-                "yiisoft/yii2": "*"
-            },
-            "type": "yii2-extension",
-            "autoload": {
-                "psr-4": {
-                    "yz\\shoppingcart\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "authors": [
-                {
-                    "name": "Pavel Agalecky",
-                    "email": "pavel.agalecky@gmail.com"
-                }
-            ],
-            "description": "Yii2 extension that adds shopping cart functions",
-            "keywords": [
-                "shopping cart",
-                "yii"
-            ],
-            "support": {
-                "issues": "https://github.com/omnilight/yii2-shopping-cart/issues",
-                "source": "https://github.com/omnilight/yii2-shopping-cart/tree/master"
-            },
-            "time": "2018-06-12T14:23:02+00:00"
-        },
-        {
             "name": "paragonie/random_compat",
             "version": "v9.99.100",
             "source": {
@@ -4487,6 +4390,52 @@
                 "source": "https://github.com/phpspec/php-diff/tree/v1.1.3"
             },
             "time": "2020-09-18T13:47:07+00:00"
+        },
+        {
+            "name": "powerkernel/yii2-photoswipe",
+            "version": "1.1.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/powerkernel/yii2-photoswipe.git",
+                "reference": "901c0269bf2ff5728907ceadf3a619d78cfd2ad1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/powerkernel/yii2-photoswipe/zipball/901c0269bf2ff5728907ceadf3a619d78cfd2ad1",
+                "reference": "901c0269bf2ff5728907ceadf3a619d78cfd2ad1",
+                "shasum": ""
+            },
+            "require": {
+                "bower-asset/photoswipe": "~4.1.0",
+                "yiisoft/yii2": "~2.0.0"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "powerkernel\\photoswipe\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Harry Tang",
+                    "email": "harry@powerkernel.com"
+                }
+            ],
+            "description": "PhotoSwipe extension for Yii2",
+            "keywords": [
+                "extension",
+                "photoswipe",
+                "yii2"
+            ],
+            "support": {
+                "issues": "https://github.com/powerkernel/yii2-photoswipe/issues",
+                "source": "https://github.com/powerkernel/yii2-photoswipe/tree/master"
+            },
+            "time": "2017-12-01T14:03:32+00:00"
         },
         {
             "name": "psr/clock",
@@ -4808,6 +4757,52 @@
             "time": "2022-03-22T16:11:07+00:00"
         },
         {
+            "name": "ronash-dhakal/yii2-cart",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ronash-dhakal/yii2-cart.git",
+                "reference": "e35ef37f15e03d551b4c1bd29f8d0dc586194ca1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ronash-dhakal/yii2-cart/zipball/e35ef37f15e03d551b4c1bd29f8d0dc586194ca1",
+                "reference": "e35ef37f15e03d551b4c1bd29f8d0dc586194ca1",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0",
+                "yiisoft/yii2": "*"
+            },
+            "default-branch": true,
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "ronashDhakal\\cart\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ronash Dhakal",
+                    "email": "ronashmail@gmail.com"
+                }
+            ],
+            "description": "Yii2 extension that adds shopping cart functions",
+            "keywords": [
+                "shopping cart",
+                "yii"
+            ],
+            "support": {
+                "issues": "https://github.com/ronash-dhakal/yii2-cart/issues",
+                "source": "https://github.com/ronash-dhakal/yii2-cart/tree/master"
+            },
+            "time": "2019-04-15T13:22:19+00:00"
+        },
+        {
             "name": "select2/select2",
             "version": "4.0.13",
             "source": {
@@ -4976,23 +4971,61 @@
             "time": "2021-09-23T13:51:44+00:00"
         },
         {
-            "name": "siripravi/catalog",
-            "version": "v1.1.0",
+            "name": "siripravi/authhelper",
+            "version": "v1.0.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/siripravi/luya-catalog-module.git",
-                "reference": "4f4d4365c1ed11627bc333ae6824e8e969d23724"
+                "url": "https://github.com/siripravi/luya-module-authhelper.git",
+                "reference": "fee7b63482bf2b9ebf8e48b59c0f74437f50b389"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/siripravi/luya-catalog-module/zipball/4f4d4365c1ed11627bc333ae6824e8e969d23724",
-                "reference": "4f4d4365c1ed11627bc333ae6824e8e969d23724",
+                "url": "https://api.github.com/repos/siripravi/luya-module-authhelper/zipball/fee7b63482bf2b9ebf8e48b59c0f74437f50b389",
+                "reference": "fee7b63482bf2b9ebf8e48b59c0f74437f50b389",
                 "shasum": ""
             },
+            "type": "yii2-extension",
+            "extra": {
+                "bootstrap": "siripravi\\authhelper\\Bootstrap"
+            },
+            "autoload": {
+                "psr-4": {
+                    "siripravi\\authhelper\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "siripravi",
+                    "email": "purnachandra.valluri@gmail.com"
+                }
+            ],
+            "description": "Luya helper module for user authentication ",
+            "support": {
+                "issues": "https://github.com/siripravi/luya-module-authhelper/issues",
+                "source": "https://github.com/siripravi/luya-module-authhelper/tree/v1.0.0"
+            },
+            "time": "2024-01-30T06:07:27+00:00"
+        },
+        {
+            "name": "siripravi/ecommerce",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/siripravi/luya-module-ecommerce.git",
+                "reference": "c6fe2ad5dbc04a6a094381c881f925ab16a85cb1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/siripravi/luya-module-ecommerce/zipball/c6fe2ad5dbc04a6a094381c881f925ab16a85cb1",
+                "reference": "c6fe2ad5dbc04a6a094381c881f925ab16a85cb1",
+                "shasum": ""
+            },
+            "default-branch": true,
             "type": "luya-module",
             "autoload": {
                 "psr-4": {
-                    "siripravi\\catalog\\": "src/"
+                    "siripravi\\ecommerce\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -5005,15 +5038,55 @@
                     "email": "provdigi@gmail.com"
                 }
             ],
-            "description": "Luya module for ecommerce",
+            "description": "Luya module for E commerce",
             "keywords": [
                 "luya"
             ],
             "support": {
-                "issues": "https://github.com/siripravi/luya-catalog-module/issues",
-                "source": "https://github.com/siripravi/luya-catalog-module/tree/v1.1.0"
+                "issues": "https://github.com/siripravi/luya-module-ecommerce/issues",
+                "source": "https://github.com/siripravi/luya-module-ecommerce/tree/main"
             },
-            "time": "2023-11-23T05:26:57+00:00"
+            "time": "2024-01-25T06:53:35+00:00"
+        },
+        {
+            "name": "siripravi/shopcart",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/siripravi/luya-module-shopcart.git",
+                "reference": "ed13495d39b87ace2ba14c01af04227d1381044d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/siripravi/luya-module-shopcart/zipball/ed13495d39b87ace2ba14c01af04227d1381044d",
+                "reference": "ed13495d39b87ace2ba14c01af04227d1381044d",
+                "shasum": ""
+            },
+            "type": "luya-module",
+            "autoload": {
+                "psr-4": {
+                    "siripravi\\shopcart\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "purnachandra",
+                    "email": "provdigi@gmail.com"
+                }
+            ],
+            "description": "Luya module for Shopcart",
+            "keywords": [
+                "luya"
+            ],
+            "support": {
+                "issues": "https://github.com/siripravi/luya-module-shopcart/issues",
+                "source": "https://github.com/siripravi/luya-module-shopcart/tree/v1.0.0"
+            },
+            "time": "2024-01-22T06:29:54+00:00"
         },
         {
             "name": "symfony/deprecation-contracts",
@@ -9291,16 +9364,16 @@
         },
         {
             "name": "symfony/var-exporter",
-            "version": "v5.4.32",
+            "version": "v5.4.35",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/var-exporter.git",
-                "reference": "fdb022f0d3d41df240c18e2eb9a117c430f06add"
+                "reference": "abb0a151b62d6b07e816487e20040464af96cae7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/var-exporter/zipball/fdb022f0d3d41df240c18e2eb9a117c430f06add",
-                "reference": "fdb022f0d3d41df240c18e2eb9a117c430f06add",
+                "url": "https://api.github.com/repos/symfony/var-exporter/zipball/abb0a151b62d6b07e816487e20040464af96cae7",
+                "reference": "abb0a151b62d6b07e816487e20040464af96cae7",
                 "shasum": ""
             },
             "require": {
@@ -9344,7 +9417,7 @@
                 "serialize"
             ],
             "support": {
-                "source": "https://github.com/symfony/var-exporter/tree/v5.4.32"
+                "source": "https://github.com/symfony/var-exporter/tree/v5.4.35"
             },
             "funding": [
                 {
@@ -9360,7 +9433,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-11-16T19:33:05+00:00"
+            "time": "2024-01-23T13:51:25+00:00"
         },
         {
             "name": "symfony/yaml",
@@ -9654,12 +9727,13 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
+        "siripravi/ecommerce": 20,
         "kartik-v/yii2-icons": 20,
-        "chandra/yii2-account": 20
+        "ronash-dhakal/yii2-cart": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": [],
-    "plugin-api-version": "2.3.0"
+    "plugin-api-version": "2.6.0"
 }

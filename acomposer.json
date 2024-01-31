@@ -10,7 +10,7 @@
         "yiisoft/yii2-bootstrap5": "~2.0.2",
         "luyadev/luya-generic" : "^1.0",        
         "luyadev/luya-module-gallery": "^1.0",
-        "siripravi/ecommerce": "@dev",
+        "siripravi/catalog": "^1.1.0",
         "kartik-v/yii2-icons": "@dev",
         "kartik-v/yii2-widgets": "*",
         "dev7ch/luya-ext-slick": "^1.1",
@@ -18,20 +18,18 @@
         "arturoliveira/yii2-checkoutprogressbar": "*",
         "sinergi/browser-detector": "^6.1",
         "beastbytes/yii2-wizard": "*",
-        "yiisoft/yii2-authclient": "~2.2.0",        
+        "yiisoft/yii2-authclient": "~2.2.0",
+        "chandra/yii2-account":"@dev",
         "yiisoft/yii2-symfonymailer": "~2.0.3",
         "luyadev/luya-module-forms": "^1.8",
         "basepodapps/yii2-feathericons": "^1.0.0",
         "tigrov/yii2-kendoui": "~1.0",
-        "siripravi/shopcart":"^1.0.0",
-        "siripravi/authhelper":"^1.0.0",
         "luyadev/luya-module-userauth": "^1.1",
-        "lav45/yii2-ajax-create": "0.2.*",      
+        "lav45/yii2-ajax-create": "0.2.*",
+        "hscstudio/yii2-cart": "*",
+        "omnilight/yii2-shopping-cart": "*",
         "biladina/yii2-ajaxcrud-bs4": "~3.0",
-        "exocet/yii2-bootstrap-material-design": "^2.3",
-        "yiisoft/yii2": "2.0.49.3",
-        "ronash-dhakal/yii2-cart": "@dev",
-        "powerkernel/yii2-photoswipe": "~1.1.5"       
+        "exocet/yii2-bootstrap-material-design": "^2.3"
        
     },
     "require-dev": {
@@ -54,7 +52,10 @@
         {
             "type": "composer",
             "url": "https://asset-packagist.org"
+        },
+        {
+            "type": "path",
+            "url": "./yii2-account"
         }
-       
     ]
 }
