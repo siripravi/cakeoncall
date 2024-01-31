@@ -32,8 +32,7 @@ $config = new Config('myproject', dirname(__DIR__), [
         ],
         'userauthadmin' => 'app\modules\userauth\admin\Module',
         'user' => [
-            'class' => 'siripravi\authhelper\Module',
-            'layout' => '@app/themes/cakeBaker/views/layouts/auth',
+            'class' => 'Chandra\Yii2Account\Module',
             'modelMap' => [
                 'RegistrationForm' => app\modules\userauth\models\RegistrationForm::class,
                 'RecoveryForm' => app\modules\userauth\models\RecoveryForm::class,
@@ -81,26 +80,21 @@ $config = new Config('myproject', dirname(__DIR__), [
             'interfaceLanguage' => 'en', // Admin interface default language. Currently supported: en, de, ru, es, fr, ua, it, el, vi, pt, fa
             'autoBootstrapQueue' => true, // Enables the fake cronjob by default, read more about queue/scheduler: https://luya.io/guide/app-queue
         ],
-        'ecommerce' => 'siripravi\ecommerce\frontend\Module',
-        'ecommerceadmin' => 'siripravi\ecommerce\admin\Module',
+        'catalog' => 'siripravi\catalog\frontend\Module',
+        'catalogadmin' => 'siripravi\catalog\admin\Module',
         'gallery' => [
             'class' => 'luya\gallery\frontend\Module',
             'useAppViewPath' => true, // When enabled the views will be looked up in the @app/views folder, otherwise the views shipped with the module will be used.
         ],
         'galleryadmin' => 'luya\gallery\admin\Module',
-        'shopcart' => 'siripravi\shopcart\frontend\Module',
-        'shopcartadmin' => 'siripravi\shopcart\admin\Module',
+        'shopcart' => 'app\modules\shopcart\frontend\Module',
+        'shopcartadmin' => 'app\modules\shopcart\admin\Module',
     ],
     'components' => [
-        'storage' => [
-            'class' => 'luya\admin\filesystem\LocalFileSystem',
-            'whitelistExtensions' => ['jpg', 'png'],
-            'whitelistMimeTypes' => ['text/plain', 'image/svg+xml'], // as this is the mime type for csv files
-        ],
         'forms' => [
             'class' => 'app\components\Forms'
         ],
-        /* 'cart' => [
+        'cart' => [
             'class' => 'hscstudio\cart\Cart',
             'storage' => [
                 'class' => 'hscstudio\cart\MultipleStorage',
@@ -108,39 +102,6 @@ $config = new Config('myproject', dirname(__DIR__), [
                     ['class' => 'hscstudio\cart\SessionStorage'],
                     [
                         'class' => 'hscstudio\cart\DatabaseStorage',
-                        'table' => 'cart',
-                    ],
-                ],
-            ]
-        ],*/
-        'session' => [
-            'class' => 'yii\web\Session',          
-        ],
-        'user' => [
-            'class' => 'yii\web\User',
-            'identityClass' => app\models\User::class,
-            'enableAutoLogin' => true,
-             'enableSession' => true,
-            'identityCookie' => [
-                'name'     => '_frontendIdentity',
-                'path'     => '/',
-                'httpOnly' => true,
-            ],
-            'on afterLogin' => function () {
-                //  if (Yii::$app->cart->saveToDataBase) Yii::$app->cart->transportSessionDataToDB();
-            },
-            'on afterConfirm' => function () {
-                //  if (Yii::$app->cart->saveToDataBase) Yii::$app->cart->transportSessionDataToDB();
-            },
-        ],
-        'cart' => [
-            'class' => 'ronashDhakal\cart\Cart',
-            'storage' => [
-                'class' => 'ronashDhakal\cart\MultipleStorage',
-                'storages' => [
-                    ['class' => 'ronashDhakal\cart\SessionStorage'],
-                    [
-                        'class' => 'ronashDhakal\cart\DatabaseStorage',
                         'table' => 'cart',
                     ],
                 ],
@@ -170,32 +131,47 @@ $config = new Config('myproject', dirname(__DIR__), [
             'class' => 'yii\db\Connection',
             'charset' => 'utf8',
         ],
-     /*   'request' => [
+        /* 'request' => [
+            
             'enableCookieValidation' => true,
-            'cookieValidationKey' => 'I-mmzHGFYAx9EnASWbueCBRo4W4HQBKHA_-',
+            'cookieValidationKey' => 'I-mmzHGFYAx9EnbueCBRo4W4HQBKHA_-',
             'enableCsrfValidation' => false,
         ],  */
-
-        'MyGlobalClass' => [
-            'class' => 'app\components\MyGlobalClass'
+        'user' => [
+            'class' => 'yii\web\User',
+            'identityClass' => app\models\User::class,
+            'enableAutoLogin' => true,
+            'identityCookie' => [
+                'name'     => '_frontendIdentity',
+                'path'     => '/',
+                'httpOnly' => true,
+            ],
+            /*  'on afterLogin' => function() {
+                    if (Yii::$app->cart->saveToDataBase) Yii::$app->cart->transportSessionDataToDB();
+                },
+                'on afterConfirm' => function() {
+                    if (Yii::$app->cart->saveToDataBase) Yii::$app->cart->transportSessionDataToDB();
+                },*/
         ],
 
         'assetManager' => [
-            'linkAssets' => false,
+            'linkAssets' => true,
             'appendTimestamp' => true,
             'bundles' => [
                 'yii\bootstrap5\BootstrapAsset' => [
                     'css' => []
-                    //   'class' => \exocet\bootstrap5md\BootstrapAsset::class,
+                 //   'class' => \exocet\bootstrap5md\BootstrapAsset::class,
                 ],
-                /*   'yii\bootstrap5\BootstrapPluginAsset' => [
+                'yii\bootstrap5\BootstrapPluginAsset' => [
                     'js' => []
                   // 'class' => \exocet\bootstrap5md\BootstrapPluginAsset::class,
-                ],*/
-                'yii\bootstrap5\BootstrapPluginAsset' => [
-                    'js' => ["https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"],                
+                ],
+                /*!!   'yii\bootstrap5\BootstrapPluginAsset' => [
+                    'js' => ["https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"]
+                ],   
+                'yii\bootstrap5\BootstrapAsset' => [
                     'css' =>[ "https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"],
-                ], 
+                ],  !!**/
                 /*'yii\web\JqueryAsset' => [
                     'sourcePath' => null,
                     'js' => [
@@ -273,10 +249,17 @@ $config->component('db', [
 ])->env(Config::ENV_LOCAL);
 $config->webComponent('request', [
     'enableCookieValidation' => true,
-    'cookieValidationKey' => 'I-mmzHGFYAx9EnbueCBRAXDo4W4HQBKHA_-',
+    'cookieValidationKey' => 'I-mmzHGFYAx9EnbueCBRo4W4HQBKHA_-',
     'enableCsrfValidation' => false,
 ])->env(Config::ENV_LOCAL);
-
+/*
+// docker mysql config
+$config->component('db', [
+    'dsn' => 'mysql:host=luya_db;dbname=luya_kickstarter_101',
+    'username' => 'luya',
+    'password' => 'CHANGE_ME',
+])->env(Config::ENV_LOCAL);
+*/
 
 $config->component('db', [
     'dsn' => 'mysql:host=localhost;dbname=DB_NAME',
@@ -289,17 +272,13 @@ $config->component('db', [
 $config->component('cache', [
     'class' => 'yii\caching\FileCache'
 ])->env(Config::ENV_PROD);
-$config->component('cache', [
-    'class' => 'yii\caching\FileCache'
-])->env(Config::ENV_LOCAL);
-//$config->bootstrap(['ronashDhakal\cart\CartBootstrap'])->env(Config::ENV_PROD);
-//$config->bootstrap(['ronashDhakal\cart\CartBootstrap'])->env(Config::ENV_LOCAL);
+$config->bootstrap(['hscstudio\cart\CartBootstrap'])->env(Config::ENV_PROD);
 // debug and gii on local env
 $config->module('debug', [
     'class' => 'yii\debug\Module',
     'allowedIPs' => ['*'],
 ])->env(Config::ENV_LOCAL);
-/*$config->module('gii', [
+$config->module('gii', [
     'class' => 'yii\gii\Module',
     'allowedIPs' => ['*'],
     'generators' => [
@@ -309,10 +288,10 @@ $config->module('debug', [
                 'material-bootstrap' => '@vendor/exocet/yii2-bootstrap-material-design/src/generators/crud',
             ]
         ],
-
+       
     ]
-])->env(Config::ENV_LOCAL);*/
+])->env(Config::ENV_LOCAL);
 
-$config->bootstrap(['debug'])->env(Config::ENV_PROD);
+//$config->bootstrap(['hscstudio\cart\CartBootstrap', 'debug', 'gii'])->env(Config::ENV_LOCAL);
 
 return $config;
