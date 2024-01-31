@@ -5006,16 +5006,16 @@
         },
         {
             "name": "symfony/event-dispatcher",
-            "version": "v7.0.2",
+            "version": "v7.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/event-dispatcher.git",
-                "reference": "098b62ae81fdd6cbf941f355059f617db28f4f9a"
+                "reference": "834c28d533dd0636f910909d01b9ff45cc094b5e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/event-dispatcher/zipball/098b62ae81fdd6cbf941f355059f617db28f4f9a",
-                "reference": "098b62ae81fdd6cbf941f355059f617db28f4f9a",
+                "url": "https://api.github.com/repos/symfony/event-dispatcher/zipball/834c28d533dd0636f910909d01b9ff45cc094b5e",
+                "reference": "834c28d533dd0636f910909d01b9ff45cc094b5e",
                 "shasum": ""
             },
             "require": {
@@ -5066,7 +5066,7 @@
             "description": "Provides tools that allow your application components to communicate with each other by dispatching events and listening to them",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/event-dispatcher/tree/v7.0.2"
+                "source": "https://github.com/symfony/event-dispatcher/tree/v7.0.3"
             },
             "funding": [
                 {
@@ -5082,7 +5082,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-12-27T22:24:19+00:00"
+            "time": "2024-01-23T15:02:46+00:00"
         },
         {
             "name": "symfony/event-dispatcher-contracts",
@@ -5162,16 +5162,16 @@
         },
         {
             "name": "symfony/mailer",
-            "version": "v7.0.2",
+            "version": "v7.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/mailer.git",
-                "reference": "c51c8f411062ef8fec837c76b0dad15dd5a6ab16"
+                "reference": "2f71c0f6d62d28784783fdc5477e19dd57065d78"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/mailer/zipball/c51c8f411062ef8fec837c76b0dad15dd5a6ab16",
-                "reference": "c51c8f411062ef8fec837c76b0dad15dd5a6ab16",
+                "url": "https://api.github.com/repos/symfony/mailer/zipball/2f71c0f6d62d28784783fdc5477e19dd57065d78",
+                "reference": "2f71c0f6d62d28784783fdc5477e19dd57065d78",
                 "shasum": ""
             },
             "require": {
@@ -5222,7 +5222,7 @@
             "description": "Helps sending emails",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/mailer/tree/v7.0.2"
+                "source": "https://github.com/symfony/mailer/tree/v7.0.3"
             },
             "funding": [
                 {
@@ -5238,7 +5238,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-12-19T11:23:03+00:00"
+            "time": "2024-01-29T15:41:16+00:00"
         },
         {
             "name": "symfony/mime",

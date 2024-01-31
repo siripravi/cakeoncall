@@ -37,8 +37,7 @@
         "twbs/bootstrap": "^4.0",
         "unglue/client": "^1.5"
     },
-    "config": {
-        "preferred-install": "source",
+    "config": {       
         "fxp-asset": {
             "enabled": false
         },
