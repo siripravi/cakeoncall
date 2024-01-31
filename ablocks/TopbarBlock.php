@@ -2,8 +2,8 @@
 
 namespace app\blocks;
 
-use siripravi\ecommerce\models\Group;
-use siripravi\ecommerce\models\Article;
+use siripravi\catalog\models\Group;
+use siripravi\catalog\models\Article;
 use luya\cms\base\PhpBlock;
 use luya\cms\frontend\blockgroups\ProjectGroup;
 

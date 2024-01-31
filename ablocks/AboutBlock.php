@@ -2,22 +2,21 @@
 
 namespace app\blocks;
 
-use siripravi\ecommerce\models\Group;
-use siripravi\ecommerce\models\Article;
 use luya\cms\base\PhpBlock;
 use luya\cms\frontend\blockgroups\ProjectGroup;
+
 
 /**
  * Portfolio Block.
  *
  * File has been created with `block/create` command on LUYA version 1.0.0. 
  */
-class TopbarBlock extends PhpBlock
+class AboutBlock extends PhpBlock
 {
     /**
      * @var string The module where this block belongs to in order to find the view files.
      */
-
+  
 
     /**
      * @var bool Choose whether a block can be cached trough the caching component. Be carefull with caching container blocks.
@@ -42,7 +41,7 @@ class TopbarBlock extends PhpBlock
      */
     public function name()
     {
-        return 'Topbar';
+        return 'About Us';
     }
 
     /**
@@ -76,7 +75,7 @@ class TopbarBlock extends PhpBlock
      */
     public function admin()
     {
-        return '<h5 class="mb-3">Topbar</h5>';
+        return '<h5 class="mb-3">About</h5>';
     }
 
     /**

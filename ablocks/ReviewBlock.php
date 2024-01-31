@@ -5,7 +5,7 @@ namespace app\blocks;
 use luya\cms\base\PhpBlock;
 use luya\cms\frontend\blockgroups\ProjectGroup;
 use luya\cms\helpers\BlockHelper;
-use siripravi\ecommerce\models\Brand;
+use siripravi\catalog\models\Brand;
 use luya\cms\injectors\ActiveQueryCheckboxInjector;
 
 /**

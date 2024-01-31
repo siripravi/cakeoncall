@@ -1,37 +1,49 @@
-<!-- Navbar Start -->
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
-    <!--  <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
-            <h1 class="text-primary m-0">CakeOnCall</h1>
-        </a>  -->
-    <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarCollapse">
-        <div class="navbar-nav mx-auto p-4 p-lg-0">
-            <!-- <a href="index.html" class="nav-item nav-link active">Home</a>
-                <a href="about.html" class="nav-item nav-link">About</a>
-                <a href="service.html" class="nav-item nav-link">Services</a>
-                <a href="product.html" class="nav-item nav-link">Products</a>
-                <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
-                    <div class="dropdown-menu m-0">
-                        <a href="team.html" class="dropdown-item">Our Team</a>
-                        <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                        <a href="404.html" class="dropdown-item">404 Page</a>
-                    </div>
-                </div>
-                <a href="contact.html" class="nav-item nav-link">Contact</a> -->
+<?php
+
+use yii\helpers\{Html, Url};
+use exocet\bootstrap5md\widgets\NavBar;
+use yii\bootstrap5\Nav;
+use siripravi\shopcart\widgets\CartIconWidget;
+?>
+<?php
+
+?>
+<?php
+$menuItems = $this->extraValue('items'); //<iconify-icon icon="mdi:user-outline" style="color: #123;" width="20" rotate="0deg"></iconify-icon>
+$userItems = $this->extraValue('userItems');
+?>
+<!-- Navbar begins  -->
+<!--<nav class="navbar navbar-expand-lg bg-body-tertiary"> -->
+<?php
+NavBar::begin([
+    //'brandLabel' => '<span class="gaozhan-logo">'.Html::img("/image/site/nyxta.png",["style"=>"max-height: 80%; padding: 0;position:relative;"]).'</span>',
+    'brandLabel'  => '<h1 class="text-primary display-6">Cake Zone</h1>',
+    'brandUrl' => Yii::$app->homeUrl,
+   // 'collapseOptions'=> ['style'=> 'display:none'],
+    'options' => [
+        'class' => ' navbar-light bg-white navbar-expand-lg py-0',  // bg-dark',  
+       // 'data-bs-theme' => 'dark',
+        'style' => "background-color: #46141c;"//border-radius: 230px 100px;"
+    ],
+    'innerContainerOptions' => ['class'=>'container py-3 py-lg-0 px-lg-0']
+]);?>
+      <?= Nav::widget([
+            'options' => ['class' => "navbar-nav me-auto mb-2 mb-lg-0"],
+            'items' => $menuItems,
+        ]); ?>
+        <div class="col-lg-auto text-center text-lg-left header-item-holder d-inline-flex ps-4" id="right-nav">
+            <?= CartIconWidget::widget(); ?>
         </div>
-        <div class=" d-none d-lg-flex">
-            <div class="btn-lg-square ">
-                <h1><i class="bi bi-telephone"></i>
-                    <h1>
-            </div>
-            <div class="ps-3">
-                <span class="text-primary mb-0">Call Us</span>
-                <p class="text-dark fs-5 mb-0">+012 345 6789</p>
-            </div>
-        </div>
+        <div class="d-flex m-3 me-0" id="right-nav-x">
+    <!--<button class="btn-search btn border border-secondary btn-md-square rounded-circle bg-white me-4" data-bs-toggle="modal" data-bs-target="#searchModal"><i data-feather="search" class="text-primary"></i></button>-->
+    <?= Nav::widget([
+        'options' => ['class' => "navbar-nav ms-auto mx-lg-auto py-0"],
+        'items' => $userItems,
+    ]); ?>
+
+      <!--<form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form> -->
     </div>
-</nav>
-<!-- Navbar End -->
+<?php NavBar::end();   ?>

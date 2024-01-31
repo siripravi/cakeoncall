@@ -6,8 +6,6 @@ use luya\cms\base\PhpBlock;
 use luya\forms\blockgroups\FormGroup;
 use luya\forms\FieldBlockTrait;
 use luya\helpers\ArrayHelper;
-use kartik\date\DatePicker;
-
 use Yii;
 use yii\validators\DateValidator;
 
@@ -22,9 +20,7 @@ use yii\validators\DateValidator;
  */
 class MyDatepickerBlock extends PhpBlock
 {
-    use FieldBlockTrait {
-        config as parentConfig;
-    }
+    use FieldBlockTrait { config as parentConfig; }
 
     /**
      * @inheritDoc
@@ -41,7 +37,7 @@ class MyDatepickerBlock extends PhpBlock
     {
         return Yii::t('app', 'My Datepicker');
     }
-
+    
     /**
      * @inheritDoc
      */
@@ -74,30 +70,30 @@ class MyDatepickerBlock extends PhpBlock
             'disablePolyfill' => Yii::t('forms', 'When enabled, the polyfill which ensures the datepicker works on Safari and Internet Explorer is disabled.'),
         ];
     }
-
+    
     /**
      * {@inheritDoc}
      *
      * @param {{vars.field}}
      * @param {{vars.hint}}
      * @param {{vars.label}}
-     */
+    */
     public function admin()
     {
-        return '<div>{{vars.label}} <span class="badge badge-secondary float-right">' . Yii::t('app', 'My Datepicker') . '</span></div>';
+        return '<div>{{vars.label}} <span class="badge badge-secondary float-right">'.Yii::t('app', 'My Datepicker').'</span></div>';
     }
 
     public function frontend()
     {
         if (!$this->getCfgValue('disablePolyfill', false)) {
-            //  Yii::$app->view->registerJsFile('//cdn.jsdelivr.net/npm/better-dom@4.1.0/dist/better-dom.min.js');
-            //   Yii::$app->view->registerJsFile('//cdnjs.cloudflare.com/ajax/libs/better-dateinput-polyfill/3.3.1/better-dateinput-polyfill.min.js', [], 'nodep-date-input-polyfil');
+          //  Yii::$app->view->registerJsFile('//cdn.jsdelivr.net/npm/better-dom@4.1.0/dist/better-dom.min.js');
+         //   Yii::$app->view->registerJsFile('//cdnjs.cloudflare.com/ajax/libs/better-dateinput-polyfill/3.3.1/better-dateinput-polyfill.min.js', [], 'nodep-date-input-polyfil');
         }
 
         Yii::$app->forms->autoConfigureAttribute(
             $this->getVarValue($this->varAttribute),
             $this->getVarValue($this->varRule, $this->defaultRule),
-            /* [
+           /* [
                 DateValidator::class,
                 ['format' => 'dd-MM-yyyy']
             ],*/
@@ -112,19 +108,8 @@ class MyDatepickerBlock extends PhpBlock
             return;
         }
 
-         $activeField = Yii::$app->forms->form->field(Yii::$app->forms->model, $varName,['options' => ['class'=>'form-outline mb-4 datepicker']]);
+        $activeField = Yii::$app->forms->form->field(Yii::$app->forms->model, $varName,['options' => ['class'=>'form-outline mb-4 datepicker']]);
 
-        
-         return $activeField->widget(DatePicker::class,[
-            'model' => Yii::$app->forms->model,
-            'attribute' => $varName,
-            'type' => DatePicker::TYPE_COMPONENT_APPEND,
-            'options' => ['placeholder' => 'Enter Delivery date ...'],
-            'pluginOptions' => [
-               // 'orientation' => 'top right',
-                'format' => 'mm/dd/yyyy',
-                'autoclose' => true,
-            ]
-        ]);
+        return $activeField->textInput(['type' => 'text']);
     }
 }

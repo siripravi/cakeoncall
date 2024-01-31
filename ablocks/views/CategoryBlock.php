@@ -10,7 +10,7 @@
  * @var $this \luya\cms\base\PhpBlockView
  */
 
-//\siripravi\ecommerce\frontend\assets\Main::register(Yii::$app->view);
+//\siripravi\catalog\frontend\assets\Main::register(Yii::$app->view);
 
 ?>
 

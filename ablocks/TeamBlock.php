@@ -2,18 +2,19 @@
 
 namespace app\blocks;
 
-use siripravi\ecommerce\models\Group;
-use siripravi\ecommerce\models\Article;
 use luya\cms\base\PhpBlock;
 use luya\cms\frontend\blockgroups\ProjectGroup;
+use luya\cms\helpers\BlockHelper;
 
 /**
  * Portfolio Block.
  *
  * File has been created with `block/create` command on LUYA version 1.0.0. 
  */
-class TopbarBlock extends PhpBlock
+class TeamBlock extends PhpBlock
 {
+    // public $isContainer = true;
+
     /**
      * @var string The module where this block belongs to in order to find the view files.
      */
@@ -42,7 +43,7 @@ class TopbarBlock extends PhpBlock
      */
     public function name()
     {
-        return 'Topbar';
+        return 'Our Team';
     }
 
     /**
@@ -58,7 +59,11 @@ class TopbarBlock extends PhpBlock
      */
     public function config()
     {
-        return [];
+        return [
+            'cfgs' => [
+                ['var' => 'images', 'label' => 'Images', 'type' => self::TYPE_IMAGEUPLOAD_ARRAY, 'options' => ['no_filter' => false]],
+            ],
+        ];
     }
 
     /**
@@ -66,7 +71,9 @@ class TopbarBlock extends PhpBlock
      */
     public function extraVars()
     {
-        return [];
+        return [
+            'images' => BlockHelper::imageArrayUpload($this->getCfgValue('images'), false, true),
+        ];
     }
 
     /**
@@ -76,7 +83,12 @@ class TopbarBlock extends PhpBlock
      */
     public function admin()
     {
-        return '<h5 class="mb-3">Topbar</h5>';
+        return '<h5 class="mb-3">Our Team</h5>' .
+            '<table class="table table-bordered">' .
+            '{% if cfgs.images is not empty %}' .
+            '<tr><td><b>Images</b></td><td>{{cfgs.images}}</td></tr>' .
+            '{% endif %}' .
+            '</table>';
     }
 
     /**

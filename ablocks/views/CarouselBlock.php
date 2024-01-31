@@ -1,11 +1,5 @@
 <?php
-use app\widgets\Carousel;
 
-
-
-$images = $this->extraValue('images');
-$indicators = null;
-$counter = 0;
 /**
  * View file for block: CarouselBlock 
  *
@@ -15,41 +9,10 @@ $counter = 0;
  * @var $this \luya\cms\base\PhpBlockView
  */
 
-//use yii\helpers\Html;
+use yii\helpers\Html;
 ?>
-
-<div class="col-lg-12 bg-primary">
-        <!--= app\widgets\HomeSlider::widget();  ?-->
-        <?php
-        echo Carousel::widget([
-            'id' => 'home-slider',
-            'items' => $images,
-            'showIndicators' => false,
-            /* 'controls' => [
-                            '<span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Previous</span>',
-                            '<span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Next</span>',
-                        ],  */
-            'options' => [
-                'data-interval' => 8,
-                'data-bs-ride' => 'scroll'
-            ],
-            'controls' => [
-                '<span class="carousel-control-prev-icon"></span>',
-                '<span class="carousel-control-next-icon"></span>',
-            ],
-        ]) ?>
-    </div>
  <!-- carousel -->
-<!--<section class="carousel">
-	<div class="reel" style="overflow: visible; transform: translate(0px, 0px);">
-
-		?php echo $this->placeholderValue('elements') ?>
-
-	</div>
-
-</section>  -->
-<!--
-<div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-mdb-ride="carousel">
+ <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-mdb-ride="carousel">
         <div class="carousel-indicators">
             <button type="button" data-mdb-target="#carouselExampleCaptions" data-mdb-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-mdb-target="#carouselExampleCaptions" data-mdb-slide-to="1" aria-label="Slide 2"></button>
@@ -132,4 +95,13 @@ $counter = 0;
             <span class="visually-hidden">Next</span>
         </button>
     </div>
+<!--
+<section class="carousel">
+	<div class="reel" style="overflow: visible; transform: translate(0px, 0px);">
+
+		<php echo $this->placeholderValue('elements') ?>
+
+	</div>
+
+</section>
 -->
