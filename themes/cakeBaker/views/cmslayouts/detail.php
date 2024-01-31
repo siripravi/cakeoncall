@@ -7,48 +7,31 @@ use yii\helpers\Url;
  * @var string[] $placeholders
  */
 ?>
+<header class="nav-holder make-sticky">
+  
+    <?php if ($placeholders['detailhdr']) : ?>
+        <?= $placeholders['detailhdr'] ?>
+    <?php endif ?>
+</header>
 <!-- Intro -->
 <div class="header-container">
     <div class="container">
-        <?= $placeholders['banner'] ?>
+        <?= $placeholders['detailbanner'] ?>
     </div>
 </div>
 
-<!--= CheckOutProgressBar::widget([
-    'current_step' => 2,
-    'current_step_done' => TRUE, # Optional if you want this step to be checked
-    'steps' => [
-        [
-            'label' => 1,
-            'title' => 'Your Cart',
-            'url' => Url::toRoute('/shopping-cart'), # Optional if you want the label and title to be clickable
-        ],
-        [
-            'label' => 2,
-            'title' => 'Delivery Details',
-            'url' => Url::toRoute('/checkout-delivery'), # Optional if you want the label and title to be clickable
-        ],
-        [
-            'label' => 3,
-            'title' => 'Payment Details',
-            'url' => Url::toRoute('/checkout-delivery'), # Optional if you want the label and title to be clickable
-        ]
-    ]
-]);
-
-?-->
 <!-- Main -->
 <section id="main-detail" class="wrapper">
     <div class="container">
-        <?= $placeholders['main'] ?>
+        <?= $placeholders['detailmain'] ?>
     </div>
 </section>
 
-<?php if ($placeholders['related']) : ?>
+<?php if ($placeholders['detailrelated']) : ?>
     <!-- Highlights -->
     <section id="highlights" class="wrapper style3">
         <div class="container">
-            <?= $placeholders['related'] ?>
+            <?= $placeholders['detailrelated'] ?>
         </div>
     </section>
 <?php endif ?>

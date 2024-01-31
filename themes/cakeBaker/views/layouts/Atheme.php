@@ -16,7 +16,7 @@ CakebakerAsset::register($this);
 $this->beginPage();
 ?>
 <!DOCTYPE html>
-<html lang="<?= Yii::$app->composition->getLangShortCode(); ?>" data-bs-theme="light">
+<html lang="<?= Yii::$app->composition->getLangShortCode(); ?>">
 
 <head>
   <title><?= $this->title; ?></title>
@@ -25,9 +25,12 @@ $this->beginPage();
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
-
+  <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
   <!-- Icon Font Stylesheet -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+  
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
   <?php $this->head() ?>
@@ -39,25 +42,11 @@ $this->beginPage();
   </style>
 </head>
 
-<body data-bs-theme="dark">
+<body>
   <?php $this->beginBody() ?>
-  <header id="header">
-    <?php echo $this->render('_headerNav'); ?>
-    <div class="row">
+  <?= $content; ?>
 
-    </div>
-  </header>
-  <main id="main" class="flex-shrink-0" role="main">
-    <?= $content; ?>
-  </main>
-  <footer class="text-center text-white mt-4" style="background-color: #607D8B">
-    <div class="container">
-      <div class="row text-muted">
-        <div class="col-md-6 text-center text-md-start">&copy; My Company <?= date('Y') ?></div>
-        <div class="col-md-6 text-center text-md-end"><?= Yii::powered() ?></div>
-      </div>
-    </div>
-  </footer>
+  <?= $this->render('_footer'); ?>
   <?php $this->endBody() ?>
 </body>
 

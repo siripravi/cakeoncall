@@ -5,19 +5,18 @@
  * @var string[] $placeholders
  */
 ?>
-<div class="row">
-    <div class="col-12 ps-5">
+<header> 
 <?php if ($placeholders['header']) : ?>
  <?= $placeholders['header'] ?>
- 
- <?php endif ?>
- </div></div>
-<!-- Main -->
-<section id="main" class="wrapper">
 
+ <?php endif ?>
+ </header>
+<!-- Main -->
+<main>
+<section id="main" class="wrapper">
     <?= $placeholders['main'] ?>
 </section>
-
+</main>
 <?php if ($placeholders['highlights']) : ?>
     <!-- Highlights -->
     <section id="highlights" class="wrapper style3">
