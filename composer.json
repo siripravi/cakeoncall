@@ -24,7 +24,7 @@
         "lav45/yii2-ajax-create": "0.2.*",      
         "biladina/yii2-ajaxcrud-bs4": "~3.0",
         "exocet/yii2-bootstrap-material-design": "^2.3",
-        "yiisoft/yii2": "2.0.49.3",
+        "yiisoft/yii2": "~2.0.49.3",
         "ronash-dhakal/yii2-cart": "@dev",
         "powerkernel/yii2-photoswipe": "~1.1.5"       
        
