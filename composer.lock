@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "aba78c47929ba07b72bb0ab006aea1e2",
+    "content-hash": "d2b9f15ec83ceeeefb60f0a3661ee08a",
     "packages": [
         {
             "name": "arturoliveira/yii2-checkoutprogressbar",
@@ -47,102 +47,6 @@
                 "yii2"
             ],
             "time": "2015-06-10T02:38:55+00:00"
-        },
-        {
-            "name": "basepodapps/yii2-feathericons",
-            "version": "1.1.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/basepodapps/yii2-feathericons.git",
-                "reference": "49788d64dcf269a25faed495225f5e09f2f31bfa"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/basepodapps/yii2-feathericons/zipball/49788d64dcf269a25faed495225f5e09f2f31bfa",
-                "reference": "49788d64dcf269a25faed495225f5e09f2f31bfa",
-                "shasum": ""
-            },
-            "require": {
-                "yiisoft/yii2": "~2.0.0"
-            },
-            "type": "yii2-extension",
-            "autoload": {
-                "psr-4": {
-                    "basepodapps\\feathericons\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Reine Sison",
-                    "email": "reine@basepod.app"
-                }
-            ],
-            "description": "An asset bundle of Feather Icons, a beautiful opensource icon set, made for use with Yii2.",
-            "keywords": [
-                "assetBundle",
-                "assets",
-                "extension",
-                "feather",
-                "feathericons",
-                "yii2"
-            ],
-            "support": {
-                "issues": "https://github.com/basepodapps/yii2-feathericons/issues",
-                "source": "https://github.com/basepodapps/yii2-feathericons/tree/1.1.0"
-            },
-            "time": "2022-08-11T15:36:03+00:00"
-        },
-        {
-            "name": "beastbytes/yii2-wizard",
-            "version": "v1.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/beastbytes/yii2-wizard.git",
-                "reference": "ad776a28a0504ee40e36d1aa179c2e9e3c861992"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/beastbytes/yii2-wizard/zipball/ad776a28a0504ee40e36d1aa179c2e9e3c861992",
-                "reference": "ad776a28a0504ee40e36d1aa179c2e9e3c861992",
-                "shasum": ""
-            },
-            "require": {
-                "yiisoft/yii2": "*"
-            },
-            "type": "yii2-extension",
-            "autoload": {
-                "psr-4": {
-                    "beastbytes\\wizard\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Chris Yates",
-                    "email": "chris.l.yates@gmail.com"
-                }
-            ],
-            "description": "Yii2 extension to handle multi-form wizards",
-            "keywords": [
-                "Behavior",
-                "Forms",
-                "form",
-                "wizard",
-                "yii2"
-            ],
-            "support": {
-                "issues": "https://github.com/beastbytes/yii2-wizard/issues",
-                "source": "https://github.com/beastbytes/yii2-wizard"
-            },
-            "abandoned": true,
-            "time": "2015-07-26T20:46:28+00:00"
         },
         {
             "name": "biladina/yii2-ajaxcrud-bs4",
@@ -4917,60 +4821,6 @@
             "time": "2023-12-11T16:03:32+00:00"
         },
         {
-            "name": "sinergi/browser-detector",
-            "version": "6.1.4",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/sinergi/php-browser-detector.git",
-                "reference": "4927f7c2bedc48b68f183bd420aa3549c59e133b"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/sinergi/php-browser-detector/zipball/4927f7c2bedc48b68f183bd420aa3549c59e133b",
-                "reference": "4927f7c2bedc48b68f183bd420aa3549c59e133b",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.2"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "^8.0 || ^9.4"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Sinergi\\BrowserDetector\\": "src"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Gabriel Bull",
-                    "email": "me@gabrielbull.com"
-                },
-                {
-                    "name": "Chris Schuld"
-                }
-            ],
-            "description": "Detecting the user's browser, operating system and language.",
-            "keywords": [
-                "browser",
-                "detection",
-                "language",
-                "operating system",
-                "os"
-            ],
-            "support": {
-                "issues": "https://github.com/sinergi/php-browser-detector/issues",
-                "source": "https://github.com/sinergi/php-browser-detector/tree/6.1.4"
-            },
-            "abandoned": true,
-            "time": "2021-09-23T13:51:44+00:00"
-        },
-        {
             "name": "siripravi/authhelper",
             "version": "v1.0.0",
             "source": {
@@ -5009,19 +4859,18 @@
         },
         {
             "name": "siripravi/ecommerce",
-            "version": "dev-main",
+            "version": "v1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/siripravi/luya-module-ecommerce.git",
-                "reference": "c6fe2ad5dbc04a6a094381c881f925ab16a85cb1"
+                "reference": "6116e13d2464bed05db0f7603a1da3e555c9b99c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/siripravi/luya-module-ecommerce/zipball/c6fe2ad5dbc04a6a094381c881f925ab16a85cb1",
-                "reference": "c6fe2ad5dbc04a6a094381c881f925ab16a85cb1",
+                "url": "https://api.github.com/repos/siripravi/luya-module-ecommerce/zipball/6116e13d2464bed05db0f7603a1da3e555c9b99c",
+                "reference": "6116e13d2464bed05db0f7603a1da3e555c9b99c",
                 "shasum": ""
             },
-            "default-branch": true,
             "type": "luya-module",
             "autoload": {
                 "psr-4": {
@@ -5044,9 +4893,9 @@
             ],
             "support": {
                 "issues": "https://github.com/siripravi/luya-module-ecommerce/issues",
-                "source": "https://github.com/siripravi/luya-module-ecommerce/tree/main"
+                "source": "https://github.com/siripravi/luya-module-ecommerce/tree/v1.0.0"
             },
-            "time": "2024-01-25T06:53:35+00:00"
+            "time": "2024-01-30T17:49:56+00:00"
         },
         {
             "name": "siripravi/shopcart",
@@ -5947,53 +5796,6 @@
                 }
             ],
             "time": "2022-05-30T19:17:29+00:00"
-        },
-        {
-            "name": "tigrov/yii2-kendoui",
-            "version": "1.0.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Tigrov/yii2-kendoui.git",
-                "reference": "2325215e92433fa0416727d06be303361aba5a7c"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Tigrov/yii2-kendoui/zipball/2325215e92433fa0416727d06be303361aba5a7c",
-                "reference": "2325215e92433fa0416727d06be303361aba5a7c",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.6",
-                "yiisoft/yii2": "*"
-            },
-            "type": "yii2-extension",
-            "autoload": {
-                "psr-4": {
-                    "tigrov\\kendoui\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Sergey Tigrov",
-                    "email": "rrr-r@ya.ru"
-                }
-            ],
-            "description": "Kendo UI Extension for Yii 2",
-            "keywords": [
-                "datasource",
-                "kendo",
-                "kendoui",
-                "yii2"
-            ],
-            "support": {
-                "issues": "https://github.com/Tigrov/yii2-kendoui/issues",
-                "source": "https://github.com/tigrov/yii2-kendoui"
-            },
-            "time": "2019-12-27T07:47:20+00:00"
         },
         {
             "name": "voskobovich/yii2-linker-behavior",
@@ -9727,7 +9529,6 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "siripravi/ecommerce": 20,
         "kartik-v/yii2-icons": 20,
         "ronash-dhakal/yii2-cart": 20
     },
