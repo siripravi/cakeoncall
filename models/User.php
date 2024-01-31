@@ -3,8 +3,8 @@ namespace app\models;
 
 use app\models\Token;
 
-use Chandra\Yii2Account\helpers\Password;
-use Chandra\Yii2Account\models\User as BaseModel;
+use siripravi\authhelper\helpers\Password;
+use siripravi\authhelper\models\User as BaseModel;
 
 /**
  * @author Albert Gainutdinov <xalbert.einsteinx@gmail.com>
@@ -141,7 +141,7 @@ class User extends BaseModel
      */
     protected function getMailer()
     {
-        return \Yii::$container->get(\Chandra\Yii2Account\Mailer::class);
+        return \Yii::$container->get(\siripravi\authhelper\Mailer::class);
         //return \Yii::$app->mailer;
     }
 

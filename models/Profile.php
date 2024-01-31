@@ -3,9 +3,9 @@
 namespace app\models;
 
 use app\models\User;
-use Chandra\Yii2Account\traits\ModuleTrait;
+use siripravi\authhelper\traits\ModuleTrait;
 use Yii;
-use Chandra\Yii2Account\models\Profile as BaseProfile;
+use siripravi\authhelper\models\Profile as BaseProfile;
 
 /**
  * This file overrides standart model of the Dektrium project Yii2-user.
@@ -27,7 +27,7 @@ use Chandra\Yii2Account\models\Profile as BaseProfile;
 class Profile extends BaseProfile
 {
     use ModuleTrait;
-    /** @var \Chandra\Yii2Account\Module */
+    /** @var \siripravi\authhelper\Module */
     protected $module;
     /** @inheritdoc */
     public function init()

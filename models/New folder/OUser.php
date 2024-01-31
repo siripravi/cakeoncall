@@ -4,8 +4,8 @@ namespace app\models;
 use yii;
 use app\models\Token;
 use app\entities\PartnerRequest;
-use Chandra\Yii2Account\helpers\Password;
-use Chandra\Yii2Account\models\User as BaseModel;
+use siripravi\authhelper\helpers\Password;
+use siripravi\authhelper\models\User as BaseModel;
 
 /**
  * @author Albert Gainutdinov <xalbert.einsteinx@gmail.com>

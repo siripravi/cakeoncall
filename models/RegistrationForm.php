@@ -11,7 +11,7 @@
 
 namespace app\models;
 use app\models\User;
-use Chandra\Yii2Account\traits\ModuleTrait;
+use siripravi\authhelper\traits\ModuleTrait;
 use Yii;
 use yii\base\Model;
 

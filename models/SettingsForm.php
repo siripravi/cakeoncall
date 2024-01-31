@@ -1,10 +1,10 @@
 <?php
 namespace app\models;
 use app\models\User;
-use Chandra\Yii2Account\helpers\Password;
-use Chandra\Yii2Account\Mailer;
-use Chandra\Yii2Account\Module;
-use Chandra\Yii2Account\traits\ModuleTrait;
+use siripravi\authhelper\helpers\Password;
+use siripravi\authhelper\Mailer;
+use siripravi\authhelper\Module;
+use siripravi\authhelper\traits\ModuleTrait;
 use Yii;
 use yii\base\Model;
 
