@@ -1,0 +1,38 @@
+{
+    "name": "chandra/user",
+    "description": "Flexible user registration and authentication module for Yii2",
+    "keywords": ["yii2", "user management", "purnachandra"],
+    "type": "yii2-extension",
+    "license": "MIT",
+    "support": {
+      
+    },
+    "authors": [
+        {
+            "name": "Purnachandra",
+            "email": "provdigi@gmail.com",
+            "homepage": "http://provdigi.in"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "yiisoft/yii2": "^2.0.6",
+        "yiisoft/yii2-swiftmailer": "^2.0.0",
+        "yiisoft/yii2-authclient": "^2.1.0",
+        "yiisoft/yii2-bootstrap5": "^2.0.0",
+        "paragonie/random_compat": "^2.0"
+    },
+    "require-dev": {
+        "yiisoft/yii2-codeception": "^2.0.5",
+        "codeception/specify": "^0.4.3",
+        "codeception/verify": "^0.3.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "chandra\\user\\": ""
+        }
+    },
+    "extra": {
+        "bootstrap": "chandra\\user\\Bootstrap"
+    }
+}

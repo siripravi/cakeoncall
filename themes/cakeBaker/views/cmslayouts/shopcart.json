@@ -1,0 +1,14 @@
+{
+    "rows" : [
+        [
+            {"cols": 12, "var": "carttop", "label": "Shop Top"}
+        ],
+        [
+            {"cols": 8, "var": "cartleft", "label": "Shop Left"},
+            {"cols": 4, "var": "cartright", "label": "Shop Right"}
+        ],
+        [
+            {"cols": 12, "var": "cartbottom", "label": "Shop Bottom"}
+        ]
+    ]
+}
