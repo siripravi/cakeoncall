@@ -98,7 +98,7 @@ $config = new Config('myproject', dirname(__DIR__), [
             'whitelistMimeTypes' => ['text/plain', 'image/svg+xml'], // as this is the mime type for csv files
         ],
         'forms' => [
-            'class' => 'app\components\Forms'
+            'class' => 'siripravi\forms\Forms'
         ],
         /* 'cart' => [
             'class' => 'hscstudio\cart\Cart',
