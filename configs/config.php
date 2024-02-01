@@ -17,6 +17,12 @@ $config = new Config('myproject', dirname(__DIR__), [
             'class' => '\kartik\grid\Module'
         ],
         'forms' => [
+            'class' => 'siripravi\forms\Module',
+            // 'useAppViewPath' => true,
+            //'viewMap' => ['block/*' =>'@app/views/blocks/']
+
+        ],
+        'luyaforms' => [
             'class' => 'luya\forms\Module',
             // 'useAppViewPath' => true,
             //'viewMap' => ['block/*' =>'@app/views/blocks/']
