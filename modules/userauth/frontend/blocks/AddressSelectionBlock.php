@@ -5,7 +5,7 @@ use app\modules\userauth\models\AddressModel;
 use luya\helpers\ArrayHelper;
 use yii\helpers\Html;
 use luya\cms\helpers\Url;
-use app\blocks\FormBlock;
+use siripravi\forms\blocks\FormBlock;
 
 class AddressSelectionBlock extends FormBlock
 {

@@ -13,7 +13,7 @@ use Yii;
  * @author Basil Suter <git@nadar.io>
  * @since 1.0.0
  */
-class AddressViewBlock extends \app\blocks\FormBlock //\luya\forms\blocks\SummaryBlock
+class AddressViewBlock extends \siripravi\forms\blocks\FormBlock //\luya\forms\blocks\SummaryBlock
 {
     public $template = '<p>{{label}}: {{value}}</p>';
     public $previewButtonsTemplate = '<div class="forms-preview-buttons-container pt-3">{{back}}<span class="forms-divider"> | </span>{{submit}}</div>';
