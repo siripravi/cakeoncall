@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "15cdbe67b629fd049adf1f35aa1c3f9a",
+    "content-hash": "d4dd32ad19f83e8b61d6922e01e3bec5",
     "packages": [
         {
             "name": "biladina/yii2-ajaxcrud-bs4",
@@ -4801,7 +4801,7 @@
             "time": "2024-01-30T17:49:56+00:00"
         },
         {
-            "name": "siripravi/shopcart",
+            "name": "siripravi/luya-module-shopcart",
             "version": "v1.1.0",
             "source": {
                 "type": "git",
