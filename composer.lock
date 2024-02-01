@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8fd6aab06b27ff23e3bdaba2cd73c2ff",
+    "content-hash": "2141b34d777bdb50aea89280cd36f57e",
     "packages": [
         {
             "name": "biladina/yii2-ajaxcrud-bs4",
@@ -4724,7 +4724,7 @@
             "time": "2023-12-11T16:03:32+00:00"
         },
         {
-            "name": "siripravi/authhelper",
+            "name": "siripravi/luya-module-authhelper",
             "version": "v1.0.0",
             "source": {
                 "type": "git",
