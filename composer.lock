@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2188b2a24effa70dac906d91eb393da3",
+    "content-hash": "3f5e1cb44ee9074a1070b57ac39a39e8",
     "packages": [
         {
             "name": "biladina/yii2-ajaxcrud-bs4",
@@ -4802,16 +4802,16 @@
         },
         {
             "name": "siripravi/shopcart",
-            "version": "v1.0.0",
+            "version": "v1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/siripravi/luya-module-shopcart.git",
-                "reference": "ed13495d39b87ace2ba14c01af04227d1381044d"
+                "reference": "0283b87615c4fd31cbb5111b6c807123dcd4c084"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/siripravi/luya-module-shopcart/zipball/ed13495d39b87ace2ba14c01af04227d1381044d",
-                "reference": "ed13495d39b87ace2ba14c01af04227d1381044d",
+                "url": "https://api.github.com/repos/siripravi/luya-module-shopcart/zipball/0283b87615c4fd31cbb5111b6c807123dcd4c084",
+                "reference": "0283b87615c4fd31cbb5111b6c807123dcd4c084",
                 "shasum": ""
             },
             "type": "luya-module",
@@ -4836,9 +4836,9 @@
             ],
             "support": {
                 "issues": "https://github.com/siripravi/luya-module-shopcart/issues",
-                "source": "https://github.com/siripravi/luya-module-shopcart/tree/v1.0.0"
+                "source": "https://github.com/siripravi/luya-module-shopcart/tree/v1.1.0"
             },
-            "time": "2024-01-22T06:29:54+00:00"
+            "time": "2024-02-01T05:44:12+00:00"
         },
         {
             "name": "symfony/deprecation-contracts",
