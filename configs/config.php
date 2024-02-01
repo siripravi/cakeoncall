@@ -290,6 +290,6 @@ $config->module('debug', [
     ]
 ])->env(Config::ENV_LOCAL);*/
 
-$config->bootstrap(['debug'])->env(Config::ENV_PROD);
+$config->bootstrap(['debug'])->env(Config::ENV_LOCAL);
 
 return $config;
