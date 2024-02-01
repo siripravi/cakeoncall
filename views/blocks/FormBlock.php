@@ -25,6 +25,8 @@ echo Html::button('<span class="glyphicon glyphicon-plus"></span>', [
 ]);
 AjaxCreate::end();*/
 ?>
+
+<h2>FORM BLOCK VIEW</h2>
 <?php if (Yii::$app->session->getFlash('formDataSuccess')) : ?>
     <?= $this->placeholderValue('success'); ?>
 <?php else : ?>

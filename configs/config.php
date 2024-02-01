@@ -100,27 +100,15 @@ $config = new Config('myproject', dirname(__DIR__), [
         'forms' => [
             'class' => 'siripravi\forms\Forms'
         ],
-        /* 'cart' => [
-            'class' => 'hscstudio\cart\Cart',
-            'storage' => [
-                'class' => 'hscstudio\cart\MultipleStorage',
-                'storages' => [
-                    ['class' => 'hscstudio\cart\SessionStorage'],
-                    [
-                        'class' => 'hscstudio\cart\DatabaseStorage',
-                        'table' => 'cart',
-                    ],
-                ],
-            ]
-        ],*/
+
         'session' => [
-            'class' => 'yii\web\Session',          
+            'class' => 'yii\web\Session',
         ],
         'user' => [
             'class' => 'yii\web\User',
             'identityClass' => app\models\User::class,
             'enableAutoLogin' => true,
-             'enableSession' => true,
+            'enableSession' => true,
             'identityCookie' => [
                 'name'     => '_frontendIdentity',
                 'path'     => '/',
@@ -170,7 +158,7 @@ $config = new Config('myproject', dirname(__DIR__), [
             'class' => 'yii\db\Connection',
             'charset' => 'utf8',
         ],
-     /*   'request' => [
+        /*   'request' => [
             'enableCookieValidation' => true,
             'cookieValidationKey' => 'I-mmzHGFYAx9EnASWbueCBRo4W4HQBKHA_-',
             'enableCsrfValidation' => false,
@@ -186,23 +174,12 @@ $config = new Config('myproject', dirname(__DIR__), [
             'bundles' => [
                 'yii\bootstrap5\BootstrapAsset' => [
                     'css' => []
-                    //   'class' => \exocet\bootstrap5md\BootstrapAsset::class,
                 ],
-                /*   'yii\bootstrap5\BootstrapPluginAsset' => [
-                    'js' => []
-                  // 'class' => \exocet\bootstrap5md\BootstrapPluginAsset::class,
-                ],*/
                 'yii\bootstrap5\BootstrapPluginAsset' => [
-                    'js' => ["https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"],                
-                    'css' =>[ "https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"],
-                ], 
-                /*'yii\web\JqueryAsset' => [
-                    'sourcePath' => null,
-                    'js' => [
-                        'https://code.jquery.com/jquery-3.2.1.min.js',
-                       //'/themes/cakeBaker/dist/jquery.min.js'
-                    ],  
-                ],*/
+                    'js' => ["https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"],
+                    'css' => ["https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"],
+                ],
+
             ],
         ],
 
@@ -220,7 +197,7 @@ $config = new Config('myproject', dirname(__DIR__), [
             // send all mails to a file by default.
             'useFileTransport' => true,
             /* 'transport' => [
-                'dsn' => 'smtp://purnachandra.valluri@gmail.com:M1yMaker@smtp.gmail.com:465',
+                'dsn' => 'smtp://purnachandra.valluri@gmail.com:xxxx@smtp.gmail.com:465',
             ],*/
         ],
         /*
