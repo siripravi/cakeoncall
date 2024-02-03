@@ -15,7 +15,7 @@
         "siripravi/luya-module-forms": "^1.0.0",
         "siripravi/luya-module-authhelper":"^1.0.0",
         "kartik-v/yii2-icons": "~1.4.8",
-        "kartik-v/yii2-widgets": "~3.4.1",
+        "kartik-v/yii2-widgets": "@dev",
         "kartik-v/yii2-builder": "@dev",
         "kartik-v/yii2-widget-activeform": "~1.6.4",
         "dev7ch/luya-ext-slick": "^1.1",

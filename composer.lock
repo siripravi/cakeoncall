@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a604f1bfaa368af29b29d2f6ede589ee",
+    "content-hash": "342e4b830fd7758caea813efb757cd54",
     "packages": [
         {
             "name": "biladina/yii2-ajaxcrud-bs4",
@@ -9590,6 +9590,7 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
+        "kartik-v/yii2-widgets": 20,
         "kartik-v/yii2-builder": 20,
         "ronash-dhakal/yii2-cart": 20
     },
