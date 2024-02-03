@@ -22,12 +22,7 @@ $config = new Config('myproject', dirname(__DIR__), [
             //'viewMap' => ['block/*' =>'@app/views/blocks/']
 
         ],
-        'luyaforms' => [
-            'class' => 'luya\forms\Module',
-            // 'useAppViewPath' => true,
-            //'viewMap' => ['block/*' =>'@app/views/blocks/']
-
-        ],
+     
         'userauthfrontend' => [
             'class' => 'app\modules\userauth\frontend\Module',
             'useAppViewPath' => false, // When enabled the views will be looked up in the @app/views folder, otherwise the views shipped with the module will be used.

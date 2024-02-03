@@ -1,6 +1,6 @@
 <?php
 namespace app\modules\userauth\frontend\blocks;
-use luya\forms\FieldBlockTrait;
+use siripravi\forms\FieldBlockTrait;
 use app\modules\userauth\models\AddressModel;
 use luya\helpers\ArrayHelper;
 use yii\helpers\Html;
