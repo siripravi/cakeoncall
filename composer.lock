@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "961be92e0a8dfe260e680f8564460329",
+    "content-hash": "0681ac2427e519d2e8162495ffabf0da",
     "packages": [
         {
             "name": "biladina/yii2-ajaxcrud-bs4",
@@ -4869,6 +4869,46 @@
                 "source": "https://github.com/siripravi/luya-module-ecommerce/tree/v1.0.0"
             },
             "time": "2024-01-30T17:49:56+00:00"
+        },
+        {
+            "name": "siripravi/luya-module-forms",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/siripravi/luya-module-forms.git",
+                "reference": "be057d8647afd29641b6f86949e127bf0c345c05"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/siripravi/luya-module-forms/zipball/be057d8647afd29641b6f86949e127bf0c345c05",
+                "reference": "be057d8647afd29641b6f86949e127bf0c345c05",
+                "shasum": ""
+            },
+            "type": "luya-module",
+            "autoload": {
+                "psr-4": {
+                    "siripravi\\forms\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "purnachandra",
+                    "email": "provdigi@gmail.com"
+                }
+            ],
+            "description": "Luya Extended module for Forms",
+            "keywords": [
+                "luya"
+            ],
+            "support": {
+                "issues": "https://github.com/siripravi/luya-module-forms/issues",
+                "source": "https://github.com/siripravi/luya-module-forms/tree/v1.0.0"
+            },
+            "time": "2024-02-01T12:22:07+00:00"
         },
         {
             "name": "siripravi/luya-module-shopcart",
