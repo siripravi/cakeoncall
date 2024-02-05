@@ -16,12 +16,12 @@ $config = new Config('myproject', dirname(__DIR__), [
         'gridview' =>  [
             'class' => '\kartik\grid\Module'
         ],
-        'forms' => [
+      /*  'forms' => [
             'class' => 'siripravi\forms\Module',
             // 'useAppViewPath' => true,
             //'viewMap' => ['block/*' =>'@app/views/blocks/']
 
-        ],
+        ],*/
      
         'userauthfrontend' => [
             'class' => 'app\modules\userauth\frontend\Module',
