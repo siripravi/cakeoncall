@@ -13,6 +13,7 @@
         "siripravi/luya-module-ecommerce": "^1.0.0",
         "siripravi/luya-module-shopcart":"^1.1.0",
         "siripravi/luya-module-forms": "^1.0.0",
+        "luyadev/luya-module-forms": "~1.8.1",
         "siripravi/luya-module-authhelper":"^1.0.0",
         "kartik-v/yii2-icons": "~1.4.8",
         "kartik-v/yii2-widgets": "@dev",
