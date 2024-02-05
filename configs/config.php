@@ -16,13 +16,12 @@ $config = new Config('myproject', dirname(__DIR__), [
         'gridview' =>  [
             'class' => '\kartik\grid\Module'
         ],
-      /*  'forms' => [
-            'class' => 'siripravi\forms\Module',
+        'forms' => [
+            'class' => 'luya\forms\Module',
             // 'useAppViewPath' => true,
             //'viewMap' => ['block/*' =>'@app/views/blocks/']
 
-        ],*/
-     
+        ],     
         'userauthfrontend' => [
             'class' => 'app\modules\userauth\frontend\Module',
             'useAppViewPath' => false, // When enabled the views will be looked up in the @app/views folder, otherwise the views shipped with the module will be used.
@@ -98,9 +97,9 @@ $config = new Config('myproject', dirname(__DIR__), [
             'whitelistExtensions' => ['jpg', 'png'],
             'whitelistMimeTypes' => ['text/plain', 'image/svg+xml'], // as this is the mime type for csv files
         ],
-    /*    'forms' => [
+       'forms' => [
             'class' => 'siripravi\forms\Forms'
-        ],*/
+        ],
 
         'session' => [
             'class' => 'yii\web\Session',
