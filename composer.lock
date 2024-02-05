@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "715ede0bb62d0c865748d71968545e7c",
+    "content-hash": "0681ac2427e519d2e8162495ffabf0da",
     "packages": [
         {
             "name": "biladina/yii2-ajaxcrud-bs4",
@@ -3668,54 +3668,6 @@
                 "source": "https://github.com/luyadev/luya-module-cms/tree/5.0.0"
             },
             "time": "2023-11-30T10:19:52+00:00"
-        },
-        {
-            "name": "luyadev/luya-module-forms",
-            "version": "1.8.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/luyadev/luya-module-forms.git",
-                "reference": "6f8508f90a7867f565d40fad14373b9e7aabe1de"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/luyadev/luya-module-forms/zipball/6f8508f90a7867f565d40fad14373b9e7aabe1de",
-                "reference": "6f8508f90a7867f565d40fad14373b9e7aabe1de",
-                "shasum": ""
-            },
-            "require": {
-                "luyadev/luya-module-admin": ">=3.0",
-                "luyadev/luya-module-cms": ">=3.4",
-                "yiisoft/yii2": "^2.0.35"
-            },
-            "require-dev": {
-                "luyadev/luya-testsuite": "^3.0"
-            },
-            "type": "luya-module",
-            "autoload": {
-                "psr-4": {
-                    "luya\\forms\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Basil Suter",
-                    "email": "git@nadar.io"
-                }
-            ],
-            "description": "A form builder module for LUYA CMS.",
-            "keywords": [
-                "luya"
-            ],
-            "support": {
-                "issues": "https://github.com/luyadev/luya-module-forms/issues",
-                "source": "https://github.com/luyadev/luya-module-forms/tree/1.8.1"
-            },
-            "time": "2023-10-31T07:11:45+00:00"
         },
         {
             "name": "luyadev/luya-module-gallery",
