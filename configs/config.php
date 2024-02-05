@@ -83,7 +83,7 @@ $config = new Config('myproject', dirname(__DIR__), [
             'autoBootstrapQueue' => true, // Enables the fake cronjob by default, read more about queue/scheduler: https://luya.io/guide/app-queue
         ],
         'ecommerce' => 'siripravi\ecommerce\frontend\Module',
-        'ecommerceadmin' => 'siripravi\ecommerce\admin\Module',
+        'catalogadmin' => 'siripravi\ecommerce\admin\Module',
         'gallery' => [
             'class' => 'luya\gallery\frontend\Module',
             'useAppViewPath' => true, // When enabled the views will be looked up in the @app/views folder, otherwise the views shipped with the module will be used.
@@ -235,12 +235,12 @@ $config = new Config('myproject', dirname(__DIR__), [
     ],
     'params' => $params,
 ]);
-
+/*
 $config->callback(function () {
     define('YII_DEBUG', true);
     define('YII_ENV', 'local');
 })->env(Config::ENV_LOCAL);
-
+*/
 // database config for 
 $config->component('db', [
     'dsn' => 'mysql:host=localhost;dbname=luyashopbs4',
@@ -277,19 +277,6 @@ $config->module('debug', [
     'class' => 'yii\debug\Module',
     'allowedIPs' => ['*'],
 ])->env(Config::ENV_LOCAL);
-/*$config->module('gii', [
-    'class' => 'yii\gii\Module',
-    'allowedIPs' => ['*'],
-    'generators' => [
-        'crud' => [
-            'class' => 'yii\gii\generators\crud\Generator',
-            'templates' => [
-                'material-bootstrap' => '@vendor/exocet/yii2-bootstrap-material-design/src/generators/crud',
-            ]
-        ],
-
-    ]
-])->env(Config::ENV_LOCAL);*/
 
 $config->bootstrap(['debug'])->env(Config::ENV_LOCAL);
 
