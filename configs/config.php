@@ -18,7 +18,7 @@ $config = new Config('myproject', dirname(__DIR__), [
         ],
         'forms' => [
             'class' => 'siripravi\forms\Module',
-             'useAppViewPath' => true,
+            // 'useAppViewPath' => true,
             //'viewMap' => ['block/*' =>'@app/views/blocks/']
 
         ],
@@ -235,12 +235,12 @@ $config = new Config('myproject', dirname(__DIR__), [
     ],
     'params' => $params,
 ]);
-/*
+
 $config->callback(function () {
     define('YII_DEBUG', true);
     define('YII_ENV', 'local');
 })->env(Config::ENV_LOCAL);
-*/
+
 // database config for 
 $config->component('db', [
     'dsn' => 'mysql:host=localhost;dbname=luyashopbs4',
@@ -273,11 +273,12 @@ $config->component('cache', [
 //$config->bootstrap(['ronashDhakal\cart\CartBootstrap'])->env(Config::ENV_PROD);
 //$config->bootstrap(['ronashDhakal\cart\CartBootstrap'])->env(Config::ENV_LOCAL);
 // debug and gii on local env
-$config->module('debug', [
+  // debug and Gii on local env
+  $config->module('debug', [
     'class' => 'yii\debug\Module',
     'allowedIPs' => ['*'],
-])->env(Config::ENV_LOCAL);
+]);
 
-$config->bootstrap(['debug'])->env(Config::ENV_LOCAL);
+$config->bootstrap(['debug'])->env(Config::ENV_PROD);
 
 return $config;
