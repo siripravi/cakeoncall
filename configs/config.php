@@ -98,9 +98,9 @@ $config = new Config('myproject', dirname(__DIR__), [
             'whitelistExtensions' => ['jpg', 'png'],
             'whitelistMimeTypes' => ['text/plain', 'image/svg+xml'], // as this is the mime type for csv files
         ],
-        'forms' => [
+    /*    'forms' => [
             'class' => 'siripravi\forms\Forms'
-        ],
+        ],*/
 
         'session' => [
             'class' => 'yii\web\Session',
