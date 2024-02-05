@@ -18,7 +18,7 @@ $config = new Config('myproject', dirname(__DIR__), [
         ],
         'forms' => [
             'class' => 'siripravi\forms\Module',
-            // 'useAppViewPath' => true,
+             'useAppViewPath' => true,
             //'viewMap' => ['block/*' =>'@app/views/blocks/']
 
         ],
