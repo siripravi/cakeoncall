@@ -18,11 +18,11 @@ use yii\helpers\Html;
 ?>
 <?= Yii::t('user', 'Hello') ?>,
 <?= Yii::t('user', 'Your account on {0} has been created', Yii::$app->name) ?>.
-<?php if ($email->isPasswordShown()): ?>
+<?php if ($email->isPasswordShown()) : ?>
     <?= Yii::t('user', 'We have generated a password for you') ?>:
     <?= $email->getUser()->password ?>
 <?php endif ?>
-<?php if ($email->getConfirmationLink()): ?>
+<?php if ($email->getConfirmationLink()) : ?>
     <?= Yii::t('user', 'In order to complete your registration, please click the link below') ?>.
     <?= $email->getConfirmationLink() ?>
     <?= Yii::t('user', 'If you cannot click the link, please try pasting the text into your browser') ?>.

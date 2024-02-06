@@ -1,5 +1,7 @@
 <?php
+
 namespace app\components\events;
+
 use yii\base\Event;
 
 /**
@@ -13,5 +15,4 @@ class UserRegistrationEvent extends Event
      * User id
      */
     public $id;
-
 }

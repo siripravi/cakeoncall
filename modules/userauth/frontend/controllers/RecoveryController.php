@@ -7,6 +7,7 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
+
 namespace app\modules\userauth\frontend\controllers;
 
 use app\components\events\ResetPasswordEvent;
@@ -124,7 +125,6 @@ class RecoveryController extends Controller
         return $this->render('request', [
             'model' => $model,
         ]);
-
     }
 
     /**

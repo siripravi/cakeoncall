@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Created by PhpStorm.
  * User: dench
@@ -91,7 +92,9 @@ class FeaturesTable extends Widget
             $cols = [];
             $cols[] = Html::tag('th', $f['label'], ['class' => 'text-left']);
             $colspan = 0;
-            if (count($f['cols']) == 1) { $colspan = $count; }
+            if (count($f['cols']) == 1) {
+                $colspan = $count;
+            }
             foreach ($f['cols'] as $col) {
                 $options = ($col['colspan'] > 1 || $colspan) ? ['colspan' => ($colspan) ? $colspan : $col['colspan']] : [];
                 $cols[] = Html::tag('td', $col['value'], $options);

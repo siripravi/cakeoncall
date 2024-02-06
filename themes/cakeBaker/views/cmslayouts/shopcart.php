@@ -1,4 +1,5 @@
 <?php
+
 use yii\widgets\Breadcrumbs;
 use yii\helpers\Html;
 ?>
@@ -26,26 +27,26 @@ use yii\helpers\Html;
                     </div>
                 </div> -->
                 <?php
-                     if (isset($this->params['breadcrumbs'])) {
-                                echo Html::tag(
-                                    'div',
-                                    Breadcrumbs::widget([
-                                        'links' => $this->params['breadcrumbs'],
-                                        'homeLink' => [
-                                            'label' => Yii::$app->name,
-                                            'url' => Yii::$app->homeUrl,
-                                        ],
-                                    ]),
-                                    [
-                                       'class' => 'display-4 fw-bolder'
-                                    ]
-                                );
-                            }
+                if (isset($this->params['breadcrumbs'])) {
+                    echo Html::tag(
+                        'div',
+                        Breadcrumbs::widget([
+                            'links' => $this->params['breadcrumbs'],
+                            'homeLink' => [
+                                'label' => Yii::$app->name,
+                                'url' => Yii::$app->homeUrl,
+                            ],
+                        ]),
+                        [
+                            'class' => 'display-4 fw-bolder'
+                        ]
+                    );
+                }
                 ?>
                 <?= $placeholders['carttop']; ?>
             </div>
         </div>
-        
+
     </div>
     <div class="row">
         <div class="col-md-8">

@@ -1,5 +1,7 @@
 <?php
+
 namespace app\modules\userauth\models;
+
 use app\models\User;
 use siripravi\authhelper\helpers\Password;
 use siripravi\authhelper\Mailer;
@@ -30,8 +32,8 @@ class SettingsForm extends Model
     /** @var string */
     public $email;
 
-//    /** @var string */
-//    public $username;
+    //    /** @var string */
+    //    public $username;
 
     /** @var string */
     public $new_password;
@@ -60,7 +62,7 @@ class SettingsForm extends Model
     {
         $this->mailer = $mailer;
         $this->setAttributes([
-//            'username' => $this->user->username,
+            //            'username' => $this->user->username,
             'email'    => $this->user->unconfirmed_email ?: $this->user->email,
         ], false);
         parent::__construct($config);
@@ -70,10 +72,10 @@ class SettingsForm extends Model
     public function rules()
     {
         return [
-//            'usernameRequired' => ['username', 'required'],
-//            'usernameTrim' => ['username', 'filter', 'filter' => 'trim'],
-//            'usernameLength'   => ['username', 'string', 'min' => 3, 'max' => 255],
-//            'usernamePattern' => ['username', 'match', 'pattern' => '/^[-a-zA-Z0-9_\.@]+$/'],
+            //            'usernameRequired' => ['username', 'required'],
+            //            'usernameTrim' => ['username', 'filter', 'filter' => 'trim'],
+            //            'usernameLength'   => ['username', 'string', 'min' => 3, 'max' => 255],
+            //            'usernamePattern' => ['username', 'match', 'pattern' => '/^[-a-zA-Z0-9_\.@]+$/'],
             'emailRequired' => ['email', 'required'],
             'emailTrim' => ['email', 'filter', 'filter' => 'trim'],
             'emailPattern' => ['email', 'email'],
@@ -95,7 +97,7 @@ class SettingsForm extends Model
     {
         return [
             'email'            => Yii::t('app', 'Email'),
-//            'username'         => Yii::t('app', 'Username'),
+            //            'username'         => Yii::t('app', 'Username'),
             'new_password'     => Yii::t('app', 'New password'),
             'current_password' => Yii::t('app', 'Current password'),
         ];
@@ -116,7 +118,7 @@ class SettingsForm extends Model
     {
         if ($this->validate()) {
             $this->user->scenario = 'settings';
-//            $this->user->username = $this->username;
+            //            $this->user->username = $this->username;
             $this->user->password = $this->new_password;
             if ($this->email == $this->user->email && $this->user->unconfirmed_email != null) {
                 $this->user->unconfirmed_email = null;

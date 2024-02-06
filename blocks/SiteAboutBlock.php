@@ -28,7 +28,7 @@ class SiteAboutBlock extends PhpBlock
     {
         return 'Site About Block';
     }
-    
+
     /**
      * @inheritDoc
      */
@@ -36,20 +36,19 @@ class SiteAboutBlock extends PhpBlock
     {
         return 'extension'; // see the list of icons on: https://material.io/icons/
     }
- 
+
     /**
      * @inheritDoc
      */
     public function config()
     {
-        return [
-        ];
+        return [];
     }
-    
+
     /**
      * {@inheritDoc} 
      *
-    */
+     */
     public function admin()
     {
         return '<h5 class="mb-3">Site About Block</h5>' .

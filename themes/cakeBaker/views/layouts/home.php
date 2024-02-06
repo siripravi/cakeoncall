@@ -29,7 +29,7 @@ $this->beginPage();
 
   <!-- Icon Font Stylesheet -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-  
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
   <?php $this->head() ?>
@@ -64,15 +64,15 @@ $this->beginPage();
 <body data-bs-theme="light">
   <?php $this->beginBody() ?>
   <div class="wide" id="all">
-  <!-- Top bar-->
-  <?= $this->render('_topBar'); ?>
-  <!-- Top bar end-->
-  <?= $content; ?>
-  
-  <?= $this->render('_footer'); ?>
+    <!-- Top bar-->
+    <?= $this->render('_topBar'); ?>
+    <!-- Top bar end-->
+    <?= $content; ?>
+
+    <?= $this->render('_footer'); ?>
   </div>
   <?php $this->endBody() ?>
-  
+
 </body>
 
 </html>

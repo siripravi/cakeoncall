@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Created by PhpStorm.
  * User: dench
@@ -29,7 +30,7 @@ class ProductCard extends Widget
 
     public function run()
     {
-       /* $rating = Review::find()
+        /* $rating = Review::find()
             ->select(['SUM(rating) sum', 'COUNT(*) count'])
             ->where(['status' => Review::STATUS_PUBLISHED, 'product_id' => $this->model->id])
             ->asArray()
@@ -47,7 +48,7 @@ class ProductCard extends Widget
         return $this->render('productCard', [
             'model' => $this->model,
             'link' => $this->link,
-           // 'rating' => $rating,
+            // 'rating' => $rating,
         ]);
     }
 }

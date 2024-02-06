@@ -1,4 +1,5 @@
 <?php
+
 namespace app\modules\userauth\models;
 /*
  * This file is part of the Dektrium project.
@@ -78,12 +79,10 @@ class Token extends BaseToken
             $returnUrlHost = substr($this->returnUrl, 0, strlen($host));
             if ($returnUrlHost == $host ?? !stripos($this->returnUrl, 'user/register')) {
                 $returnUrl = $this->returnUrl;
-            }
-            else {
+            } else {
                 $returnUrl = \Yii::$app->user->returnUrl;
             }
-        }
-        else {
+        } else {
             $returnUrl = '';
         }
 

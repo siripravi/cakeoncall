@@ -1,4 +1,5 @@
 <?php
+
 use app\widgets\Carousel;
 
 
@@ -19,27 +20,27 @@ $counter = 0;
 ?>
 
 <div class="col-lg-12 bg-primary">
-        <!--= app\widgets\HomeSlider::widget();  ?-->
-        <?php
-        echo Carousel::widget([
-            'id' => 'home-slider',
-            'items' => $images,
-            'showIndicators' => false,
-            /* 'controls' => [
+    <!--= app\widgets\HomeSlider::widget();  ?-->
+    <?php
+    echo Carousel::widget([
+        'id' => 'home-slider',
+        'items' => $images,
+        'showIndicators' => false,
+        /* 'controls' => [
                             '<span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Previous</span>',
                             '<span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Next</span>',
                         ],  */
-            'options' => [
-                'data-interval' => 8,
-                'data-bs-ride' => 'scroll'
-            ],
-            'controls' => [
-                '<span class="carousel-control-prev-icon"></span>',
-                '<span class="carousel-control-next-icon"></span>',
-            ],
-        ]) ?>
-    </div>
- <!-- carousel -->
+        'options' => [
+            'data-interval' => 8,
+            'data-bs-ride' => 'scroll'
+        ],
+        'controls' => [
+            '<span class="carousel-control-prev-icon"></span>',
+            '<span class="carousel-control-next-icon"></span>',
+        ],
+    ]) ?>
+</div>
+<!-- carousel -->
 <!--<section class="carousel">
 	<div class="reel" style="overflow: visible; transform: translate(0px, 0px);">
 

@@ -1,4 +1,5 @@
 <?php
+
 namespace app\components\events;
 
 use app\components\user\controllers\RegistrationController;
@@ -16,10 +17,16 @@ class UserRegistrationBootstrap implements BootstrapInterface
      */
     public function bootstrap($app)
     {
-        Event::on(RegistrationController::className(),
-            RegistrationController::EVENT_AFTER_REGISTER, [$this, 'addLogRecord']);
-        Event::on(RegistrationController::className(),
-            RegistrationController::EVENT_AFTER_CONFIRM, [$this, 'addLogRecord']);
+        Event::on(
+            RegistrationController::className(),
+            RegistrationController::EVENT_AFTER_REGISTER,
+            [$this, 'addLogRecord']
+        );
+        Event::on(
+            RegistrationController::className(),
+            RegistrationController::EVENT_AFTER_CONFIRM,
+            [$this, 'addLogRecord']
+        );
     }
 
     /**
@@ -27,7 +34,8 @@ class UserRegistrationBootstrap implements BootstrapInterface
      *
      * Records log
      */
-    public function addLogRecord($event) {
+    public function addLogRecord($event)
+    {
         /**
          * If logging is enabled
          */

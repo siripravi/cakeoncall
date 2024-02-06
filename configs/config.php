@@ -22,7 +22,7 @@ $config = new Config('myproject', dirname(__DIR__), [
             //'viewMap' => ['block/*' =>'@app/views/blocks/']
 
         ],
-     
+
         'userauthfrontend' => [
             'class' => 'app\modules\userauth\frontend\Module',
             'useAppViewPath' => false, // When enabled the views will be looked up in the @app/views folder, otherwise the views shipped with the module will be used.
@@ -98,7 +98,7 @@ $config = new Config('myproject', dirname(__DIR__), [
             'whitelistExtensions' => ['jpg', 'png'],
             'whitelistMimeTypes' => ['text/plain', 'image/svg+xml'], // as this is the mime type for csv files
         ],
-       'forms' => [
+        'forms' => [
             'class' => 'siripravi\forms\Forms'
         ],
 
@@ -273,8 +273,8 @@ $config->component('cache', [
 //$config->bootstrap(['ronashDhakal\cart\CartBootstrap'])->env(Config::ENV_PROD);
 //$config->bootstrap(['ronashDhakal\cart\CartBootstrap'])->env(Config::ENV_LOCAL);
 // debug and gii on local env
-  // debug and Gii on local env
-  $config->module('debug', [
+// debug and Gii on local env
+$config->module('debug', [
     'class' => 'yii\debug\Module',
     'allowedIPs' => ['*'],
 ]);

@@ -7,7 +7,7 @@
 //use app\modules\modal\Modal;
 use yii\bootstrap5\Modal;
 ?>
- <!--= Modal::widget([]); -->    
+<!--= Modal::widget([]); -->
 <!-- Footer Start -->
 <div class="container-fluid text-white-50 footer pt-5 mt-5" style="background-color: #601654;">
     <div class="container py-5">
@@ -106,12 +106,12 @@ use yii\bootstrap5\Modal;
 
 <?php
 Modal::begin([
-	"id" => "ajaxCrudModal",
-	"options" => [
-		'data-backdrop' => "static",
-		'data-keyboard' => "false",
-	],
-	"footer" => "", // always need it for jquery plugin
+    "id" => "ajaxCrudModal",
+    "options" => [
+        'data-backdrop' => "static",
+        'data-keyboard' => "false",
+    ],
+    "footer" => "", // always need it for jquery plugin
 ]);
 
 Modal::end();

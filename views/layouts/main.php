@@ -17,7 +17,7 @@ $this->beginPage();
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="author" content="luya.io">
     <?php $this->head() ?>
-   
+
 </head>
 
 <body>

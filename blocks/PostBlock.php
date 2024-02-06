@@ -14,7 +14,7 @@ use luya\TagParser;
  */
 class PostBlock extends PhpBlock
 {
-   
+
     /**
      * @var bool Choose whether a block can be cached trough the caching component. Be carefull with caching container blocks.
      */

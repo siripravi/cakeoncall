@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @link https://github.com/LAV45/yii2-ajax-create
  * @copyright Copyright (c) 2015 LAV45!
@@ -13,10 +14,10 @@ use yii\web\AssetBundle;
  * Class AjaxCreateAsset
  * @package lav45\widget
  */
- 
+
 class AjaxCreateAsset extends AssetBundle
 {
-   // public $sourcePath = '@vendor/lav45/yii2-ajax-create/resource';
+    // public $sourcePath = '@vendor/lav45/yii2-ajax-create/resource';
 
     public $js = [
         'js/main.js'

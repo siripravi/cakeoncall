@@ -1,4 +1,5 @@
 <?php
+
 namespace app\components\user\controllers;
 
 use app\models\Profile;
@@ -105,13 +106,13 @@ class RegistrationController extends Controller
                     ['allow' => true, 'actions' => ['register', 'connect'], 'roles' => ['?']],
                     ['allow' => true, 'actions' => ['confirm', 'resend'], 'roles' => ['?', '@']],
                 ],
-            ]          
+            ]
         ];
     }
     public function getViewPath()
-{
-    return \Yii::getAlias('@app/views/user/registration');
-}
+    {
+        return \Yii::getAlias('@app/views/user/registration');
+    }
 
     /**
      * Displays the registration page.
@@ -133,20 +134,20 @@ class RegistrationController extends Controller
 
         $this->performAjaxValidation($user);
 
-        if (\Yii::$app->request->isPost) {  
-            $post = \Yii::$app->request->post();  
-            if ($user->load($post)) {  
+        if (\Yii::$app->request->isPost) {
+            $post = \Yii::$app->request->post();
+            if ($user->load($post)) {
                 $user->username = $user->email;
                 if ($profile->load($post)) {
                     if ($profile->user_id = $user->register()) {
-                       
+
                         if ($profile->validate()) {
                             $profile->save();
 
                             $this->trigger(self::EVENT_AFTER_REGISTER, new UserRegistrationEvent([
                                 'id' => $profile->user_id
-                          ]));
-                        
+                            ]));
+
                             return $this->render('message', [
                                 'title'  => \Yii::t('user', 'Your account has been created'),
                                 'module' => $this->module,
@@ -155,7 +156,7 @@ class RegistrationController extends Controller
                         }
                     }
                 }
-                    
+
                 throw new Exception(\Yii::t('user', 'Registration error'));
             }
         }
@@ -217,10 +218,10 @@ class RegistrationController extends Controller
      * @return string
      * @throws \yii\web\HttpException
      */
-    public function actionConfirm($id, $code, $return='/user/security/login')
+    public function actionConfirm($id, $code, $return = '/user/security/login')
     {
-        
-       $user = $this->finder->findUserById($id);
+
+        $user = $this->finder->findUserById($id);
 
         if ($user === null || $this->module->enableConfirmation == false) {
             throw new NotFoundHttpException();
@@ -258,9 +259,9 @@ class RegistrationController extends Controller
         if ($this->module->enableConfirmation == false) {
             throw new NotFoundHttpException();
         }
-      
-        $model = \Yii::createObject(ResendForm::class,['finder' => $this->finder]);
-      
+
+        $model = \Yii::createObject(ResendForm::class, ['finder' => $this->finder]);
+
         $event = $this->getFormEvent($model);
 
         $this->trigger(self::EVENT_BEFORE_RESEND, $event);
@@ -279,5 +280,5 @@ class RegistrationController extends Controller
         return $this->render('resend', [
             'model' => $model,
         ]);
-    }  
+    }
 }

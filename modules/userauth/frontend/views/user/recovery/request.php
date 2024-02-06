@@ -25,7 +25,7 @@ $this->params['breadcrumbs'][] = $this->title;
 <section class="p-3 p-md-4 p-xl-5">
     <div class="container">
         <div class="row">
-            <div class="col-xs-12">               
+            <div class="col-xs-12">
                 <?php foreach (Yii::$app->session->getAllFlashes() as $type => $message) : ?>
                     <?php if (in_array($type, ['success', 'danger', 'warning', 'info'])) : ?>
                         <?= Alert::widget([
@@ -38,7 +38,7 @@ $this->params['breadcrumbs'][] = $this->title;
         </div>
         <div class="row">
             <div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3">
-            <div class="row">
+                <div class="row">
                     <div class="col-12">
                         <div class="mb-5">
                             <h3><?= Html::encode($this->title) ?></h3>

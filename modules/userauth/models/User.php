@@ -1,4 +1,5 @@
 <?php
+
 namespace app\modules\userauth\models;
 
 use app\models\Token;
@@ -18,7 +19,6 @@ class User extends BaseModel
     /** @inheritdoc */
     public function afterSave($insert, $changedAttributes)
     {
-
     }
 
     /** @inheritdoc */
@@ -109,22 +109,23 @@ class User extends BaseModel
             $transaction->commit();
 
             return $this->id;
-        } catch (\Exception $e) {  echo $e->getMessage(); die;
+        } catch (\Exception $e) {
+            echo $e->getMessage();
+            die;
             $transaction->rollBack();
             \Yii::warning($e->getMessage());
             return false;
         }
     }
 
-    public function getPartnerStatus() {
+    public function getPartnerStatus()
+    {
         if (!\Yii::$app->user->isGuest) {
             $partnerRequest = PartnerRequest::find()->where(['sender_id' => $this->id])->one();
             if (!empty($partnerRequest)) {
                 return $partnerRequest->moderation_status;
-            }
-            else return false;
-        }
-        else return false;
+            } else return false;
+        } else return false;
     }
 
     /**
@@ -149,13 +150,13 @@ class User extends BaseModel
     {
         return $this->email;
     }
-    
+
     public function getAvatarImage()
     {
         return \Yii::getAlias('@web/img/avatar/') . $this->id . '/' . $this->profile->avatar;
     }
 
-     /**
+    /**
      * Confirms the user by setting 'confirmed_at' field to current time.
      */
     public function confirm()
@@ -166,16 +167,16 @@ class User extends BaseModel
         return $result;
     }
 
-     /**
+    /**
      * @return \yii\db\ActiveQuery
      */
     public function getProfile()
     {
         return $this->hasOne(get_class(\Yii::createObject(Profile::class)), ['user_id' => 'id']);
     }
-    
 
-  /**
+
+    /**
      * @inheritdoc
      */
     public function ngRestAttributeTypes()
@@ -193,8 +194,8 @@ class User extends BaseModel
     public function ngRestScopes()
     {
         return [
-            ['list', ['username','email']],
-          //  [['create'], ['username', 'password']],
+            ['list', ['username', 'email']],
+            //  [['create'], ['username', 'password']],
             [['update'], ['username']],
             ['delete', false],
         ];

@@ -1,5 +1,7 @@
 <?php
+
 namespace app\modules\userauth\models;
+
 use Yii;
 use yii\db\ActiveRecord;
 use luya\admin\ngrest\base\NgRestModel;
@@ -44,8 +46,8 @@ class UserAddress extends NgRestModel
     {
         return [
             [['user_profile_id', 'zipcode'], 'integer'],
-            [['country', 'region', 'city', 'street', 'house','contact_person'], 'string', 'max' => 255],
-            [['contact_mobile1','contact_mobile2'], 'string', 'max' => 16],           
+            [['country', 'region', 'city', 'street', 'house', 'contact_person'], 'string', 'max' => 255],
+            [['contact_mobile1', 'contact_mobile2'], 'string', 'max' => 16],
             [['user_profile_id'], 'exist', 'skipOnError' => true, 'targetClass' => Profile::class, 'targetAttribute' => ['user_profile_id' => 'id']],
         ];
     }

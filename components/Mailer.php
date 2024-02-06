@@ -1,10 +1,12 @@
 <?php
+
 namespace app\components;
 
 use Exception;
 use yii\base\Component;
 use yii\helpers\{
-    Html, Url
+    Html,
+    Url
 };
 use bl\emailTemplates\data\Template;
 
@@ -50,7 +52,7 @@ class Mailer extends Component
             try {
                 $sendFromAddress = [
                     $sendFrom ?? \Yii::$app->cart->sender ??
-                    \Yii::$app->shopMailer->transport->getUsername() => \Yii::$app->name ?? Url::to(['/'], true)
+                        \Yii::$app->shopMailer->transport->getUsername() => \Yii::$app->name ?? Url::to(['/'], true)
                 ];
 
                 \Yii::$app->get('shopMailer')->compose('/mail/mail-body', $bodyParams)
@@ -58,7 +60,6 @@ class Mailer extends Component
                     ->setTo($sendTo)
                     ->setSubject($bodySubject)
                     ->send();
-
             } catch (Exception $ex) {
                 throw new Exception($ex);
             }
@@ -82,8 +83,6 @@ class Mailer extends Component
 
             $this->sendMessage($sendFrom, $sendTo, $subject, $bodyParams);
         }
-
-
     }
 
     /**
@@ -103,8 +102,6 @@ class Mailer extends Component
 
             $this->sendMessage($sendFrom, $sendTo, $subject, $bodyParams);
         }
-
-
     }
 
     /**
@@ -123,7 +120,6 @@ class Mailer extends Component
 
             $this->sendMessage($sendFrom, $partnerEmail, $subject, $bodyParams);
         }
-
     }
 
     /**
@@ -143,7 +139,8 @@ class Mailer extends Component
                 $productOwner->profile->name . ' ' . $productOwner->profile->surname : $productOwner->profile->info,
             '{link}' => Html::a(
                 $product->translation->title,
-                Url::toRoute('/shop/product/save?id=' . $product->id . '&languageId=' . Language::getCurrent()->id, true)),
+                Url::toRoute('/shop/product/save?id=' . $product->id . '&languageId=' . Language::getCurrent()->id, true)
+            ),
 
         ];
 
@@ -190,7 +187,8 @@ class Mailer extends Component
                 $productOwner->profile->name . ' ' . $productOwner->profile->surname : $productOwner->profile->info,
             '{link}' => Html::a(
                 $product->translation->title,
-                Url::toRoute('/shop/product/save?id=' . $product->id . '&languageId=' . Language::getCurrent()->id, true)),
+                Url::toRoute('/shop/product/save?id=' . $product->id . '&languageId=' . Language::getCurrent()->id, true)
+            ),
 
         ];
         $mailTemplate = $this->createMailTemplate('accept-product-to-owner', $mailVars);
@@ -241,7 +239,8 @@ class Mailer extends Component
                     null,
                     $adminMail,
                     $subject,
-                    $bodyParams);
+                    $bodyParams
+                );
             }
         }
         //Send to user
@@ -252,7 +251,7 @@ class Mailer extends Component
             null,
             (!empty($orderResult['user']->identity)) ? $orderResult['user']->identity->email : $orderResult['user']->email,
             $subject,
-            $bodyParams);
+            $bodyParams
+        );
     }
-
 }

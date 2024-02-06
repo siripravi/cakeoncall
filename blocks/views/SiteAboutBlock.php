@@ -1,4 +1,5 @@
 <?php
+
 /**
  * View file for block: SiteAboutBlock 
  *
@@ -7,4 +8,3 @@
  *
  * @var \luya\cms\base\PhpBlockView $this
  */
-?>

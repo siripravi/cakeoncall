@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @var $model \dench\shopshopcart\models\Delivery
  */

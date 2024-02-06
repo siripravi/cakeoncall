@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Created by PhpStorm.
  * User: dench
@@ -30,20 +31,18 @@ if (@$model->variants[0]->price) {
     }
 }
 ?>
-    <div class="col-12 bg-white text-center h-100 product-item">
-        <div class="row h-100">
-            <?php if ($model->image) { ?>
-                <div class="col-12 p-0 mb-3">
-                    <a href="<?= $link; ?>">
-                        <img src="<?= ImageHelper::thumb($model->image->id, 'micro') ?>"
-                            alt="<?= $model->image->alt ? $model->image->alt : $model->name ?>" title="<?= $model->title ?>"
-                            class="img-fluid">
-                    </a>
+<div class="col-12 bg-white text-center h-100 product-item">
+    <div class="row h-100">
+        <?php if ($model->image) { ?>
+            <div class="col-12 p-0 mb-3">
+                <a href="<?= $link; ?>">
+                    <img src="<?= ImageHelper::thumb($model->image->id, 'micro') ?>" alt="<?= $model->image->alt ? $model->image->alt : $model->name ?>" title="<?= $model->title ?>" class="img-fluid">
+                </a>
 
 
-                <?php } else { ?>
-                    <img class="card-img-top" src="<?= Yii::$app->params['image']['none'] ?>" alt="">
-                <?php } ?>
+            <?php } else { ?>
+                <img class="card-img-top" src="<?= Yii::$app->params['image']['none'] ?>" alt="">
+            <?php } ?>
             </div>
             <div class="col-12 mb-3">
                 <a href="<?= $link; ?>" class="product-name">
@@ -95,5 +94,5 @@ if (@$model->variants[0]->price) {
                         cart</button>
                 </div>
             </div>
-        </div>
     </div>
+</div>

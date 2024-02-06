@@ -20,7 +20,7 @@ class ReviewBlock extends PhpBlock
     /**
      * @var string The module where this block belongs to in order to find the view files.
      */
-  
+
 
     /**
      * @var bool Choose whether a block can be cached trough the caching component. Be carefull with caching container blocks.

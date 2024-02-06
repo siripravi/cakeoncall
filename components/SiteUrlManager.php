@@ -28,14 +28,16 @@ class SiteUrlManager extends UrlManager
             $url = $lang . str_replace('/en/', '/', parent::createUrl($params));
         }
 
-        if ($lang === null &&
+        if (
+            $lang === null &&
             empty($params['lang']) &&
             Yii::$app->language === 'en' &&
             strpos($params[0], 'image/') !== 0 &&
-            strpos($url, '/en/') !== 0) {
+            strpos($url, '/en/') !== 0
+        ) {
             $url = '/en' . $url;
         }
-           
+
         return $url;
     }
 }

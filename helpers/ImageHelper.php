@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Created by PhpStorm.
  * User: Dench
@@ -30,7 +31,7 @@ class ImageHelper
      * @return string
      */
     public static function generatePath($size)
-    {  
+    {
         $param = Yii::$app->params['image'];
 
         if (empty($param['size'][$size])) {
@@ -47,12 +48,12 @@ class ImageHelper
     {
         return substr(md5(
             $model->file->hash .
-            $model->method .
-            $model->rotate .
-            $model->mirror .
-            $model->x .
-            $model->y .
-            $model->zoom
+                $model->method .
+                $model->rotate .
+                $model->mirror .
+                $model->x .
+                $model->y .
+                $model->zoom
         ), 0, 6);
     }
 
@@ -70,7 +71,7 @@ class ImageHelper
      */
     protected static function generateUrl($id, $size)
     {
-        $path = static::generatePath($size);         
+        $path = static::generatePath($size);
         return '/' . $path . '/' . static::generateName($id);
     }
 

@@ -1,6 +1,7 @@
 <?php
 
 namespace app\widgets;
+
 use Yii;
 use yii\bootstrap5\Html;
 use yii\bootstrap5\Widget;
@@ -8,8 +9,8 @@ use yii\helpers\ArrayHelper;
 
 class Carousel extends \yii\bootstrap5\Carousel
 {
-    public $thumbnails = [];
-	/*$model = Slider ::find()-> one();
+  public $thumbnails = [];
+  /*$model = Slider ::find()-> one();
 		$slides = $model->slides;
 		foreach($slides as $sld){
 			if (($image = SliderImage::find()->where(['id' => $sld->id])->multilingual()->one()) !== null) {
@@ -25,51 +26,51 @@ class Carousel extends \yii\bootstrap5\Carousel
 		
     ];  */
 
-    public function init()
-    {
-        parent::init();
-       /* Yii::$app->assetManager->bundles['yii\bootstrap5\BootstrapAsset'] = [
+  public function init()
+  {
+    parent::init();
+    /* Yii::$app->assetManager->bundles['yii\bootstrap5\BootstrapAsset'] = [
             'basePath'   => '@web',
            // 'sourcePath' => [],
            // 'css'        => ['css/styles.css'],
             'js'  => []
         ];*/
-        Html::addCssClass($this->options, ['data-bs-ride' => 'carousel']);
-        if ($this->crossfade) {
-            Html::addCssClass($this->options, ['animation' => 'carousel-fade']);
-        }
+    Html::addCssClass($this->options, ['data-bs-ride' => 'carousel']);
+    if ($this->crossfade) {
+      Html::addCssClass($this->options, ['animation' => 'carousel-fade']);
     }
-   
-	/**
-     * Renders carousel indicators.
-     * @return string the rendering result
-     */
-    public function renderIndicators(): string
-    {
-        if ($this->showIndicators === false){
-            return '';
-        }
-        $indicators = [];
-        for ($i = 0, $count = count($this->items); $i < $count; $i++){
-            $options = [
-                'data' => [
-                    'bs-target' => '#' . $this->options['id'],
-                    'bs-slide-to' => $i
-                ],
-                'type' => 'button',
-				'thumb' => $this->thumbnails[$i]['thumb']
-            ];
-            if ($i === 0){
-                Html::addCssClass($options, ['activate' => 'active']);
-                $options['aria']['current'] = 'true';
-            }
-          //  $indicators[] = Html::tag('button', '', $options);
-			
-			 $indicators[] = Html::tag('li',Html::img($options['thumb']), $options);
-        }
-        return Html::tag('ol', implode("\n", $indicators), ['class' => ['carousel-indicators']]);
+  }
+
+  /**
+   * Renders carousel indicators.
+   * @return string the rendering result
+   */
+  public function renderIndicators(): string
+  {
+    if ($this->showIndicators === false) {
+      return '';
     }
- }
+    $indicators = [];
+    for ($i = 0, $count = count($this->items); $i < $count; $i++) {
+      $options = [
+        'data' => [
+          'bs-target' => '#' . $this->options['id'],
+          'bs-slide-to' => $i
+        ],
+        'type' => 'button',
+        'thumb' => $this->thumbnails[$i]['thumb']
+      ];
+      if ($i === 0) {
+        Html::addCssClass($options, ['activate' => 'active']);
+        $options['aria']['current'] = 'true';
+      }
+      //  $indicators[] = Html::tag('button', '', $options);
+
+      $indicators[] = Html::tag('li', Html::img($options['thumb']), $options);
+    }
+    return Html::tag('ol', implode("\n", $indicators), ['class' => ['carousel-indicators']]);
+  }
+}
 
  /*
   <section>
@@ -113,4 +114,3 @@ class Carousel extends \yii\bootstrap5\Carousel
           </div>
     </section>
     */
- 

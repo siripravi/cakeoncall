@@ -120,7 +120,7 @@ class SettingsController extends BaseController
     public function actionProfile()
     {
 
-        
+
         $model = $this->finder->findProfileById(\Yii::$app->user->identity->getId());
 
         if ($model == null) {

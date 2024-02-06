@@ -14,7 +14,7 @@ use luya\cms\frontend\blockgroups\ProjectGroup;
  */
 class SectionBlock extends PhpBlock
 {
-   
+
     /**
      * @var boolean Choose whether block is a layout/container/segmnet/section block or not, Container elements will be optically displayed
      * in a different way for a better user experience. Container block will not display isDirty colorizing.

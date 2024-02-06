@@ -8,7 +8,7 @@ use yii\helpers\Url;
  */
 ?>
 <header class="nav-holder make-sticky">
-  
+
     <?php if ($placeholders['detailhdr']) : ?>
         <?= $placeholders['detailhdr'] ?>
     <?php endif ?>

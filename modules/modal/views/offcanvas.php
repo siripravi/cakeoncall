@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Created by PhpStorm.
  * User: dench
@@ -19,13 +20,13 @@ use yii\bootstrap5\Offcanvas;
 <!-- Offcanvas -->
 <!--<h4>OffCanvas Test</h4> -->
 <?php Offcanvas::begin([
-        'id' => $offCanvasId,
-        'placement' => Offcanvas::PLACEMENT_END,
-        'closeButton' => ['id'=>'closeCartOffcanvas'],
-        'title' => "Your Cart Items",
-        'backdrop' => false,
-        'scrolling' => true
-    ]); ?> 
-       <!--= app\modules\shopcart\widgets\CartWidget::widget();  ?-->
-    <?php Offcanvas::end();
-    ?>
+   'id' => $offCanvasId,
+   'placement' => Offcanvas::PLACEMENT_END,
+   'closeButton' => ['id' => 'closeCartOffcanvas'],
+   'title' => "Your Cart Items",
+   'backdrop' => false,
+   'scrolling' => true
+]); ?>
+<!--= app\modules\shopcart\widgets\CartWidget::widget();  ?-->
+<?php Offcanvas::end();
+?>

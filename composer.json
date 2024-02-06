@@ -1,58 +1,55 @@
 {
-    "name": "luyadev/luya-kickstarter-bootstrap4",
-    "description": "LUYA boilerplate to kickstart projects with Bootstrap 4.",
-    "type": "luya-kickstarter",
-    "license":"MIT",  
-    "require": {
-        "luyadev/luya-module-admin" : "^5.0",
-        "luyadev/luya-module-cms" : "^5.0",
-        "luyadev/luya-bootstrap4": "^1.0",
-        "yiisoft/yii2-bootstrap5": "~2.0.2",
-        "luyadev/luya-generic" : "^1.0",        
-        "luyadev/luya-module-gallery": "^1.0",
-        "siripravi/luya-module-ecommerce": "^1.0.0",
-        "siripravi/luya-module-shopcart":"^1.1.0",
-        "siripravi/luya-module-forms": "^1.0.0",
-       
-        "siripravi/luya-module-authhelper":"^1.0.0",
-        "kartik-v/yii2-icons": "~1.4.8",
-        "kartik-v/yii2-widgets": "@dev",
-        "kartik-v/yii2-builder": "@dev",
-        "kartik-v/yii2-widget-activeform": "~1.6.4",
-        "dev7ch/luya-ext-slick": "^1.1",
-        "voskobovich/yii2-linker-behavior": "^4.0",     
-        "yiisoft/yii2-authclient": "~2.2.0",        
-        "yiisoft/yii2-symfonymailer": "~2.0.3",       
-        "luyadev/luya-module-userauth": "^1.1",
-        "lav45/yii2-ajax-create": "0.2.*",      
-        "biladina/yii2-ajaxcrud-bs4": "~3.0",
-        "exocet/yii2-bootstrap-material-design": "^2.3",
-        "yiisoft/yii2": "~2.0.49.3",
-        "ronash-dhakal/yii2-cart": "@dev",
-        "powerkernel/yii2-photoswipe": "~1.1.5"       
-       
+  "name": "luyadev/luya-kickstarter-bootstrap4",
+  "description": "LUYA boilerplate to kickstart projects with Bootstrap 4.",
+  "type": "luya-kickstarter",
+  "license": "MIT",
+  "require": {
+    "luyadev/luya-module-admin": "^5.0",
+    "luyadev/luya-module-cms": "^5.0",
+    "luyadev/luya-bootstrap4": "^1.0",
+    "yiisoft/yii2-bootstrap5": "~2.0.2",
+    "luyadev/luya-generic": "^1.0",
+    "luyadev/luya-module-gallery": "^1.0",
+    "siripravi/luya-module-ecommerce": "^1.0.0",
+    "siripravi/luya-module-shopcart": "^1.1.0",
+    "siripravi/luya-module-forms": "^1.0.0",
+    "siripravi/luya-module-authhelper": "^1.0.0",
+    "kartik-v/yii2-icons": "~1.4.8",
+    "kartik-v/yii2-widgets": "@dev",
+    "kartik-v/yii2-builder": "@dev",
+    "kartik-v/yii2-widget-activeform": "~1.6.4",
+    "dev7ch/luya-ext-slick": "^1.1",
+    "voskobovich/yii2-linker-behavior": "^4.0",
+    "yiisoft/yii2-authclient": "~2.2.0",
+    "yiisoft/yii2-symfonymailer": "~2.0.3",
+    "luyadev/luya-module-userauth": "^1.1",
+    "lav45/yii2-ajax-create": "0.2.*",
+    "biladina/yii2-ajaxcrud-bs4": "~3.0",
+    "exocet/yii2-bootstrap-material-design": "^2.3",
+    "yiisoft/yii2": "~2.0.49.3",
+    "ronash-dhakal/yii2-cart": "@dev",
+    "powerkernel/yii2-photoswipe": "~1.1.5"
+  },
+  "require-dev": {
+    "yiisoft/yii2-debug": "^2.0",
+    "yiisoft/yii2-gii": "^2.0",
+    "luyadev/luya-deployer": "^1.0",
+    "twbs/bootstrap": "^4.0",
+    "unglue/client": "^1.5"
+  },
+  "config": {
+    "fxp-asset": {
+      "enabled": false
     },
-    "require-dev": {
-        "yiisoft/yii2-debug" : "^2.0",
-        "yiisoft/yii2-gii" : "^2.0",
-        "luyadev/luya-deployer": "^1.0",
-        "twbs/bootstrap": "^4.0",
-        "unglue/client": "^1.5"
-    },
-    "config": {       
-        "fxp-asset": {
-            "enabled": false
-        },
-        "allow-plugins": {
-            "yiisoft/yii2-composer": true,
-            "luyadev/luya-composer": true
-        }
-    }, 
-    "repositories": [
-        {
-            "type": "composer",
-            "url": "https://asset-packagist.org"
-        }
-       
-    ]
+    "allow-plugins": {
+      "yiisoft/yii2-composer": true,
+      "luyadev/luya-composer": true
+    }
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://asset-packagist.org"
+    }
+  ]
 }

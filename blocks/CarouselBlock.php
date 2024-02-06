@@ -1,6 +1,7 @@
 <?php
 
 namespace app\blocks;
+
 use luya\cms\helpers\BlockHelper;
 use luya\cms\base\PhpBlock;
 use luya\helpers\Html;
@@ -102,15 +103,15 @@ class CarouselBlock extends PhpBlock
             "row" => 'Adds the row class to the carousel container.',
         ];
     }
-   /**
+    /**
      * {@inheritdoc}
      */
     public function extraVars()
     {
         return [
             'images' => $this->images(),
-         //   'id' => 'carousel_'.md5($this->getEnvOption('id')),
-          //  'jsConfig' => $this->getJsConfig()
+            //   'id' => 'carousel_'.md5($this->getEnvOption('id')),
+            //  'jsConfig' => $this->getJsConfig()
         ];
     }
     /**
@@ -141,7 +142,7 @@ class CarouselBlock extends PhpBlock
         {% endif %}';
     }
 
- /**
+    /**
      * Get all carousel images (slides)
      *
      * @return array images
@@ -155,25 +156,26 @@ class CarouselBlock extends PhpBlock
                 $images[] = [
                     'image' => $image,
                     'title' => isset($item['title']) ? $item['title'] : null,
-               //     'caption' => isset($item['caption']) ? $item['caption'] : null,
+                    //     'caption' => isset($item['caption']) ? $item['caption'] : null,
                     'link' => isset($item['link'])  ? BlockHelper::linkObject($item['link']) : null,
                     'content' => '<div class="home_slider_container">
                                     <div class="text-center p-0"><div class="">' .
-                                    Html::img($image->source,['class'=>'d-block w-100'])                                  
-                                    // $image->render($sld->filename, "large", ["class" => "slider-img"]) .
-                                    .'</div>',
+                        Html::img($image->source, ['class' => 'd-block w-100'])
+                        // $image->render($sld->filename, "large", ["class" => "slider-img"]) .
+                        . '</div>',
                     'caption' => '<div class="slide-text">' .
                         Html::tag('h1', $item['caption'], ['class' => 'h1 text-light']) .
                         '<h3 class="h2"></h3><p>' . $item['title'] . '</p></div></div></div>',
-                    'captionOptions' => ['class' => ['mb-0 d-flex align-items-center']
-                ]              
+                    'captionOptions' => [
+                        'class' => ['mb-0 d-flex align-items-center']
+                    ]
                 ];
             }
         }
         return $images;
     }
 
-  /*  public function getSlides(){
+    /*  public function getSlides(){
         $slides = $this->placeholderValue('elements');
         $images = [];
         foreach ($slides as $sld) {

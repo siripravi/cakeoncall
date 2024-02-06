@@ -5,7 +5,7 @@ namespace app\assets;
 class ResourcesAsset extends \luya\web\Asset
 {
     public $sourcePath = '@app/resources';
-    
+
     public $css = [
         YII_ENV . '/css/main.css'
     ];

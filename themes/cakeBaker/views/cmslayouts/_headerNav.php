@@ -122,7 +122,7 @@ if (Yii::$app->user->isGuest) {
 </div>
 <div class="d-flex m-3 me-0" id="right-nav-x">
     <!--<button class="btn-search btn border border-secondary btn-md-square rounded-circle bg-white me-4" data-bs-toggle="modal" data-bs-target="#searchModal"><i data-feather="search" class="text-primary"></i></button> -->
-    
+
     <?= Nav::widget([
         'options' => ['class' => "navbar-nav ms-auto mx-lg-auto py-0"],
         'items' => $userItems,

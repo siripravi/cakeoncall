@@ -1,5 +1,7 @@
 <?php
+
 namespace app\modules\userauth\frontend\controllers;
+
 use siripravi\authhelper\controllers\SecurityController as MainController;
 use app\models\LoginForm;
 use siripravi\shopcart\models\Cart;
@@ -22,29 +24,28 @@ class SecurityController extends MainController
      * @return string|Response
      */
     public function actionLogin()
-    {       
-       
-        if (!\Yii::$app->user->isGuest) {
-           $cart = \Yii::$app->cart->getItems();
-           if(!empty($cart))
-                \Yii::$app->getResponse()->redirect(Url::to(['/shopping-cart']));
-             else
-                \Yii::$app->getResponse()->redirect(Url::to([\Yii::$app->getHomeUrl()]));
+    {
 
+        if (!\Yii::$app->user->isGuest) {
+            $cart = \Yii::$app->cart->getItems();
+            if (!empty($cart))
+                \Yii::$app->getResponse()->redirect(Url::to(['/shopping-cart']));
+            else
+                \Yii::$app->getResponse()->redirect(Url::to([\Yii::$app->getHomeUrl()]));
         }
-         $returnUrl =  \Yii::$app->request->referrer ;
+        $returnUrl =  \Yii::$app->request->referrer;
         /** @var LoginForm $model */
         $model = \Yii::createObject(LoginForm::class);
         $event = $this->getFormEvent($model);
 
         $this->performAjaxValidation($model);
         $this->trigger(self::EVENT_BEFORE_LOGIN, $event);
-       
+
         if ($model->load(\Yii::$app->getRequest()->post()) && $model->login()) {
             $this->trigger(self::EVENT_AFTER_LOGIN, $event);
-           
+
             //Checking return url
-         /*   if (!empty($model->returnUrl)) {
+            /*   if (!empty($model->returnUrl)) {
                 $host = \Yii::$app->request->hostInfo;
                 $returnUrlHost = substr($model->returnUrl, 0, strlen($host));
                 if ($returnUrlHost == $host) {
@@ -60,7 +61,7 @@ class SecurityController extends MainController
             */
 
             \Yii::$app->user->setReturnUrl($returnUrl);
-           
+
             return \Yii::$app->getResponse()->redirect($returnUrl);
         }
 

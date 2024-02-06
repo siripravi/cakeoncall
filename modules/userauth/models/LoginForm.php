@@ -1,4 +1,5 @@
 <?php
+
 namespace app\modules\userauth\models;
 
 use siripravi\authhelper\Finder;

@@ -42,10 +42,10 @@ AjaxCreate::end();*/
         <?php endif; ?>
         <?= $this->placeholderValue('content'); ?>
         <div class="d-grid gap-2 col-6 mx-auto">
-            <button class="btn btn-primary btn-lg" type="submit" data-mdb-ripple-init><?=$this->cfgValue('submitButtonLabel', Yii::t('forms', 'Submit'));?></button>
-           <!--= Html::submitButton($this->cfgValue('submitButtonLabel', Yii::t('forms', 'Submit')), Yii::$app->forms->submitButtonsOptions); ?-->
+            <button class="btn btn-primary btn-lg" type="submit" data-mdb-ripple-init><?= $this->cfgValue('submitButtonLabel', Yii::t('forms', 'Submit')); ?></button>
+            <!--= Html::submitButton($this->cfgValue('submitButtonLabel', Yii::t('forms', 'Submit')), Yii::$app->forms->submitButtonsOptions); ?-->
         </div>
-        
+
     <?php endif; ?>
 <?php endif; ?>
 

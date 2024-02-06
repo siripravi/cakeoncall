@@ -1,4 +1,5 @@
 <?php
+
 namespace app\components\events;
 
 use Yii;
@@ -65,15 +66,14 @@ class PartnersBootstrap implements BootstrapInterface
         $mailer->sendPartnerRequestToPartner(
             $mailVars,
             [$event->sender->module->senderEmail ??
-            \Yii::$app->get('shopMailer')->transport->getUsername() => \Yii::$app->name ?? parse_url(Url::base(true), PHP_URL_HOST)],
+                \Yii::$app->get('shopMailer')->transport->getUsername() => \Yii::$app->name ?? parse_url(Url::base(true), PHP_URL_HOST)],
             $partnerEmail
         );
         $mailer->sendPartnerRequestToManager(
             $mailVars,
             [$event->sender->module->senderEmail ??
-            \Yii::$app->get('shopMailer')->transport->getUsername() => \Yii::$app->name ?? parse_url(Url::base(true), PHP_URL_HOST)],
+                \Yii::$app->get('shopMailer')->transport->getUsername() => \Yii::$app->name ?? parse_url(Url::base(true), PHP_URL_HOST)],
             $event->sender->module->partnerManagerEmail
         );
     }
-
 }

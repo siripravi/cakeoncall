@@ -114,7 +114,7 @@ class Modal extends Widget
                     });               
                 
         JS;
-     //   $view->registerJs($js);
+        //   $view->registerJs($js);
 
         Html::addCssClass($this->titleOptions, 'modal-title');
         Html::addCssClass($this->options, $this->offCanvasId);

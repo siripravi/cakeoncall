@@ -106,7 +106,7 @@ class SettingsController extends BaseController
             $address = UserAddress::findOne($id);
             if ($address->user_profile_id == \Yii::$app->user->identity->profile->id) {
                 $address->delete();
-              //  \Yii::$app->session->remove(\Yii::$app->forms->sessionFormDataName);
+                //  \Yii::$app->session->remove(\Yii::$app->forms->sessionFormDataName);
                 //return $this->redirect('addresses');
                 return $this->redirect(\Yii::$app->request->referrer);
             } else throw new ForbiddenHttpException('Such address does not exists or it is not your address.');
@@ -119,7 +119,7 @@ class SettingsController extends BaseController
      * @return string|\yii\web\Response
      */
     public function actionProfile()
-    {        
+    {
         $model = $this->finder->findProfileById(\Yii::$app->user->identity->getId());
 
         if ($model == null) {

@@ -16,7 +16,7 @@ use siripravi\ecommerce\models\Group;
         foreach ($categories as $category) {
           $items[$category->id] = [
             'label' => $category->name,
-            'url' => (count($category->categories)) ? ['/menu/'.$category->slug] : ['/menu/'.$category->slug],
+            'url' => (count($category->categories)) ? ['/menu/' . $category->slug] : ['/menu/' . $category->slug],
             'options' => [
               'tag' => false,
             ],

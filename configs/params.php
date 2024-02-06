@@ -5,7 +5,7 @@ return [
     'senderEmail' => 'noreply@example.com',
     'senderName' => 'Example.com mailer',
     'order_secret' => 'SiriPravi',
-   
+
     'user.avatar.size' => [200, 200],
     'phone1' => '',
     'phone1f' => '',
@@ -31,8 +31,8 @@ return [
         'extensions' => 'png, jpg, jpeg, pdf, zip, rar, doc, docx, xls, xlsx',
         'maxSize' => 100 * 1024 * 1024,
         'maxFiles' => 50,
-       'path' => dirname(__DIR__) . '/files',
-       
+        'path' => dirname(__DIR__) . '/files',
+
     ],
 
     'image' => [

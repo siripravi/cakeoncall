@@ -1,5 +1,7 @@
 <?php
+
 namespace app\components\events;
+
 use yii\base\Event;
 
 /**
@@ -12,5 +14,4 @@ class PartnersEvents extends Event
     {
         parent::__construct($config);
     }
-
 }

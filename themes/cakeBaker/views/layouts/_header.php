@@ -21,7 +21,7 @@ $menuItems = []; //<iconify-icon icon="mdi:user-outline" style="color: #123;" wi
             </div>
         </div>
         <div class="col-lg-5 mx-auto mt-6 mt-lg-0">
-            <!--= $this->render('_searchForm');  ?-->            
+            <!--= $this->render('_searchForm');  ?-->
         </div>
         <div class="col-lg-auto text-center text-lg-left header-item-holder d-inline-flex ps-4">
             <?= CartIconWidget::widget(); ?>
@@ -80,33 +80,33 @@ NavBar::begin([
 
 <!--header starts-->
 
-    <!-- .navbar -->
-    <nav class="navbar navbar-dark">
-        <div class="container">
-            <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#mainNavbarCollapse">&#9776;</button>
-            <a class="navbar-brand" href="/"> <img class="img-rounded" src="/images/food-picky-logo.png" alt=""> </a>
-            <div class="collapse navbar-toggleable-md  float-lg-right" id="mainNavbarCollapse">
-                <ul class="nav navbar-nav">
-                    <?php foreach (Yii::$app->menu->find()->container('default')->root()->all() as $item) : ?>
-                        <li class="<?php echo $item->isActive ? 'nav-item active' : 'nav-item' ?>">
-                            <?php if ($item->hasChildren) : ?>
-                                <?php echo Html::a($item->title, $item->link, ['class' => $item->alias == Yii::$app->menu->current->alias]) ?>
+<!-- .navbar -->
+<nav class="navbar navbar-dark">
+    <div class="container">
+        <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#mainNavbarCollapse">&#9776;</button>
+        <a class="navbar-brand" href="/"> <img class="img-rounded" src="/images/food-picky-logo.png" alt=""> </a>
+        <div class="collapse navbar-toggleable-md  float-lg-right" id="mainNavbarCollapse">
+            <ul class="nav navbar-nav">
+                <?php foreach (Yii::$app->menu->find()->container('default')->root()->all() as $item) : ?>
+                    <li class="<?php echo $item->isActive ? 'nav-item active' : 'nav-item' ?>">
+                        <?php if ($item->hasChildren) : ?>
+                            <?php echo Html::a($item->title, $item->link, ['class' => $item->alias == Yii::$app->menu->current->alias]) ?>
 
-                                <ul>
-                                    <?php foreach ($item->children as $childItem) : ?>
-                                        <li class="nav-item">
-                                            <?php echo Html::a($childItem->title, $childItem->link, ['class' => $childItem->alias == Yii::$app->menu->current->alias]) ?>
-                                        </li>
-                                    <?php endforeach; ?>
-                                </ul>
-                            <?php else : ?>
-                                <?php echo Html::a($item->title, $item->link, ['class' => $item->alias == Yii::$app->menu->current->alias]) ?>
-                            <?php endif ?>
-                        </li>
-                    <?php endforeach; ?>
-                </ul>
+                            <ul>
+                                <?php foreach ($item->children as $childItem) : ?>
+                                    <li class="nav-item">
+                                        <?php echo Html::a($childItem->title, $childItem->link, ['class' => $childItem->alias == Yii::$app->menu->current->alias]) ?>
+                                    </li>
+                                <?php endforeach; ?>
+                            </ul>
+                        <?php else : ?>
+                            <?php echo Html::a($item->title, $item->link, ['class' => $item->alias == Yii::$app->menu->current->alias]) ?>
+                        <?php endif ?>
+                    </li>
+                <?php endforeach; ?>
+            </ul>
 
-            </div>
         </div>
-    </nav>
-    <!-- /.navbar -->
+    </div>
+</nav>
+<!-- /.navbar -->

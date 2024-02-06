@@ -8,7 +8,7 @@ use siripravi\shopcart\widgets\CartIconWidget;
 ?>
 <?php
 $menuItems = []; //<iconify-icon icon="mdi:user-outline" style="color: #123;" width="20" rotate="0deg"></iconify-icon>
- if (Yii::$app->user->isGuest) {
+if (Yii::$app->user->isGuest) {
     $menuItems[] = [
         'label' =>  Html::tag(
             'span',
@@ -26,9 +26,9 @@ $menuItems = []; //<iconify-icon icon="mdi:user-outline" style="color: #123;" wi
         'visible' => \Yii::$app->user->can('manage_users'),
         'items' => []
     ];
-   $menuItems[] = [
+    $menuItems[] = [
         'label' => Html::img(
-           \Yii::$app->user->identity->getAvatarImage(),
+            \Yii::$app->user->identity->getAvatarImage(),
             ['alt' => Yii::$app->user->identity->username, 'class' => 'rounded-circle border-2', 'width' => 38]
         ),
         'encode' => false,
@@ -62,8 +62,8 @@ $menuItems = []; //<iconify-icon icon="mdi:user-outline" style="color: #123;" wi
                 ],
             ]
         ]
-    ]; 
-}  
+    ];
+}
 
 ?>
 <!-- Begin Top Nav -->
@@ -96,11 +96,11 @@ $menuItems = []; //<iconify-icon icon="mdi:user-outline" style="color: #123;" wi
                 <?= Html::a('<img src="/image/site/flag-bha.svg">', Url::current(['lang' => 'hi']), ['class' => ['btn btn-sm', Yii::$app->language === 'hi' ? '' : ''], 'hreflang' => 'hi-IN', 'rel' => 'nofollow']) ?>
             </div>
             <div class="col-lg-auto text-center text-lg-left header-item-holder d-inline-flex ps-4">
-            <!--= CartIconWidget::widget(); ?-->
-            <a id="cart-icon" class="border border-circle cart-icon header-item"  title="You have items in cart" href="/cart/bag/index">
-                <span class="fa-layers fa-fw" style="background:white"><i class="fa-2x fas fa-shopping-cart"></i></span>
-            </a>
-        </div>
+                <!--= CartIconWidget::widget(); ?-->
+                <a id="cart-icon" class="border border-circle cart-icon header-item" title="You have items in cart" href="/cart/bag/index">
+                    <span class="fa-layers fa-fw" style="background:white"><i class="fa-2x fas fa-shopping-cart"></i></span>
+                </a>
+            </div>
         </div>
     </div>
 </div>

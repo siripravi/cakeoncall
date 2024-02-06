@@ -12,9 +12,7 @@
       "email": "provdigi@gmail.com"
     }
   ],
-  "require": {
-   
-  },
+  "require": {},
   "autoload": {
     "psr-4": {
       "siripravi\\ecommerce\\": "src/"

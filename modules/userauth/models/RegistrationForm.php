@@ -10,6 +10,7 @@
  */
 
 namespace app\modules\userauth\models;
+
 use app\models\User;
 use siripravi\authhelper\traits\ModuleTrait;
 use Yii;
@@ -111,7 +112,7 @@ class RegistrationForm extends Model
      */
     public function register()
     {
-        
+
         if (!$this->validate()) {
             return false;
         }

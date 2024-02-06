@@ -1,4 +1,5 @@
 <?php
+
 use luya\helpers\Html;
 use app\modules\userauth\frontend\Module;
 use yii\widgets\ActiveForm;

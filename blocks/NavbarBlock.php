@@ -1,6 +1,7 @@
 <?php
 
 namespace app\blocks;
+
 use yii\widgets\Menu;
 use siripravi\ecommerce\models\Group;
 use yii\bootstrap5\Nav;
@@ -102,7 +103,7 @@ class NavbarBlock extends PhpBlock
                 'url' => ['/'],
                 'active' => in_array(Yii::$app->controller->id, ['site']) && in_array(Yii::$app->controller->action->id, ['index']),
                 'linkOptions' => [
-                //    'class' => in_array(Yii::$app->controller->id, ['site']) && in_array(Yii::$app->controller->action->id, ['index']) ? 'nav-item nav-link text-white ml-3' : 'nav-item nav-link text-white',
+                    //    'class' => in_array(Yii::$app->controller->id, ['site']) && in_array(Yii::$app->controller->action->id, ['index']) ? 'nav-item nav-link text-white ml-3' : 'nav-item nav-link text-white',
                 ],
             ],
             '<li class="nav-item">
@@ -121,10 +122,11 @@ class NavbarBlock extends PhpBlock
                     $this->getMegaMenu()
                 ]
             ],
-            ['label' => Yii::t('app', 'Blog'), 'url' => ['/blog']
+            [
+                'label' => Yii::t('app', 'Blog'), 'url' => ['/blog']
             ]
         ]; //<iconify-icon icon="mdi:user-outline" style="color: #123;" width="20" rotate="0deg"></iconify-icon>
-       
+
         return $menuItems;
     }
 
@@ -192,28 +194,29 @@ class NavbarBlock extends PhpBlock
         return $userItems;
     }
 
-    public function getMegaMenu(){
+    public function getMegaMenu()
+    {
         $categories = Group::getMain(); //!Yii::$app->cache->exists('_categories-' . Yii::$app->language) ? Category::getMain() : [];
         $items = [];
         foreach ($categories as $category) {
-          $items[$category->id] = [
-            'label' => $category->name,
-            'url' => (count($category->categories)) ? ['/menu/'.$category->slug] : ['/menu/'.$category->slug],
-            'options' => [
-              'tag' => false,
-            ],
-          ];
+            $items[$category->id] = [
+                'label' => $category->name,
+                'url' => (count($category->categories)) ? ['/menu/' . $category->slug] : ['/menu/' . $category->slug],
+                'options' => [
+                    'tag' => false,
+                ],
+            ];
         }
         return Menu::widget([
-          'items' => $items,
-          'linkTemplate' => '<a class="list-group-item" href="{url}">{label}</a>',
-          'itemOptions' => ['class' => 'list-group-item'],
-          'options' => [
-            'tag' => 'div',
-            //'class' => 'dropdown-menu rounded-0 w-100',
-            'class' => 'list-group',
-            // 'aria-labelledby' => "dropdownButton"
-          ],
+            'items' => $items,
+            'linkTemplate' => '<a class="list-group-item" href="{url}">{label}</a>',
+            'itemOptions' => ['class' => 'list-group-item'],
+            'options' => [
+                'tag' => 'div',
+                //'class' => 'dropdown-menu rounded-0 w-100',
+                'class' => 'list-group',
+                // 'aria-labelledby' => "dropdownButton"
+            ],
         ]);
     }
 }

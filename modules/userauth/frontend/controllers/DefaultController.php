@@ -1,5 +1,7 @@
 <?php
+
 namespace app\modules\userauth\frontend\controllers;
+
 use siripravi\authhelper\controllers\SecurityController as MainController;
 use luya\cms\menu\QueryOperatorFieldInterface;
 use luya\helpers\Url;
@@ -93,7 +95,7 @@ class DefaultController extends MainController
         }
 
         $navId = Yii::$app->getModule('userauthfrontend')->params[Module::USERAUTH_CONFIG_AFTER_LOGIN_NAV_ID];
-        
+
         //Config::get(Module::USERAUTH_CONFIG_AFTER_LOGIN_NAV_ID, false);
 
         if ($navId) {

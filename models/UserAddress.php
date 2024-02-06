@@ -1,5 +1,7 @@
 <?php
+
 namespace app\models;
+
 use Yii;
 use yii\db\ActiveRecord;
 
@@ -39,15 +41,16 @@ class UserAddress extends ActiveRecord
     {
         return [
             [['user_profile_id', 'zipcode'], 'integer'],
-            [['country', 'region', 'city', 'street', 'house','contact_person'], 'string', 'max' => 255],
-            [['contact_mobile1','contact_mobile2'], 'string', 'max' => 16],           
+            [['country', 'region', 'city', 'street', 'house', 'contact_person'], 'string', 'max' => 255],
+            [['contact_mobile1', 'contact_mobile2'], 'string', 'max' => 16],
             [['user_profile_id'], 'exist', 'skipOnError' => true, 'targetClass' => Profile::class, 'targetAttribute' => ['user_profile_id' => 'id']],
             [['province_id', 'city_id', 'district_id', 'is_default', 'user_id'], 'integer'],
-            [['selectPreset'],'safe']
+            [['selectPreset'], 'safe']
         ];
     }
 
-    public function scenarios(){
+    public function scenarios()
+    {
         $parent = parent::scenarios();
 
         $parent['useAddressInChoseCheckout'] = [
@@ -86,30 +89,33 @@ class UserAddress extends ActiveRecord
         return $this->hasOne(Profile::class, ['id' => 'user_profile_id']);
     }
 
-    
-    public function ambilProvice(){
+
+    public function ambilProvice()
+    {
         $modelForm = new FormOrder();
 
         return $modelForm->ambilProvice();
     }
 
-    public function ambilCity($province_id){
+    public function ambilCity($province_id)
+    {
         $modelForm = new FormOrder();
         return $modelForm->ambilCity($province_id);
     }
 
     /*mengambil data city di rajaongkir.com*/
-    public function ambilProviceAndCityByOne(){
+    public function ambilProviceAndCityByOne()
+    {
 
         $cacing = Yii::$app->cache; //add library cache
 
-        $presetDefault = $cacing->get('defaultPresetLoc_'.$this->city_id.'_'.$this->province_id); // buat mbedain aja
+        $presetDefault = $cacing->get('defaultPresetLoc_' . $this->city_id . '_' . $this->province_id); // buat mbedain aja
 
 
-        if($presetDefault === false){
+        if ($presetDefault === false) {
             $curl = curl_init();
             curl_setopt_array($curl, array(
-                CURLOPT_URL => "https://api.rajaongkir.com/starter/city?id=".$this->city_id."&province=".$this->province_id,
+                CURLOPT_URL => "https://api.rajaongkir.com/starter/city?id=" . $this->city_id . "&province=" . $this->province_id,
                 CURLOPT_RETURNTRANSFER => true,
                 CURLOPT_ENCODING => "",
                 CURLOPT_MAXREDIRS => 10,
@@ -129,12 +135,12 @@ class UserAddress extends ActiveRecord
             if ($err) {
                 echo "cURL Error #:" . $err;
             } else {
-                $result = json_decode($response,true);
+                $result = json_decode($response, true);
                 $result = $result['rajaongkir']['results'];
 
 
-                $cacing->set('defaultPresetLoc_'.$this->city_id.'_'.$this->province_id, $result, 3600); // di cache 300 detik
-                $presetDefault = $cacing->get('defaultPresetLoc_'.$this->city_id.'_'.$this->province_id);
+                $cacing->set('defaultPresetLoc_' . $this->city_id . '_' . $this->province_id, $result, 3600); // di cache 300 detik
+                $presetDefault = $cacing->get('defaultPresetLoc_' . $this->city_id . '_' . $this->province_id);
             }
         }
 

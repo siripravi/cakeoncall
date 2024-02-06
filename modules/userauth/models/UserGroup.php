@@ -1,4 +1,5 @@
 <?php
+
 namespace app\modules\userauth\models;
 
 use Yii;
@@ -32,7 +33,6 @@ class UserGroup extends ActiveRecord
      */
     public function behaviors()
     {
-       
     }
 
     /**
@@ -40,8 +40,7 @@ class UserGroup extends ActiveRecord
      */
     public function rules()
     {
-        return [
-        ];
+        return [];
     }
 
     /**
@@ -54,5 +53,4 @@ class UserGroup extends ActiveRecord
             'user_id' => Yii::t('shop', 'User ID'),
         ];
     }
-   
 }

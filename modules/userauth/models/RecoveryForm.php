@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
- namespace app\modules\userauth\models;
+namespace app\modules\userauth\models;
 
 use app\models\User;
 use siripravi\authhelper\Finder;
@@ -128,9 +128,7 @@ class RecoveryForm extends Model
                 \Yii::t('app', 'An email has been sent with instructions for resetting your password')
             );
             return true;
-        }
-
-        else {
+        } else {
             \Yii::$app->session->setFlash(
                 'info',
                 \Yii::t('app', 'Such email does not exist.')
