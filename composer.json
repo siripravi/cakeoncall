@@ -28,7 +28,8 @@
     "exocet/yii2-bootstrap-material-design": "^2.3",
     "yiisoft/yii2": "~2.0.49.3",
     "ronash-dhakal/yii2-cart": "@dev",
-    "powerkernel/yii2-photoswipe": "~1.1.5"
+    "powerkernel/yii2-photoswipe": "~1.1.5",
+    "siripravi/luya-module-category": "dev-master"
   },
   "require-dev": {
     "yiisoft/yii2-debug": "^2.0",
