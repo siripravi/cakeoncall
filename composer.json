@@ -29,7 +29,8 @@
     "yiisoft/yii2": "~2.0.49.3",
     "ronash-dhakal/yii2-cart": "@dev",
     "powerkernel/yii2-photoswipe": "~1.1.5",
-    "siripravi/luya-module-category": "dev-master"
+    "siripravi/luya-module-category": "dev-master",
+    "creocoder/yii2-nested-sets": "^0.9.0"
   },
   "require-dev": {
     "yiisoft/yii2-debug": "^2.0",
