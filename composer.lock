@@ -4,7 +4,7 @@
     "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
     "This file is @generated automatically"
   ],
-  "content-hash": "cc18cf6b65ca78ee8ddd77768533205b",
+  "content-hash": "8f0a40592e097013db7a07bc09c1310c",
   "packages": [
     {
       "name": "biladina/yii2-ajaxcrud-bs4",
@@ -4875,47 +4875,6 @@
       "time": "2024-01-30T06:07:27+00:00"
     },
     {
-      "name": "siripravi/luya-module-category",
-      "version": "dev-master",
-      "source": {
-        "type": "git",
-        "url": "https://github.com/siripravi/luya-module-category.git",
-        "reference": "16864e085ce81d8df1a45afb4652aed8f94d0468"
-      },
-      "dist": {
-        "type": "zip",
-        "url": "https://api.github.com/repos/siripravi/luya-module-category/zipball/16864e085ce81d8df1a45afb4652aed8f94d0468",
-        "reference": "16864e085ce81d8df1a45afb4652aed8f94d0468",
-        "shasum": ""
-      },
-      "default-branch": true,
-      "type": "luya-module",
-      "autoload": {
-        "psr-4": {
-          "siripravi\\category\\": "src/"
-        }
-      },
-      "notification-url": "https://packagist.org/downloads/",
-      "license": [
-        "MIT"
-      ],
-      "authors": [
-        {
-          "name": "purnachandra",
-          "email": "provdigi@gmail.com"
-        }
-      ],
-      "description": "Luya category tree administration",
-      "keywords": [
-        "luya"
-      ],
-      "support": {
-        "issues": "https://github.com/siripravi/luya-module-category/issues",
-        "source": "https://github.com/siripravi/luya-module-category/tree/master"
-      },
-      "time": "2024-02-07T14:10:03+00:00"
-    },
-    {
       "name": "siripravi/luya-module-ecommerce",
       "version": "v1.0.0",
       "source": {
@@ -9608,8 +9567,7 @@
   "stability-flags": {
     "kartik-v/yii2-widgets": 20,
     "kartik-v/yii2-builder": 20,
-    "ronash-dhakal/yii2-cart": 20,
-    "siripravi/luya-module-category": 20
+    "ronash-dhakal/yii2-cart": 20
   },
   "prefer-stable": false,
   "prefer-lowest": false,
