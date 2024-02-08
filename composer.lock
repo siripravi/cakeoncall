@@ -4880,12 +4880,12 @@
       "source": {
         "type": "git",
         "url": "https://github.com/siripravi/luya-module-category.git",
-        "reference": "8bb249e0cfbee8abb38053c52456683ba74c2c28"
+        "reference": "16864e085ce81d8df1a45afb4652aed8f94d0468"
       },
       "dist": {
         "type": "zip",
-        "url": "https://api.github.com/repos/siripravi/luya-module-category/zipball/8bb249e0cfbee8abb38053c52456683ba74c2c28",
-        "reference": "8bb249e0cfbee8abb38053c52456683ba74c2c28",
+        "url": "https://api.github.com/repos/siripravi/luya-module-category/zipball/16864e085ce81d8df1a45afb4652aed8f94d0468",
+        "reference": "16864e085ce81d8df1a45afb4652aed8f94d0468",
         "shasum": ""
       },
       "default-branch": true,
@@ -4913,7 +4913,7 @@
         "issues": "https://github.com/siripravi/luya-module-category/issues",
         "source": "https://github.com/siripravi/luya-module-category/tree/master"
       },
-      "time": "2024-02-07T13:30:32+00:00"
+      "time": "2024-02-07T14:10:03+00:00"
     },
     {
       "name": "siripravi/luya-module-ecommerce",
