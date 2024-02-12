@@ -1,9 +1,5 @@
 <?php
-
 use app\widgets\Carousel;
-
-
-
 $images = $this->extraValue('images');
 $indicators = null;
 $counter = 0;

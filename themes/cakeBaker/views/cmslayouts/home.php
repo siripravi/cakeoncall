@@ -4,12 +4,16 @@
  * @var string[] $placeholders
  */
 ?>
-<header class="nav-holder make-sticky">
+<
+<header class="xnav-holder xmake-sticky">
     <!-- echo $this->render('_headerNav'); ?-->
     <?php if ($placeholders['homehdr']) : ?>
         <?= $placeholders['homehdr'] ?>
     <?php endif ?>
+   
 </header>
+   
+
 <!-- HERO SLIDER SECTION-->
 <section class="text-white bg-cover bg-center primary-overlay overlay-dense" style="background: url('img/photogrid.jpg') repeat">
     <div class="overlay-content py-5">

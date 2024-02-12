@@ -14,6 +14,7 @@ $userItems = $this->extraValue('userItems');
 ?>
 <!-- Navbar begins  -->
 <!--<nav class="navbar navbar-expand-lg bg-body-tertiary"> -->
+<div class="navigation">
 <?php
 NavBar::begin([
     //'brandLabel' => '<span class="gaozhan-logo">'.Html::img("/image/site/nyxta.png",["style"=>"max-height: 80%; padding: 0;position:relative;"]).'</span>',
@@ -47,3 +48,4 @@ NavBar::begin([
       </form> -->
 </div>
 <?php NavBar::end();   ?>
+</div>

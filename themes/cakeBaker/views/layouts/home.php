@@ -28,11 +28,22 @@ $this->beginPage();
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
   <!-- Icon Font Stylesheet -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
-
+  <link rel="icon" type="image/png" id="favicon" href="../images/favicon.png" />
   <?php $this->head() ?>
+  <script type="text/javascript">
+var responsive_design = 'yes';
+</script>
+  <script>
+    
+  </script>
+  <script>
+   
+</script>
+<script type="text/javascript">
+
+</script>
   <style>
     /*body {
       overflow-x: hidden;
@@ -63,12 +74,27 @@ $this->beginPage();
 
 <body data-bs-theme="light">
   <?php $this->beginBody() ?>
-  <div class="wide" id="all">
+  <div class="wide" id="skrollr-body">
+    <!--<div class="navigation">
+      <nav>
+        <ul>
+          <li class="home"><a href="../index.html">Home</a></li>
+        </ul>
+        <ul>
+          <li><a href="#ceremony">Ceremony & Reception</a></li>
+          <li><a href="#weekend">Weekend Events</a></li>
+          <li><a href="#accommodations">Accommodations</a></li>
+          <li><a href="#registries">Registries</a></li>
+          <li class="rsvp-link"><a href="#rsvp">RSVP</a></li>
+        </ul>
+      </nav>
+    </div>  -->
     <!-- Top bar-->
     <?= $this->render('_topBar'); ?>
     <!-- Top bar end-->
-    <?= $content; ?>
 
+    <?= $content; ?>
+ 
     <?= $this->render('_footer'); ?>
   </div>
   <?php $this->endBody() ?>
