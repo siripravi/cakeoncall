@@ -137,7 +137,7 @@ window.addEventListener('load', function() {
                     var check_product = '';
                     var store_id = '73';
                     var postcode = $('#postcode_check').val();
-                    setCookie('pdp_check_postcode', postcode);
+                //    setCookie('pdp_check_postcode', postcode);
                     if (is_fynd && product_id != 0) {
                         var option = $('#product input[type=\'radio\']:checked').next().html();
                         if (typeof option == 'undefined') {
@@ -205,7 +205,7 @@ function submitchkzipcodform(form) {
         $("#express_apply_postcode_view").text(postcode);
         $("#express_apply_postcode_view_m").text(postcode);
         $("#apply_postcode").val(postcode);
-        setCookie('pdp_check_postcode', postcode);
+     //   setCookie('pdp_check_postcode', postcode);
         if (is_fynd && product_id != 0) {
             var option = $('#product input[type=\'radio\']:checked').next().html();
             if (typeof option == 'undefined') {
