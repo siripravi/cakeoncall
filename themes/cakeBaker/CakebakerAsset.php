@@ -10,13 +10,15 @@ class CakebakerAsset extends Asset
    public $css = [
       'css/main.css',
       //  'css/style.pink.css',
-      //   'css/custom.css'
+       'css/owlcarousel.css'
 
    ];
 
    public $js = [
       // 'js/mdb.min.js',
       'js/main.js',
+      'js/elevatezoom.js',
+      'js/owlcarousel.js'
       //  'plugins/js/ecommerce-gallery.min.js'
    ];
 
