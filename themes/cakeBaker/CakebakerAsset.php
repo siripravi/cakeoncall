@@ -16,10 +16,11 @@ class CakebakerAsset extends Asset
 
    public $js = [
       // 'js/mdb.min.js',
-      'js/main.js',
+     
       'js/elevatezoom.js',
-      'js/owlcarousel.js'
-      //  'plugins/js/ecommerce-gallery.min.js'
+      'js/owlcarousel.js',
+      //  'plugins/js/ecommerce-gallery.min.js',
+      'js/main.js',
    ];
 
 
