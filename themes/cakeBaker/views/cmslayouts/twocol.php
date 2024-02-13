@@ -12,10 +12,10 @@ use yii\helpers\Html;
       </div>
     </div>
     <div class="row">
-      <div class="col-md-4" id="twocol-left">
+      <div class="col-md-6" id="twocol-left">
         <?= $placeholders['left']; ?>
       </div>
-      <div class="col-md-8" id="twocol-right">
+      <div class="col-md-6 mx-6" id="twocol-right">
         <?= $placeholders['right']; ?>
       </div>
     </div>

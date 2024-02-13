@@ -29,5 +29,6 @@
 <main>
     <?php if ($placeholders['homemain']) : ?>
         <?= $placeholders['homemain'] ?>
+       
     <?php endif ?>
 </main>

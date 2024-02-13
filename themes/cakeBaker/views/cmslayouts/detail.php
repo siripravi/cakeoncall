@@ -32,6 +32,8 @@ use yii\helpers\Url;
     <section id="highlights" class="wrapper style3">
         <div class="container">
             <?= $placeholders['detailrelated'] ?>
+            <p>DETAIL RELATED</p>
+           
         </div>
     </section>
 <?php endif ?>

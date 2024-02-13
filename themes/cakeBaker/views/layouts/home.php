@@ -28,7 +28,7 @@ $this->beginPage();
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
   <!-- Icon Font Stylesheet -->
-
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
   <link rel="icon" type="image/png" id="favicon" href="../images/favicon.png" />
   <?php $this->head() ?>
