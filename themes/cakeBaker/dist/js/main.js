@@ -140,6 +140,7 @@ $(window).resize(function () {
 document.addEventListener("DOMContentLoaded", function (event) {
   $(document).ready(function () {
     if ($(window).width() > 992) {
+      console.log("WIDTH:",$(window).width())
       $("#image").elevateZoom({
         zoomWindowFadeIn: 500,
         zoomWindowFadeOut: 500,
@@ -153,7 +154,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
       });
       var z_index = 0;
 
-      $(document).on("click", ".open-popup-image", function () {
+      $(document).on("click", ".open-popup-image,.carousel-item.active", function () {
         $(".popup-gallery").magnificPopup("open", z_index);
         return false;
       });
@@ -311,11 +312,12 @@ $(document).ready(function () {
 
   $(document).on("click", ".zoomed,.mfp-close", function () {
     var closeMethod =
-      document.exitFullscreen ||
-      document.webkitExitFullscreen ||
-      document.mozCancelFullScreen ||
-      document.msExitFullscreen;
+      document.fullscreenElement  ||
+      document.fullscreenElement  ||
+      document.fullscreenElement  ||
+      document.fullscreenElement ;
     if (closeMethod) {
+      console.log("CLOSE METHOD",closeMethod);
       // Native full screen.
       closeMethod.call(document);
     }
