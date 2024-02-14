@@ -174,7 +174,7 @@ $config = new Config('myproject', dirname(__DIR__), [
             'appendTimestamp' => true,
             'bundles' => [
                 'yii\bootstrap5\BootstrapAsset' => [
-                    'css' => []
+                   // 'css' => []
                 ],
                 'yii\bootstrap5\BootstrapPluginAsset' => [
                     'js' => ["https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"],
