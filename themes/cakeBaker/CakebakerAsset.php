@@ -13,7 +13,7 @@ class CakebakerAsset extends Asset
      // 'css/style.pink.css',
      // 'css/style.css',
       'css/owlcarousel.css',
-    //  'css/custom.css',
+      'css/custom.css',
       'css/magnific-popup.css'
     
      
