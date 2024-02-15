@@ -1,4 +1,4 @@
-a:2:{i:0;s:1058:"
+a:2:{i:0;s:1188:"
  <div class="container-fluid pt-5">
         <div class="text-center mb-4">
             <h2 class="xsection-title px-5"><span class="px-2">You may also be interested in</span></h2>
@@ -6,18 +6,20 @@ a:2:{i:0;s:1058:"
         <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
                             
 <div class="img-wrapper">
-    <a data-productid="29" href='/product/butter-cookies'>
-        <img src="\storage\10_8_5c298e59.jpg" width="292" height="204" alt="">    </a>
-    <span class="price">25<br><span class="per">/ea</span></span>
+    <a data-productid="28" href='/product-info?id=28&title=chocolate-cake'>
+        <img src="\storage\1_dscn3068_fbae9c09.jpg" width="292" height="204" alt="">    </a>
+    <span class="price">1250<br><span class="per">
+        siripravi\ecommerce\models\Product    </span></span>
 </div>
 <span class="info">Cakes</span>
-<p class="name"><a href="#">Butter Cookies</a></p>
+<p class="name"><a href="#">Chocolate Cake</a></p>
       
                             
 <div class="img-wrapper">
-    <a data-productid="30" href='/product/vanilla-cake'>
+    <a data-productid="30" href='/product-info?id=30&title=vanilla-cake'>
         <img src="\storage\0_3_d94b5339.jpg" width="292" height="204" alt="">    </a>
-    <span class="price">254<br><span class="per">/ea</span></span>
+    <span class="price">254<br><span class="per">
+        siripravi\ecommerce\models\Product    </span></span>
 </div>
 <span class="info">Cakes</span>
 <p class="name"><a href="#">Vanilla Cake</a></p>
