@@ -4,7 +4,7 @@
     "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
     "This file is @generated automatically"
   ],
-  "content-hash": "8f0a40592e097013db7a07bc09c1310c",
+  "content-hash": "4ffce012da69100f62664b3ebe642789",
   "packages": [
     {
       "name": "biladina/yii2-ajaxcrud-bs4",
@@ -749,16 +749,16 @@
     },
     {
       "name": "exocet/yii2-bootstrap-material-design",
-      "version": "2.3.0",
+      "version": "2.4.0",
       "source": {
         "type": "git",
         "url": "https://github.com/xchwarze/yii2-bootstrap-material-design.git",
-        "reference": "44eb5deff5d1aa8ab57dc095a373c89cfaa11ca6"
+        "reference": "1960642cab658cedb068676b4380fb2ac1939db2"
       },
       "dist": {
         "type": "zip",
-        "url": "https://api.github.com/repos/xchwarze/yii2-bootstrap-material-design/zipball/44eb5deff5d1aa8ab57dc095a373c89cfaa11ca6",
-        "reference": "44eb5deff5d1aa8ab57dc095a373c89cfaa11ca6",
+        "url": "https://api.github.com/repos/xchwarze/yii2-bootstrap-material-design/zipball/1960642cab658cedb068676b4380fb2ac1939db2",
+        "reference": "1960642cab658cedb068676b4380fb2ac1939db2",
         "shasum": ""
       },
       "require": {
@@ -797,7 +797,7 @@
         "issues": "https://github.com/xchwarze/yii2-bootstrap-material-design/issues",
         "source": "https://github.com/xchwarze/yii2-bootstrap-material-design"
       },
-      "time": "2023-12-27T21:17:05+00:00"
+      "time": "2024-02-13T20:19:13+00:00"
     },
     {
       "name": "ezyang/htmlpurifier",
@@ -1115,6 +1115,51 @@
         "source": "https://github.com/giggsey/Locale/tree/2.5"
       },
       "time": "2023-11-01T17:19:48+00:00"
+    },
+    {
+      "name": "hscstudio/yii2-cart",
+      "version": "v2.2",
+      "source": {
+        "type": "git",
+        "url": "https://github.com/hscstudio/yii2-cart.git",
+        "reference": "24c9ae8bddf82e63c4704e608567377f547982bd"
+      },
+      "dist": {
+        "type": "zip",
+        "url": "https://api.github.com/repos/hscstudio/yii2-cart/zipball/24c9ae8bddf82e63c4704e608567377f547982bd",
+        "reference": "24c9ae8bddf82e63c4704e608567377f547982bd",
+        "shasum": ""
+      },
+      "require": {
+        "php": ">=5.4.0",
+        "yiisoft/yii2": "*"
+      },
+      "type": "yii2-extension",
+      "autoload": {
+        "psr-4": {
+          "hscstudio\\cart\\": ""
+        }
+      },
+      "notification-url": "https://packagist.org/downloads/",
+      "license": [
+        "MIT"
+      ],
+      "authors": [
+        {
+          "name": "Hafid Mukhlasin",
+          "email": "hafidmukhlasin@gmail.com"
+        }
+      ],
+      "description": "Yii2 extension that adds shopping cart functions",
+      "keywords": [
+        "shopping cart",
+        "yii"
+      ],
+      "support": {
+        "issues": "https://github.com/hscstudio/yii2-cart/issues",
+        "source": "https://github.com/hscstudio/yii2-cart/tree/master"
+      },
+      "time": "2016-01-17T23:24:26+00:00"
     },
     {
       "name": "imagine/imagine",
@@ -3816,16 +3861,16 @@
     },
     {
       "name": "luyadev/yii-helpers",
-      "version": "1.5.0",
+      "version": "1.6.0",
       "source": {
         "type": "git",
         "url": "https://github.com/luyadev/yii-helpers.git",
-        "reference": "006f1e7473497c7fbbd5319faff1e6c2bc01f856"
+        "reference": "a32e15360103e545fec06657a487c648adfafed8"
       },
       "dist": {
         "type": "zip",
-        "url": "https://api.github.com/repos/luyadev/yii-helpers/zipball/006f1e7473497c7fbbd5319faff1e6c2bc01f856",
-        "reference": "006f1e7473497c7fbbd5319faff1e6c2bc01f856",
+        "url": "https://api.github.com/repos/luyadev/yii-helpers/zipball/a32e15360103e545fec06657a487c648adfafed8",
+        "reference": "a32e15360103e545fec06657a487c648adfafed8",
         "shasum": ""
       },
       "require": {
@@ -3856,9 +3901,9 @@
       "description": "Static helper methods in addition to the Yii Framework.",
       "support": {
         "issues": "https://github.com/luyadev/yii-helpers/issues",
-        "source": "https://github.com/luyadev/yii-helpers/tree/1.5.0"
+        "source": "https://github.com/luyadev/yii-helpers/tree/1.6.0"
       },
-      "time": "2023-10-26T13:47:11+00:00"
+      "time": "2024-02-14T14:20:13+00:00"
     },
     {
       "name": "mpdf/mpdf",
@@ -4676,52 +4721,6 @@
         }
       ],
       "time": "2022-03-22T16:11:07+00:00"
-    },
-    {
-      "name": "ronash-dhakal/yii2-cart",
-      "version": "dev-master",
-      "source": {
-        "type": "git",
-        "url": "https://github.com/ronash-dhakal/yii2-cart.git",
-        "reference": "e35ef37f15e03d551b4c1bd29f8d0dc586194ca1"
-      },
-      "dist": {
-        "type": "zip",
-        "url": "https://api.github.com/repos/ronash-dhakal/yii2-cart/zipball/e35ef37f15e03d551b4c1bd29f8d0dc586194ca1",
-        "reference": "e35ef37f15e03d551b4c1bd29f8d0dc586194ca1",
-        "shasum": ""
-      },
-      "require": {
-        "php": ">=5.4.0",
-        "yiisoft/yii2": "*"
-      },
-      "default-branch": true,
-      "type": "yii2-extension",
-      "autoload": {
-        "psr-4": {
-          "ronashDhakal\\cart\\": ""
-        }
-      },
-      "notification-url": "https://packagist.org/downloads/",
-      "license": [
-        "MIT"
-      ],
-      "authors": [
-        {
-          "name": "Ronash Dhakal",
-          "email": "ronashmail@gmail.com"
-        }
-      ],
-      "description": "Yii2 extension that adds shopping cart functions",
-      "keywords": [
-        "shopping cart",
-        "yii"
-      ],
-      "support": {
-        "issues": "https://github.com/ronash-dhakal/yii2-cart/issues",
-        "source": "https://github.com/ronash-dhakal/yii2-cart/tree/master"
-      },
-      "time": "2019-04-15T13:22:19+00:00"
     },
     {
       "name": "select2/select2",
@@ -9566,8 +9565,7 @@
   "minimum-stability": "stable",
   "stability-flags": {
     "kartik-v/yii2-widgets": 20,
-    "kartik-v/yii2-builder": 20,
-    "ronash-dhakal/yii2-cart": 20
+    "kartik-v/yii2-builder": 20
   },
   "prefer-stable": false,
   "prefer-lowest": false,

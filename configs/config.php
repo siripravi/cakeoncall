@@ -123,19 +123,19 @@ $config = new Config('myproject', dirname(__DIR__), [
             },
         ],
         'cart' => [
-            'class' => 'ronashDhakal\cart\Cart',
-            'storage' => [
-                'class' => 'ronashDhakal\cart\MultipleStorage',
-                'storages' => [
-                    ['class' => 'ronashDhakal\cart\SessionStorage'],
-                    [
-                        'class' => 'ronashDhakal\cart\DatabaseStorage',
-                        'table' => 'cart',
-                    ],
-                ],
-            ]
-        ],
-
+            'class' => 'hscstudio\cart\Cart',
+			'storage' => [
+				'class' => 'hscstudio\cart\MultipleStorage',
+				'storages' => [
+					['class' => 'hscstudio\cart\SessionStorage'],
+					[
+						'class' => 'hscstudio\cart\DatabaseStorage',
+						'table' => 'cart',
+					],
+				],
+			]
+		],
+                
         /*  'urlManager' => [
            // 'class' => 'app\components\SiteUrlManager',           
             'enablePrettyUrl' => true,
