@@ -82,6 +82,7 @@ class RegistrationController extends Controller
     /** @var Finder */
     protected $finder;
 
+    
     /**
      * @param string           $id
      * @param \yii\base\Module $module
