@@ -1,0 +1,23 @@
+body {
+    animation: body-gradient 40s linear infinite;
+    background: linear-gradient(180deg, #{$background-gradient});
+    background-color: nth($background-gradient, 1);
+    background-size: 200% 200%;
+    font-size: 1rem;
+
+    @include media-breakpoint-up(lg) {
+        font-size: 1.2rem;
+    };
+}
+
+@keyframes body-gradient {
+    0% {
+        background-position: 50% 0;
+    }
+    50% {
+        background-position: 50% 100%;
+    }
+    100% {
+        background-position: 50% 0;
+    }
+}
