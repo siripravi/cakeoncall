@@ -33,17 +33,17 @@ $this->beginPage();
   <link rel="icon" type="image/png" id="favicon" href="../images/favicon.png" />
   <?php $this->head() ?>
   <script type="text/javascript">
-var responsive_design = 'yes';
-</script>
-  <script>
-    
+    var responsive_design = 'yes';
   </script>
   <script>
-   
-</script>
-<script type="text/javascript">
 
-</script>
+  </script>
+  <script>
+
+  </script>
+  <script type="text/javascript">
+
+  </script>
   <style>
     /*body {
       overflow-x: hidden;
@@ -94,7 +94,7 @@ var responsive_design = 'yes';
     <!-- Top bar end-->
 
     <?= $content; ?>
- 
+
     <?= $this->render('_footer'); ?>
   </div>
   <?php $this->endBody() ?>

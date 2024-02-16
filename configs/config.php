@@ -122,20 +122,7 @@ $config = new Config('myproject', dirname(__DIR__), [
                 //  if (Yii::$app->cart->saveToDataBase) Yii::$app->cart->transportSessionDataToDB();
             },
         ],
-        'cart' => [
-            'class' => 'hscstudio\cart\Cart',
-			'storage' => [
-				'class' => 'hscstudio\cart\MultipleStorage',
-				'storages' => [
-					['class' => 'hscstudio\cart\SessionStorage'],
-					[
-						'class' => 'hscstudio\cart\DatabaseStorage',
-						'table' => 'cart',
-					],
-				],
-			]
-		],
-                
+                      
         /*  'urlManager' => [
            // 'class' => 'app\components\SiteUrlManager',           
             'enablePrettyUrl' => true,
@@ -247,6 +234,7 @@ $config->component('db', [
     // 'dsn' => 'mysql:host=localhost;dbname=DB_NAME;unix_socket=/Applications/MAMP/tmp/mysql/mysql.sock', // OSX MAMP
     // 'dsn' => 'mysql:host=localhost;dbname=DB_NAME;unix_socket=/Applications/XAMPP/xamppfiles/var/mysql/mysql.sock', // OSX XAMPP
     'username' => 'root',
+    'tablePrefix' => '',
     'password' => '',
 ])->env(Config::ENV_LOCAL);
 $config->webComponent('request', [
@@ -255,7 +243,7 @@ $config->webComponent('request', [
     'enableCsrfValidation' => false,
 ])->env(Config::ENV_LOCAL);
 
-
+/*
 $config->component('db', [
     'dsn' => 'mysql:host=localhost;dbname=DB_NAME',
     'username' => '',
@@ -263,7 +251,7 @@ $config->component('db', [
     'enableSchemaCache' => true,
     'schemaCacheDuration' => 0,
 ])->env(Config::ENV_PROD);
-
+*/
 $config->component('cache', [
     'class' => 'yii\caching\FileCache'
 ])->env(Config::ENV_PROD);

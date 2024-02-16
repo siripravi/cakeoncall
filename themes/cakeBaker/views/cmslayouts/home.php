@@ -4,7 +4,7 @@
  * @var string[] $placeholders
  */
 ?>
-<
+
 <header class="xnav-holder xmake-sticky">
     <!-- echo $this->render('_headerNav'); ?-->
     <?php if ($placeholders['homehdr']) : ?>
