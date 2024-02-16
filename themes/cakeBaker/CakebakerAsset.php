@@ -11,7 +11,7 @@ class CakebakerAsset extends Asset
     //  'css/Ans-font-awesome.min.css',    
       'css/main.css',     
      // 'css/style.pink.css',
-     // 'css/style.css',
+      'css/style.css',
       'css/owlcarousel.css',
       'css/custom.css',
       'css/magnific-popup.css'
