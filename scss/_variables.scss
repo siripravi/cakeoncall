@@ -1,0 +1,33 @@
+$offcanvas-horizontal-width: 100% !default;
+
+$hamburger-size:                            90px;
+$hamburger-thickness:                       5px;
+$hamburger-color:                           $light;
+$hamburger-background-transition-speed:     0.2s;
+$hamburger-opacity-transition-speed:        0.2s;
+$hamburger-padding:                         20px;
+$hamburger-border-radius:                   0;
+$hamburger-bar-border-radius:               0;
+$hamburger-bar-spacing:                     15px;
+$hamburger-animation-speed:                 1;
+$hamburger-class-name:                      'hamburger';
+$hamburger-active-class-name:               'active';
+
+$primary: #D4CBE5;
+$secondary:#CFC7D2;
+$success: #BEA8AA;
+$warning: #9E9885;
+$danger: #7C7F65;
+$bd-violet: #230e62;
+
+$custom-colors: (
+  "dark-lava": #4B4237,
+  "goldenrod": #D5A021,
+  "alabaster": #EDE7D9,
+  "spanish-gray": #A49694,
+  "dim-gray": #736B60,
+ 
+);
+
+
+
