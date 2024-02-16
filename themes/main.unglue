@@ -1,0 +1,8 @@
+{
+    "css" : [
+        "dist/scss/main.scss"
+    ],
+    "js" : [
+        "dist/js/app.js"
+    ]
+}
