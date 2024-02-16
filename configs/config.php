@@ -122,7 +122,22 @@ $config = new Config('myproject', dirname(__DIR__), [
                 //  if (Yii::$app->cart->saveToDataBase) Yii::$app->cart->transportSessionDataToDB();
             },
         ],
-                      
+      
+        'cart' => [
+			'class' => 'siripravi\shopcart\components\Cart',
+			'storage' => [
+				'class' => 'siripravi\shopcart\components\MultipleStorage',
+				'storages' => [
+					['class' => 'siripravi\shopcart\components\SessionStorage'],
+					[
+						'class' => 'siripravi\shopcart\components\DatabaseStorage',
+						'table' => 'cart',
+					],
+				],
+			]
+		],
+
+                    
         /*  'urlManager' => [
            // 'class' => 'app\components\SiteUrlManager',           
             'enablePrettyUrl' => true,
