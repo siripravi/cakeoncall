@@ -9,7 +9,7 @@ class CakebakerAsset extends Asset
    public $sourcePath = '@activeTheme/dist';
    public $css = [
     //  'css/Ans-font-awesome.min.css',    
-      'css/main.css',     
+    //  'css/main.css',     
      // 'css/style.pink.css',
       'css/style.css',
       'css/owlcarousel.css',
