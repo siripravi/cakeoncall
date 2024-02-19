@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "56529365a94a874af162d30d88ba9e52",
+    "content-hash": "5ec076ea24eab4ff8185249396ccc09c",
     "packages": [
         {
             "name": "biladina/yii2-ajaxcrud-bs4",
@@ -141,16 +141,16 @@
         },
         {
             "name": "bower-asset/bootstrap",
-            "version": "v5.2.3",
+            "version": "v5.3.2",
             "source": {
                 "type": "git",
-                "url": "git@github.com:twbs/bootstrap.git",
-                "reference": "cb021439c683d9805e2864c58095b92d405e9b11"
+                "url": "https://github.com/twbs/bootstrap.git",
+                "reference": "344e912d04b5b6a04482113eff20ab416ff01048"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twbs/bootstrap/zipball/cb021439c683d9805e2864c58095b92d405e9b11",
-                "reference": "cb021439c683d9805e2864c58095b92d405e9b11"
+                "url": "https://api.github.com/repos/twbs/bootstrap/zipball/344e912d04b5b6a04482113eff20ab416ff01048",
+                "reference": "344e912d04b5b6a04482113eff20ab416ff01048"
             },
             "type": "bower-asset"
         },
@@ -602,6 +602,58 @@
                 "source": "https://github.com/dev7ch/luya-ext-slick/tree/master"
             },
             "time": "2018-08-14T17:40:22+00:00"
+        },
+        {
+            "name": "dmstr/yii2-json-editor",
+            "version": "1.4.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dmstr/yii2-json-editor.git",
+                "reference": "ab7a22ea82086a62b36586f36e763ac94c5f543f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dmstr/yii2-json-editor/zipball/ab7a22ea82086a62b36586f36e763ac94c5f543f",
+                "reference": "ab7a22ea82086a62b36586f36e763ac94c5f543f",
+                "shasum": ""
+            },
+            "require": {
+                "npm-asset/json-editor--json-editor": "^2.5.0",
+                "yiisoft/yii2": "~2.0.0"
+            },
+            "suggest": {
+                "2amigos/yii2-ckeditor-widget": "Recommended assets for CKEditor plugin in json-editor",
+                "2amigos/yii2-selectize-widget": "Recommended assets for selectize plugin in json-editor"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "dmstr\\jsoneditor\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-2-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Marc Mautz",
+                    "email": "marc@diemeisterei.de",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Yii2 wrapper for \"json-editor/json-editor\" (is a fork of \"jdorn/json-editor\")",
+            "homepage": "https://github.com/dmstr/yii2-json-editor",
+            "keywords": [
+                "json",
+                "json-editor",
+                "yii2"
+            ],
+            "support": {
+                "issues": "https://github.com/dmstr/yii2-json-editor/issues",
+                "source": "https://github.com/dmstr/yii2-json-editor/tree/1.4.4"
+            },
+            "time": "2023-09-19T07:50:48+00:00"
         },
         {
             "name": "doctrine/lexer",
@@ -3987,6 +4039,18 @@
             ]
         },
         {
+            "name": "npm-asset/core-js",
+            "version": "3.36.0",
+            "dist": {
+                "type": "tar",
+                "url": "https://registry.npmjs.org/core-js/-/core-js-3.36.0.tgz"
+            },
+            "type": "npm-asset",
+            "license": [
+                "MIT"
+            ]
+        },
+        {
             "name": "npm-asset/fortawesome--fontawesome-free",
             "version": "6.5.1",
             "dist": {
@@ -3996,6 +4060,21 @@
             "type": "npm-asset",
             "license": [
                 "(CC-BY-4.0 AND OFL-1.1 AND MIT)"
+            ]
+        },
+        {
+            "name": "npm-asset/json-editor--json-editor",
+            "version": "2.14.1",
+            "dist": {
+                "type": "tar",
+                "url": "https://registry.npmjs.org/@json-editor/json-editor/-/json-editor-2.14.1.tgz"
+            },
+            "require": {
+                "npm-asset/core-js": ">=3.27.2,<4.0.0"
+            },
+            "type": "npm-asset",
+            "license": [
+                "MIT"
             ]
         },
         {
@@ -5742,55 +5821,6 @@
                 "source": "https://github.com/voskobovich/yii2-linker-behavior"
             },
             "time": "2017-12-01T15:06:34+00:00"
-        },
-        {
-            "name": "yii2mod/yii2-cart",
-            "version": "1.4",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/yii2mod/yii2-cart.git",
-                "reference": "dc183b3f2bbc3f48ccaae0ecdfe193041786a736"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/yii2mod/yii2-cart/zipball/dc183b3f2bbc3f48ccaae0ecdfe193041786a736",
-                "reference": "dc183b3f2bbc3f48ccaae0ecdfe193041786a736",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.1.0",
-                "yiisoft/yii2": "~2.0.10"
-            },
-            "require-dev": {
-                "friendsofphp/php-cs-fixer": "~2.0",
-                "phpunit/phpunit": "^7.3"
-            },
-            "type": "yii2-extension",
-            "autoload": {
-                "psr-4": {
-                    "yii2mod\\cart\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Dmitry Semenov",
-                    "email": "disemx@gmail.com"
-                },
-                {
-                    "name": "Igor Chepurnoi",
-                    "email": "chepurnoi.igor@gmail.com"
-                }
-            ],
-            "description": "Yii2 Shopping cart",
-            "support": {
-                "issues": "https://github.com/yii2mod/yii2-cart/issues",
-                "source": "https://github.com/yii2mod/yii2-cart/tree/master"
-            },
-            "time": "2018-08-20T20:01:03+00:00"
         },
         {
             "name": "yiisoft/yii2",

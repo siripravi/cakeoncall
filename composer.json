@@ -25,10 +25,10 @@
     "lav45/yii2-ajax-create": "0.2.*",
     "biladina/yii2-ajaxcrud-bs4": "~3.0",
     "exocet/yii2-bootstrap-material-design": "^2.3",
-    "yiisoft/yii2": "~2.0.49.3",
-    "yii2mod/yii2-cart": "~1.4",
+    "yiisoft/yii2": "~2.0.49.3",    
     "powerkernel/yii2-photoswipe": "~1.1.5",   
-    "creocoder/yii2-nested-sets": "^0.9.0"
+    "creocoder/yii2-nested-sets": "^0.9.0",
+    "dmstr/yii2-json-editor": "^1.4"
   },
   "require-dev": {
     "yiisoft/yii2-debug": "^2.0",
