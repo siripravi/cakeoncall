@@ -6,12 +6,10 @@ $params = require __DIR__ . '/params.php';
 $config = new Config('myproject', dirname(__DIR__), [
     'siteTitle' => 'Cake Zone',
     'defaultRoute' => 'cms',
-
     'aliases' => [
         '@bower' => '@vendor/bower-asset',
         '@npm'   => '@vendor/npm-asset',
-    ],
-    // 'bootstrap' => ['user'],
+    ],    
     'modules' => [
         'gridview' =>  [
             'class' => '\kartik\grid\Module'
@@ -238,10 +236,6 @@ $config = new Config('myproject', dirname(__DIR__), [
     'params' => $params,
 ]);
 
-$config->callback(function () {
-    define('YII_DEBUG', true);
-    define('YII_ENV', 'local');
-})->env(Config::ENV_LOCAL);
 
 // database config for 
 $config->component('db', [
@@ -251,37 +245,21 @@ $config->component('db', [
     'username' => 'root',
     'tablePrefix' => '',
     'password' => '',
-])->env(Config::ENV_LOCAL);
+])->env(Config::ENV_DEV);
+
 $config->webComponent('request', [
     'enableCookieValidation' => true,
     'cookieValidationKey' => 'I-mmzHGFYAx9EnbueCBRAXDo4W4HQBKHA_-',
     'enableCsrfValidation' => false,
-])->env(Config::ENV_LOCAL);
+])->env(Config::ENV_DEV);
 
-/*
-$config->component('db', [
-    'dsn' => 'mysql:host=localhost;dbname=DB_NAME',
-    'username' => '',
-    'password' => '',
-    'enableSchemaCache' => true,
-    'schemaCacheDuration' => 0,
-])->env(Config::ENV_PROD);
-*/
 $config->component('cache', [
     'class' => 'yii\caching\FileCache'
-])->env(Config::ENV_PROD);
-$config->component('cache', [
-    'class' => 'yii\caching\FileCache'
-])->env(Config::ENV_LOCAL);
-//$config->bootstrap(['ronashDhakal\cart\CartBootstrap'])->env(Config::ENV_PROD);
-//$config->bootstrap(['ronashDhakal\cart\CartBootstrap'])->env(Config::ENV_LOCAL);
-// debug and gii on local env
-// debug and Gii on local env
+])->env(Config::ENV_DEV);
+
 $config->module('debug', [
     'class' => 'yii\debug\Module',
     'allowedIPs' => ['*'],
 ]);
-
-$config->bootstrap(['debug'])->env(Config::ENV_PROD);
 
 return $config;
