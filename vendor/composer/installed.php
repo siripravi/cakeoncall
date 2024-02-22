@@ -3,7 +3,7 @@
         'name' => 'luyadev/luya-kickstarter-bootstrap4',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => '5c84c8285eb3c7af6cdc3644aaac3467fce5c421',
+        'reference' => '3cf2f65f22ceb9c23716983fb9faa2b673f09a1a',
         'type' => 'luya-kickstarter',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -688,7 +688,7 @@
         'luyadev/luya-kickstarter-bootstrap4' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => '5c84c8285eb3c7af6cdc3644aaac3467fce5c421',
+            'reference' => '3cf2f65f22ceb9c23716983fb9faa2b673f09a1a',
             'type' => 'luya-kickstarter',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
