@@ -1,7 +1,7 @@
 <?php
 
 use luya\Config;
-
+$test = "nothing";
 $params = require __DIR__ . '/params.php';
 $config = new Config('myproject', dirname(__DIR__), [
     'siteTitle' => 'Cake Zone',
