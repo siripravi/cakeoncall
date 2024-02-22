@@ -39,6 +39,7 @@
     "unglue/client": "^1.5"
   },
   "config": {
+    "platform-check": false,
     "fxp-asset": {
       "enabled": false
     },
