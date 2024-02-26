@@ -282,3 +282,396 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1708955584.6162
     'REQUEST_TIME' => 1708955584
 ]
+2024-02-26 17:31:05 [::1][-][nc8tlkhr00ivoe6ppi9oiv34n2][error][yii\base\InvalidConfigException] yii\base\InvalidConfigException: The table does not exist: {{%user}} in C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\db\ActiveRecord.php:442
+Stack trace:
+#0 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\db\ActiveRecord.php(463): yii\db\ActiveRecord::getTableSchema()
+#1 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\db\ActiveRecord.php(182): yii\db\ActiveRecord::primaryKey()
+#2 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\db\BaseActiveRecord.php(110): yii\db\ActiveRecord::findByCondition(34)
+#3 C:\gitrepos\cakeoncall\vendor\siripravi\yii2-user-helper\src\models\User.php(559): yii\db\BaseActiveRecord::findOne(34)
+#4 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\web\User.php(698): siripravi\userhelper\models\User::findIdentity(34)
+#5 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\web\User.php(199): yii\web\User->renewAuthStatus()
+#6 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\web\User.php(367): yii\web\User->getIdentity()
+#7 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\base\Component.php(139): yii\web\User->getIsGuest()
+#8 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2-debug\src\panels\UserPanel.php(83): yii\base\Component->__get('isGuest')
+#9 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\debug\panels\UserPanel->init()
+#10 [internal function]: yii\base\BaseObject->__construct(Array)
+#11 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\di\Container.php(419): ReflectionClass->newInstanceArgs(Array)
+#12 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\di\Container.php(170): yii\di\Container->build('yii\\debug\\panel...', Array, Array)
+#13 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\BaseYii.php(365): yii\di\Container->get('yii\\debug\\panel...', Array, Array)
+#14 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2-debug\src\Module.php(253): yii\BaseYii::createObject(Array)
+#15 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2-debug\src\Module.php(225): yii\debug\Module->initPanels()
+#16 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\debug\Module->init()
+#17 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\base\Module.php(161): yii\base\BaseObject->__construct(Array)
+#18 [internal function]: yii\base\Module->__construct('debug', Object(yii\web\Application), Array)
+#19 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\di\Container.php(411): ReflectionClass->newInstanceArgs(Array)
+#20 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\di\Container.php(170): yii\di\Container->build('yii\\debug\\Modul...', Array, Array)
+#21 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\BaseYii.php(365): yii\di\Container->get('yii\\debug\\Modul...', Array, Array)
+#22 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\base\Module.php(445): yii\BaseYii::createObject(Array, Array)
+#23 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\base\Application.php(313): yii\base\Module->getModule('debug')
+#24 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\web\Application.php(69): yii\base\Application->bootstrap()
+#25 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\base\Application.php(271): yii\web\Application->bootstrap()
+#26 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\base\BaseObject.php(109): yii\base\Application->init()
+#27 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\base\Application.php(204): yii\base\BaseObject->__construct(Array)
+#28 C:\gitrepos\cakeoncall\web\index.php(12): yii\base\Application->__construct(Array)
+#29 {main}
+2024-02-26 17:31:04 [::1][-][nc8tlkhr00ivoe6ppi9oiv34n2][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'Typo3InstallTool' => 'lq9hpgird039pm23p44p0ces5r'
+    'viewed_ids' => 'b84589efe72196818a646bd4443c83b804cd1e0e4549460976073990f79a84cfa:2:{i:0;s:10:\"viewed_ids\";i:1;s:33:\"a:3:{i:0;i:28;i:1;i:29;i:2;i:30;}\";}'
+    '_lang' => 'en'
+    'cb-enabled' => 'enabled'
+    '_identity' => 'f16c58d808cfcf1f5c75618ecd846b9bde6294030228ec536e9e6ce7e67ee062a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"101\",\"test101key\",2592000]\";}'
+    '_csrf' => '2a5a70212033f78dc82aa91d1dd7577a17b21a21b47091050c9d4265da5751a0a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"O9SdO_IOIaa_Mcn5URoE1o97o266nO3_\";}'
+    '_csrf_admin' => '3db856cebecff770c3469429f84e61b6535da991f3f1f33a8c7742294072b473a:2:{i:0;s:11:\"_csrf_admin\";i:1;s:32:\"rcy5EmierZqOeRrDYCEu0n7mculLzCPa\";}'
+    'PHPSESSID' => 'nc8tlkhr00ivoe6ppi9oiv34n2'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'success' => -1
+    ]
+    '__returnUrl' => 'http://localhost:3030/admin'
+    '__id' => 34
+    '__captcha/site/captcha' => 'eupmpo'
+    '__captcha/site/captchacount' => 1
+    'success' => true
+    'autologin' => false
+    '__lastKeyStroke' => 1708935215258
+    '7f39b3edf48f157ebb349a4046951c9b50d66e5e' => '1'
+    'c6611e15953c4b84127f0fd61e36799859116de7' => '3'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\gitrepos\\cakeoncall\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '52062'
+    'SERVER_SOFTWARE' => 'PHP 8.2.4 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '3030'
+    'REQUEST_URI' => '/'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\gitrepos\\cakeoncall\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'HTTP_HOST' => 'localhost:3030'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"122\", \"Not(A:Brand\";v=\"24\", \"Microsoft Edge\";v=\"122\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'Typo3InstallTool=lq9hpgird039pm23p44p0ces5r; viewed_ids=b84589efe72196818a646bd4443c83b804cd1e0e4549460976073990f79a84cfa%3A2%3A%7Bi%3A0%3Bs%3A10%3A%22viewed_ids%22%3Bi%3A1%3Bs%3A33%3A%22a%3A3%3A%7Bi%3A0%3Bi%3A28%3Bi%3A1%3Bi%3A29%3Bi%3A2%3Bi%3A30%3B%7D%22%3B%7D; _lang=en; cb-enabled=enabled; _identity=f16c58d808cfcf1f5c75618ecd846b9bde6294030228ec536e9e6ce7e67ee062a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22101%22%2C%22test101key%22%2C2592000%5D%22%3B%7D; _csrf=2a5a70212033f78dc82aa91d1dd7577a17b21a21b47091050c9d4265da5751a0a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22O9SdO_IOIaa_Mcn5URoE1o97o266nO3_%22%3B%7D; _csrf_admin=3db856cebecff770c3469429f84e61b6535da991f3f1f33a8c7742294072b473a%3A2%3A%7Bi%3A0%3Bs%3A11%3A%22_csrf_admin%22%3Bi%3A1%3Bs%3A32%3A%22rcy5EmierZqOeRrDYCEu0n7mculLzCPa%22%3B%7D; PHPSESSID=nc8tlkhr00ivoe6ppi9oiv34n2'
+    'REQUEST_TIME_FLOAT' => 1708965064.6378
+    'REQUEST_TIME' => 1708965064
+]
+2024-02-26 17:33:38 [::1][34][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "site/index". in C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\base\Module.php:561
+Stack trace:
+#0 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/index', Array)
+#1 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(app\components\SiteRequest))
+#2 C:\gitrepos\cakeoncall\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: पृष्ठ नहीं मिला। in C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(app\components\SiteRequest))
+#1 C:\gitrepos\cakeoncall\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2024-02-26 17:33:38 [::1][34][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'Typo3InstallTool' => 'lq9hpgird039pm23p44p0ces5r'
+    'viewed_ids' => 'b84589efe72196818a646bd4443c83b804cd1e0e4549460976073990f79a84cfa:2:{i:0;s:10:\"viewed_ids\";i:1;s:33:\"a:3:{i:0;i:28;i:1;i:29;i:2;i:30;}\";}'
+    '_lang' => 'en'
+    'cb-enabled' => 'enabled'
+    '_identity' => 'f16c58d808cfcf1f5c75618ecd846b9bde6294030228ec536e9e6ce7e67ee062a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"101\",\"test101key\",2592000]\";}'
+    '_csrf' => '2a5a70212033f78dc82aa91d1dd7577a17b21a21b47091050c9d4265da5751a0a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"O9SdO_IOIaa_Mcn5URoE1o97o266nO3_\";}'
+    '_csrf_admin' => '3db856cebecff770c3469429f84e61b6535da991f3f1f33a8c7742294072b473a:2:{i:0;s:11:\"_csrf_admin\";i:1;s:32:\"rcy5EmierZqOeRrDYCEu0n7mculLzCPa\";}'
+    'PHPSESSID' => 'nc8tlkhr00ivoe6ppi9oiv34n2'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'success' => -1
+    ]
+    '__returnUrl' => 'http://localhost:3030/admin'
+    '__id' => 34
+    '__captcha/site/captcha' => 'eupmpo'
+    '__captcha/site/captchacount' => 1
+    'success' => true
+    'autologin' => false
+    '__lastKeyStroke' => 1708935215258
+    '7f39b3edf48f157ebb349a4046951c9b50d66e5e' => '1'
+    'c6611e15953c4b84127f0fd61e36799859116de7' => '3'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\gitrepos\\cakeoncall\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '52152'
+    'SERVER_SOFTWARE' => 'PHP 8.2.4 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '3030'
+    'REQUEST_URI' => '/'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\gitrepos\\cakeoncall\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'HTTP_HOST' => 'localhost:3030'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"122\", \"Not(A:Brand\";v=\"24\", \"Microsoft Edge\";v=\"122\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'Typo3InstallTool=lq9hpgird039pm23p44p0ces5r; viewed_ids=b84589efe72196818a646bd4443c83b804cd1e0e4549460976073990f79a84cfa%3A2%3A%7Bi%3A0%3Bs%3A10%3A%22viewed_ids%22%3Bi%3A1%3Bs%3A33%3A%22a%3A3%3A%7Bi%3A0%3Bi%3A28%3Bi%3A1%3Bi%3A29%3Bi%3A2%3Bi%3A30%3B%7D%22%3B%7D; _lang=en; cb-enabled=enabled; _identity=f16c58d808cfcf1f5c75618ecd846b9bde6294030228ec536e9e6ce7e67ee062a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22101%22%2C%22test101key%22%2C2592000%5D%22%3B%7D; _csrf=2a5a70212033f78dc82aa91d1dd7577a17b21a21b47091050c9d4265da5751a0a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22O9SdO_IOIaa_Mcn5URoE1o97o266nO3_%22%3B%7D; _csrf_admin=3db856cebecff770c3469429f84e61b6535da991f3f1f33a8c7742294072b473a%3A2%3A%7Bi%3A0%3Bs%3A11%3A%22_csrf_admin%22%3Bi%3A1%3Bs%3A32%3A%22rcy5EmierZqOeRrDYCEu0n7mculLzCPa%22%3B%7D; PHPSESSID=nc8tlkhr00ivoe6ppi9oiv34n2'
+    'REQUEST_TIME_FLOAT' => 1708965218.578
+    'REQUEST_TIME' => 1708965218
+]
+2024-02-26 17:33:44 [::1][34][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "site/index". in C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\base\Module.php:561
+Stack trace:
+#0 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/index', Array)
+#1 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(app\components\SiteRequest))
+#2 C:\gitrepos\cakeoncall\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: पृष्ठ नहीं मिला। in C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(app\components\SiteRequest))
+#1 C:\gitrepos\cakeoncall\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2024-02-26 17:33:44 [::1][34][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'Typo3InstallTool' => 'lq9hpgird039pm23p44p0ces5r'
+    'viewed_ids' => 'b84589efe72196818a646bd4443c83b804cd1e0e4549460976073990f79a84cfa:2:{i:0;s:10:\"viewed_ids\";i:1;s:33:\"a:3:{i:0;i:28;i:1;i:29;i:2;i:30;}\";}'
+    '_lang' => 'en'
+    'cb-enabled' => 'enabled'
+    '_identity' => 'f16c58d808cfcf1f5c75618ecd846b9bde6294030228ec536e9e6ce7e67ee062a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"101\",\"test101key\",2592000]\";}'
+    '_csrf' => '2a5a70212033f78dc82aa91d1dd7577a17b21a21b47091050c9d4265da5751a0a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"O9SdO_IOIaa_Mcn5URoE1o97o266nO3_\";}'
+    '_csrf_admin' => '3db856cebecff770c3469429f84e61b6535da991f3f1f33a8c7742294072b473a:2:{i:0;s:11:\"_csrf_admin\";i:1;s:32:\"rcy5EmierZqOeRrDYCEu0n7mculLzCPa\";}'
+    'PHPSESSID' => 'nc8tlkhr00ivoe6ppi9oiv34n2'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'success' => -1
+    ]
+    '__returnUrl' => 'http://localhost:3030/admin'
+    '__id' => 34
+    '__captcha/site/captcha' => 'eupmpo'
+    '__captcha/site/captchacount' => 1
+    'success' => true
+    'autologin' => false
+    '__lastKeyStroke' => 1708935215258
+    '7f39b3edf48f157ebb349a4046951c9b50d66e5e' => '1'
+    'c6611e15953c4b84127f0fd61e36799859116de7' => '3'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\gitrepos\\cakeoncall\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '52156'
+    'SERVER_SOFTWARE' => 'PHP 8.2.4 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '3030'
+    'REQUEST_URI' => '/'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\gitrepos\\cakeoncall\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'HTTP_HOST' => 'localhost:3030'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"122\", \"Not(A:Brand\";v=\"24\", \"Microsoft Edge\";v=\"122\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'Typo3InstallTool=lq9hpgird039pm23p44p0ces5r; viewed_ids=b84589efe72196818a646bd4443c83b804cd1e0e4549460976073990f79a84cfa%3A2%3A%7Bi%3A0%3Bs%3A10%3A%22viewed_ids%22%3Bi%3A1%3Bs%3A33%3A%22a%3A3%3A%7Bi%3A0%3Bi%3A28%3Bi%3A1%3Bi%3A29%3Bi%3A2%3Bi%3A30%3B%7D%22%3B%7D; _lang=en; cb-enabled=enabled; _identity=f16c58d808cfcf1f5c75618ecd846b9bde6294030228ec536e9e6ce7e67ee062a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22101%22%2C%22test101key%22%2C2592000%5D%22%3B%7D; _csrf=2a5a70212033f78dc82aa91d1dd7577a17b21a21b47091050c9d4265da5751a0a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22O9SdO_IOIaa_Mcn5URoE1o97o266nO3_%22%3B%7D; _csrf_admin=3db856cebecff770c3469429f84e61b6535da991f3f1f33a8c7742294072b473a%3A2%3A%7Bi%3A0%3Bs%3A11%3A%22_csrf_admin%22%3Bi%3A1%3Bs%3A32%3A%22rcy5EmierZqOeRrDYCEu0n7mculLzCPa%22%3B%7D; PHPSESSID=nc8tlkhr00ivoe6ppi9oiv34n2'
+    'REQUEST_TIME_FLOAT' => 1708965224.78
+    'REQUEST_TIME' => 1708965224
+]
+2024-02-26 17:35:28 [::1][34][nc8tlkhr00ivoe6ppi9oiv34n2][error][Error] Error: Class "siripravi\slideradmin\models\Slider" not found in C:\gitrepos\cakeoncall\views\site\index.php:19
+Stack trace:
+#0 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\base\View.php(347): require()
+#1 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\base\View.php(257): yii\base\View->renderPhpFile('C:\\gitrepos\\cak...', Array)
+#2 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\base\View.php(156): yii\base\View->renderFile('C:\\gitrepos\\cak...', Array, Object(app\controllers\SiteController))
+#3 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\base\Controller.php(407): yii\base\View->render('index', Array, Object(app\controllers\SiteController))
+#4 C:\gitrepos\cakeoncall\controllers\SiteController.php(64): yii\base\Controller->render('index')
+#5 [internal function]: app\controllers\SiteController->actionIndex()
+#6 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#7 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\base\Controller.php(178): yii\base\InlineAction->runWithParams(Array)
+#8 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\base\Module.php(552): yii\base\Controller->runAction('index', Array)
+#9 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('site/index', Array)
+#10 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(app\components\SiteRequest))
+#11 C:\gitrepos\cakeoncall\web\index.php(12): yii\base\Application->run()
+#12 {main}
+2024-02-26 17:35:28 [::1][34][nc8tlkhr00ivoe6ppi9oiv34n2][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'Typo3InstallTool' => 'lq9hpgird039pm23p44p0ces5r'
+    'viewed_ids' => 'b84589efe72196818a646bd4443c83b804cd1e0e4549460976073990f79a84cfa:2:{i:0;s:10:\"viewed_ids\";i:1;s:33:\"a:3:{i:0;i:28;i:1;i:29;i:2;i:30;}\";}'
+    '_lang' => 'en'
+    'cb-enabled' => 'enabled'
+    '_identity' => 'f16c58d808cfcf1f5c75618ecd846b9bde6294030228ec536e9e6ce7e67ee062a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"101\",\"test101key\",2592000]\";}'
+    '_csrf' => '2a5a70212033f78dc82aa91d1dd7577a17b21a21b47091050c9d4265da5751a0a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"O9SdO_IOIaa_Mcn5URoE1o97o266nO3_\";}'
+    '_csrf_admin' => '3db856cebecff770c3469429f84e61b6535da991f3f1f33a8c7742294072b473a:2:{i:0;s:11:\"_csrf_admin\";i:1;s:32:\"rcy5EmierZqOeRrDYCEu0n7mculLzCPa\";}'
+    'PHPSESSID' => 'nc8tlkhr00ivoe6ppi9oiv34n2'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'success' => -1
+    ]
+    '__returnUrl' => 'http://localhost:3030/admin'
+    '__id' => 34
+    '__captcha/site/captcha' => 'eupmpo'
+    '__captcha/site/captchacount' => 1
+    'success' => true
+    'autologin' => false
+    '__lastKeyStroke' => 1708935215258
+    '7f39b3edf48f157ebb349a4046951c9b50d66e5e' => '1'
+    'c6611e15953c4b84127f0fd61e36799859116de7' => '3'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\gitrepos\\cakeoncall\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '52165'
+    'SERVER_SOFTWARE' => 'PHP 8.2.4 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '3030'
+    'REQUEST_URI' => '/'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\gitrepos\\cakeoncall\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'HTTP_HOST' => 'localhost:3030'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"122\", \"Not(A:Brand\";v=\"24\", \"Microsoft Edge\";v=\"122\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'Typo3InstallTool=lq9hpgird039pm23p44p0ces5r; viewed_ids=b84589efe72196818a646bd4443c83b804cd1e0e4549460976073990f79a84cfa%3A2%3A%7Bi%3A0%3Bs%3A10%3A%22viewed_ids%22%3Bi%3A1%3Bs%3A33%3A%22a%3A3%3A%7Bi%3A0%3Bi%3A28%3Bi%3A1%3Bi%3A29%3Bi%3A2%3Bi%3A30%3B%7D%22%3B%7D; _lang=en; cb-enabled=enabled; _identity=f16c58d808cfcf1f5c75618ecd846b9bde6294030228ec536e9e6ce7e67ee062a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22101%22%2C%22test101key%22%2C2592000%5D%22%3B%7D; _csrf=2a5a70212033f78dc82aa91d1dd7577a17b21a21b47091050c9d4265da5751a0a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22O9SdO_IOIaa_Mcn5URoE1o97o266nO3_%22%3B%7D; _csrf_admin=3db856cebecff770c3469429f84e61b6535da991f3f1f33a8c7742294072b473a%3A2%3A%7Bi%3A0%3Bs%3A11%3A%22_csrf_admin%22%3Bi%3A1%3Bs%3A32%3A%22rcy5EmierZqOeRrDYCEu0n7mculLzCPa%22%3B%7D; PHPSESSID=nc8tlkhr00ivoe6ppi9oiv34n2'
+    'REQUEST_TIME_FLOAT' => 1708965328.4471
+    'REQUEST_TIME' => 1708965328
+]
+2024-02-26 17:35:28 [::1][34][-][warning][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'user' does not exist: C:\gitrepos\cakeoncall\vendor\siripravi\yii2-user-helper\src/messages/hi/user.php
+    in C:\gitrepos\cakeoncall\modules\userauth\models\User.php:28
+2024-02-26 17:35:28 [::1][34][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'Typo3InstallTool' => 'lq9hpgird039pm23p44p0ces5r'
+    'viewed_ids' => 'b84589efe72196818a646bd4443c83b804cd1e0e4549460976073990f79a84cfa:2:{i:0;s:10:\"viewed_ids\";i:1;s:33:\"a:3:{i:0;i:28;i:1;i:29;i:2;i:30;}\";}'
+    '_lang' => 'en'
+    'cb-enabled' => 'enabled'
+    '_identity' => 'f16c58d808cfcf1f5c75618ecd846b9bde6294030228ec536e9e6ce7e67ee062a:2:{i:0;s:9:\"_identity\";i:1;s:28:\"[\"101\",\"test101key\",2592000]\";}'
+    '_csrf' => '2a5a70212033f78dc82aa91d1dd7577a17b21a21b47091050c9d4265da5751a0a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"O9SdO_IOIaa_Mcn5URoE1o97o266nO3_\";}'
+    '_csrf_admin' => '3db856cebecff770c3469429f84e61b6535da991f3f1f33a8c7742294072b473a:2:{i:0;s:11:\"_csrf_admin\";i:1;s:32:\"rcy5EmierZqOeRrDYCEu0n7mculLzCPa\";}'
+    'PHPSESSID' => 'nc8tlkhr00ivoe6ppi9oiv34n2'
+]
+
+$_SESSION = [
+    '__flash' => [
+        'success' => -1
+    ]
+    '__returnUrl' => 'http://localhost:3030/admin'
+    '__id' => 34
+    '__captcha/site/captcha' => 'eupmpo'
+    '__captcha/site/captchacount' => 1
+    'success' => true
+    'autologin' => false
+    '__lastKeyStroke' => 1708935215258
+    '7f39b3edf48f157ebb349a4046951c9b50d66e5e' => '1'
+    'c6611e15953c4b84127f0fd61e36799859116de7' => '3'
+]
+
+$_SERVER = [
+    'DOCUMENT_ROOT' => 'C:\\gitrepos\\cakeoncall\\web'
+    'REMOTE_ADDR' => '::1'
+    'REMOTE_PORT' => '52165'
+    'SERVER_SOFTWARE' => 'PHP 8.2.4 Development Server'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'SERVER_NAME' => 'localhost'
+    'SERVER_PORT' => '3030'
+    'REQUEST_URI' => '/'
+    'REQUEST_METHOD' => 'GET'
+    'SCRIPT_NAME' => '/index.php'
+    'SCRIPT_FILENAME' => 'C:\\gitrepos\\cakeoncall\\web\\index.php'
+    'PHP_SELF' => '/index.php'
+    'HTTP_HOST' => 'localhost:3030'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_SEC_CH_UA' => '\"Chromium\";v=\"122\", \"Not(A:Brand\";v=\"24\", \"Microsoft Edge\";v=\"122\"'
+    'HTTP_SEC_CH_UA_MOBILE' => '?0'
+    'HTTP_SEC_CH_UA_PLATFORM' => '\"Windows\"'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_SEC_FETCH_SITE' => 'none'
+    'HTTP_SEC_FETCH_MODE' => 'navigate'
+    'HTTP_SEC_FETCH_USER' => '?1'
+    'HTTP_SEC_FETCH_DEST' => 'document'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, br'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'Typo3InstallTool=lq9hpgird039pm23p44p0ces5r; viewed_ids=b84589efe72196818a646bd4443c83b804cd1e0e4549460976073990f79a84cfa%3A2%3A%7Bi%3A0%3Bs%3A10%3A%22viewed_ids%22%3Bi%3A1%3Bs%3A33%3A%22a%3A3%3A%7Bi%3A0%3Bi%3A28%3Bi%3A1%3Bi%3A29%3Bi%3A2%3Bi%3A30%3B%7D%22%3B%7D; _lang=en; cb-enabled=enabled; _identity=f16c58d808cfcf1f5c75618ecd846b9bde6294030228ec536e9e6ce7e67ee062a%3A2%3A%7Bi%3A0%3Bs%3A9%3A%22_identity%22%3Bi%3A1%3Bs%3A28%3A%22%5B%22101%22%2C%22test101key%22%2C2592000%5D%22%3B%7D; _csrf=2a5a70212033f78dc82aa91d1dd7577a17b21a21b47091050c9d4265da5751a0a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22O9SdO_IOIaa_Mcn5URoE1o97o266nO3_%22%3B%7D; _csrf_admin=3db856cebecff770c3469429f84e61b6535da991f3f1f33a8c7742294072b473a%3A2%3A%7Bi%3A0%3Bs%3A11%3A%22_csrf_admin%22%3Bi%3A1%3Bs%3A32%3A%22rcy5EmierZqOeRrDYCEu0n7mculLzCPa%22%3B%7D; PHPSESSID=nc8tlkhr00ivoe6ppi9oiv34n2'
+    'REQUEST_TIME_FLOAT' => 1708965328.4471
+    'REQUEST_TIME' => 1708965328
+]

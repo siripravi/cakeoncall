@@ -34,7 +34,7 @@ class Bootstrap implements BootstrapInterface
         /** @var Module $module */
         if ($app->hasModule('user') && ($module = $app->getModule('user')) instanceof Module) {
             if ($app instanceof ConsoleApplication) {
-                $module->controllerNamespace = 'siripray\userhelper\commands';
+                $module->controllerNamespace = 'siripravi\userhelper\commands';
             } else {
                 Yii::$container->set('yii\web\User', [
                     'enableAutoLogin' => true,
@@ -71,7 +71,7 @@ class Bootstrap implements BootstrapInterface
                 ];
             }
 
-            Yii::$container->set('siripray\userhelper\Mailer', $module->mailer);
+            Yii::$container->set('siripravi\userhelper\Mailer', $module->mailer);
         }
     }
 }

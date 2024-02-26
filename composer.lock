@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7cf5fc213204bb29c7696a3c9f79e381",
+    "content-hash": "694f5ab23b1e56646cc834a20caa0bda",
     "packages": [
         {
             "name": "biladina/yii2-ajaxcrud-bs4",
@@ -3185,16 +3185,16 @@
         },
         {
             "name": "siripravi/yii2-user-helper",
-            "version": "v0.1.0",
+            "version": "v1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/siripravi/yii2-user-helper.git",
-                "reference": "205cea0b71760fd8ff0467447f8af2f96a165631"
+                "reference": "b3d0fb0094373f91f00d0e8fc09f9d8faa65c1de"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/siripravi/yii2-user-helper/zipball/205cea0b71760fd8ff0467447f8af2f96a165631",
-                "reference": "205cea0b71760fd8ff0467447f8af2f96a165631",
+                "url": "https://api.github.com/repos/siripravi/yii2-user-helper/zipball/b3d0fb0094373f91f00d0e8fc09f9d8faa65c1de",
+                "reference": "b3d0fb0094373f91f00d0e8fc09f9d8faa65c1de",
                 "shasum": ""
             },
             "type": "yii2-extension",
@@ -3216,9 +3216,9 @@
             "description": "Yii2 helper module for user authentication ",
             "support": {
                 "issues": "https://github.com/siripravi/yii2-user-helper/issues",
-                "source": "https://github.com/siripravi/yii2-user-helper/tree/v0.1.0"
+                "source": "https://github.com/siripravi/yii2-user-helper/tree/v1.0.0"
             },
-            "time": "2024-02-23T04:47:13+00:00"
+            "time": "2024-02-23T05:43:57+00:00"
         },
         {
             "name": "symfony/deprecation-contracts",

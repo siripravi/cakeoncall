@@ -332,7 +332,7 @@ return array (
   'siripravi/yii2-user-helper' => 
   array (
     'name' => 'siripravi/yii2-user-helper',
-    'version' => '0.1.0.0',
+    'version' => '1.0.0.0',
     'alias' => 
     array (
       '@siripravi/userhelper' => $vendorDir . '/siripravi/yii2-user-helper/src',

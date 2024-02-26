@@ -33,7 +33,7 @@
     "kartik-v/yii2-widget-activeform": "~1.6.4",
     "lav45/yii2-ajax-create": "0.2.*",
     "biladina/yii2-ajaxcrud-bs4": "~3.0",
-    "siripravi/yii2-user-helper": "~v0.1.0" 
+    "siripravi/yii2-user-helper": "~1.0.0" 
   },
   "require-dev": {
     "yiisoft/yii2-debug": "^2.0",
