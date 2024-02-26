@@ -4,9 +4,9 @@ namespace siripravi\ecommerce\admin\assets;
 
 use luya\web\Asset;
 
-class CatalogAdminAsset extends Asset
+class ecommerceadminAsset extends Asset
 {
-    public $sourcePath = '@catalogadmin/resources';
+    public $sourcePath = '@ecommerceadmin/resources';
 
     public $js = [
         'articleFeatures.js'
