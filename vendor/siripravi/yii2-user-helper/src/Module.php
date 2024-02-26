@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace siripravi\userhelper;
+namespace siripravi\authhelper;
 
 use yii\base\Module as BaseModule;
 

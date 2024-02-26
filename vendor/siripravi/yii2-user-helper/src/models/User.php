@@ -9,12 +9,12 @@
  * file that was distributed with this source code.
  */
 
-namespace siripravi\userhelper\models;
+namespace siripray\userhelper\models;
 
-use siripravi\userhelper\helpers\PasswordGenerator;
-use siripravi\userhelper\models\query\UserQuery;
-use siripravi\userhelper\Module;
-use siripravi\userhelper\traits\ModuleTrait;
+use siripray\userhelper\helpers\PasswordGenerator;
+use siripray\userhelper\models\query\UserQuery;
+use siripray\userhelper\Module;
+use siripray\userhelper\traits\ModuleTrait;
 use yii\base\NotSupportedException;
 use yii\behaviors\TimestampBehavior;
 use yii\db\ActiveRecord;
@@ -22,7 +22,7 @@ use yii\web\Application as WebApplication;
 use yii\web\IdentityInterface;
 use yii\helpers\ArrayHelper;
 
-use siripravi\userhelper\Finder;
+use siripray\userhelper\Finder;
 
 /**
  * User ActiveRecord model.

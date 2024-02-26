@@ -9,9 +9,9 @@
  * file that was distributed with this source code.
  */
 
-namespace siripravi\userhelper;
+namespace siripravi\authhelper;
 
-use siripravi\userhelper\models\User;
+use siripray\userhelper\models\User;
 use Yii;
 use yii\authclient\Collection;
 use yii\base\BootstrapInterface;
