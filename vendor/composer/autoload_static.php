@@ -8,8 +8,8 @@ class ComposerStaticInit2188b2a24effa70dac906d91eb393da3
 {
     public static $files = array (
         'ad155f8f1cf0d418fe49e248db8c661b' => __DIR__ . '/..' . '/react/promise/src/functions_include.php',
-        '972fda704d680a3a53c68e34e193cb22' => __DIR__ . '/..' . '/react/promise-timer/src/functions_include.php',
         '2cffec82183ee1cea088009cef9a6fc3' => __DIR__ . '/..' . '/ezyang/htmlpurifier/library/HTMLPurifier.composer.php',
+        '972fda704d680a3a53c68e34e193cb22' => __DIR__ . '/..' . '/react/promise-timer/src/functions_include.php',
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
         'a4a119a56e50fbb293281d9a48007e0e' => __DIR__ . '/..' . '/symfony/polyfill-php80/bootstrap.php',
         '6e3fae29631ef280660b3cdad06f25a8' => __DIR__ . '/..' . '/symfony/deprecation-contracts/function.php',
@@ -32,13 +32,26 @@ class ComposerStaticInit2188b2a24effa70dac906d91eb393da3
         'y' => 
         array (
             'yii\\symfonymailer\\' => 18,
+            'yii\\queue\\sync\\' => 15,
+            'yii\\queue\\stomp\\' => 16,
+            'yii\\queue\\sqs\\' => 14,
+            'yii\\queue\\redis\\' => 16,
+            'yii\\queue\\gearman\\' => 18,
+            'yii\\queue\\file\\' => 15,
+            'yii\\queue\\db\\' => 13,
+            'yii\\queue\\beanstalk\\' => 20,
+            'yii\\queue\\amqp_interop\\' => 23,
+            'yii\\queue\\amqp\\' => 15,
+            'yii\\queue\\' => 10,
             'yii\\jui\\' => 8,
             'yii\\imagine\\' => 12,
+            'yii\\httpclient\\' => 15,
             'yii\\gii\\' => 8,
             'yii\\debug\\' => 10,
             'yii\\composer\\' => 13,
             'yii\\bootstrap5\\' => 15,
             'yii\\bootstrap4\\' => 15,
+            'yii\\authclient\\' => 15,
             'yii\\' => 4,
             'yii2ajaxcrud\\ajaxcrud\\' => 22,
         ),
@@ -60,6 +73,7 @@ class ComposerStaticInit2188b2a24effa70dac906d91eb393da3
             'luya\\yii\\' => 9,
             'luya\\deployer\\tests\\' => 20,
             'luya\\composer\\' => 14,
+            'luya\\admin\\' => 11,
             'luya\\' => 5,
             'libphonenumber\\' => 15,
             'lav45\\widget\\' => 13,
@@ -101,6 +115,10 @@ class ComposerStaticInit2188b2a24effa70dac906d91eb393da3
         array (
             'cebe\\markdown\\' => 14,
         ),
+        'b' => 
+        array (
+            'bizley\\jwt\\' => 11,
+        ),
         'S' => 
         array (
             'Symfony\\Polyfill\\Php80\\' => 23,
@@ -128,6 +146,7 @@ class ComposerStaticInit2188b2a24effa70dac906d91eb393da3
         ),
         'R' => 
         array (
+            'RobThree\\Auth\\' => 14,
             'RingCentral\\Psr7\\' => 17,
             'React\\Stream\\' => 13,
             'React\\Socket\\' => 13,
@@ -148,6 +167,7 @@ class ComposerStaticInit2188b2a24effa70dac906d91eb393da3
             'Psr\\Http\\Message\\' => 17,
             'Psr\\EventDispatcher\\' => 20,
             'Psr\\Container\\' => 14,
+            'Psr\\Clock\\' => 10,
             'Psr\\Cache\\' => 10,
             'PHPMailer\\PHPMailer\\' => 20,
         ),
@@ -156,6 +176,11 @@ class ComposerStaticInit2188b2a24effa70dac906d91eb393da3
             'Mpdf\\PsrLogAwareTrait\\' => 22,
             'Mpdf\\PsrHttpMessageShim\\' => 24,
             'Mpdf\\' => 5,
+        ),
+        'L' => 
+        array (
+            'Lcobucci\\JWT\\' => 13,
+            'Lcobucci\\Clock\\' => 15,
         ),
         'J' => 
         array (
@@ -188,6 +213,50 @@ class ComposerStaticInit2188b2a24effa70dac906d91eb393da3
         array (
             0 => __DIR__ . '/..' . '/yiisoft/yii2-symfonymailer/src',
         ),
+        'yii\\queue\\sync\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/yiisoft/yii2-queue/src/drivers/sync',
+        ),
+        'yii\\queue\\stomp\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/yiisoft/yii2-queue/src/drivers/stomp',
+        ),
+        'yii\\queue\\sqs\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/yiisoft/yii2-queue/src/drivers/sqs',
+        ),
+        'yii\\queue\\redis\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/yiisoft/yii2-queue/src/drivers/redis',
+        ),
+        'yii\\queue\\gearman\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/yiisoft/yii2-queue/src/drivers/gearman',
+        ),
+        'yii\\queue\\file\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/yiisoft/yii2-queue/src/drivers/file',
+        ),
+        'yii\\queue\\db\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/yiisoft/yii2-queue/src/drivers/db',
+        ),
+        'yii\\queue\\beanstalk\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/yiisoft/yii2-queue/src/drivers/beanstalk',
+        ),
+        'yii\\queue\\amqp_interop\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/yiisoft/yii2-queue/src/drivers/amqp_interop',
+        ),
+        'yii\\queue\\amqp\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/yiisoft/yii2-queue/src/drivers/amqp',
+        ),
+        'yii\\queue\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/yiisoft/yii2-queue/src',
+        ),
         'yii\\jui\\' => 
         array (
             0 => __DIR__ . '/..' . '/yiisoft/yii2-jui',
@@ -195,6 +264,10 @@ class ComposerStaticInit2188b2a24effa70dac906d91eb393da3
         'yii\\imagine\\' => 
         array (
             0 => __DIR__ . '/..' . '/yiisoft/yii2-imagine/src',
+        ),
+        'yii\\httpclient\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/yiisoft/yii2-httpclient/src',
         ),
         'yii\\gii\\' => 
         array (
@@ -215,6 +288,10 @@ class ComposerStaticInit2188b2a24effa70dac906d91eb393da3
         'yii\\bootstrap4\\' => 
         array (
             0 => __DIR__ . '/..' . '/yiisoft/yii2-bootstrap4/src',
+        ),
+        'yii\\authclient\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/yiisoft/yii2-authclient/src',
         ),
         'yii\\' => 
         array (
@@ -251,6 +328,10 @@ class ComposerStaticInit2188b2a24effa70dac906d91eb393da3
         'luya\\composer\\' => 
         array (
             0 => __DIR__ . '/..' . '/luyadev/luya-composer/src',
+        ),
+        'luya\\admin\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/luyadev/luya-module-admin/src',
         ),
         'luya\\' => 
         array (
@@ -388,6 +469,10 @@ class ComposerStaticInit2188b2a24effa70dac906d91eb393da3
         array (
             0 => __DIR__ . '/..' . '/cebe/markdown',
         ),
+        'bizley\\jwt\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/bizley/jwt/src',
+        ),
         'Symfony\\Polyfill\\Php80\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/polyfill-php80',
@@ -476,6 +561,10 @@ class ComposerStaticInit2188b2a24effa70dac906d91eb393da3
         array (
             0 => __DIR__ . '/..' . '/seld/jsonlint/src/Seld/JsonLint',
         ),
+        'RobThree\\Auth\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/robthree/twofactorauth/lib',
+        ),
         'RingCentral\\Psr7\\' => 
         array (
             0 => __DIR__ . '/..' . '/ringcentral/psr7/src',
@@ -544,6 +633,10 @@ class ComposerStaticInit2188b2a24effa70dac906d91eb393da3
         array (
             0 => __DIR__ . '/..' . '/psr/container/src',
         ),
+        'Psr\\Clock\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/clock/src',
+        ),
         'Psr\\Cache\\' => 
         array (
             0 => __DIR__ . '/..' . '/psr/cache/src',
@@ -563,6 +656,14 @@ class ComposerStaticInit2188b2a24effa70dac906d91eb393da3
         'Mpdf\\' => 
         array (
             0 => __DIR__ . '/..' . '/mpdf/mpdf/src',
+        ),
+        'Lcobucci\\JWT\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/lcobucci/jwt/src',
+        ),
+        'Lcobucci\\Clock\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/lcobucci/clock/src',
         ),
         'JsonSchema\\' => 
         array (
@@ -620,6 +721,13 @@ class ComposerStaticInit2188b2a24effa70dac906d91eb393da3
             'HTMLPurifier' => 
             array (
                 0 => __DIR__ . '/..' . '/ezyang/htmlpurifier/library',
+            ),
+        ),
+        'F' => 
+        array (
+            'Flow' => 
+            array (
+                0 => __DIR__ . '/..' . '/flowjs/flow-php-server/src',
             ),
         ),
         'E' => 

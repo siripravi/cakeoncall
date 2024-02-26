@@ -7,16 +7,16 @@
 
 /** @var yii\web\View $this */
 
-use siripravi\slideradmin\models\Slider;
-use siripravi\slideradmin\models\SliderImage;
+//use siripravi\slideradmin\models\Slider;
+//use siripravi\slideradmin\models\SliderImage;
 use yii\bootstrap5\Html;
-use app\widgets\Carousel;
-use iutbay\yii2pnotify\PNotify;
+//use app\widgets\Carousel;
+//use iutbay\yii2pnotify\PNotify;
 
 
 $this->title = 'My Yii Application';
 
-$model = Slider::find()->one();
+/*$model = Slider::find()->one();
 $slides = $model->slides;
 foreach ($slides as $sld) {
     if (($image = SliderImage::find()->where(['id' => $sld->id])->multilingual()->one()) !== null) {
@@ -32,7 +32,7 @@ foreach ($slides as $sld) {
 
         ];
     }
-}
+}*/
 ?>
 <?php
 /* echo PNotify::widget(
@@ -46,15 +46,15 @@ foreach ($slides as $sld) {
 ?>
 <div class="site-index">
     <?php
-    echo Carousel::widget([
+  /*  echo Carousel::widget([
         'id' => 'home-slider',
         'items' => $sitems,
         'showIndicators' => false,
-        /* 'controls' => [
+         'controls' => [
                             '<span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Previous</span>',
                             '<span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Next</span>',
-                        ],  */
-        'options' => [
+                        ],  
+                                'options' => [
             'data-interval' => 8,
             'data-bs-ride' => 'scroll'
         ],
@@ -62,7 +62,7 @@ foreach ($slides as $sld) {
             '<span class="carousel-control-prev-icon"></span>',
             '<span class="carousel-control-next-icon"></span>',
         ],
-    ]) ?>
+    ]);  */ ?>
     <div class="jumbotron text-center bg-transparent mt-5 mb-5">
         <h1 class="display-4">Congratulations!</h1>
 

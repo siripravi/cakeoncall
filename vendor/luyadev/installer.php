@@ -28,6 +28,30 @@ return array (
       array (
       ),
     ),
+    'luyadev/luya-module-admin' => 
+    array (
+      'package' => 
+      array (
+        'isDev' => false,
+        'name' => 'luyadev/luya-module-admin',
+        'prettyName' => 'luyadev/luya-module-admin',
+        'version' => '5.0.1.0',
+        'targetDir' => NULL,
+        'installSource' => 'dist',
+        'sourceUrl' => 'https://github.com/luyadev/luya-module-admin.git',
+        'packageFolder' => 'luyadev\\luya-module-admin',
+      ),
+      'blocks' => 
+      array (
+      ),
+      'bootstrap' => 
+      array (
+        0 => '\\luya\\admin\\Bootstrap',
+      ),
+      'themes' => 
+      array (
+      ),
+    ),
   ),
-  'timestamp' => 1708938725,
+  'timestamp' => 1708972289,
 );

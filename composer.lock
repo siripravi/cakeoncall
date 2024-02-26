@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "694f5ab23b1e56646cc834a20caa0bda",
+    "content-hash": "a29776810495593d46162a114fa9fe9e",
     "packages": [
         {
             "name": "biladina/yii2-ajaxcrud-bs4",
@@ -73,6 +73,71 @@
                 "source": "https://github.com/biladina/yii2-ajaxcrud-bs4"
             },
             "time": "2023-06-22T09:21:52+00:00"
+        },
+        {
+            "name": "bizley/jwt",
+            "version": "3.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bizley/yii2-jwt.git",
+                "reference": "864517683bc5ad71bf7bd0b6d6982a3c7972896b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/bizley/yii2-jwt/zipball/864517683bc5ad71bf7bd0b6d6982a3c7972896b",
+                "reference": "864517683bc5ad71bf7bd0b6d6982a3c7972896b",
+                "shasum": ""
+            },
+            "require": {
+                "lcobucci/jwt": "^4.1",
+                "php": ">=7.4",
+                "yiisoft/yii2": ">=2.0.14 <2.1"
+            },
+            "require-dev": {
+                "infection/infection": "*",
+                "phpstan/phpstan": "*",
+                "phpunit/phpunit": "^9.3",
+                "roave/security-advisories": "dev-latest"
+            },
+            "type": "yii2-extension",
+            "autoload": {
+                "psr-4": {
+                    "bizley\\jwt\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Paweł Bizley Brzozowski",
+                    "email": "pawel@positive.codes"
+                },
+                {
+                    "name": "Dmitriy Demin",
+                    "email": "sizemail@gmail.com"
+                }
+            ],
+            "description": "JWT integration for Yii 2",
+            "keywords": [
+                "Authentication",
+                "JWS",
+                "jwt",
+                "token",
+                "yii2"
+            ],
+            "support": {
+                "issues": "https://github.com/bizley/yii2-jwt/issues",
+                "source": "https://github.com/bizley/yii2-jwt"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/bizley",
+                    "type": "github"
+                }
+            ],
+            "time": "2022-08-20T11:04:00+00:00"
         },
         {
             "name": "bower-asset/bootstrap",
@@ -312,6 +377,64 @@
             "time": "2023-12-11T18:14:25+00:00"
         },
         {
+            "name": "curl/curl",
+            "version": "2.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-mod/curl.git",
+                "reference": "c4f8799c471e43b7c782c77d5c6e178d0465e210"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-mod/curl/zipball/c4f8799c471e43b7c782c77d5c6e178d0465e210",
+                "reference": "c4f8799c471e43b7c782c77d5c6e178d0465e210",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "php": "^5.6 | ^7.0 | ^8.0"
+            },
+            "require-dev": {
+                "yoast/phpunit-polyfills": "^0.2.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Curl": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "php-curl-class",
+                    "homepage": "https://github.com/php-curl-class"
+                },
+                {
+                    "name": "Hassan Amouhzi",
+                    "email": "hassan@anezi.net",
+                    "homepage": "http://hassan.amouhzi.com"
+                },
+                {
+                    "name": "user52",
+                    "homepage": "https://github.com/user52"
+                }
+            ],
+            "description": "cURL class for PHP",
+            "homepage": "https://github.com/php-mod/curl",
+            "keywords": [
+                "curl",
+                "dot"
+            ],
+            "support": {
+                "issues": "https://github.com/php-mod/curl/issues",
+                "source": "https://github.com/php-mod/curl/tree/2.5.0"
+            },
+            "time": "2022-12-14T13:27:59+00:00"
+        },
+        {
             "name": "doctrine/lexer",
             "version": "3.0.1",
             "source": {
@@ -517,6 +640,67 @@
             "time": "2023-11-17T15:01:25+00:00"
         },
         {
+            "name": "flowjs/flow-php-server",
+            "version": "v1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/flowjs/flow-php-server.git",
+                "reference": "fe8890c25e835d0b4f58d8bd91331326ab1808ba"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/flowjs/flow-php-server/zipball/fe8890c25e835d0b4f58d8bd91331326ab1808ba",
+                "reference": "fe8890c25e835d0b4f58d8bd91331326ab1808ba",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4"
+            },
+            "require-dev": {
+                "ext-mongodb": "*",
+                "fabpot/php-cs-fixer": "~2.2",
+                "league/phpunit-coverage-listener": "~1.1",
+                "mikey179/vfsstream": "v1.2.0",
+                "mongodb/mongodb": "^1.4.0",
+                "phpunit/phpunit": "4.*"
+            },
+            "suggest": {
+                "mongodb/mongodb": "Required to use this package with Mongo DB"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Flow": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Aidas Klimas",
+                    "email": "aidaskk@gmail.com"
+                }
+            ],
+            "description": "PHP library for handling chunk uploads. Works with flow.js html5 file uploads.",
+            "keywords": [
+                "chunks",
+                "file upload",
+                "flow",
+                "flow.js",
+                "html5 file upload",
+                "resumable",
+                "resumable.js",
+                "upload"
+            ],
+            "support": {
+                "issues": "https://github.com/flowjs/flow-php-server/issues",
+                "source": "https://github.com/flowjs/flow-php-server/tree/v1.2.0"
+            },
+            "time": "2022-08-26T15:50:37+00:00"
+        },
+        {
             "name": "fortawesome/font-awesome",
             "version": "5.15.4",
             "source": {
@@ -584,6 +768,132 @@
                 "source": "https://github.com/FortAwesome/Font-Awesome"
             },
             "time": "2021-08-04T19:09:22+00:00"
+        },
+        {
+            "name": "giggsey/libphonenumber-for-php",
+            "version": "8.13.31",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/giggsey/libphonenumber-for-php.git",
+                "reference": "a4934bddda4672d12f21728e08bd575913bdc310"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/giggsey/libphonenumber-for-php/zipball/a4934bddda4672d12f21728e08bd575913bdc310",
+                "reference": "a4934bddda4672d12f21728e08bd575913bdc310",
+                "shasum": ""
+            },
+            "require": {
+                "giggsey/locale": "^1.7|^2.0",
+                "php": ">=5.3.2",
+                "symfony/polyfill-mbstring": "^1.17"
+            },
+            "require-dev": {
+                "pear/pear-core-minimal": "^1.9",
+                "pear/pear_exception": "^1.0",
+                "pear/versioncontrol_git": "^0.5",
+                "phing/phing": "^2.7",
+                "php-coveralls/php-coveralls": "^1.0|^2.0",
+                "symfony/console": "^2.8|^3.0|^v4.4|^v5.2",
+                "symfony/phpunit-bridge": "^4.2 || ^5"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "8.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "libphonenumber\\": "src/"
+                },
+                "exclude-from-classmap": [
+                    "/src/data/",
+                    "/src/carrier/data/",
+                    "/src/geocoding/data/",
+                    "/src/timezone/data/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Joshua Gigg",
+                    "email": "giggsey@gmail.com",
+                    "homepage": "https://giggsey.com/"
+                }
+            ],
+            "description": "PHP Port of Google's libphonenumber",
+            "homepage": "https://github.com/giggsey/libphonenumber-for-php",
+            "keywords": [
+                "geocoding",
+                "geolocation",
+                "libphonenumber",
+                "mobile",
+                "phonenumber",
+                "validation"
+            ],
+            "support": {
+                "issues": "https://github.com/giggsey/libphonenumber-for-php/issues",
+                "source": "https://github.com/giggsey/libphonenumber-for-php"
+            },
+            "time": "2024-02-26T08:31:45+00:00"
+        },
+        {
+            "name": "giggsey/locale",
+            "version": "2.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/giggsey/Locale.git",
+                "reference": "e6d4540109a01dd2bc7334cdc842d6a6a67cf239"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/giggsey/Locale/zipball/e6d4540109a01dd2bc7334cdc842d6a6a67cf239",
+                "reference": "e6d4540109a01dd2bc7334cdc842d6a6a67cf239",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2"
+            },
+            "require-dev": {
+                "ext-json": "*",
+                "pear/pear-core-minimal": "^1.9",
+                "pear/pear_exception": "^1.0",
+                "pear/versioncontrol_git": "^0.5",
+                "phing/phing": "^2.7",
+                "php-coveralls/php-coveralls": "^2.0",
+                "phpunit/phpunit": "^8.5|^9.5",
+                "symfony/console": "^5.0|^6.0",
+                "symfony/filesystem": "^5.0|^6.0",
+                "symfony/finder": "^5.0|^6.0",
+                "symfony/process": "^5.0|^6.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Giggsey\\Locale\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Joshua Gigg",
+                    "email": "giggsey@gmail.com",
+                    "homepage": "https://giggsey.com/"
+                }
+            ],
+            "description": "Locale functions required by libphonenumber-for-php",
+            "support": {
+                "issues": "https://github.com/giggsey/Locale/issues",
+                "source": "https://github.com/giggsey/Locale/tree/2.5"
+            },
+            "time": "2023-11-01T17:19:48+00:00"
         },
         {
             "name": "imagine/imagine",
@@ -2534,6 +2844,393 @@
             "time": "2019-11-13T13:53:27+00:00"
         },
         {
+            "name": "lcobucci/clock",
+            "version": "3.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/lcobucci/clock.git",
+                "reference": "6f28b826ea01306b07980cb8320ab30b966cd715"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/lcobucci/clock/zipball/6f28b826ea01306b07980cb8320ab30b966cd715",
+                "reference": "6f28b826ea01306b07980cb8320ab30b966cd715",
+                "shasum": ""
+            },
+            "require": {
+                "php": "~8.2.0 || ~8.3.0",
+                "psr/clock": "^1.0"
+            },
+            "provide": {
+                "psr/clock-implementation": "1.0"
+            },
+            "require-dev": {
+                "infection/infection": "^0.27",
+                "lcobucci/coding-standard": "^11.0.0",
+                "phpstan/extension-installer": "^1.3.1",
+                "phpstan/phpstan": "^1.10.25",
+                "phpstan/phpstan-deprecation-rules": "^1.1.3",
+                "phpstan/phpstan-phpunit": "^1.3.13",
+                "phpstan/phpstan-strict-rules": "^1.5.1",
+                "phpunit/phpunit": "^10.2.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Lcobucci\\Clock\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Luís Cobucci",
+                    "email": "lcobucci@gmail.com"
+                }
+            ],
+            "description": "Yet another clock abstraction",
+            "support": {
+                "issues": "https://github.com/lcobucci/clock/issues",
+                "source": "https://github.com/lcobucci/clock/tree/3.2.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/lcobucci",
+                    "type": "github"
+                },
+                {
+                    "url": "https://www.patreon.com/lcobucci",
+                    "type": "patreon"
+                }
+            ],
+            "time": "2023-11-17T17:00:27+00:00"
+        },
+        {
+            "name": "lcobucci/jwt",
+            "version": "4.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/lcobucci/jwt.git",
+                "reference": "4d7de2fe0d51a96418c0d04004986e410e87f6b4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/lcobucci/jwt/zipball/4d7de2fe0d51a96418c0d04004986e410e87f6b4",
+                "reference": "4d7de2fe0d51a96418c0d04004986e410e87f6b4",
+                "shasum": ""
+            },
+            "require": {
+                "ext-hash": "*",
+                "ext-json": "*",
+                "ext-mbstring": "*",
+                "ext-openssl": "*",
+                "ext-sodium": "*",
+                "lcobucci/clock": "^2.0 || ^3.0",
+                "php": "^7.4 || ^8.0"
+            },
+            "require-dev": {
+                "infection/infection": "^0.21",
+                "lcobucci/coding-standard": "^6.0",
+                "mikey179/vfsstream": "^1.6.7",
+                "phpbench/phpbench": "^1.2",
+                "phpstan/extension-installer": "^1.0",
+                "phpstan/phpstan": "^1.4",
+                "phpstan/phpstan-deprecation-rules": "^1.0",
+                "phpstan/phpstan-phpunit": "^1.0",
+                "phpstan/phpstan-strict-rules": "^1.0",
+                "phpunit/php-invoker": "^3.1",
+                "phpunit/phpunit": "^9.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Lcobucci\\JWT\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Luís Cobucci",
+                    "email": "lcobucci@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A simple library to work with JSON Web Token and JSON Web Signature",
+            "keywords": [
+                "JWS",
+                "jwt"
+            ],
+            "support": {
+                "issues": "https://github.com/lcobucci/jwt/issues",
+                "source": "https://github.com/lcobucci/jwt/tree/4.3.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/lcobucci",
+                    "type": "github"
+                },
+                {
+                    "url": "https://www.patreon.com/lcobucci",
+                    "type": "patreon"
+                }
+            ],
+            "time": "2023-01-02T13:28:00+00:00"
+        },
+        {
+            "name": "luyadev/luya-composer",
+            "version": "1.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/luyadev/luya-composer.git",
+                "reference": "598541d1ae6fa7bc51d862f67ab3400f2538bf47"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/luyadev/luya-composer/zipball/598541d1ae6fa7bc51d862f67ab3400f2538bf47",
+                "reference": "598541d1ae6fa7bc51d862f67ab3400f2538bf47",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^1.1 | ^2.0"
+            },
+            "require-dev": {
+                "composer/composer": "^1.0 | ^2.0@dev",
+                "phpunit/phpunit": "~5.0"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "luya\\composer\\Plugin",
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "luya\\composer\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Basil Suter",
+                    "email": "basil@nadar.io"
+                }
+            ],
+            "description": "LUYA composer core",
+            "keywords": [
+                "composer",
+                "luya"
+            ],
+            "support": {
+                "issues": "https://github.com/luyadev/luya-composer/issues",
+                "source": "https://github.com/luyadev/luya-composer/tree/master"
+            },
+            "time": "2020-07-30T09:02:41+00:00"
+        },
+        {
+            "name": "luyadev/luya-core",
+            "version": "2.3.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/luyadev/luya-core.git",
+                "reference": "1d7b837cedeecf4c72096135f3cc291c825486f0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/luyadev/luya-core/zipball/1d7b837cedeecf4c72096135f3cc291c825486f0",
+                "reference": "1d7b837cedeecf4c72096135f3cc291c825486f0",
+                "shasum": ""
+            },
+            "require": {
+                "curl/curl": "^2.0 || ^1.0",
+                "giggsey/libphonenumber-for-php": "^8.11",
+                "luyadev/luya-composer": "^1.0",
+                "luyadev/yii-helpers": "^1.0",
+                "phpmailer/phpmailer": "^6.0",
+                "yiisoft/yii2": "~2.0.15"
+            },
+            "bin": [
+                "bin/luya"
+            ],
+            "type": "luya-core",
+            "autoload": {
+                "psr-4": {
+                    "luya\\": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Basil Suter",
+                    "email": "git@nadar.io",
+                    "homepage": "https://github.com/nadar"
+                }
+            ],
+            "description": "LUYA is a scalable web framework and content management system with the goal to please developers, clients and users alike.",
+            "homepage": "https://luya.io",
+            "keywords": [
+                "admin",
+                "cms",
+                "core",
+                "luya",
+                "yii",
+                "yii2"
+            ],
+            "support": {
+                "issues": "https://github.com/luyadev/luya/issues",
+                "source": "https://github.com/luyadev/luya-core/tree/2.3.1"
+            },
+            "time": "2024-02-07T13:19:25+00:00"
+        },
+        {
+            "name": "luyadev/luya-module-admin",
+            "version": "5.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/luyadev/luya-module-admin.git",
+                "reference": "0b3e8c319ce2c505054ef46cfc5391ddae5596ad"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/luyadev/luya-module-admin/zipball/0b3e8c319ce2c505054ef46cfc5391ddae5596ad",
+                "reference": "0b3e8c319ce2c505054ef46cfc5391ddae5596ad",
+                "shasum": ""
+            },
+            "require": {
+                "bizley/jwt": "^3.3",
+                "flowjs/flow-php-server": "^1.0",
+                "luyadev/luya-core": "^2.2",
+                "php": ">=8.0",
+                "robthree/twofactorauth": "^1.7",
+                "yiisoft/yii2-imagine": "^2.1",
+                "yiisoft/yii2-queue": "^2.3.6"
+            },
+            "require-dev": {
+                "bower-asset/angular": "^1.8.2",
+                "bower-asset/angular-filter": "^0.5.15",
+                "bower-asset/angular-loading-bar": "^0.9.0",
+                "bower-asset/bowser": "^1.9",
+                "bower-asset/echarts": "^5.0",
+                "bower-asset/ng-file-upload": "^12.2.0",
+                "bower-asset/ng-flow": "^2.7.0",
+                "bower-asset/ng-wig": "^3.0.0",
+                "bower-asset/twigjs-bower": "^0.10.5",
+                "bower-asset/ui-cropper": "^1.0",
+                "bower-asset/ui-router": "^0.4.0",
+                "cebe/php-openapi": "^1.4",
+                "friendsofphp/php-cs-fixer": "^3.2",
+                "luyadev/luya-testsuite": "^2.0",
+                "phpstan/phpstan": "^1.7",
+                "rector/rector": "^0.14.2",
+                "twbs/bootstrap": "^4.5",
+                "unglue/client": "^1.5"
+            },
+            "suggest": {
+                "cebe/php-openapi": "Is required in order to generate the OpenAPI File."
+            },
+            "type": "luya-core",
+            "extra": {
+                "luya": {
+                    "bootstrap": [
+                        "\\luya\\admin\\Bootstrap"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "luya\\admin\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Basil Suter",
+                    "email": "git@nadar.io",
+                    "homepage": "https://github.com/nadar"
+                }
+            ],
+            "description": "Administration core module for all LUYA admin modules",
+            "homepage": "http://luya.io",
+            "keywords": [
+                "admin",
+                "administration",
+                "angular",
+                "luya",
+                "manage",
+                "module",
+                "ngrest",
+                "panel",
+                "php",
+                "yii",
+                "yii2"
+            ],
+            "support": {
+                "issues": "https://github.com/luyadev/luya-module-admin/issues",
+                "source": "https://github.com/luyadev/luya-module-admin/tree/5.0.1"
+            },
+            "time": "2024-02-07T13:24:12+00:00"
+        },
+        {
+            "name": "luyadev/yii-helpers",
+            "version": "1.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/luyadev/yii-helpers.git",
+                "reference": "a32e15360103e545fec06657a487c648adfafed8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/luyadev/yii-helpers/zipball/a32e15360103e545fec06657a487c648adfafed8",
+                "reference": "a32e15360103e545fec06657a487c648adfafed8",
+                "shasum": ""
+            },
+            "require": {
+                "yiisoft/yii2": "^2.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^3.2",
+                "luyadev/luya-testsuite": "^2.0",
+                "phpstan/phpstan": "^1.7",
+                "rector/rector": "^0.14.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "luya\\yii\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Basil Suter",
+                    "email": "git@nadar.io"
+                }
+            ],
+            "description": "Static helper methods in addition to the Yii Framework.",
+            "support": {
+                "issues": "https://github.com/luyadev/yii-helpers/issues",
+                "source": "https://github.com/luyadev/yii-helpers/tree/1.6.0"
+            },
+            "time": "2024-02-14T14:20:13+00:00"
+        },
+        {
             "name": "mpdf/mpdf",
             "version": "v8.2.2",
             "source": {
@@ -2828,6 +3525,87 @@
             "time": "2020-10-15T08:29:30+00:00"
         },
         {
+            "name": "phpmailer/phpmailer",
+            "version": "v6.9.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/PHPMailer/PHPMailer.git",
+                "reference": "039de174cd9c17a8389754d3b877a2ed22743e18"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/PHPMailer/PHPMailer/zipball/039de174cd9c17a8389754d3b877a2ed22743e18",
+                "reference": "039de174cd9c17a8389754d3b877a2ed22743e18",
+                "shasum": ""
+            },
+            "require": {
+                "ext-ctype": "*",
+                "ext-filter": "*",
+                "ext-hash": "*",
+                "php": ">=5.5.0"
+            },
+            "require-dev": {
+                "dealerdirect/phpcodesniffer-composer-installer": "^1.0",
+                "doctrine/annotations": "^1.2.6 || ^1.13.3",
+                "php-parallel-lint/php-console-highlighter": "^1.0.0",
+                "php-parallel-lint/php-parallel-lint": "^1.3.2",
+                "phpcompatibility/php-compatibility": "^9.3.5",
+                "roave/security-advisories": "dev-latest",
+                "squizlabs/php_codesniffer": "^3.7.2",
+                "yoast/phpunit-polyfills": "^1.0.4"
+            },
+            "suggest": {
+                "decomplexity/SendOauth2": "Adapter for using XOAUTH2 authentication",
+                "ext-mbstring": "Needed to send email in multibyte encoding charset or decode encoded addresses",
+                "ext-openssl": "Needed for secure SMTP sending and DKIM signing",
+                "greew/oauth2-azure-provider": "Needed for Microsoft Azure XOAUTH2 authentication",
+                "hayageek/oauth2-yahoo": "Needed for Yahoo XOAUTH2 authentication",
+                "league/oauth2-google": "Needed for Google XOAUTH2 authentication",
+                "psr/log": "For optional PSR-3 debug logging",
+                "symfony/polyfill-mbstring": "To support UTF-8 if the Mbstring PHP extension is not enabled (^1.2)",
+                "thenetworg/oauth2-azure": "Needed for Microsoft XOAUTH2 authentication"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "PHPMailer\\PHPMailer\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-2.1-only"
+            ],
+            "authors": [
+                {
+                    "name": "Marcus Bointon",
+                    "email": "phpmailer@synchromedia.co.uk"
+                },
+                {
+                    "name": "Jim Jagielski",
+                    "email": "jimjag@gmail.com"
+                },
+                {
+                    "name": "Andy Prevost",
+                    "email": "codeworxtech@users.sourceforge.net"
+                },
+                {
+                    "name": "Brent R. Matzelle"
+                }
+            ],
+            "description": "PHPMailer is a full-featured email creation and transfer class for PHP",
+            "support": {
+                "issues": "https://github.com/PHPMailer/PHPMailer/issues",
+                "source": "https://github.com/PHPMailer/PHPMailer/tree/v6.9.1"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/Synchro",
+                    "type": "github"
+                }
+            ],
+            "time": "2023-11-25T22:23:28+00:00"
+        },
+        {
             "name": "phpspec/php-diff",
             "version": "v1.1.3",
             "source": {
@@ -2867,6 +3645,54 @@
                 "source": "https://github.com/phpspec/php-diff/tree/v1.1.3"
             },
             "time": "2020-09-18T13:47:07+00:00"
+        },
+        {
+            "name": "psr/clock",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/clock.git",
+                "reference": "e41a24703d4560fd0acb709162f73b8adfc3aa0d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/clock/zipball/e41a24703d4560fd0acb709162f73b8adfc3aa0d",
+                "reference": "e41a24703d4560fd0acb709162f73b8adfc3aa0d",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.0 || ^8.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Clock\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "https://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for reading the clock.",
+            "homepage": "https://github.com/php-fig/clock",
+            "keywords": [
+                "clock",
+                "now",
+                "psr",
+                "psr-20",
+                "time"
+            ],
+            "support": {
+                "issues": "https://github.com/php-fig/clock/issues",
+                "source": "https://github.com/php-fig/clock/tree/1.0.0"
+            },
+            "time": "2022-11-25T14:36:26+00:00"
         },
         {
             "name": "psr/container",
@@ -3068,6 +3894,76 @@
                 "source": "https://github.com/php-fig/log/tree/1.1.4"
             },
             "time": "2021-05-03T11:20:27+00:00"
+        },
+        {
+            "name": "robthree/twofactorauth",
+            "version": "1.8.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/RobThree/TwoFactorAuth.git",
+                "reference": "65681de5a324eae05140ac58b08648a60212afc0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/RobThree/TwoFactorAuth/zipball/65681de5a324eae05140ac58b08648a60212afc0",
+                "reference": "65681de5a324eae05140ac58b08648a60212afc0",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6.0"
+            },
+            "require-dev": {
+                "php-parallel-lint/php-parallel-lint": "^1.2",
+                "phpunit/phpunit": "@stable"
+            },
+            "suggest": {
+                "bacon/bacon-qr-code": "Needed for BaconQrCodeProvider provider",
+                "endroid/qr-code": "Needed for EndroidQrCodeProvider"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "RobThree\\Auth\\": "lib"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Rob Janssen",
+                    "homepage": "http://robiii.me",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Two Factor Authentication",
+            "homepage": "https://github.com/RobThree/TwoFactorAuth",
+            "keywords": [
+                "Authentication",
+                "MFA",
+                "Multi Factor Authentication",
+                "Two Factor Authentication",
+                "authenticator",
+                "authy",
+                "php",
+                "tfa"
+            ],
+            "support": {
+                "issues": "https://github.com/RobThree/TwoFactorAuth/issues",
+                "source": "https://github.com/RobThree/TwoFactorAuth"
+            },
+            "funding": [
+                {
+                    "url": "https://paypal.me/robiii",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/RobThree",
+                    "type": "github"
+                }
+            ],
+            "time": "2022-03-22T16:11:07+00:00"
         },
         {
             "name": "select2/select2",
@@ -3925,6 +4821,67 @@
             "time": "2024-01-29T20:11:03+00:00"
         },
         {
+            "name": "symfony/process",
+            "version": "v3.4.47",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/process.git",
+                "reference": "b8648cf1d5af12a44a51d07ef9bf980921f15fca"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/process/zipball/b8648cf1d5af12a44a51d07ef9bf980921f15fca",
+                "reference": "b8648cf1d5af12a44a51d07ef9bf980921f15fca",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.5.9|>=7.0.8"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Process\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony Process Component",
+            "homepage": "https://symfony.com",
+            "support": {
+                "source": "https://github.com/symfony/process/tree/v3.4.47"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2020-10-24T10:57:07+00:00"
+        },
+        {
             "name": "symfony/service-contracts",
             "version": "v2.5.2",
             "source": {
@@ -4128,6 +5085,99 @@
                 }
             ],
             "time": "2023-10-31T15:39:08+00:00"
+        },
+        {
+            "name": "yiisoft/yii2-authclient",
+            "version": "2.2.15",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/yiisoft/yii2-authclient.git",
+                "reference": "a11cbb065a2424c25f9dc0d0df6852d605d869b2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/yiisoft/yii2-authclient/zipball/a11cbb065a2424c25f9dc0d0df6852d605d869b2",
+                "reference": "a11cbb065a2424c25f9dc0d0df6852d605d869b2",
+                "shasum": ""
+            },
+            "require": {
+                "paragonie/random_compat": ">=1",
+                "yiisoft/yii2": "~2.0.13",
+                "yiisoft/yii2-httpclient": "~2.0.5"
+            },
+            "require-dev": {
+                "cweagans/composer-patches": "^1.7",
+                "phpunit/phpunit": "4.8.34"
+            },
+            "suggest": {
+                "web-token/jwt-checker": "required for JWS, JWT or JWK related flows like OpenIDConnect",
+                "web-token/jwt-key-mgmt": "required for JWS, JWT or JWK related flows like OpenIDConnect",
+                "web-token/jwt-signature": "required for JWS, JWT or JWK related flows like OpenIDConnect",
+                "web-token/jwt-signature-algorithm-ecdsa": "required for JWS, JWT or JWK related flows like OpenIDConnect",
+                "web-token/jwt-signature-algorithm-hmac": "required for JWS, JWT or JWK related flows like OpenIDConnect",
+                "web-token/jwt-signature-algorithm-rsa": "required for JWS, JWT or JWK related flows like OpenIDConnect"
+            },
+            "type": "yii2-extension",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0.x-dev"
+                },
+                "patches": {
+                    "phpunit/phpunit-mock-objects": {
+                        "Fix PHP 7 and 8 compatibility": "https://yiisoft.github.io/phpunit-patches/phpunit_mock_objects.patch"
+                    },
+                    "phpunit/phpunit": {
+                        "Fix PHP 7 compatibility": "https://yiisoft.github.io/phpunit-patches/phpunit_php7.patch",
+                        "Fix PHP 8 compatibility": "https://yiisoft.github.io/phpunit-patches/phpunit_php8.patch"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "yii\\authclient\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Paul Klimov",
+                    "email": "klimov.paul@gmail.com"
+                }
+            ],
+            "description": "External authentication via OAuth and OpenID for the Yii framework",
+            "keywords": [
+                "OpenID Connect",
+                "OpenId",
+                "api",
+                "auth",
+                "oauth",
+                "yii2"
+            ],
+            "support": {
+                "forum": "https://www.yiiframework.com/forum/",
+                "irc": "ircs://irc.libera.chat:6697/yii",
+                "issues": "https://github.com/yiisoft/yii2-authclient/issues",
+                "source": "https://github.com/yiisoft/yii2-authclient",
+                "wiki": "https://www.yiiframework.com/wiki/"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/yiisoft",
+                    "type": "github"
+                },
+                {
+                    "url": "https://opencollective.com/yiisoft",
+                    "type": "open_collective"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/yiisoft/yii2-authclient",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2023-12-16T15:14:16+00:00"
         },
         {
             "name": "yiisoft/yii2-bootstrap4",
@@ -4474,6 +5524,89 @@
             "time": "2023-05-22T20:55:37+00:00"
         },
         {
+            "name": "yiisoft/yii2-httpclient",
+            "version": "2.0.15",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/yiisoft/yii2-httpclient.git",
+                "reference": "5a8350e15f2db3555ba52830c9c701587c136e87"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/yiisoft/yii2-httpclient/zipball/5a8350e15f2db3555ba52830c9c701587c136e87",
+                "reference": "5a8350e15f2db3555ba52830c9c701587c136e87",
+                "shasum": ""
+            },
+            "require": {
+                "paragonie/random_compat": ">=1",
+                "yiisoft/yii2": "~2.0.13"
+            },
+            "require-dev": {
+                "cweagans/composer-patches": "^1.7",
+                "phpunit/phpunit": "4.8.34"
+            },
+            "type": "yii2-extension",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0.x-dev"
+                },
+                "composer-exit-on-patch-failure": true,
+                "patches": {
+                    "phpunit/phpunit-mock-objects": {
+                        "Fix PHP 7 and 8 compatibility": "https://yiisoft.github.io/phpunit-patches/phpunit_mock_objects.patch"
+                    },
+                    "phpunit/phpunit": {
+                        "Fix PHP 7 compatibility": "https://yiisoft.github.io/phpunit-patches/phpunit_php7.patch",
+                        "Fix PHP 8 compatibility": "https://yiisoft.github.io/phpunit-patches/phpunit_php8.patch"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "yii\\httpclient\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Paul Klimov",
+                    "email": "klimov.paul@gmail.com"
+                }
+            ],
+            "description": "HTTP client extension for the Yii framework",
+            "keywords": [
+                "curl",
+                "http",
+                "httpclient",
+                "yii2"
+            ],
+            "support": {
+                "forum": "http://www.yiiframework.com/forum/",
+                "irc": "irc://irc.freenode.net/yii",
+                "issues": "https://github.com/yiisoft/yii2-httpclient/issues",
+                "source": "https://github.com/yiisoft/yii2-httpclient",
+                "wiki": "http://www.yiiframework.com/wiki/"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/yiisoft",
+                    "type": "github"
+                },
+                {
+                    "url": "https://opencollective.com/yiisoft",
+                    "type": "open_collective"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/yiisoft/yii2-httpclient",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2023-05-22T18:32:24+00:00"
+        },
+        {
             "name": "yiisoft/yii2-imagine",
             "version": "2.2.0",
             "source": {
@@ -4585,6 +5718,123 @@
             "time": "2017-11-25T15:32:29+00:00"
         },
         {
+            "name": "yiisoft/yii2-queue",
+            "version": "2.3.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/yiisoft/yii2-queue.git",
+                "reference": "5c14c3f6e83b2e2d150a969dc6eda4e083b73956"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/yiisoft/yii2-queue/zipball/5c14c3f6e83b2e2d150a969dc6eda4e083b73956",
+                "reference": "5c14c3f6e83b2e2d150a969dc6eda4e083b73956",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.0",
+                "symfony/process": "^3.3||^4.0||^5.0||^6.0",
+                "yiisoft/yii2": "~2.0.14"
+            },
+            "require-dev": {
+                "aws/aws-sdk-php": ">=2.4",
+                "cweagans/composer-patches": "^1.7",
+                "enqueue/amqp-lib": "^0.8||^0.9.10||^0.10.0",
+                "enqueue/stomp": "^0.8.39||^0.10.0",
+                "opis/closure": "*",
+                "pda/pheanstalk": "~3.2.1",
+                "php-amqplib/php-amqplib": "^2.8.0||^3.0.0",
+                "phpunit/phpunit": "4.8.34",
+                "yiisoft/yii2-debug": "~2.1.0",
+                "yiisoft/yii2-gii": "~2.2.0",
+                "yiisoft/yii2-redis": "~2.0.0"
+            },
+            "suggest": {
+                "aws/aws-sdk-php": "Need for aws SQS.",
+                "enqueue/amqp-lib": "Need for AMQP interop queue.",
+                "enqueue/stomp": "Need for Stomp queue.",
+                "ext-gearman": "Need for Gearman queue.",
+                "ext-pcntl": "Need for process signals.",
+                "pda/pheanstalk": "Need for Beanstalk queue.",
+                "php-amqplib/php-amqplib": "Need for AMQP queue.",
+                "yiisoft/yii2-redis": "Need for Redis queue."
+            },
+            "type": "yii2-extension",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.x-dev"
+                },
+                "composer-exit-on-patch-failure": true,
+                "patches": {
+                    "phpunit/phpunit-mock-objects": {
+                        "Fix PHP 7 and 8 compatibility": "https://yiisoft.github.io/phpunit-patches/phpunit_mock_objects.patch"
+                    },
+                    "phpunit/phpunit": {
+                        "Fix PHP 7 compatibility": "https://yiisoft.github.io/phpunit-patches/phpunit_php7.patch",
+                        "Fix PHP 8 compatibility": "https://yiisoft.github.io/phpunit-patches/phpunit_php8.patch"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "yii\\queue\\": "src",
+                    "yii\\queue\\db\\": "src/drivers/db",
+                    "yii\\queue\\sqs\\": "src/drivers/sqs",
+                    "yii\\queue\\amqp\\": "src/drivers/amqp",
+                    "yii\\queue\\file\\": "src/drivers/file",
+                    "yii\\queue\\sync\\": "src/drivers/sync",
+                    "yii\\queue\\redis\\": "src/drivers/redis",
+                    "yii\\queue\\stomp\\": "src/drivers/stomp",
+                    "yii\\queue\\gearman\\": "src/drivers/gearman",
+                    "yii\\queue\\beanstalk\\": "src/drivers/beanstalk",
+                    "yii\\queue\\amqp_interop\\": "src/drivers/amqp_interop"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Roman Zhuravlev",
+                    "email": "zhuravljov@gmail.com"
+                }
+            ],
+            "description": "Yii2 Queue Extension which supported DB, Redis, RabbitMQ, Beanstalk, SQS and Gearman",
+            "keywords": [
+                "async",
+                "beanstalk",
+                "db",
+                "gearman",
+                "gii",
+                "queue",
+                "rabbitmq",
+                "redis",
+                "sqs",
+                "yii"
+            ],
+            "support": {
+                "docs": "https://github.com/yiisoft/yii2-queue/blob/master/docs/guide",
+                "issues": "https://github.com/yiisoft/yii2-queue/issues",
+                "source": "https://github.com/yiisoft/yii2-queue"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/yiisoft",
+                    "type": "github"
+                },
+                {
+                    "url": "https://opencollective.com/yiisoft",
+                    "type": "open_collective"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/yiisoft/yii2-queue",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2023-10-03T16:02:00+00:00"
+        },
+        {
             "name": "yiisoft/yii2-symfonymailer",
             "version": "2.0.4",
             "source": {
@@ -4661,64 +5911,6 @@
         }
     ],
     "packages-dev": [
-        {
-            "name": "curl/curl",
-            "version": "2.5.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/php-mod/curl.git",
-                "reference": "c4f8799c471e43b7c782c77d5c6e178d0465e210"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/php-mod/curl/zipball/c4f8799c471e43b7c782c77d5c6e178d0465e210",
-                "reference": "c4f8799c471e43b7c782c77d5c6e178d0465e210",
-                "shasum": ""
-            },
-            "require": {
-                "ext-curl": "*",
-                "php": "^5.6 | ^7.0 | ^8.0"
-            },
-            "require-dev": {
-                "yoast/phpunit-polyfills": "^0.2.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "Curl": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "php-curl-class",
-                    "homepage": "https://github.com/php-curl-class"
-                },
-                {
-                    "name": "Hassan Amouhzi",
-                    "email": "hassan@anezi.net",
-                    "homepage": "http://hassan.amouhzi.com"
-                },
-                {
-                    "name": "user52",
-                    "homepage": "https://github.com/user52"
-                }
-            ],
-            "description": "cURL class for PHP",
-            "homepage": "https://github.com/php-mod/curl",
-            "keywords": [
-                "curl",
-                "dot"
-            ],
-            "support": {
-                "issues": "https://github.com/php-mod/curl/issues",
-                "source": "https://github.com/php-mod/curl/tree/2.5.0"
-            },
-            "time": "2022-12-14T13:27:59+00:00"
-        },
         {
             "name": "deployer/deployer",
             "version": "v3.3.0",
@@ -4941,132 +6133,6 @@
                 "source": "https://github.com/igorw/evenement/tree/master"
             },
             "time": "2017-07-17T17:39:19+00:00"
-        },
-        {
-            "name": "giggsey/libphonenumber-for-php",
-            "version": "8.13.31",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/giggsey/libphonenumber-for-php.git",
-                "reference": "a4934bddda4672d12f21728e08bd575913bdc310"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/giggsey/libphonenumber-for-php/zipball/a4934bddda4672d12f21728e08bd575913bdc310",
-                "reference": "a4934bddda4672d12f21728e08bd575913bdc310",
-                "shasum": ""
-            },
-            "require": {
-                "giggsey/locale": "^1.7|^2.0",
-                "php": ">=5.3.2",
-                "symfony/polyfill-mbstring": "^1.17"
-            },
-            "require-dev": {
-                "pear/pear-core-minimal": "^1.9",
-                "pear/pear_exception": "^1.0",
-                "pear/versioncontrol_git": "^0.5",
-                "phing/phing": "^2.7",
-                "php-coveralls/php-coveralls": "^1.0|^2.0",
-                "symfony/console": "^2.8|^3.0|^v4.4|^v5.2",
-                "symfony/phpunit-bridge": "^4.2 || ^5"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "8.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "libphonenumber\\": "src/"
-                },
-                "exclude-from-classmap": [
-                    "/src/data/",
-                    "/src/carrier/data/",
-                    "/src/geocoding/data/",
-                    "/src/timezone/data/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "Apache-2.0"
-            ],
-            "authors": [
-                {
-                    "name": "Joshua Gigg",
-                    "email": "giggsey@gmail.com",
-                    "homepage": "https://giggsey.com/"
-                }
-            ],
-            "description": "PHP Port of Google's libphonenumber",
-            "homepage": "https://github.com/giggsey/libphonenumber-for-php",
-            "keywords": [
-                "geocoding",
-                "geolocation",
-                "libphonenumber",
-                "mobile",
-                "phonenumber",
-                "validation"
-            ],
-            "support": {
-                "issues": "https://github.com/giggsey/libphonenumber-for-php/issues",
-                "source": "https://github.com/giggsey/libphonenumber-for-php"
-            },
-            "time": "2024-02-26T08:31:45+00:00"
-        },
-        {
-            "name": "giggsey/locale",
-            "version": "2.5",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/giggsey/Locale.git",
-                "reference": "e6d4540109a01dd2bc7334cdc842d6a6a67cf239"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/giggsey/Locale/zipball/e6d4540109a01dd2bc7334cdc842d6a6a67cf239",
-                "reference": "e6d4540109a01dd2bc7334cdc842d6a6a67cf239",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.2"
-            },
-            "require-dev": {
-                "ext-json": "*",
-                "pear/pear-core-minimal": "^1.9",
-                "pear/pear_exception": "^1.0",
-                "pear/versioncontrol_git": "^0.5",
-                "phing/phing": "^2.7",
-                "php-coveralls/php-coveralls": "^2.0",
-                "phpunit/phpunit": "^8.5|^9.5",
-                "symfony/console": "^5.0|^6.0",
-                "symfony/filesystem": "^5.0|^6.0",
-                "symfony/finder": "^5.0|^6.0",
-                "symfony/process": "^5.0|^6.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Giggsey\\Locale\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Joshua Gigg",
-                    "email": "giggsey@gmail.com",
-                    "homepage": "https://giggsey.com/"
-                }
-            ],
-            "description": "Locale functions required by libphonenumber-for-php",
-            "support": {
-                "issues": "https://github.com/giggsey/Locale/issues",
-                "source": "https://github.com/giggsey/Locale/tree/2.5"
-            },
-            "time": "2023-11-01T17:19:48+00:00"
         },
         {
             "name": "guzzlehttp/psr7",
@@ -5428,118 +6494,6 @@
             "time": "2016-01-25T15:43:01+00:00"
         },
         {
-            "name": "luyadev/luya-composer",
-            "version": "1.1.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/luyadev/luya-composer.git",
-                "reference": "598541d1ae6fa7bc51d862f67ab3400f2538bf47"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/luyadev/luya-composer/zipball/598541d1ae6fa7bc51d862f67ab3400f2538bf47",
-                "reference": "598541d1ae6fa7bc51d862f67ab3400f2538bf47",
-                "shasum": ""
-            },
-            "require": {
-                "composer-plugin-api": "^1.1 | ^2.0"
-            },
-            "require-dev": {
-                "composer/composer": "^1.0 | ^2.0@dev",
-                "phpunit/phpunit": "~5.0"
-            },
-            "type": "composer-plugin",
-            "extra": {
-                "class": "luya\\composer\\Plugin",
-                "branch-alias": {
-                    "dev-master": "1.0.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "luya\\composer\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Basil Suter",
-                    "email": "basil@nadar.io"
-                }
-            ],
-            "description": "LUYA composer core",
-            "keywords": [
-                "composer",
-                "luya"
-            ],
-            "support": {
-                "issues": "https://github.com/luyadev/luya-composer/issues",
-                "source": "https://github.com/luyadev/luya-composer/tree/master"
-            },
-            "time": "2020-07-30T09:02:41+00:00"
-        },
-        {
-            "name": "luyadev/luya-core",
-            "version": "2.3.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/luyadev/luya-core.git",
-                "reference": "1d7b837cedeecf4c72096135f3cc291c825486f0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/luyadev/luya-core/zipball/1d7b837cedeecf4c72096135f3cc291c825486f0",
-                "reference": "1d7b837cedeecf4c72096135f3cc291c825486f0",
-                "shasum": ""
-            },
-            "require": {
-                "curl/curl": "^2.0 || ^1.0",
-                "giggsey/libphonenumber-for-php": "^8.11",
-                "luyadev/luya-composer": "^1.0",
-                "luyadev/yii-helpers": "^1.0",
-                "phpmailer/phpmailer": "^6.0",
-                "yiisoft/yii2": "~2.0.15"
-            },
-            "bin": [
-                "bin/luya"
-            ],
-            "type": "luya-core",
-            "autoload": {
-                "psr-4": {
-                    "luya\\": ""
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Basil Suter",
-                    "email": "git@nadar.io",
-                    "homepage": "https://github.com/nadar"
-                }
-            ],
-            "description": "LUYA is a scalable web framework and content management system with the goal to please developers, clients and users alike.",
-            "homepage": "https://luya.io",
-            "keywords": [
-                "admin",
-                "cms",
-                "core",
-                "luya",
-                "yii",
-                "yii2"
-            ],
-            "support": {
-                "issues": "https://github.com/luyadev/luya/issues",
-                "source": "https://github.com/luyadev/luya-core/tree/2.3.1"
-            },
-            "time": "2024-02-07T13:19:25+00:00"
-        },
-        {
             "name": "luyadev/luya-deployer",
             "version": "1.0.9",
             "source": {
@@ -5592,133 +6546,6 @@
                 "source": "https://github.com/luyadev/luya-deployer/tree/1.0.9"
             },
             "time": "2020-05-07T12:51:25+00:00"
-        },
-        {
-            "name": "luyadev/yii-helpers",
-            "version": "1.6.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/luyadev/yii-helpers.git",
-                "reference": "a32e15360103e545fec06657a487c648adfafed8"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/luyadev/yii-helpers/zipball/a32e15360103e545fec06657a487c648adfafed8",
-                "reference": "a32e15360103e545fec06657a487c648adfafed8",
-                "shasum": ""
-            },
-            "require": {
-                "yiisoft/yii2": "^2.0"
-            },
-            "require-dev": {
-                "friendsofphp/php-cs-fixer": "^3.2",
-                "luyadev/luya-testsuite": "^2.0",
-                "phpstan/phpstan": "^1.7",
-                "rector/rector": "^0.14.2"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "luya\\yii\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Basil Suter",
-                    "email": "git@nadar.io"
-                }
-            ],
-            "description": "Static helper methods in addition to the Yii Framework.",
-            "support": {
-                "issues": "https://github.com/luyadev/yii-helpers/issues",
-                "source": "https://github.com/luyadev/yii-helpers/tree/1.6.0"
-            },
-            "time": "2024-02-14T14:20:13+00:00"
-        },
-        {
-            "name": "phpmailer/phpmailer",
-            "version": "v6.9.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/PHPMailer/PHPMailer.git",
-                "reference": "039de174cd9c17a8389754d3b877a2ed22743e18"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/PHPMailer/PHPMailer/zipball/039de174cd9c17a8389754d3b877a2ed22743e18",
-                "reference": "039de174cd9c17a8389754d3b877a2ed22743e18",
-                "shasum": ""
-            },
-            "require": {
-                "ext-ctype": "*",
-                "ext-filter": "*",
-                "ext-hash": "*",
-                "php": ">=5.5.0"
-            },
-            "require-dev": {
-                "dealerdirect/phpcodesniffer-composer-installer": "^1.0",
-                "doctrine/annotations": "^1.2.6 || ^1.13.3",
-                "php-parallel-lint/php-console-highlighter": "^1.0.0",
-                "php-parallel-lint/php-parallel-lint": "^1.3.2",
-                "phpcompatibility/php-compatibility": "^9.3.5",
-                "roave/security-advisories": "dev-latest",
-                "squizlabs/php_codesniffer": "^3.7.2",
-                "yoast/phpunit-polyfills": "^1.0.4"
-            },
-            "suggest": {
-                "decomplexity/SendOauth2": "Adapter for using XOAUTH2 authentication",
-                "ext-mbstring": "Needed to send email in multibyte encoding charset or decode encoded addresses",
-                "ext-openssl": "Needed for secure SMTP sending and DKIM signing",
-                "greew/oauth2-azure-provider": "Needed for Microsoft Azure XOAUTH2 authentication",
-                "hayageek/oauth2-yahoo": "Needed for Yahoo XOAUTH2 authentication",
-                "league/oauth2-google": "Needed for Google XOAUTH2 authentication",
-                "psr/log": "For optional PSR-3 debug logging",
-                "symfony/polyfill-mbstring": "To support UTF-8 if the Mbstring PHP extension is not enabled (^1.2)",
-                "thenetworg/oauth2-azure": "Needed for Microsoft XOAUTH2 authentication"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "PHPMailer\\PHPMailer\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "LGPL-2.1-only"
-            ],
-            "authors": [
-                {
-                    "name": "Marcus Bointon",
-                    "email": "phpmailer@synchromedia.co.uk"
-                },
-                {
-                    "name": "Jim Jagielski",
-                    "email": "jimjag@gmail.com"
-                },
-                {
-                    "name": "Andy Prevost",
-                    "email": "codeworxtech@users.sourceforge.net"
-                },
-                {
-                    "name": "Brent R. Matzelle"
-                }
-            ],
-            "description": "PHPMailer is a full-featured email creation and transfer class for PHP",
-            "support": {
-                "issues": "https://github.com/PHPMailer/PHPMailer/issues",
-                "source": "https://github.com/PHPMailer/PHPMailer/tree/v6.9.1"
-            },
-            "funding": [
-                {
-                    "url": "https://github.com/Synchro",
-                    "type": "github"
-                }
-            ],
-            "time": "2023-11-25T22:23:28+00:00"
         },
         {
             "name": "phpseclib/phpseclib",
@@ -7404,67 +8231,6 @@
                 }
             ],
             "time": "2024-01-29T20:11:03+00:00"
-        },
-        {
-            "name": "symfony/process",
-            "version": "v3.4.47",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/process.git",
-                "reference": "b8648cf1d5af12a44a51d07ef9bf980921f15fca"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/process/zipball/b8648cf1d5af12a44a51d07ef9bf980921f15fca",
-                "reference": "b8648cf1d5af12a44a51d07ef9bf980921f15fca",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^5.5.9|>=7.0.8"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Symfony\\Component\\Process\\": ""
-                },
-                "exclude-from-classmap": [
-                    "/Tests/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
-                },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "https://symfony.com/contributors"
-                }
-            ],
-            "description": "Symfony Process Component",
-            "homepage": "https://symfony.com",
-            "support": {
-                "source": "https://github.com/symfony/process/tree/v3.4.47"
-            },
-            "funding": [
-                {
-                    "url": "https://symfony.com/sponsor",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://github.com/fabpot",
-                    "type": "github"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
-                    "type": "tidelift"
-                }
-            ],
-            "time": "2020-10-24T10:57:07+00:00"
         },
         {
             "name": "symfony/var-exporter",

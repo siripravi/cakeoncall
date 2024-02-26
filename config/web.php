@@ -100,6 +100,7 @@ $config = [
         'nyiixta' => [
             'class' => 'siripravi\nyiixta\Module',
         ],
+     
         'user' => [
             'class' => 'siripravi\userhelper\Module',
          //   'layout' => '@app/themes/cakeBaker/views/layouts/auth',
@@ -152,9 +153,9 @@ $config = [
                 'nyiixta' => [
                     'class' => 'siripravi\nyiixta\Module',
                 ],
-                'catalog' => [
+              /* 'catalog' => [
                     'class' => 'app\modules\catalog\Module',
-                ],
+                ],*/
             ],
         ],
 
