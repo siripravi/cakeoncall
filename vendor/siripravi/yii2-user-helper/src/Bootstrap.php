@@ -11,7 +11,7 @@
 
 namespace siripravi\userhelper;
 
-use siripray\userhelper\models\User;
+use siripravi\userhelper\models\User;
 use Yii;
 use yii\authclient\Collection;
 use yii\base\BootstrapInterface;
