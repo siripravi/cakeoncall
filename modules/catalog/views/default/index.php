@@ -1,7 +1,7 @@
 <?php
 
 use yii\widgets\LinkPager;
-use luya\admin\filters\MediumCrop;
+use app\modules\storage\filters\MediumCrop;
 
 /* @var $this \luya\web\View */
 /* @var $provider \yii\data\ActiveDataProvider */
@@ -14,8 +14,9 @@ use luya\admin\filters\MediumCrop;
                     <div class="card h-100">
                     <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
                         <!-- Product image-->
-                        <img src="<?= $item->getImage()->applyFilter(MediumCrop::identifier())->source; ?>" class="card-img-top" />
-                       
+                        <?php if($item->getImage()):?>
+                        <img src="<?= Yii::$app->storage->getImage($item->image_id)->source; ?>" class="card-img-top" />
+                        <?php endif;  ?> <!--= $item->image_id;  ?-->
                         <!-- Product details-->
                         <div class="card-body p-4">
                             <div class="text-center">

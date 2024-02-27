@@ -19,7 +19,7 @@ namespace app\modules\catalog\components;
  */
 class BaseController extends \yii\web\Controller
 {
-    public $layout = '@app/themes/cakeBaker/views/layouts/detail';
+    public $layout = '@app/views/layouts/detail';
     public $secClass = "container my-2 my-md-3";
 
     public $bannerTitle = "Some Title";

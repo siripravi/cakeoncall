@@ -60,7 +60,7 @@ class DefaultController extends BaseController
 
     public function actionIndex()
     {
-        return "OK FINE"; die;
+        
         $provider = new ActiveDataProvider([
             'query' => Article::find()
                 ->andWhere(['enabled' => 1]),

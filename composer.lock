@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a29776810495593d46162a114fa9fe9e",
+    "content-hash": "618bd05d57033afc51290985cc4e9a3a",
     "packages": [
         {
             "name": "biladina/yii2-ajaxcrud-bs4",

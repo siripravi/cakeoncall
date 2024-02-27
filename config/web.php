@@ -47,6 +47,11 @@ $config = [
                 ],
             ],
         ],
+        'storage' => [
+            'class' => 'app\modules\storage\filesystem\LocalFileSystem',
+            'whitelistExtensions' => ['jpg', 'png'],
+            'whitelistMimeTypes' => ['text/plain', 'image/svg+xml'], // as this is the mime type for csv files
+        ],
         'db' => $db,
         'urlManager' => [
             'class' => 'app\components\SiteUrlManager',
@@ -54,6 +59,7 @@ $config = [
             'showScriptName' => false,
             'rules' => [
                 '' => 'site/index',
+                'product-info/<title:[0-9a-z\-]+>' => 'catalog/default/product-info',
                 'image/<size:[0-9a-z\-]+>/<name>.<extension:[a-z]+>' => 'admin/image/default/index',
                 // 'file/<name>.<extension:[a-z]+>' => 'admin/image/default/file',                
                 $params['images_dir'] . '/<dir:[a-zA-Z0-9-_\/]+>/<action:(small|medium|large)>/<name:[a-zA-Z0-9-_\.]+>' => 'image/<action>',
@@ -77,14 +83,7 @@ $config = [
                 //  if (Yii::$app->cart->saveToDataBase) Yii::$app->cart->transportSessionDataToDB();
             },
         ],
-        /*
-        'urlManager' => [
-            'enablePrettyUrl' => true,
-            'showScriptName' => false,
-            'rules' => [
-            ],
-        ],
-        */
+       
     ],
     'modules'  =>  [
         'slider' => [

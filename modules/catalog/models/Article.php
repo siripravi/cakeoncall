@@ -1,6 +1,6 @@
 <?php
 
-namespace siripravi\ecommerce\models;
+namespace app\modules\catalog\models;
 
 use Yii;
 use yii\helpers\Inflector;
@@ -303,7 +303,12 @@ class Article extends ActiveRecord
      */
     public function getImage()
     {
-        return Yii::$app->storage->getImage($this->image_id);
+        $image = Yii::$app->storage->getImage($this->image_id);
+        if(isset($image)){
+            return $image;
+        }
+        return false;
+       // return Yii::$app->storage->getImage($this->image_id);
     }
 
     /**

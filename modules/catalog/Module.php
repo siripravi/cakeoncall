@@ -11,9 +11,14 @@ class Module extends \yii\base\Module
       /**
      * {@inheritdoc}
      */
-    public $controllerNamespace = 'app\modules\catalog\controllers\backend';
+    public $controllerNamespace = 'app\modules\catalog\controllers';
     protected $_isBackend;
+    public $articleDefaultOrder = ['created_at' => SORT_DESC];
     
+    /**
+     * @var integer Default number of pages.
+     */
+    public $articleDefaultPageSize = 10;
     /**
      * {@inheritdoc}
      */
@@ -72,7 +77,7 @@ class Module extends \yii\base\Module
     /**
      * @inheritdoc
      */
-    /*public $urlRules = [
+    public $urlRules = [
         
         ['pattern' => 'catalog/page-<page:[0-9]+>', 'route' => 'catalog/category/index'],
         ['pattern' => 'catalog', 'route' => 'catalog/category/pod'],
@@ -91,9 +96,6 @@ class Module extends \yii\base\Module
             'pattern' => 'ajax-info',
             'route' => 'catalog/default/ajax-info',
         ],
-       
-
-
-    ];*/
+    ];
 
 }
