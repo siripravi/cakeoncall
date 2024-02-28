@@ -45,7 +45,7 @@ $menuItems = [
             $this->render("_mega")
         ]
     ],
-    ['label' => Yii::t('app', 'Blog'), 'url' => ['/blog']]
+    ['label' => Yii::t('app', 'Shop'), 'url' => ['/catalog']]
 
 ];
 $userItems = [];

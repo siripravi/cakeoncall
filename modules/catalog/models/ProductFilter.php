@@ -1,5 +1,5 @@
 <?php
-namespace siripravi\ecommerce\models;
+namespace app\modules\catalog\models;
 use yii\base\Model;
 use yii\data\ActiveDataProvider;
 use yii\db\Query;

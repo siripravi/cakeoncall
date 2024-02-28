@@ -5,10 +5,10 @@ use yii\base\Widget;
 use yii\helpers\Html;
 use luya\helpers\ArrayHelper;
 //use kartik\widgets\Select2;
-use siripravi\ecommerce\models\Value;
-use siripravi\ecommerce\models\ArticleValueRef;
+use app\modules\catalog\models\Value;
+use app\modules\catalog\models\ArticleValueRef;
 use conquer\select2\Select2Widget;
-use siripravi\ecommerce\frontend\widgets\PriceTable;
+use app\modules\catalog\widgets\PriceTable;
 ?>
 
 <?php Pjax::begin(['id' => 'feature-pjax']); ?>

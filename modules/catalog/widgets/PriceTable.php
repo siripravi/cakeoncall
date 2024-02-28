@@ -7,9 +7,9 @@
  * Time: 13:01
  */
 
-namespace siripravi\ecommerce\frontend\widgets;
+namespace app\modules\catalog\widgets;
 
-use siripravi\ecommerce\models\Article;
+use app\modules\catalog\models\Article;
 use Yii;
 use yii\base\Widget;
 use yii\helpers\ArrayHelper;

@@ -4007,6 +4007,59 @@
             "install-path": "../paragonie/random_compat"
         },
         {
+            "name": "paulzi/yii2-json-behavior",
+            "version": "v1.0.7",
+            "version_normalized": "1.0.7.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/paulzi/yii2-json-behavior.git",
+                "reference": "37b474f78a03d4c88f708721899efb6fc5164eee"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/paulzi/yii2-json-behavior/zipball/37b474f78a03d4c88f708721899efb6fc5164eee",
+                "reference": "37b474f78a03d4c88f708721899efb6fc5164eee",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0",
+                "yiisoft/yii2": "~2.0.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0"
+            },
+            "time": "2020-03-27T08:40:58+00:00",
+            "type": "yii2-extension",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "paulzi\\jsonBehavior\\": "./src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PaulZi",
+                    "email": "pavel.zimakoff@gmail.com"
+                }
+            ],
+            "description": "Yii2 json attribute behavior",
+            "keywords": [
+                "Behavior",
+                "json",
+                "validator",
+                "yii2"
+            ],
+            "support": {
+                "issues": "https://github.com/paulzi/yii2-json-behavior/issues?state=open",
+                "source": "https://github.com/paulzi/yii2-json-behavior"
+            },
+            "install-path": "../paulzi/yii2-json-behavior"
+        },
+        {
             "name": "phpmailer/phpmailer",
             "version": "v6.9.1",
             "version_normalized": "6.9.1.0",

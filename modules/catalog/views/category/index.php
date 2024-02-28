@@ -6,7 +6,7 @@
 /** @var $dataProvider yii\data\ActiveDataProvider */
 
 
-use siripravi\ecommerce\models\Group;
+use app\modules\catalog\models\Group;
 use yii\helpers\Url;
 use yii\widgets\ListView;
 use luya\admin\filters\SmallThumbnail;

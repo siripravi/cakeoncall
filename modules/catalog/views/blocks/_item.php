@@ -1,6 +1,6 @@
 <?php
 
-use siripravi\ecommerce\frontend\widgets\PriceTable;
+use app\modules\catalog\widgets\PriceTable;
 use yii\helpers\Html;
 use yii\helpers\Url;
 

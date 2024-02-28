@@ -5,9 +5,9 @@
  * @copyright Copyright (c) 2017 Power Kernel
  */
 
- namespace siripravi\ecommerce\frontend\widgets;
+ namespace app\modules\catalog\widgets;
 
- use siripravi\ecommerce\frontend\assets\PhotoswipeAsset;
+ use app\modules\catalog\assets\PhotoswipeAsset;
 
 
 use yii\base\Widget;

@@ -37,14 +37,15 @@ if (@$model->articles[0]->price) {
 ?>
 
 <div class="img-wrapper">
-    <a data-productid="<?= $model->id; ?>" href='<?= $model->getDetailUrl(); ?>'>
+    <a data-productid="<?= $model->id; ?>" href='<?= $model->getDetailUrl(); ?>'>      
+        
         <?php echo Html::img(
             Yii::$app->storage->getImage($model->cover_image_id)->source,
             ["width" => 292, "height" => 204]
         ) ?>
     </a>
     <span class="price"><?php echo $model->price_from; ?><br><span class="per">
-        <?= get_class($model);  ?>
+     
     </span></span>
 </div>
 <span class="info"><?= $model->groups[0]->name; ?></span>

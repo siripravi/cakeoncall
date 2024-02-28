@@ -22,12 +22,12 @@
  * ```
  */
 
-namespace siripravi\ecommerce\frontend\widgets;
+namespace app\modules\catalog\widgets;
 
-use siripravi\ecommerce\frontend\assets\PhotoswipeAsset;
+use app\modules\catalog\assets\PhotoswipeAsset;
 use yii\base\Widget;
 use yii\helpers\ArrayHelper;
-use siripravi\ecommerce\models\Article;
+use app\modules\catalog\models\Article;
 use yii\helpers\Html;
 
 class GalleryWidget extends Widget
@@ -102,7 +102,7 @@ class GalleryWidget extends Widget
             if ($model) {
                 foreach ($model->images as $id => $photo) {
                     $thumbnails[$id] = ['thumb' => $photo->image->applyFilter(MediumCrop::identifier())->source];
-                    $src = str_replace("\\","/",$photo->image->applyFilter(LargeCrop::identifier())->getSourceAbsolute());
+                    $src = str_replace("\","/",$photo->image->applyFilter(LargeCrop::identifier())->getSourceAbsolute());
                     $images[] = [
                         'src' => $src,
                        // 'src' => 'https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Vertical/'.$im[$id].'a.webp', //$src,

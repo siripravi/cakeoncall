@@ -8,9 +8,10 @@ use yii\db\ActiveRecord;
 use yii\behaviors\TimestampBehavior;
 use yii\db\Expression;
 use app\modules\catalog\behaviors\ManyToManyBehavior;
-use luya\gallery\models\Album;
+use app\modules\catalog\models\Album;
 use yii\helpers\Url;
 use yii\helpers\ArrayHelper;
+use app\modules\catalog\behaviors\JsonBehavior;
 /**
  * Article.
  * 
@@ -36,7 +37,7 @@ class Article extends ActiveRecord
 
     private $_price;
     private $_currency;
-
+public $jsonObject;
     public $adminFeatures = [];
 
     public $i18n = ['name', 'code'];
@@ -70,7 +71,13 @@ class Article extends ActiveRecord
                 'relations' => [
                     'value_ids' => ['setValues'],
                 ]
-            ]
+                ],
+                [
+                    'class'=>JsonBehavior::className(),
+                    'attributes'=>[
+                        'jsonObject' => 'name' 
+                    ]
+              ],
         ];
     }
 
@@ -317,7 +324,7 @@ class Article extends ActiveRecord
      */
     public function getDetailUrl()
     {
-        return Url::toRoute(['/product-info', 'id' => $this->id, 'title' => Inflector::slug($this->name)]);
+        return Url::toRoute(['/product-info', 'aID' => $this->id, 'aTitle' => Inflector::slug($this->name)]);
     }
 
     public static function getFeaturesFormData($id)
@@ -333,14 +340,14 @@ class Article extends ActiveRecord
             $category_ids = $product->group_ids;
             $prices = $article->prices;
             $priceList = ArrayHelper::index(ArrayHelper::toArray($prices, [
-                'siripravi\ecommerce\models\ArticlePrice' => [
+                'app\modules\catalog\models\ArticlePrice' => [
                     'article_id', 'value_id', 'currency_id', 'price', 'qty', 'unit_id'
                 ],
             ]), 'value_id');
 
             $obList = Feature::getObjectList(true, $category_ids);
             $pli =  ArrayHelper::toArray($obList, [
-                'siripravi\ecommerce\models\Feature' => [
+                'app\modules\catalog\models\Feature' => [
                     'id',
                     'name',
                     'type',

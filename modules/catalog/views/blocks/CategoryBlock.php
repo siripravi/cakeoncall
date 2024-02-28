@@ -14,7 +14,7 @@ use yii\helpers\Url;
  *
  * @var $this \luya\cms\base\PhpBlockView
  */
-//\siripravi\ecommerce\frontend\assets\Main::register(Yii::$app->view);
+//\app\modules\catalog\assets\Main::register(Yii::$app->view);
 ?>
 <div class="container">
     <div class="page-content">

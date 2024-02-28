@@ -45,7 +45,7 @@
                     if ($article) {
                         foreach ($article->images as $id => $photo) {
                             $thumbnails[$id] = ['thumb' => $photo->image->applyFilter(MediumCrop::identifier())->source];
-                            $src = str_replace("\\", "/", $photo->image->applyFilter(LargeCrop::identifier())->getSourceAbsolute());
+                            $src = str_replace("\", "/", $photo->image->applyFilter(LargeCrop::identifier())->getSourceAbsolute());
                             $images[] = [
                                 'src' => $src,
                                 // 'src' => 'https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Vertical/'.$im[$id].'a.webp', //$src,

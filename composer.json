@@ -35,7 +35,8 @@
     "lav45/yii2-ajax-create": "0.2.*",
     "biladina/yii2-ajaxcrud-bs4": "~3.0",
     "siripravi/yii2-user-helper": "~1.0.0" ,    
-    "luyadev/luya-core": "^2.3.1"
+    "luyadev/luya-core": "^2.3.1",
+    "paulzi/yii2-json-behavior" : "~1.0.0"
 
   },
   "require-dev": {

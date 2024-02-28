@@ -1,6 +1,7 @@
 <?php
 
 use yii\widgets\LinkPager;
+use yii\helpers\Json;
 use app\modules\storage\filters\MediumCrop;
 
 /* @var $this \luya\web\View */
@@ -15,15 +16,20 @@ use app\modules\storage\filters\MediumCrop;
                     <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Sale</div>
                         <!-- Product image-->
                         <?php if($item->getImage()):?>
-                        <img src="<?= Yii::$app->storage->getImage($item->image_id)->source; ?>" class="card-img-top" />
+                        <img src="<?= Yii::$app->storage->getImage($item->cover_image_id)->source; ?>" class="card-img-top" />
                         <?php endif;  ?> <!--= $item->image_id;  ?-->
                         <!-- Product details-->
                         <div class="card-body p-4">
                             <div class="text-center">
                                 <!-- Product name-->
-                                <h5 class="fw-bolder"><?= $item->name; ?></h5>
+                                <h5 class="fw-bolder"><?= '';//Json::decode($item->name)[Yii::$app->language]; ?>
+                                <?=  $item->name;  ?>
+                            </h5>
+                                
                                 <!-- Product price-->
                                 $40.00 - $80.00
+                               
+                                
                             </div>
                         </div>
                         <!-- Product actions-->

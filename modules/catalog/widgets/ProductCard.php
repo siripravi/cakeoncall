@@ -7,10 +7,10 @@
  * Time: 13:27
  */
 
-namespace siripravi\ecommerce\frontend\widgets;
+namespace app\modules\catalog\widgets;
 
-use siripravi\ecommerce\models\Review;
-use siripravi\ecommerce\models\Product;
+use app\modules\catalog\models\Review;
+use app\modules\catalog\models\Product;
 use yii\base\Widget;
 use yii\helpers\Url;
 

@@ -106,6 +106,9 @@ foreach ($slides as $sld) {
             <p><a class="btn btn-outline-secondary" href="https://www.yiiframework.com/extensions/">Yii Extensions &raquo;</a></p>
         </div>
     </div>
-
+    <div class="row">
+        <div class="container">]
+            <?php echo app\modules\catalog\widgets\GroupWidget::widget();?>
+    </div>
 </div>
 </div>

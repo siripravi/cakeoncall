@@ -10,7 +10,7 @@
  * @var $viewed boolean
  */
 
-use siripravi\ecommerce\frontend\widgets\ProductCard;
+use app\modules\catalog\widgets\ProductCard;
 
 ?>
 <!--

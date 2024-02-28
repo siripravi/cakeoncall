@@ -276,7 +276,7 @@ function genSku() {
   if (sku === variantSkuInitName + "-") {
     sku = sku.concat("DEFAULT");
   }
-  return sku.replace(/\s/g, "").replace(".", "\\.").toUpperCase();
+  return sku.replace(/\s/g, "").replace(".", "\.").toUpperCase();
 }
 
 $(".prod-att-radio").change(function () {

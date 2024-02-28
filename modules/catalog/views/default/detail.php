@@ -3,11 +3,11 @@ use luya\admin\filters\MediumCrop;
 use luya\admin\filters\LargeCrop;
 use luya\admin\filters\LargeThumbnail;
 use luya\admin\filters\MediumThumbnail;
-use siripravi\ecommerce\models\Article;
-use siripravi\ecommerce\frontend\widgets\ProductCard;
+use app\modules\catalog\models\Article;
+use app\modules\catalog\widgets\ProductCard;
 use luya\web\View;
-use siripravi\ecommerce\frontend\widgets\GalleryWidget;
-use siripravi\ecommerce\frontend\widgets\Carousel;
+use app\modules\catalog\widgets\GalleryWidget;
+use app\modules\catalog\widgets\Carousel;
 use yii\helpers\Html;
 
 /** @var View $this  */

@@ -14,7 +14,7 @@
 use yii\widgets\Pjax;
 use yii\helpers\Html;
 use yii\helpers\ArrayHelper;
-use siripravi\ecommerce\models\ArticlePrice;
+use app\modules\catalog\models\ArticlePrice;
 use yii\helpers\Url;
 ?>
 <span class="rounded-5 rounded-top-0">HELLO WORLD!</span>

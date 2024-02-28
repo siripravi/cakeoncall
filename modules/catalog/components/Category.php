@@ -2,7 +2,7 @@
 
 namespace app\modules\catalog\components;
 
-use siripravi\ecommerce\models\Group;
+use app\modules\catalog\models\Group;
 use Yii;
 use yii\web\NotFoundHttpException;
 

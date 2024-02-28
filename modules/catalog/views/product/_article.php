@@ -1,7 +1,7 @@
 <?php
 
 use luya\helpers\ArrayHelper;
-use siripravi\ecommerce\frontend\widgets\OrderFormWidget;
+use app\modules\catalog\widgets\OrderFormWidget;
 ?>
 <?php
 $radList = [];

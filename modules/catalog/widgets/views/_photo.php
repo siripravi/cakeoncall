@@ -9,8 +9,8 @@
  * @var $model dench\products\models\Product
  */
 
-use siripravi\ecommerce\frontend\widgets\GalleryWidget;
-use siripravi\ecommerce\frontend\widgets\Carousel;
+use app\modules\catalog\widgets\GalleryWidget;
+use app\modules\catalog\widgets\Carousel;
 ?>
 
 <?php

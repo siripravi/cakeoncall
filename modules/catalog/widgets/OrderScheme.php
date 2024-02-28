@@ -7,7 +7,7 @@
  * Time: 17:54
  */
 
-namespace siripravi\ecommerce\frontend\widgets;
+namespace app\modules\catalog\widgets;
 
 use yii\base\Widget;
 

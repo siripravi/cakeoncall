@@ -22,6 +22,7 @@ return array(
     'siripravi\\userhelper\\' => array($vendorDir . '/siripravi/yii2-user-helper/src'),
     'setasign\\Fpdi\\' => array($vendorDir . '/setasign/fpdi/src'),
     'phpseclib\\' => array($vendorDir . '/phpseclib/phpseclib/phpseclib'),
+    'paulzi\\jsonBehavior\\' => array($vendorDir . '/paulzi/yii2-json-behavior/src'),
     'luya\\yii\\' => array($vendorDir . '/luyadev/yii-helpers/src'),
     'luya\\deployer\\tests\\' => array($vendorDir . '/luyadev/luya-deployer/tests'),
     'luya\\composer\\' => array($vendorDir . '/luyadev/luya-composer/src'),

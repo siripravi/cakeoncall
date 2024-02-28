@@ -56,6 +56,7 @@ class ComposerStaticInit2188b2a24effa70dac906d91eb393da3
         'p' => 
         array (
             'phpseclib\\' => 10,
+            'paulzi\\jsonBehavior\\' => 20,
         ),
         'l' => 
         array (
@@ -249,6 +250,10 @@ class ComposerStaticInit2188b2a24effa70dac906d91eb393da3
         'phpseclib\\' => 
         array (
             0 => __DIR__ . '/..' . '/phpseclib/phpseclib/phpseclib',
+        ),
+        'paulzi\\jsonBehavior\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/paulzi/yii2-json-behavior/src',
         ),
         'luya\\yii\\' => 
         array (

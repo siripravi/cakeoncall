@@ -1,6 +1,6 @@
 <?php
 
-\siripravi\ecommerce\frontend\assets\Main::register($this);
+\app\modules\catalog\assets\Main::register($this);
 
 ?>
 <div class="container-fluid">

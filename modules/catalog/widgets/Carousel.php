@@ -1,12 +1,12 @@
 <?php
 
-namespace siripravi\ecommerce\frontend\widgets;
+namespace app\modules\catalog\widgets;
 
 use Yii;
 use yii\bootstrap5\Html;
 use yii\bootstrap5\Widget;
 use yii\helpers\ArrayHelper;
-use siripravi\ecommerce\frontend\assets\PhotoswipeAsset;
+use app\modules\catalog\assets\PhotoswipeAsset;
 
 class Carousel extends \yii\bootstrap5\Carousel
 {

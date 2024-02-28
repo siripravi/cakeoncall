@@ -1,7 +1,7 @@
 <?php
 
-use siripravi\ecommerce\models\Feature;
-use siripravi\ecommerce\models\Value;
+use app\modules\catalog\models\Feature;
+use app\modules\catalog\models\Value;
 use yii\helpers\Url;
 use yii\widgets\ActiveForm;
 

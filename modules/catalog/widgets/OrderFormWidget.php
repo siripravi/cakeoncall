@@ -7,11 +7,11 @@
  * Time: 14:02
  */
 
-namespace siripravi\ecommerce\frontend\widgets;
+namespace app\modules\catalog\widgets;
 
 use app\modules\shopcart\models\Cart;
-use siripravi\ecommerce\models\CartOrder;
-use siripravi\ecommerce\models\Article;
+use app\modules\catalog\models\CartOrder;
+use app\modules\catalog\models\Article;
 use Yii;
 use yii\base\Widget;
 use yii\helpers\ArrayHelper;
@@ -37,8 +37,6 @@ class OrderFormWidget extends Widget
     $articleRadios = [];
 
     $features = Article::getFeaturesFormData($this->key);
-
-
     foreach ($features as $aid => $feat) {
       $thumbnails = [];
       $images = [];
@@ -70,7 +68,7 @@ class OrderFormWidget extends Widget
           if ($article) {
             foreach ($article->images as $id => $photo) {
               $thumbnails[$id] = ['thumb' => $photo->image->applyFilter(MediumCrop::identifier())->source];
-              $src = str_replace("\\", "/", $photo->image->applyFilter(LargeCrop::identifier())->getSourceAbsolute());
+              $src = str_replace("\", "/", $photo->image->applyFilter(LargeCrop::identifier())->getSourceAbsolute());
               $images[] = [
                 'src' => $src,
                 // 'src' => 'https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Vertical/'.$im[$id].'a.webp', //$src,

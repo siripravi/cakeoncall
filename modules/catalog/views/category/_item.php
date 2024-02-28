@@ -9,7 +9,7 @@
  * @var app\models\Product $model
  */
 
-use siripravi\ecommerce\frontend\widgets\ProductCard;
+use app\modules\catalog\widgets\ProductCard;
 use yii\helpers\Url;
 echo ProductCard::widget([
     'model' => $model,

@@ -357,4 +357,13 @@ return array (
       '@yii/authclient' => $vendorDir . '/yiisoft/yii2-authclient/src',
     ),
   ),
+  'paulzi/yii2-json-behavior' => 
+  array (
+    'name' => 'paulzi/yii2-json-behavior',
+    'version' => '1.0.7.0',
+    'alias' => 
+    array (
+      '@paulzi/jsonBehavior' => $vendorDir . '/paulzi/yii2-json-behavior/src',
+    ),
+  ),
 );

@@ -34,7 +34,7 @@ use yii\helpers\Url;
  */
 class Group extends ActiveRecord
 {
-    use SortableTrait;
+   // use SortableTrait;
     public $adminFeatures = [];
     /**
      * @inheritdoc
@@ -199,6 +199,6 @@ class Group extends ActiveRecord
     public function getDetailUrl()
     {
        // return Url::toRoute(['/product-info', 'id' => $this->id, 'title' => Inflector::slug($this->name)]);
-       return Url::to((count($this->categories)) ? ['/ecommerce/category/pod', 'slug' => $category->slug] : ['/ecommerce/category/view', 'slug' => Inflector::slug($this->slug)]);
+       return Url::to((count($this->categories)) ? ['/catalog/category/pod', 'slug' => $category->slug] : ['/catalog/category/view', 'slug' => Inflector::slug($this->slug)]);
     }
 }

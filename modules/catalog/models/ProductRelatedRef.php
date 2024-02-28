@@ -1,6 +1,6 @@
 <?php
 
-namespace siripravi\ecommerce\models;
+namespace app\modules\catalog\models;
 
 use Yii;
 use yii\db\ActiveRecord;

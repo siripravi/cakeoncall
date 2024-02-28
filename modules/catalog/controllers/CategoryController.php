@@ -4,10 +4,10 @@ namespace app\modules\catalog\controllers;
 
 use app\modules\catalog\components\BaseController;
 use app\modules\catalog\components\Category;
-use siripravi\ecommerce\models\Group;
-use siripravi\ecommerce\models\Feature;
-use siripravi\ecommerce\models\Product;
-use siripravi\ecommerce\models\ProductFilter;
+use app\modules\catalog\models\Group;
+use app\modules\catalog\models\Feature;
+use app\modules\catalog\models\Product;
+use app\modules\catalog\models\ProductFilter;
 use Yii;
 use yii\web\Controller;
 use yii\data\ActiveDataProvider;

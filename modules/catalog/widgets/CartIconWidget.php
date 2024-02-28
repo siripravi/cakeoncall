@@ -7,9 +7,9 @@
  * Time: 14:02
  */
 
-namespace siripravi\ecommerce\frontend\widgets;
+namespace app\modules\catalog\widgets;
 
-use siripravi\ecommerce\models\Cart;
+use app\modules\catalog\models\Cart;
 use yii\base\Widget;
 use yii\helpers\ArrayHelper;
 use yii\helpers\Html;

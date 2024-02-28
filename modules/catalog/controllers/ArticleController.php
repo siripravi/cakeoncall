@@ -5,10 +5,10 @@ namespace app\modules\catalog\controllers;
 use app\modules\catalog\components\BaseController;
 //use app\models\Review;
 //use app\models\ReviewForm;
-use siripravi\ecommerce\models\Product;
-use siripravi\ecommerce\models\Article;
-use siripravi\ecommerce\models\Feature;
-use siripravi\ecommerce\models\CartOrder;
+use app\modules\catalog\models\Product;
+use app\modules\catalog\models\Article;
+use app\modules\catalog\models\Feature;
+use app\modules\catalog\models\CartOrder;
 
 //use app\traits\BlockTrait;
 use Yii;

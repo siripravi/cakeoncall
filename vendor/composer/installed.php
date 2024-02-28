@@ -3,7 +3,7 @@
         'name' => 'yiisoft/yii2-app-basic',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => 'd1977365cef7876a8e6ffe8575e608dfb8385a76',
+        'reference' => '1ab619cf10f9cc46ab7b482a7b3b1efb426e349f',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -639,6 +639,15 @@
             'aliases' => array(),
             'dev_requirement' => false,
         ),
+        'paulzi/yii2-json-behavior' => array(
+            'pretty_version' => 'v1.0.7',
+            'version' => '1.0.7.0',
+            'reference' => '37b474f78a03d4c88f708721899efb6fc5164eee',
+            'type' => 'yii2-extension',
+            'install_path' => __DIR__ . '/../paulzi/yii2-json-behavior',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
         'phpmailer/phpmailer' => array(
             'pretty_version' => 'v6.9.1',
             'version' => '6.9.1.0',
@@ -1158,7 +1167,7 @@
         'yiisoft/yii2-app-basic' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => 'd1977365cef7876a8e6ffe8575e608dfb8385a76',
+            'reference' => '1ab619cf10f9cc46ab7b482a7b3b1efb426e349f',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

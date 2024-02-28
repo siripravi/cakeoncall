@@ -1,6 +1,6 @@
 <?php
 
-use siripravi\ecommerce\frontend\widgets\Carousel;
+use app\modules\catalog\widgets\Carousel;
 
 $imageInfo = $this->extraValue('articleImages');
 /*

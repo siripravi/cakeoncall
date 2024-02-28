@@ -9,7 +9,7 @@
 namespace app\modules\catalog\components;
 
 //use common\models\CartItem;
-//use frontend\models\Search;
+//use \models\Search;
 
 /**
  * Class Controller

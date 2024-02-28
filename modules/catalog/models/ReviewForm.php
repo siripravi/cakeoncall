@@ -6,7 +6,7 @@
  * Time: 15:46
  */
 
-namespace siripravi\ecommerce\models;
+namespace app\modules\catalog\models;
 
 //use himiklab\yii2\recaptcha\ReCaptchaValidator2;
 use Yii;

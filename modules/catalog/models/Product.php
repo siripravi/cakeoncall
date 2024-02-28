@@ -4,7 +4,7 @@ namespace app\modules\catalog\models;
 
 use Yii;
 use yii\db\ActiveRecord;
-
+use yii\web\NotFoundHttpException;
 use yii\behaviors\TimestampBehavior;
 use app\modules\catalog\behaviors\ManyToManyBehavior;
 use yii\db\Expression;
@@ -151,6 +151,20 @@ class Product extends ActiveRecord
             $features = [];
         }
     }
+     /**
+     * Get image object.
+     *
+     * @return \luya\admin\image\Item|boolean
+     */
+    public function getImage()
+    {
+        $image = Yii::$app->storage->getImage($this->cover_image_id);
+        if(isset($image)){
+            return $image;
+        }
+        return false;
+       // return Yii::$app->storage->getImage($this->image_id);
+    }
 
     public static function viewPage($id)
     {
@@ -161,7 +175,7 @@ class Product extends ActiveRecord
         //echo $page->id; die;  //->createCommand()->getRawSql(); die;
           }
         if ($page === null) {
-            throw new \NotFoundHttpException('The requested page does not exist.');
+            throw new NotFoundHttpException('The requested page does not exist.');
         }
         Yii::$app->view->params['page'] = $page;
         Yii::$app->view->title = $page->name;
@@ -186,6 +200,6 @@ class Product extends ActiveRecord
      */
     public function getDetailUrl()
     {
-        return Url::toRoute(['/product-info', 'id' => $this->id, 'title' => Inflector::slug($this->name)]);
+        return Url::toRoute(['/product-info', 'aID' => $this->id, 'aTitle' => Inflector::slug($this->name)]);
     }
 }

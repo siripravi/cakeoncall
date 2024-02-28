@@ -1,1 +1,1 @@
-<?= siripravi\ecommerce\widgets\CartWidget::widget();  ?>
+<?= app\modules\catalog\widgets\CartWidget::widget();  ?>

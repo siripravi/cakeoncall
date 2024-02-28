@@ -22,9 +22,9 @@ use luya\helpers\Url;
 use yii\base\Model;
 use luya\helpers\ArrayHelper;
 use luya\cms\models\Redirect;
-use siripravi\shopcart\models\Cart;
-use siripravi\shopcart\models\Order;
-use siripravi\shopcart\models\CartOrder;
+use app\modules\catalogmodels\Cart;
+use app\modules\catalogmodels\Order;
+use app\modules\shopcart\models\CartOrder;
 use app\modules\cart\widgets\CartWidget;
 use luya\cms\models\Block;
 use yii\data\ActiveDataProvider;
@@ -36,15 +36,7 @@ class DefaultController extends BaseController
     /**
      * @return array
      */
-    public function behaviors()
-    {
-        return [
-            [
-                'class' => 'yii\filters\AjaxFilter',
-                'only' => ['modal', 'add', 'del'],
-            ],
-        ];
-    }
+   
 
     public function actions()
     {
@@ -62,7 +54,7 @@ class DefaultController extends BaseController
     {
         
         $provider = new ActiveDataProvider([
-            'query' => Article::find()
+            'query' => Product::find()
                 ->andWhere(['enabled' => 1]),
             //  ->with(['createUser']),
             'sort' => [
@@ -475,9 +467,9 @@ class DefaultController extends BaseController
     }
 
 
-    public function actionProductInfo($id = null)
+    public function actionProductInfo($aID, $aTitle = null)
     {
-        $id = Yii::$app->request->get('id');
+        $id = Yii::$app->request->get('aID');
         $product = Product::viewPage($id);
         $model = new CartOrder();  //CartOrder();      
         $article_id = Yii::$app->request->post('article_id');  
@@ -540,7 +532,9 @@ class DefaultController extends BaseController
                 if ($article) {
                     foreach ($article->images as $id => $photo) {
                         $thumbnails[$id] = ['thumb' => $photo->image->applyFilter(MediumCrop::identifier())->source];
-                        $src = str_replace("\\", "/", $photo->image->applyFilter(LargeCrop::identifier())->getSourceAbsolute());
+                        $ps = $photo->image->applyFilter(LargeCrop::identifier())->getSourceAbsolute();
+                        $src = str_replace("\\", "/", $ps);
+                       
                         /* $images[] = [
                             'src' => $src,
                             // 'src' => 'https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Vertical/'.$im[$id].'a.webp', //$src,
@@ -604,7 +598,7 @@ class DefaultController extends BaseController
                 // Render the block content
                 $items[] = [
                     'label' => Html::img($thumb).$article->name,
-                    'content' => $phpBlock->renderFrontend(),
+                    'content' => $phpBlock->render(),
                     'active' => ($index == 0)
                 ];
             } else {

@@ -4,7 +4,7 @@ use kartik\form\ActiveForm; // or kartik\widgets\ActiveForm
 use yii\bootstrap5\Accordion;
 use kartik\date\DatePicker;
 use yii\helpers\Html;
-use siripravi\ecommerce\frontend\widgets\Carousel;
+use app\modules\catalog\widgets\Carousel;
 
 $articleOptions = $this->context->getCfgValues(); //$this->extraValue('articleOptions');
 //echo "<pre>";print_r($articleOptions); die;
