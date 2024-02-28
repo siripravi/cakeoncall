@@ -15,6 +15,7 @@ use yii\web\NotFoundHttpException;
 use Exception;
 use app\modules\catalog\components\BaseController;
 use luya\admin\filters\MediumCrop;
+use luya\admin\filters\TinyFilter;
 use luya\admin\filters\LargeCrop;
 use luya\helpers\Html;
 use luya\helpers\Json;
@@ -36,7 +37,7 @@ class DefaultController extends BaseController
     /**
      * @return array
      */
-   
+
 
     public function actions()
     {
@@ -52,7 +53,7 @@ class DefaultController extends BaseController
 
     public function actionIndex()
     {
-        
+
         $provider = new ActiveDataProvider([
             'query' => Product::find()
                 ->andWhere(['enabled' => 1]),
@@ -472,31 +473,31 @@ class DefaultController extends BaseController
         $id = Yii::$app->request->get('aID');
         $product = Product::viewPage($id);
         $model = new CartOrder();  //CartOrder();      
-        $article_id = Yii::$app->request->post('article_id');  
-        if(Yii::$app->request->post()){   
+        $article_id = Yii::$app->request->post('article_id');
+        if (Yii::$app->request->post()) {
             // echo "<pre>";print_r(Yii::$app->request->post()['OrderForm']);die;   
-            $post = Yii::$app->request->post()['CartOrder']; 
+            $post = Yii::$app->request->post()['CartOrder'];
             $model->setAttributes($post[$article_id]);
             $model->id = $article_id;
             $model->price = Article::calcCartPrice($model->selFeatures);
             $model->featureText = $model->formatFText();
-          //  $model->image = $article_id;
-           // $model->featureText = $model->formatFText();
-          /* $model->FeatureSel = $post[$article_id]['FeatureSel'];
+            //  $model->image = $article_id;
+            // $model->featureText = $model->formatFText();
+            /* $model->FeatureSel = $post[$article_id]['FeatureSel'];
            $model->Delivery =  $post[$article_id]['Delivery'];  */
-            if($model->validate()){
-            //if ($model->save()) {
-             // echo "S**UCCESS"; die;
+            if ($model->validate()) {
+                //if ($model->save()) {
+                // echo "S**UCCESS"; die;
                 \Yii::$app->session->setFlash('success');
-                \Yii::$app->cart->create($model, 1);              
+                \Yii::$app->cart->create($model, 1);
                 return Yii::$app->getResponse()->redirect('/shopping-cart');
-            }
-            else{
-                echo "<pre>"; print_r($model->errors);die;
-             
+            } else {
+                echo "<pre>";
+                print_r($model->errors);
+                die;
             }
         }
-        
+
         $key = $id; //Yii::$app->request->queryParams['key'];
         $articleImages = [];
         $selection = [];
@@ -532,9 +533,9 @@ class DefaultController extends BaseController
                 if ($article) {
                     foreach ($article->images as $id => $photo) {
                         $thumbnails[$id] = ['thumb' => $photo->image->applyFilter(MediumCrop::identifier())->source];
-                        $ps = $photo->image->applyFilter(LargeCrop::identifier())->getSourceAbsolute();
+                        $ps = $photo->image->applyFilter(TinyFilter::identifier())->getSourceAbsolute();
                         $src = str_replace("\\", "/", $ps);
-                       
+
                         /* $images[] = [
                             'src' => $src,
                             // 'src' => 'https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Vertical/'.$im[$id].'a.webp', //$src,
@@ -573,18 +574,18 @@ class DefaultController extends BaseController
         }*/
 
         // Get the block by its ID
-        $blockId = 66;
-        $block = Block::findOne(['id' => $blockId]);
-        $phpBlock = Yii::createObject($block->class);
+       // $blockId = 66;
+       // $block = Block::findOne(['id' => $blockId]);
+        $phpBlock = Yii::createObject('app\modules\catalog\widgets\ArticleOptionsWidget');
 
         $blockConfig = [];
         foreach ($product->articles as $index => $article) {
-            $thumb =  \Yii::$app->storage->getImage($article->image_id)->applyFilter(\app\filters\ThumbFilter::identifier())->source;
+            $thumb =  \Yii::$app->storage->getImage($article->image_id)->source;
             $blockConfig = [
                 'aId' => $article->id,
                 'image' => $thumb,
-               // 'price' => Article::calcCartPrice($model->selFeatures),
-               // 'featureText' => $model->formatFText(), 
+                // 'price' => Article::calcCartPrice($model->selFeatures),
+                // 'featureText' => $model->formatFText(), 
                 'name' => $article->name,
                 'key' => $key,
                 'cartOrder' => $model,
@@ -597,8 +598,8 @@ class DefaultController extends BaseController
             if ($phpBlock) {
                 // Render the block content
                 $items[] = [
-                    'label' => Html::img($thumb).$article->name,
-                    'content' => $phpBlock->render(),
+                    'label' => Html::img($thumb) . $article->name,
+                    'content' => $phpBlock->show(),
                     'active' => ($index == 0)
                 ];
             } else {
@@ -606,15 +607,8 @@ class DefaultController extends BaseController
                 echo "Block not found";
             }
         }
-        return Tabs::widget([
-            //'navType' => 'nav-tabs card-header full-width-tabs',
-            'navType' => 'nav nav-pills nav-fill',
-            'items' =>      $items,
-            'tabContentOptions' => ['class' => 'p-4'],
-            //  'itemOptions' => ['class'=>'card-body'],
-          //  'headerOptions' => ['class' => 'use-max-space'],
-            'encodeLabels'  => false
-
-        ]);
+        echo "<pre>";
+        print_r($articleImages);die;
+        return $this->render('article_info',['items' => $items]);
     }
 }
