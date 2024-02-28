@@ -30334,3 +30334,3144 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1709045591.3251
     'REQUEST_TIME' => 1709045591
 ]
+2024-02-27 16:04:43 [127.0.0.1][-][6rtfjfmht53nvu5581jp7g1opb][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "storage/3_2_d17096d3.jpg". in C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\base\Module.php:561
+Stack trace:
+#0 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('storage/3_2_d17...', Array)
+#1 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(app\components\SiteRequest))
+#2 C:\gitrepos\cakeoncall\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: पृष्ठ नहीं मिला। in C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(app\components\SiteRequest))
+#1 C:\gitrepos\cakeoncall\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2024-02-27 16:04:43 [127.0.0.1][-][6rtfjfmht53nvu5581jp7g1opb][warning][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'app' does not exist: C:\gitrepos\cakeoncall/messages/hi/app.php
+    in C:\gitrepos\cakeoncall\views\layouts\_topNav.php:20
+    in C:\gitrepos\cakeoncall\views\layouts\main.php:34
+2024-02-27 16:04:43 [127.0.0.1][-][6rtfjfmht53nvu5581jp7g1opb][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '6rtfjfmht53nvu5581jp7g1opb'
+    '_csrf' => '297f82ef1c7583024dd8e2e135d02ef9797148dd1af1b94e9da440dc7c96c8c2a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"UjHVF5VeeZhsmOJKqV--kbyL0-3qJENT\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'luyashop.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0'
+    'HTTP_ACCEPT' => 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://luyashop.local/catalog'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=6rtfjfmht53nvu5581jp7g1opb; _csrf=297f82ef1c7583024dd8e2e135d02ef9797148dd1af1b94e9da440dc7c96c8c2a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22UjHVF5VeeZhsmOJKqV--kbyL0-3qJENT%22%3B%7D'
+    'PATH' => 'C:\\Ruby32-x64\\bin;C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Graphviz\\bin;C:\\Users\\pc\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs;C:\\Program Files\\PuTTY\\;C:\\Users\\pc\\scoop\\shims;C:\\Users\\pc\\AppData\\Local\\Programs\\Python\\Python311\\Scripts\\;C:\\Users\\pc\\AppData\\Local\\Programs\\Python\\Python311\\;C:\\Users\\pc\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\pc\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\pc\\AppData\\Roaming\\npm;C:\\xampp\\php;C:\\Users\\pc\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\pc\\.dotnet\\tools;C:\\Users\\pc\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\pc\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4 Server at luyashop.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4'
+    'SERVER_NAME' => 'luyashop.local'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/gitrepos/cakeoncall/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/gitrepos/cakeoncall/web'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/gitrepos/cakeoncall/web/index.php'
+    'REMOTE_PORT' => '63496'
+    'REDIRECT_URL' => '/storage/3_2_d17096d3.jpg'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/storage/3_2_d17096d3.jpg'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1709046283.6497
+    'REQUEST_TIME' => 1709046283
+]
+2024-02-27 16:04:43 [127.0.0.1][-][6rtfjfmht53nvu5581jp7g1opb][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "storage/3_3_a39d51c6.jpg". in C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\base\Module.php:561
+Stack trace:
+#0 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('storage/3_3_a39...', Array)
+#1 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(app\components\SiteRequest))
+#2 C:\gitrepos\cakeoncall\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: पृष्ठ नहीं मिला। in C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(app\components\SiteRequest))
+#1 C:\gitrepos\cakeoncall\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2024-02-27 16:04:43 [127.0.0.1][-][6rtfjfmht53nvu5581jp7g1opb][warning][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'app' does not exist: C:\gitrepos\cakeoncall/messages/hi/app.php
+    in C:\gitrepos\cakeoncall\views\layouts\_topNav.php:20
+    in C:\gitrepos\cakeoncall\views\layouts\main.php:34
+2024-02-27 16:04:43 [127.0.0.1][-][6rtfjfmht53nvu5581jp7g1opb][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '6rtfjfmht53nvu5581jp7g1opb'
+    '_csrf' => '297f82ef1c7583024dd8e2e135d02ef9797148dd1af1b94e9da440dc7c96c8c2a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"UjHVF5VeeZhsmOJKqV--kbyL0-3qJENT\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'luyashop.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0'
+    'HTTP_ACCEPT' => 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://luyashop.local/catalog'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=6rtfjfmht53nvu5581jp7g1opb; _csrf=297f82ef1c7583024dd8e2e135d02ef9797148dd1af1b94e9da440dc7c96c8c2a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22UjHVF5VeeZhsmOJKqV--kbyL0-3qJENT%22%3B%7D'
+    'PATH' => 'C:\\Ruby32-x64\\bin;C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Graphviz\\bin;C:\\Users\\pc\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs;C:\\Program Files\\PuTTY\\;C:\\Users\\pc\\scoop\\shims;C:\\Users\\pc\\AppData\\Local\\Programs\\Python\\Python311\\Scripts\\;C:\\Users\\pc\\AppData\\Local\\Programs\\Python\\Python311\\;C:\\Users\\pc\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\pc\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\pc\\AppData\\Roaming\\npm;C:\\xampp\\php;C:\\Users\\pc\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\pc\\.dotnet\\tools;C:\\Users\\pc\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\pc\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4 Server at luyashop.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4'
+    'SERVER_NAME' => 'luyashop.local'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/gitrepos/cakeoncall/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/gitrepos/cakeoncall/web'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/gitrepos/cakeoncall/web/index.php'
+    'REMOTE_PORT' => '63497'
+    'REDIRECT_URL' => '/storage/3_3_a39d51c6.jpg'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/storage/3_3_a39d51c6.jpg'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1709046283.6497
+    'REQUEST_TIME' => 1709046283
+]
+2024-02-27 16:04:43 [127.0.0.1][-][6rtfjfmht53nvu5581jp7g1opb][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "img/payment.png". in C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\base\Module.php:561
+Stack trace:
+#0 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('img/payment.png', Array)
+#1 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(app\components\SiteRequest))
+#2 C:\gitrepos\cakeoncall\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: पृष्ठ नहीं मिला। in C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(app\components\SiteRequest))
+#1 C:\gitrepos\cakeoncall\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2024-02-27 16:04:43 [127.0.0.1][-][6rtfjfmht53nvu5581jp7g1opb][warning][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'app' does not exist: C:\gitrepos\cakeoncall/messages/hi/app.php
+    in C:\gitrepos\cakeoncall\views\layouts\_topNav.php:20
+    in C:\gitrepos\cakeoncall\views\layouts\main.php:34
+2024-02-27 16:04:43 [127.0.0.1][-][6rtfjfmht53nvu5581jp7g1opb][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '6rtfjfmht53nvu5581jp7g1opb'
+    '_csrf' => '297f82ef1c7583024dd8e2e135d02ef9797148dd1af1b94e9da440dc7c96c8c2a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"UjHVF5VeeZhsmOJKqV--kbyL0-3qJENT\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'luyashop.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0'
+    'HTTP_ACCEPT' => 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://luyashop.local/catalog'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=6rtfjfmht53nvu5581jp7g1opb; _csrf=297f82ef1c7583024dd8e2e135d02ef9797148dd1af1b94e9da440dc7c96c8c2a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22UjHVF5VeeZhsmOJKqV--kbyL0-3qJENT%22%3B%7D'
+    'PATH' => 'C:\\Ruby32-x64\\bin;C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Graphviz\\bin;C:\\Users\\pc\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs;C:\\Program Files\\PuTTY\\;C:\\Users\\pc\\scoop\\shims;C:\\Users\\pc\\AppData\\Local\\Programs\\Python\\Python311\\Scripts\\;C:\\Users\\pc\\AppData\\Local\\Programs\\Python\\Python311\\;C:\\Users\\pc\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\pc\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\pc\\AppData\\Roaming\\npm;C:\\xampp\\php;C:\\Users\\pc\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\pc\\.dotnet\\tools;C:\\Users\\pc\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\pc\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4 Server at luyashop.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4'
+    'SERVER_NAME' => 'luyashop.local'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/gitrepos/cakeoncall/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/gitrepos/cakeoncall/web'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/gitrepos/cakeoncall/web/index.php'
+    'REMOTE_PORT' => '63499'
+    'REDIRECT_URL' => '/img/payment.png'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/img/payment.png'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1709046283.7207
+    'REQUEST_TIME' => 1709046283
+]
+2024-02-27 16:04:43 [127.0.0.1][-][6rtfjfmht53nvu5581jp7g1opb][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "images/footerbg.jpg". in C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\base\Module.php:561
+Stack trace:
+#0 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('images/footerbg...', Array)
+#1 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(app\components\SiteRequest))
+#2 C:\gitrepos\cakeoncall\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: पृष्ठ नहीं मिला। in C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(app\components\SiteRequest))
+#1 C:\gitrepos\cakeoncall\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2024-02-27 16:04:43 [127.0.0.1][-][6rtfjfmht53nvu5581jp7g1opb][warning][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'app' does not exist: C:\gitrepos\cakeoncall/messages/hi/app.php
+    in C:\gitrepos\cakeoncall\views\layouts\_topNav.php:20
+    in C:\gitrepos\cakeoncall\views\layouts\main.php:34
+2024-02-27 16:04:43 [127.0.0.1][-][6rtfjfmht53nvu5581jp7g1opb][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '6rtfjfmht53nvu5581jp7g1opb'
+    '_csrf' => '297f82ef1c7583024dd8e2e135d02ef9797148dd1af1b94e9da440dc7c96c8c2a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"UjHVF5VeeZhsmOJKqV--kbyL0-3qJENT\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'luyashop.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0'
+    'HTTP_ACCEPT' => 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://luyashop.local/css/main.css'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=6rtfjfmht53nvu5581jp7g1opb; _csrf=297f82ef1c7583024dd8e2e135d02ef9797148dd1af1b94e9da440dc7c96c8c2a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22UjHVF5VeeZhsmOJKqV--kbyL0-3qJENT%22%3B%7D'
+    'PATH' => 'C:\\Ruby32-x64\\bin;C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Graphviz\\bin;C:\\Users\\pc\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs;C:\\Program Files\\PuTTY\\;C:\\Users\\pc\\scoop\\shims;C:\\Users\\pc\\AppData\\Local\\Programs\\Python\\Python311\\Scripts\\;C:\\Users\\pc\\AppData\\Local\\Programs\\Python\\Python311\\;C:\\Users\\pc\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\pc\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\pc\\AppData\\Roaming\\npm;C:\\xampp\\php;C:\\Users\\pc\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\pc\\.dotnet\\tools;C:\\Users\\pc\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\pc\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4 Server at luyashop.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4'
+    'SERVER_NAME' => 'luyashop.local'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/gitrepos/cakeoncall/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/gitrepos/cakeoncall/web'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/gitrepos/cakeoncall/web/index.php'
+    'REMOTE_PORT' => '63501'
+    'REDIRECT_URL' => '/images/footerbg.jpg'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/images/footerbg.jpg'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1709046283.7387
+    'REQUEST_TIME' => 1709046283
+]
+2024-02-27 16:04:44 [127.0.0.1][-][6rtfjfmht53nvu5581jp7g1opb][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "images/favicon.png". in C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\base\Module.php:561
+Stack trace:
+#0 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('images/favicon....', Array)
+#1 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(app\components\SiteRequest))
+#2 C:\gitrepos\cakeoncall\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: पृष्ठ नहीं मिला। in C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(app\components\SiteRequest))
+#1 C:\gitrepos\cakeoncall\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2024-02-27 16:04:44 [127.0.0.1][-][6rtfjfmht53nvu5581jp7g1opb][warning][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'app' does not exist: C:\gitrepos\cakeoncall/messages/hi/app.php
+    in C:\gitrepos\cakeoncall\views\layouts\_topNav.php:20
+    in C:\gitrepos\cakeoncall\views\layouts\main.php:34
+2024-02-27 16:04:44 [127.0.0.1][-][6rtfjfmht53nvu5581jp7g1opb][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '6rtfjfmht53nvu5581jp7g1opb'
+    '_csrf' => '297f82ef1c7583024dd8e2e135d02ef9797148dd1af1b94e9da440dc7c96c8c2a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"UjHVF5VeeZhsmOJKqV--kbyL0-3qJENT\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'luyashop.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0'
+    'HTTP_ACCEPT' => 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://luyashop.local/catalog'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=6rtfjfmht53nvu5581jp7g1opb; _csrf=297f82ef1c7583024dd8e2e135d02ef9797148dd1af1b94e9da440dc7c96c8c2a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22UjHVF5VeeZhsmOJKqV--kbyL0-3qJENT%22%3B%7D'
+    'PATH' => 'C:\\Ruby32-x64\\bin;C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Graphviz\\bin;C:\\Users\\pc\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs;C:\\Program Files\\PuTTY\\;C:\\Users\\pc\\scoop\\shims;C:\\Users\\pc\\AppData\\Local\\Programs\\Python\\Python311\\Scripts\\;C:\\Users\\pc\\AppData\\Local\\Programs\\Python\\Python311\\;C:\\Users\\pc\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\pc\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\pc\\AppData\\Roaming\\npm;C:\\xampp\\php;C:\\Users\\pc\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\pc\\.dotnet\\tools;C:\\Users\\pc\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\pc\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4 Server at luyashop.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4'
+    'SERVER_NAME' => 'luyashop.local'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/gitrepos/cakeoncall/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/gitrepos/cakeoncall/web'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/gitrepos/cakeoncall/web/index.php'
+    'REMOTE_PORT' => '63500'
+    'REDIRECT_URL' => '/images/favicon.png'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/images/favicon.png'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1709046284
+    'REQUEST_TIME' => 1709046284
+]
+2024-02-27 16:05:31 [127.0.0.1][-][6rtfjfmht53nvu5581jp7g1opb][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "storage/3_2_d17096d3.jpg". in C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\base\Module.php:561
+Stack trace:
+#0 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('storage/3_2_d17...', Array)
+#1 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(app\components\SiteRequest))
+#2 C:\gitrepos\cakeoncall\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: पृष्ठ नहीं मिला। in C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(app\components\SiteRequest))
+#1 C:\gitrepos\cakeoncall\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2024-02-27 16:05:31 [127.0.0.1][-][6rtfjfmht53nvu5581jp7g1opb][warning][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'app' does not exist: C:\gitrepos\cakeoncall/messages/hi/app.php
+    in C:\gitrepos\cakeoncall\views\layouts\_topNav.php:20
+    in C:\gitrepos\cakeoncall\views\layouts\main.php:34
+2024-02-27 16:05:31 [127.0.0.1][-][6rtfjfmht53nvu5581jp7g1opb][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '6rtfjfmht53nvu5581jp7g1opb'
+    '_csrf' => '297f82ef1c7583024dd8e2e135d02ef9797148dd1af1b94e9da440dc7c96c8c2a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"UjHVF5VeeZhsmOJKqV--kbyL0-3qJENT\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'luyashop.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0'
+    'HTTP_ACCEPT' => 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://luyashop.local/catalog'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=6rtfjfmht53nvu5581jp7g1opb; _csrf=297f82ef1c7583024dd8e2e135d02ef9797148dd1af1b94e9da440dc7c96c8c2a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22UjHVF5VeeZhsmOJKqV--kbyL0-3qJENT%22%3B%7D'
+    'PATH' => 'C:\\Ruby32-x64\\bin;C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Graphviz\\bin;C:\\Users\\pc\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs;C:\\Program Files\\PuTTY\\;C:\\Users\\pc\\scoop\\shims;C:\\Users\\pc\\AppData\\Local\\Programs\\Python\\Python311\\Scripts\\;C:\\Users\\pc\\AppData\\Local\\Programs\\Python\\Python311\\;C:\\Users\\pc\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\pc\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\pc\\AppData\\Roaming\\npm;C:\\xampp\\php;C:\\Users\\pc\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\pc\\.dotnet\\tools;C:\\Users\\pc\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\pc\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4 Server at luyashop.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4'
+    'SERVER_NAME' => 'luyashop.local'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/gitrepos/cakeoncall/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/gitrepos/cakeoncall/web'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/gitrepos/cakeoncall/web/index.php'
+    'REMOTE_PORT' => '63524'
+    'REDIRECT_URL' => '/storage/3_2_d17096d3.jpg'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/storage/3_2_d17096d3.jpg'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1709046331.8598
+    'REQUEST_TIME' => 1709046331
+]
+2024-02-27 16:05:31 [127.0.0.1][-][6rtfjfmht53nvu5581jp7g1opb][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "storage/3_3_a39d51c6.jpg". in C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\base\Module.php:561
+Stack trace:
+#0 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('storage/3_3_a39...', Array)
+#1 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(app\components\SiteRequest))
+#2 C:\gitrepos\cakeoncall\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: पृष्ठ नहीं मिला। in C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(app\components\SiteRequest))
+#1 C:\gitrepos\cakeoncall\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2024-02-27 16:05:31 [127.0.0.1][-][6rtfjfmht53nvu5581jp7g1opb][warning][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'app' does not exist: C:\gitrepos\cakeoncall/messages/hi/app.php
+    in C:\gitrepos\cakeoncall\views\layouts\_topNav.php:20
+    in C:\gitrepos\cakeoncall\views\layouts\main.php:34
+2024-02-27 16:05:31 [127.0.0.1][-][6rtfjfmht53nvu5581jp7g1opb][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '6rtfjfmht53nvu5581jp7g1opb'
+    '_csrf' => '297f82ef1c7583024dd8e2e135d02ef9797148dd1af1b94e9da440dc7c96c8c2a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"UjHVF5VeeZhsmOJKqV--kbyL0-3qJENT\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'luyashop.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0'
+    'HTTP_ACCEPT' => 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://luyashop.local/catalog'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=6rtfjfmht53nvu5581jp7g1opb; _csrf=297f82ef1c7583024dd8e2e135d02ef9797148dd1af1b94e9da440dc7c96c8c2a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22UjHVF5VeeZhsmOJKqV--kbyL0-3qJENT%22%3B%7D'
+    'PATH' => 'C:\\Ruby32-x64\\bin;C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Graphviz\\bin;C:\\Users\\pc\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs;C:\\Program Files\\PuTTY\\;C:\\Users\\pc\\scoop\\shims;C:\\Users\\pc\\AppData\\Local\\Programs\\Python\\Python311\\Scripts\\;C:\\Users\\pc\\AppData\\Local\\Programs\\Python\\Python311\\;C:\\Users\\pc\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\pc\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\pc\\AppData\\Roaming\\npm;C:\\xampp\\php;C:\\Users\\pc\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\pc\\.dotnet\\tools;C:\\Users\\pc\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\pc\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4 Server at luyashop.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4'
+    'SERVER_NAME' => 'luyashop.local'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/gitrepos/cakeoncall/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/gitrepos/cakeoncall/web'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/gitrepos/cakeoncall/web/index.php'
+    'REMOTE_PORT' => '63525'
+    'REDIRECT_URL' => '/storage/3_3_a39d51c6.jpg'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/storage/3_3_a39d51c6.jpg'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1709046331.8598
+    'REQUEST_TIME' => 1709046331
+]
+2024-02-27 16:05:32 [127.0.0.1][-][6rtfjfmht53nvu5581jp7g1opb][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "img/payment.png". in C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\base\Module.php:561
+Stack trace:
+#0 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('img/payment.png', Array)
+#1 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(app\components\SiteRequest))
+#2 C:\gitrepos\cakeoncall\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: पृष्ठ नहीं मिला। in C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(app\components\SiteRequest))
+#1 C:\gitrepos\cakeoncall\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2024-02-27 16:05:32 [127.0.0.1][-][6rtfjfmht53nvu5581jp7g1opb][warning][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'app' does not exist: C:\gitrepos\cakeoncall/messages/hi/app.php
+    in C:\gitrepos\cakeoncall\views\layouts\_topNav.php:20
+    in C:\gitrepos\cakeoncall\views\layouts\main.php:34
+2024-02-27 16:05:31 [127.0.0.1][-][6rtfjfmht53nvu5581jp7g1opb][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '6rtfjfmht53nvu5581jp7g1opb'
+    '_csrf' => '297f82ef1c7583024dd8e2e135d02ef9797148dd1af1b94e9da440dc7c96c8c2a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"UjHVF5VeeZhsmOJKqV--kbyL0-3qJENT\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'luyashop.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0'
+    'HTTP_ACCEPT' => 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://luyashop.local/catalog'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=6rtfjfmht53nvu5581jp7g1opb; _csrf=297f82ef1c7583024dd8e2e135d02ef9797148dd1af1b94e9da440dc7c96c8c2a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22UjHVF5VeeZhsmOJKqV--kbyL0-3qJENT%22%3B%7D'
+    'PATH' => 'C:\\Ruby32-x64\\bin;C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Graphviz\\bin;C:\\Users\\pc\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs;C:\\Program Files\\PuTTY\\;C:\\Users\\pc\\scoop\\shims;C:\\Users\\pc\\AppData\\Local\\Programs\\Python\\Python311\\Scripts\\;C:\\Users\\pc\\AppData\\Local\\Programs\\Python\\Python311\\;C:\\Users\\pc\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\pc\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\pc\\AppData\\Roaming\\npm;C:\\xampp\\php;C:\\Users\\pc\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\pc\\.dotnet\\tools;C:\\Users\\pc\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\pc\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4 Server at luyashop.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4'
+    'SERVER_NAME' => 'luyashop.local'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/gitrepos/cakeoncall/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/gitrepos/cakeoncall/web'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/gitrepos/cakeoncall/web/index.php'
+    'REMOTE_PORT' => '63528'
+    'REDIRECT_URL' => '/img/payment.png'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/img/payment.png'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1709046331.9339
+    'REQUEST_TIME' => 1709046331
+]
+2024-02-27 16:05:32 [127.0.0.1][-][6rtfjfmht53nvu5581jp7g1opb][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "images/footerbg.jpg". in C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\base\Module.php:561
+Stack trace:
+#0 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('images/footerbg...', Array)
+#1 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(app\components\SiteRequest))
+#2 C:\gitrepos\cakeoncall\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: पृष्ठ नहीं मिला। in C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(app\components\SiteRequest))
+#1 C:\gitrepos\cakeoncall\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2024-02-27 16:05:32 [127.0.0.1][-][6rtfjfmht53nvu5581jp7g1opb][warning][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'app' does not exist: C:\gitrepos\cakeoncall/messages/hi/app.php
+    in C:\gitrepos\cakeoncall\views\layouts\_topNav.php:20
+    in C:\gitrepos\cakeoncall\views\layouts\main.php:34
+2024-02-27 16:05:31 [127.0.0.1][-][6rtfjfmht53nvu5581jp7g1opb][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '6rtfjfmht53nvu5581jp7g1opb'
+    '_csrf' => '297f82ef1c7583024dd8e2e135d02ef9797148dd1af1b94e9da440dc7c96c8c2a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"UjHVF5VeeZhsmOJKqV--kbyL0-3qJENT\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'luyashop.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0'
+    'HTTP_ACCEPT' => 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://luyashop.local/css/main.css'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=6rtfjfmht53nvu5581jp7g1opb; _csrf=297f82ef1c7583024dd8e2e135d02ef9797148dd1af1b94e9da440dc7c96c8c2a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22UjHVF5VeeZhsmOJKqV--kbyL0-3qJENT%22%3B%7D'
+    'PATH' => 'C:\\Ruby32-x64\\bin;C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Graphviz\\bin;C:\\Users\\pc\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs;C:\\Program Files\\PuTTY\\;C:\\Users\\pc\\scoop\\shims;C:\\Users\\pc\\AppData\\Local\\Programs\\Python\\Python311\\Scripts\\;C:\\Users\\pc\\AppData\\Local\\Programs\\Python\\Python311\\;C:\\Users\\pc\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\pc\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\pc\\AppData\\Roaming\\npm;C:\\xampp\\php;C:\\Users\\pc\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\pc\\.dotnet\\tools;C:\\Users\\pc\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\pc\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4 Server at luyashop.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4'
+    'SERVER_NAME' => 'luyashop.local'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/gitrepos/cakeoncall/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/gitrepos/cakeoncall/web'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/gitrepos/cakeoncall/web/index.php'
+    'REMOTE_PORT' => '63530'
+    'REDIRECT_URL' => '/images/footerbg.jpg'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/images/footerbg.jpg'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1709046331.9569
+    'REQUEST_TIME' => 1709046331
+]
+2024-02-27 16:05:38 [127.0.0.1][-][6rtfjfmht53nvu5581jp7g1opb][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "storage/3_3_a39d51c6.jpg". in C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\base\Module.php:561
+Stack trace:
+#0 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('storage/3_3_a39...', Array)
+#1 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(app\components\SiteRequest))
+#2 C:\gitrepos\cakeoncall\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: पृष्ठ नहीं मिला। in C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(app\components\SiteRequest))
+#1 C:\gitrepos\cakeoncall\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2024-02-27 16:05:38 [127.0.0.1][-][6rtfjfmht53nvu5581jp7g1opb][warning][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'app' does not exist: C:\gitrepos\cakeoncall/messages/hi/app.php
+    in C:\gitrepos\cakeoncall\views\layouts\_topNav.php:20
+    in C:\gitrepos\cakeoncall\views\layouts\main.php:34
+2024-02-27 16:05:38 [127.0.0.1][-][6rtfjfmht53nvu5581jp7g1opb][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '6rtfjfmht53nvu5581jp7g1opb'
+    '_csrf' => '297f82ef1c7583024dd8e2e135d02ef9797148dd1af1b94e9da440dc7c96c8c2a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"UjHVF5VeeZhsmOJKqV--kbyL0-3qJENT\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'luyashop.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0'
+    'HTTP_ACCEPT' => 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://luyashop.local/catalog'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=6rtfjfmht53nvu5581jp7g1opb; _csrf=297f82ef1c7583024dd8e2e135d02ef9797148dd1af1b94e9da440dc7c96c8c2a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22UjHVF5VeeZhsmOJKqV--kbyL0-3qJENT%22%3B%7D'
+    'PATH' => 'C:\\Ruby32-x64\\bin;C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Graphviz\\bin;C:\\Users\\pc\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs;C:\\Program Files\\PuTTY\\;C:\\Users\\pc\\scoop\\shims;C:\\Users\\pc\\AppData\\Local\\Programs\\Python\\Python311\\Scripts\\;C:\\Users\\pc\\AppData\\Local\\Programs\\Python\\Python311\\;C:\\Users\\pc\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\pc\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\pc\\AppData\\Roaming\\npm;C:\\xampp\\php;C:\\Users\\pc\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\pc\\.dotnet\\tools;C:\\Users\\pc\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\pc\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4 Server at luyashop.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4'
+    'SERVER_NAME' => 'luyashop.local'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/gitrepos/cakeoncall/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/gitrepos/cakeoncall/web'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/gitrepos/cakeoncall/web/index.php'
+    'REMOTE_PORT' => '63532'
+    'REDIRECT_URL' => '/storage/3_3_a39d51c6.jpg'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/storage/3_3_a39d51c6.jpg'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1709046338.743
+    'REQUEST_TIME' => 1709046338
+]
+2024-02-27 16:05:38 [127.0.0.1][-][6rtfjfmht53nvu5581jp7g1opb][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "storage/3_2_d17096d3.jpg". in C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\base\Module.php:561
+Stack trace:
+#0 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('storage/3_2_d17...', Array)
+#1 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(app\components\SiteRequest))
+#2 C:\gitrepos\cakeoncall\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: पृष्ठ नहीं मिला। in C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(app\components\SiteRequest))
+#1 C:\gitrepos\cakeoncall\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2024-02-27 16:05:38 [127.0.0.1][-][6rtfjfmht53nvu5581jp7g1opb][warning][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'app' does not exist: C:\gitrepos\cakeoncall/messages/hi/app.php
+    in C:\gitrepos\cakeoncall\views\layouts\_topNav.php:20
+    in C:\gitrepos\cakeoncall\views\layouts\main.php:34
+2024-02-27 16:05:38 [127.0.0.1][-][6rtfjfmht53nvu5581jp7g1opb][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '6rtfjfmht53nvu5581jp7g1opb'
+    '_csrf' => '297f82ef1c7583024dd8e2e135d02ef9797148dd1af1b94e9da440dc7c96c8c2a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"UjHVF5VeeZhsmOJKqV--kbyL0-3qJENT\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'luyashop.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0'
+    'HTTP_ACCEPT' => 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://luyashop.local/catalog'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=6rtfjfmht53nvu5581jp7g1opb; _csrf=297f82ef1c7583024dd8e2e135d02ef9797148dd1af1b94e9da440dc7c96c8c2a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22UjHVF5VeeZhsmOJKqV--kbyL0-3qJENT%22%3B%7D'
+    'PATH' => 'C:\\Ruby32-x64\\bin;C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Graphviz\\bin;C:\\Users\\pc\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs;C:\\Program Files\\PuTTY\\;C:\\Users\\pc\\scoop\\shims;C:\\Users\\pc\\AppData\\Local\\Programs\\Python\\Python311\\Scripts\\;C:\\Users\\pc\\AppData\\Local\\Programs\\Python\\Python311\\;C:\\Users\\pc\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\pc\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\pc\\AppData\\Roaming\\npm;C:\\xampp\\php;C:\\Users\\pc\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\pc\\.dotnet\\tools;C:\\Users\\pc\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\pc\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4 Server at luyashop.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4'
+    'SERVER_NAME' => 'luyashop.local'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/gitrepos/cakeoncall/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/gitrepos/cakeoncall/web'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/gitrepos/cakeoncall/web/index.php'
+    'REMOTE_PORT' => '63529'
+    'REDIRECT_URL' => '/storage/3_2_d17096d3.jpg'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/storage/3_2_d17096d3.jpg'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1709046338.74
+    'REQUEST_TIME' => 1709046338
+]
+2024-02-27 16:05:38 [127.0.0.1][-][6rtfjfmht53nvu5581jp7g1opb][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "img/payment.png". in C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\base\Module.php:561
+Stack trace:
+#0 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('img/payment.png', Array)
+#1 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(app\components\SiteRequest))
+#2 C:\gitrepos\cakeoncall\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: पृष्ठ नहीं मिला। in C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(app\components\SiteRequest))
+#1 C:\gitrepos\cakeoncall\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2024-02-27 16:05:38 [127.0.0.1][-][6rtfjfmht53nvu5581jp7g1opb][warning][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'app' does not exist: C:\gitrepos\cakeoncall/messages/hi/app.php
+    in C:\gitrepos\cakeoncall\views\layouts\_topNav.php:20
+    in C:\gitrepos\cakeoncall\views\layouts\main.php:34
+2024-02-27 16:05:38 [127.0.0.1][-][6rtfjfmht53nvu5581jp7g1opb][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '6rtfjfmht53nvu5581jp7g1opb'
+    '_csrf' => '297f82ef1c7583024dd8e2e135d02ef9797148dd1af1b94e9da440dc7c96c8c2a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"UjHVF5VeeZhsmOJKqV--kbyL0-3qJENT\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'luyashop.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0'
+    'HTTP_ACCEPT' => 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://luyashop.local/catalog'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=6rtfjfmht53nvu5581jp7g1opb; _csrf=297f82ef1c7583024dd8e2e135d02ef9797148dd1af1b94e9da440dc7c96c8c2a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22UjHVF5VeeZhsmOJKqV--kbyL0-3qJENT%22%3B%7D'
+    'PATH' => 'C:\\Ruby32-x64\\bin;C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Graphviz\\bin;C:\\Users\\pc\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs;C:\\Program Files\\PuTTY\\;C:\\Users\\pc\\scoop\\shims;C:\\Users\\pc\\AppData\\Local\\Programs\\Python\\Python311\\Scripts\\;C:\\Users\\pc\\AppData\\Local\\Programs\\Python\\Python311\\;C:\\Users\\pc\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\pc\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\pc\\AppData\\Roaming\\npm;C:\\xampp\\php;C:\\Users\\pc\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\pc\\.dotnet\\tools;C:\\Users\\pc\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\pc\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4 Server at luyashop.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4'
+    'SERVER_NAME' => 'luyashop.local'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/gitrepos/cakeoncall/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/gitrepos/cakeoncall/web'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/gitrepos/cakeoncall/web/index.php'
+    'REMOTE_PORT' => '63534'
+    'REDIRECT_URL' => '/img/payment.png'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/img/payment.png'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1709046338.7967
+    'REQUEST_TIME' => 1709046338
+]
+2024-02-27 16:05:38 [127.0.0.1][-][6rtfjfmht53nvu5581jp7g1opb][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "images/footerbg.jpg". in C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\base\Module.php:561
+Stack trace:
+#0 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('images/footerbg...', Array)
+#1 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(app\components\SiteRequest))
+#2 C:\gitrepos\cakeoncall\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: पृष्ठ नहीं मिला। in C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(app\components\SiteRequest))
+#1 C:\gitrepos\cakeoncall\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2024-02-27 16:05:38 [127.0.0.1][-][6rtfjfmht53nvu5581jp7g1opb][warning][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'app' does not exist: C:\gitrepos\cakeoncall/messages/hi/app.php
+    in C:\gitrepos\cakeoncall\views\layouts\_topNav.php:20
+    in C:\gitrepos\cakeoncall\views\layouts\main.php:34
+2024-02-27 16:05:38 [127.0.0.1][-][6rtfjfmht53nvu5581jp7g1opb][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '6rtfjfmht53nvu5581jp7g1opb'
+    '_csrf' => '297f82ef1c7583024dd8e2e135d02ef9797148dd1af1b94e9da440dc7c96c8c2a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"UjHVF5VeeZhsmOJKqV--kbyL0-3qJENT\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'luyashop.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0'
+    'HTTP_ACCEPT' => 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://luyashop.local/css/main.css'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=6rtfjfmht53nvu5581jp7g1opb; _csrf=297f82ef1c7583024dd8e2e135d02ef9797148dd1af1b94e9da440dc7c96c8c2a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22UjHVF5VeeZhsmOJKqV--kbyL0-3qJENT%22%3B%7D'
+    'PATH' => 'C:\\Ruby32-x64\\bin;C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Graphviz\\bin;C:\\Users\\pc\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs;C:\\Program Files\\PuTTY\\;C:\\Users\\pc\\scoop\\shims;C:\\Users\\pc\\AppData\\Local\\Programs\\Python\\Python311\\Scripts\\;C:\\Users\\pc\\AppData\\Local\\Programs\\Python\\Python311\\;C:\\Users\\pc\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\pc\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\pc\\AppData\\Roaming\\npm;C:\\xampp\\php;C:\\Users\\pc\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\pc\\.dotnet\\tools;C:\\Users\\pc\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\pc\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4 Server at luyashop.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4'
+    'SERVER_NAME' => 'luyashop.local'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/gitrepos/cakeoncall/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/gitrepos/cakeoncall/web'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/gitrepos/cakeoncall/web/index.php'
+    'REMOTE_PORT' => '63536'
+    'REDIRECT_URL' => '/images/footerbg.jpg'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/images/footerbg.jpg'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1709046338.8184
+    'REQUEST_TIME' => 1709046338
+]
+2024-02-27 16:08:02 [127.0.0.1][-][6rtfjfmht53nvu5581jp7g1opb][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "img/payment.png". in C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\base\Module.php:561
+Stack trace:
+#0 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('img/payment.png', Array)
+#1 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(app\components\SiteRequest))
+#2 C:\gitrepos\cakeoncall\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: पृष्ठ नहीं मिला। in C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(app\components\SiteRequest))
+#1 C:\gitrepos\cakeoncall\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2024-02-27 16:08:02 [127.0.0.1][-][6rtfjfmht53nvu5581jp7g1opb][warning][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'app' does not exist: C:\gitrepos\cakeoncall/messages/hi/app.php
+    in C:\gitrepos\cakeoncall\views\layouts\_topNav.php:20
+    in C:\gitrepos\cakeoncall\views\layouts\main.php:34
+2024-02-27 16:08:02 [127.0.0.1][-][6rtfjfmht53nvu5581jp7g1opb][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '6rtfjfmht53nvu5581jp7g1opb'
+    '_csrf' => '297f82ef1c7583024dd8e2e135d02ef9797148dd1af1b94e9da440dc7c96c8c2a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"UjHVF5VeeZhsmOJKqV--kbyL0-3qJENT\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'luyashop.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0'
+    'HTTP_ACCEPT' => 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://luyashop.local/catalog'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=6rtfjfmht53nvu5581jp7g1opb; _csrf=297f82ef1c7583024dd8e2e135d02ef9797148dd1af1b94e9da440dc7c96c8c2a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22UjHVF5VeeZhsmOJKqV--kbyL0-3qJENT%22%3B%7D'
+    'PATH' => 'C:\\Ruby32-x64\\bin;C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Graphviz\\bin;C:\\Users\\pc\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs;C:\\Program Files\\PuTTY\\;C:\\Users\\pc\\scoop\\shims;C:\\Users\\pc\\AppData\\Local\\Programs\\Python\\Python311\\Scripts\\;C:\\Users\\pc\\AppData\\Local\\Programs\\Python\\Python311\\;C:\\Users\\pc\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\pc\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\pc\\AppData\\Roaming\\npm;C:\\xampp\\php;C:\\Users\\pc\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\pc\\.dotnet\\tools;C:\\Users\\pc\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\pc\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4 Server at luyashop.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4'
+    'SERVER_NAME' => 'luyashop.local'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/gitrepos/cakeoncall/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/gitrepos/cakeoncall/web'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/gitrepos/cakeoncall/web/index.php'
+    'REMOTE_PORT' => '63558'
+    'REDIRECT_URL' => '/img/payment.png'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/img/payment.png'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1709046482.1625
+    'REQUEST_TIME' => 1709046482
+]
+2024-02-27 16:08:02 [127.0.0.1][-][6rtfjfmht53nvu5581jp7g1opb][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "images/footerbg.jpg". in C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\base\Module.php:561
+Stack trace:
+#0 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('images/footerbg...', Array)
+#1 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(app\components\SiteRequest))
+#2 C:\gitrepos\cakeoncall\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: पृष्ठ नहीं मिला। in C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(app\components\SiteRequest))
+#1 C:\gitrepos\cakeoncall\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2024-02-27 16:08:02 [127.0.0.1][-][6rtfjfmht53nvu5581jp7g1opb][warning][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'app' does not exist: C:\gitrepos\cakeoncall/messages/hi/app.php
+    in C:\gitrepos\cakeoncall\views\layouts\_topNav.php:20
+    in C:\gitrepos\cakeoncall\views\layouts\main.php:34
+2024-02-27 16:08:02 [127.0.0.1][-][6rtfjfmht53nvu5581jp7g1opb][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '6rtfjfmht53nvu5581jp7g1opb'
+    '_csrf' => '297f82ef1c7583024dd8e2e135d02ef9797148dd1af1b94e9da440dc7c96c8c2a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"UjHVF5VeeZhsmOJKqV--kbyL0-3qJENT\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'luyashop.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0'
+    'HTTP_ACCEPT' => 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://luyashop.local/css/main.css'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=6rtfjfmht53nvu5581jp7g1opb; _csrf=297f82ef1c7583024dd8e2e135d02ef9797148dd1af1b94e9da440dc7c96c8c2a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22UjHVF5VeeZhsmOJKqV--kbyL0-3qJENT%22%3B%7D'
+    'PATH' => 'C:\\Ruby32-x64\\bin;C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Graphviz\\bin;C:\\Users\\pc\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs;C:\\Program Files\\PuTTY\\;C:\\Users\\pc\\scoop\\shims;C:\\Users\\pc\\AppData\\Local\\Programs\\Python\\Python311\\Scripts\\;C:\\Users\\pc\\AppData\\Local\\Programs\\Python\\Python311\\;C:\\Users\\pc\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\pc\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\pc\\AppData\\Roaming\\npm;C:\\xampp\\php;C:\\Users\\pc\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\pc\\.dotnet\\tools;C:\\Users\\pc\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\pc\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4 Server at luyashop.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4'
+    'SERVER_NAME' => 'luyashop.local'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/gitrepos/cakeoncall/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/gitrepos/cakeoncall/web'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/gitrepos/cakeoncall/web/index.php'
+    'REMOTE_PORT' => '63562'
+    'REDIRECT_URL' => '/images/footerbg.jpg'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/images/footerbg.jpg'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1709046482.1895
+    'REQUEST_TIME' => 1709046482
+]
+2024-02-27 16:08:22 [127.0.0.1][-][6rtfjfmht53nvu5581jp7g1opb][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "img/payment.png". in C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\base\Module.php:561
+Stack trace:
+#0 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('img/payment.png', Array)
+#1 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(app\components\SiteRequest))
+#2 C:\gitrepos\cakeoncall\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: पृष्ठ नहीं मिला। in C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(app\components\SiteRequest))
+#1 C:\gitrepos\cakeoncall\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2024-02-27 16:08:22 [127.0.0.1][-][6rtfjfmht53nvu5581jp7g1opb][warning][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'app' does not exist: C:\gitrepos\cakeoncall/messages/hi/app.php
+    in C:\gitrepos\cakeoncall\views\layouts\_topNav.php:20
+    in C:\gitrepos\cakeoncall\views\layouts\main.php:34
+2024-02-27 16:08:22 [127.0.0.1][-][6rtfjfmht53nvu5581jp7g1opb][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '6rtfjfmht53nvu5581jp7g1opb'
+    '_csrf' => '297f82ef1c7583024dd8e2e135d02ef9797148dd1af1b94e9da440dc7c96c8c2a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"UjHVF5VeeZhsmOJKqV--kbyL0-3qJENT\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'luyashop.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0'
+    'HTTP_ACCEPT' => 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://luyashop.local/catalog'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=6rtfjfmht53nvu5581jp7g1opb; _csrf=297f82ef1c7583024dd8e2e135d02ef9797148dd1af1b94e9da440dc7c96c8c2a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22UjHVF5VeeZhsmOJKqV--kbyL0-3qJENT%22%3B%7D'
+    'PATH' => 'C:\\Ruby32-x64\\bin;C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Graphviz\\bin;C:\\Users\\pc\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs;C:\\Program Files\\PuTTY\\;C:\\Users\\pc\\scoop\\shims;C:\\Users\\pc\\AppData\\Local\\Programs\\Python\\Python311\\Scripts\\;C:\\Users\\pc\\AppData\\Local\\Programs\\Python\\Python311\\;C:\\Users\\pc\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\pc\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\pc\\AppData\\Roaming\\npm;C:\\xampp\\php;C:\\Users\\pc\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\pc\\.dotnet\\tools;C:\\Users\\pc\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\pc\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4 Server at luyashop.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4'
+    'SERVER_NAME' => 'luyashop.local'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/gitrepos/cakeoncall/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/gitrepos/cakeoncall/web'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/gitrepos/cakeoncall/web/index.php'
+    'REMOTE_PORT' => '63565'
+    'REDIRECT_URL' => '/img/payment.png'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/img/payment.png'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1709046502.5616
+    'REQUEST_TIME' => 1709046502
+]
+2024-02-27 16:08:22 [127.0.0.1][-][6rtfjfmht53nvu5581jp7g1opb][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "images/footerbg.jpg". in C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\base\Module.php:561
+Stack trace:
+#0 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('images/footerbg...', Array)
+#1 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(app\components\SiteRequest))
+#2 C:\gitrepos\cakeoncall\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: पृष्ठ नहीं मिला। in C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(app\components\SiteRequest))
+#1 C:\gitrepos\cakeoncall\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2024-02-27 16:08:22 [127.0.0.1][-][6rtfjfmht53nvu5581jp7g1opb][warning][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'app' does not exist: C:\gitrepos\cakeoncall/messages/hi/app.php
+    in C:\gitrepos\cakeoncall\views\layouts\_topNav.php:20
+    in C:\gitrepos\cakeoncall\views\layouts\main.php:34
+2024-02-27 16:08:22 [127.0.0.1][-][6rtfjfmht53nvu5581jp7g1opb][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '6rtfjfmht53nvu5581jp7g1opb'
+    '_csrf' => '297f82ef1c7583024dd8e2e135d02ef9797148dd1af1b94e9da440dc7c96c8c2a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"UjHVF5VeeZhsmOJKqV--kbyL0-3qJENT\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'luyashop.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0'
+    'HTTP_ACCEPT' => 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://luyashop.local/css/main.css'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=6rtfjfmht53nvu5581jp7g1opb; _csrf=297f82ef1c7583024dd8e2e135d02ef9797148dd1af1b94e9da440dc7c96c8c2a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22UjHVF5VeeZhsmOJKqV--kbyL0-3qJENT%22%3B%7D'
+    'PATH' => 'C:\\Ruby32-x64\\bin;C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Graphviz\\bin;C:\\Users\\pc\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs;C:\\Program Files\\PuTTY\\;C:\\Users\\pc\\scoop\\shims;C:\\Users\\pc\\AppData\\Local\\Programs\\Python\\Python311\\Scripts\\;C:\\Users\\pc\\AppData\\Local\\Programs\\Python\\Python311\\;C:\\Users\\pc\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\pc\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\pc\\AppData\\Roaming\\npm;C:\\xampp\\php;C:\\Users\\pc\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\pc\\.dotnet\\tools;C:\\Users\\pc\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\pc\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4 Server at luyashop.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4'
+    'SERVER_NAME' => 'luyashop.local'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/gitrepos/cakeoncall/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/gitrepos/cakeoncall/web'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/gitrepos/cakeoncall/web/index.php'
+    'REMOTE_PORT' => '63569'
+    'REDIRECT_URL' => '/images/footerbg.jpg'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/images/footerbg.jpg'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1709046502.6293
+    'REQUEST_TIME' => 1709046502
+]
+2024-02-27 16:15:23 [127.0.0.1][-][6rtfjfmht53nvu5581jp7g1opb][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "img/payment.png". in C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\base\Module.php:561
+Stack trace:
+#0 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('img/payment.png', Array)
+#1 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(app\components\SiteRequest))
+#2 C:\gitrepos\cakeoncall\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: पृष्ठ नहीं मिला। in C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(app\components\SiteRequest))
+#1 C:\gitrepos\cakeoncall\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2024-02-27 16:15:23 [127.0.0.1][-][6rtfjfmht53nvu5581jp7g1opb][warning][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'app' does not exist: C:\gitrepos\cakeoncall/messages/hi/app.php
+    in C:\gitrepos\cakeoncall\views\layouts\_topNav.php:20
+    in C:\gitrepos\cakeoncall\views\layouts\main.php:34
+2024-02-27 16:15:23 [127.0.0.1][-][6rtfjfmht53nvu5581jp7g1opb][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '6rtfjfmht53nvu5581jp7g1opb'
+    '_csrf' => '297f82ef1c7583024dd8e2e135d02ef9797148dd1af1b94e9da440dc7c96c8c2a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"UjHVF5VeeZhsmOJKqV--kbyL0-3qJENT\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'luyashop.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0'
+    'HTTP_ACCEPT' => 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://luyashop.local/catalog'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=6rtfjfmht53nvu5581jp7g1opb; _csrf=297f82ef1c7583024dd8e2e135d02ef9797148dd1af1b94e9da440dc7c96c8c2a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22UjHVF5VeeZhsmOJKqV--kbyL0-3qJENT%22%3B%7D'
+    'PATH' => 'C:\\Ruby32-x64\\bin;C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Graphviz\\bin;C:\\Users\\pc\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs;C:\\Program Files\\PuTTY\\;C:\\Users\\pc\\scoop\\shims;C:\\Users\\pc\\AppData\\Local\\Programs\\Python\\Python311\\Scripts\\;C:\\Users\\pc\\AppData\\Local\\Programs\\Python\\Python311\\;C:\\Users\\pc\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\pc\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\pc\\AppData\\Roaming\\npm;C:\\xampp\\php;C:\\Users\\pc\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\pc\\.dotnet\\tools;C:\\Users\\pc\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\pc\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4 Server at luyashop.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4'
+    'SERVER_NAME' => 'luyashop.local'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/gitrepos/cakeoncall/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/gitrepos/cakeoncall/web'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/gitrepos/cakeoncall/web/index.php'
+    'REMOTE_PORT' => '63683'
+    'REDIRECT_URL' => '/img/payment.png'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/img/payment.png'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1709046923.2831
+    'REQUEST_TIME' => 1709046923
+]
+2024-02-27 16:15:23 [127.0.0.1][-][6rtfjfmht53nvu5581jp7g1opb][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "images/footerbg.jpg". in C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\base\Module.php:561
+Stack trace:
+#0 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('images/footerbg...', Array)
+#1 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(app\components\SiteRequest))
+#2 C:\gitrepos\cakeoncall\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: पृष्ठ नहीं मिला। in C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(app\components\SiteRequest))
+#1 C:\gitrepos\cakeoncall\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2024-02-27 16:15:23 [127.0.0.1][-][6rtfjfmht53nvu5581jp7g1opb][warning][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'app' does not exist: C:\gitrepos\cakeoncall/messages/hi/app.php
+    in C:\gitrepos\cakeoncall\views\layouts\_topNav.php:20
+    in C:\gitrepos\cakeoncall\views\layouts\main.php:34
+2024-02-27 16:15:23 [127.0.0.1][-][6rtfjfmht53nvu5581jp7g1opb][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '6rtfjfmht53nvu5581jp7g1opb'
+    '_csrf' => '297f82ef1c7583024dd8e2e135d02ef9797148dd1af1b94e9da440dc7c96c8c2a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"UjHVF5VeeZhsmOJKqV--kbyL0-3qJENT\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'luyashop.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0'
+    'HTTP_ACCEPT' => 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://luyashop.local/css/main.css'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=6rtfjfmht53nvu5581jp7g1opb; _csrf=297f82ef1c7583024dd8e2e135d02ef9797148dd1af1b94e9da440dc7c96c8c2a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22UjHVF5VeeZhsmOJKqV--kbyL0-3qJENT%22%3B%7D'
+    'PATH' => 'C:\\Ruby32-x64\\bin;C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Graphviz\\bin;C:\\Users\\pc\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs;C:\\Program Files\\PuTTY\\;C:\\Users\\pc\\scoop\\shims;C:\\Users\\pc\\AppData\\Local\\Programs\\Python\\Python311\\Scripts\\;C:\\Users\\pc\\AppData\\Local\\Programs\\Python\\Python311\\;C:\\Users\\pc\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\pc\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\pc\\AppData\\Roaming\\npm;C:\\xampp\\php;C:\\Users\\pc\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\pc\\.dotnet\\tools;C:\\Users\\pc\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\pc\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4 Server at luyashop.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4'
+    'SERVER_NAME' => 'luyashop.local'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/gitrepos/cakeoncall/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/gitrepos/cakeoncall/web'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/gitrepos/cakeoncall/web/index.php'
+    'REMOTE_PORT' => '63687'
+    'REDIRECT_URL' => '/images/footerbg.jpg'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/images/footerbg.jpg'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1709046923.3441
+    'REQUEST_TIME' => 1709046923
+]
+2024-02-27 16:45:47 [127.0.0.1][-][6rtfjfmht53nvu5581jp7g1opb][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "img/payment.png". in C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\base\Module.php:561
+Stack trace:
+#0 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('img/payment.png', Array)
+#1 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(app\components\SiteRequest))
+#2 C:\gitrepos\cakeoncall\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: पृष्ठ नहीं मिला। in C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(app\components\SiteRequest))
+#1 C:\gitrepos\cakeoncall\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2024-02-27 16:45:47 [127.0.0.1][-][6rtfjfmht53nvu5581jp7g1opb][warning][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'app' does not exist: C:\gitrepos\cakeoncall/messages/hi/app.php
+    in C:\gitrepos\cakeoncall\views\layouts\_topNav.php:20
+    in C:\gitrepos\cakeoncall\views\layouts\main.php:34
+2024-02-27 16:45:46 [127.0.0.1][-][6rtfjfmht53nvu5581jp7g1opb][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '6rtfjfmht53nvu5581jp7g1opb'
+    '_csrf' => '297f82ef1c7583024dd8e2e135d02ef9797148dd1af1b94e9da440dc7c96c8c2a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"UjHVF5VeeZhsmOJKqV--kbyL0-3qJENT\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'luyashop.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0'
+    'HTTP_ACCEPT' => 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://luyashop.local/catalog'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=6rtfjfmht53nvu5581jp7g1opb; _csrf=297f82ef1c7583024dd8e2e135d02ef9797148dd1af1b94e9da440dc7c96c8c2a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22UjHVF5VeeZhsmOJKqV--kbyL0-3qJENT%22%3B%7D'
+    'PATH' => 'C:\\Ruby32-x64\\bin;C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Graphviz\\bin;C:\\Users\\pc\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs;C:\\Program Files\\PuTTY\\;C:\\Users\\pc\\scoop\\shims;C:\\Users\\pc\\AppData\\Local\\Programs\\Python\\Python311\\Scripts\\;C:\\Users\\pc\\AppData\\Local\\Programs\\Python\\Python311\\;C:\\Users\\pc\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\pc\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\pc\\AppData\\Roaming\\npm;C:\\xampp\\php;C:\\Users\\pc\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\pc\\.dotnet\\tools;C:\\Users\\pc\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\pc\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4 Server at luyashop.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4'
+    'SERVER_NAME' => 'luyashop.local'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/gitrepos/cakeoncall/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/gitrepos/cakeoncall/web'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/gitrepos/cakeoncall/web/index.php'
+    'REMOTE_PORT' => '64021'
+    'REDIRECT_URL' => '/img/payment.png'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/img/payment.png'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1709048746.9785
+    'REQUEST_TIME' => 1709048746
+]
+2024-02-27 16:45:47 [127.0.0.1][-][6rtfjfmht53nvu5581jp7g1opb][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "images/footerbg.jpg". in C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\base\Module.php:561
+Stack trace:
+#0 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('images/footerbg...', Array)
+#1 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(app\components\SiteRequest))
+#2 C:\gitrepos\cakeoncall\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: पृष्ठ नहीं मिला। in C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(app\components\SiteRequest))
+#1 C:\gitrepos\cakeoncall\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2024-02-27 16:45:47 [127.0.0.1][-][6rtfjfmht53nvu5581jp7g1opb][warning][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'app' does not exist: C:\gitrepos\cakeoncall/messages/hi/app.php
+    in C:\gitrepos\cakeoncall\views\layouts\_topNav.php:20
+    in C:\gitrepos\cakeoncall\views\layouts\main.php:34
+2024-02-27 16:45:47 [127.0.0.1][-][6rtfjfmht53nvu5581jp7g1opb][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '6rtfjfmht53nvu5581jp7g1opb'
+    '_csrf' => '297f82ef1c7583024dd8e2e135d02ef9797148dd1af1b94e9da440dc7c96c8c2a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"UjHVF5VeeZhsmOJKqV--kbyL0-3qJENT\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'luyashop.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0'
+    'HTTP_ACCEPT' => 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://luyashop.local/css/main.css'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=6rtfjfmht53nvu5581jp7g1opb; _csrf=297f82ef1c7583024dd8e2e135d02ef9797148dd1af1b94e9da440dc7c96c8c2a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22UjHVF5VeeZhsmOJKqV--kbyL0-3qJENT%22%3B%7D'
+    'PATH' => 'C:\\Ruby32-x64\\bin;C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Graphviz\\bin;C:\\Users\\pc\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs;C:\\Program Files\\PuTTY\\;C:\\Users\\pc\\scoop\\shims;C:\\Users\\pc\\AppData\\Local\\Programs\\Python\\Python311\\Scripts\\;C:\\Users\\pc\\AppData\\Local\\Programs\\Python\\Python311\\;C:\\Users\\pc\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\pc\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\pc\\AppData\\Roaming\\npm;C:\\xampp\\php;C:\\Users\\pc\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\pc\\.dotnet\\tools;C:\\Users\\pc\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\pc\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4 Server at luyashop.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4'
+    'SERVER_NAME' => 'luyashop.local'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/gitrepos/cakeoncall/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/gitrepos/cakeoncall/web'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/gitrepos/cakeoncall/web/index.php'
+    'REMOTE_PORT' => '64034'
+    'REDIRECT_URL' => '/images/footerbg.jpg'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/images/footerbg.jpg'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1709048747.0204
+    'REQUEST_TIME' => 1709048747
+]
+2024-02-27 16:52:36 [127.0.0.1][-][6rtfjfmht53nvu5581jp7g1opb][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "img/payment.png". in C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\base\Module.php:561
+Stack trace:
+#0 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('img/payment.png', Array)
+#1 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(app\components\SiteRequest))
+#2 C:\gitrepos\cakeoncall\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: पृष्ठ नहीं मिला। in C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(app\components\SiteRequest))
+#1 C:\gitrepos\cakeoncall\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2024-02-27 16:52:36 [127.0.0.1][-][6rtfjfmht53nvu5581jp7g1opb][warning][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'app' does not exist: C:\gitrepos\cakeoncall/messages/hi/app.php
+    in C:\gitrepos\cakeoncall\views\layouts\_topNav.php:20
+    in C:\gitrepos\cakeoncall\views\layouts\main.php:34
+2024-02-27 16:52:36 [127.0.0.1][-][6rtfjfmht53nvu5581jp7g1opb][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '6rtfjfmht53nvu5581jp7g1opb'
+    '_csrf' => '297f82ef1c7583024dd8e2e135d02ef9797148dd1af1b94e9da440dc7c96c8c2a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"UjHVF5VeeZhsmOJKqV--kbyL0-3qJENT\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'luyashop.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0'
+    'HTTP_ACCEPT' => 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://luyashop.local/catalog'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=6rtfjfmht53nvu5581jp7g1opb; _csrf=297f82ef1c7583024dd8e2e135d02ef9797148dd1af1b94e9da440dc7c96c8c2a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22UjHVF5VeeZhsmOJKqV--kbyL0-3qJENT%22%3B%7D'
+    'PATH' => 'C:\\Ruby32-x64\\bin;C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Graphviz\\bin;C:\\Users\\pc\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs;C:\\Program Files\\PuTTY\\;C:\\Users\\pc\\scoop\\shims;C:\\Users\\pc\\AppData\\Local\\Programs\\Python\\Python311\\Scripts\\;C:\\Users\\pc\\AppData\\Local\\Programs\\Python\\Python311\\;C:\\Users\\pc\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\pc\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\pc\\AppData\\Roaming\\npm;C:\\xampp\\php;C:\\Users\\pc\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\pc\\.dotnet\\tools;C:\\Users\\pc\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\pc\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4 Server at luyashop.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4'
+    'SERVER_NAME' => 'luyashop.local'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/gitrepos/cakeoncall/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/gitrepos/cakeoncall/web'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/gitrepos/cakeoncall/web/index.php'
+    'REMOTE_PORT' => '64104'
+    'REDIRECT_URL' => '/img/payment.png'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/img/payment.png'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1709049156.0627
+    'REQUEST_TIME' => 1709049156
+]
+2024-02-27 16:52:36 [127.0.0.1][-][6rtfjfmht53nvu5581jp7g1opb][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "images/footerbg.jpg". in C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\base\Module.php:561
+Stack trace:
+#0 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('images/footerbg...', Array)
+#1 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(app\components\SiteRequest))
+#2 C:\gitrepos\cakeoncall\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: पृष्ठ नहीं मिला। in C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(app\components\SiteRequest))
+#1 C:\gitrepos\cakeoncall\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2024-02-27 16:52:36 [127.0.0.1][-][6rtfjfmht53nvu5581jp7g1opb][warning][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'app' does not exist: C:\gitrepos\cakeoncall/messages/hi/app.php
+    in C:\gitrepos\cakeoncall\views\layouts\_topNav.php:20
+    in C:\gitrepos\cakeoncall\views\layouts\main.php:34
+2024-02-27 16:52:36 [127.0.0.1][-][6rtfjfmht53nvu5581jp7g1opb][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '6rtfjfmht53nvu5581jp7g1opb'
+    '_csrf' => '297f82ef1c7583024dd8e2e135d02ef9797148dd1af1b94e9da440dc7c96c8c2a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"UjHVF5VeeZhsmOJKqV--kbyL0-3qJENT\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'luyashop.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0'
+    'HTTP_ACCEPT' => 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://luyashop.local/css/main.css'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=6rtfjfmht53nvu5581jp7g1opb; _csrf=297f82ef1c7583024dd8e2e135d02ef9797148dd1af1b94e9da440dc7c96c8c2a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22UjHVF5VeeZhsmOJKqV--kbyL0-3qJENT%22%3B%7D'
+    'PATH' => 'C:\\Ruby32-x64\\bin;C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Graphviz\\bin;C:\\Users\\pc\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs;C:\\Program Files\\PuTTY\\;C:\\Users\\pc\\scoop\\shims;C:\\Users\\pc\\AppData\\Local\\Programs\\Python\\Python311\\Scripts\\;C:\\Users\\pc\\AppData\\Local\\Programs\\Python\\Python311\\;C:\\Users\\pc\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\pc\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\pc\\AppData\\Roaming\\npm;C:\\xampp\\php;C:\\Users\\pc\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\pc\\.dotnet\\tools;C:\\Users\\pc\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\pc\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4 Server at luyashop.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4'
+    'SERVER_NAME' => 'luyashop.local'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/gitrepos/cakeoncall/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/gitrepos/cakeoncall/web'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/gitrepos/cakeoncall/web/index.php'
+    'REMOTE_PORT' => '64108'
+    'REDIRECT_URL' => '/images/footerbg.jpg'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/images/footerbg.jpg'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1709049156.1446
+    'REQUEST_TIME' => 1709049156
+]
+2024-02-27 16:52:38 [127.0.0.1][-][6rtfjfmht53nvu5581jp7g1opb][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "img/payment.png". in C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\base\Module.php:561
+Stack trace:
+#0 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('img/payment.png', Array)
+#1 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(app\components\SiteRequest))
+#2 C:\gitrepos\cakeoncall\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: पृष्ठ नहीं मिला। in C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(app\components\SiteRequest))
+#1 C:\gitrepos\cakeoncall\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2024-02-27 16:52:38 [127.0.0.1][-][6rtfjfmht53nvu5581jp7g1opb][warning][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'app' does not exist: C:\gitrepos\cakeoncall/messages/hi/app.php
+    in C:\gitrepos\cakeoncall\views\layouts\_topNav.php:20
+    in C:\gitrepos\cakeoncall\views\layouts\main.php:34
+2024-02-27 16:52:38 [127.0.0.1][-][6rtfjfmht53nvu5581jp7g1opb][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '6rtfjfmht53nvu5581jp7g1opb'
+    '_csrf' => '297f82ef1c7583024dd8e2e135d02ef9797148dd1af1b94e9da440dc7c96c8c2a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"UjHVF5VeeZhsmOJKqV--kbyL0-3qJENT\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'luyashop.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0'
+    'HTTP_ACCEPT' => 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://luyashop.local/catalog'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=6rtfjfmht53nvu5581jp7g1opb; _csrf=297f82ef1c7583024dd8e2e135d02ef9797148dd1af1b94e9da440dc7c96c8c2a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22UjHVF5VeeZhsmOJKqV--kbyL0-3qJENT%22%3B%7D'
+    'PATH' => 'C:\\Ruby32-x64\\bin;C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Graphviz\\bin;C:\\Users\\pc\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs;C:\\Program Files\\PuTTY\\;C:\\Users\\pc\\scoop\\shims;C:\\Users\\pc\\AppData\\Local\\Programs\\Python\\Python311\\Scripts\\;C:\\Users\\pc\\AppData\\Local\\Programs\\Python\\Python311\\;C:\\Users\\pc\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\pc\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\pc\\AppData\\Roaming\\npm;C:\\xampp\\php;C:\\Users\\pc\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\pc\\.dotnet\\tools;C:\\Users\\pc\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\pc\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4 Server at luyashop.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4'
+    'SERVER_NAME' => 'luyashop.local'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/gitrepos/cakeoncall/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/gitrepos/cakeoncall/web'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/gitrepos/cakeoncall/web/index.php'
+    'REMOTE_PORT' => '64105'
+    'REDIRECT_URL' => '/img/payment.png'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/img/payment.png'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1709049158.4247
+    'REQUEST_TIME' => 1709049158
+]
+2024-02-27 16:52:38 [127.0.0.1][-][6rtfjfmht53nvu5581jp7g1opb][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "images/footerbg.jpg". in C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\base\Module.php:561
+Stack trace:
+#0 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('images/footerbg...', Array)
+#1 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(app\components\SiteRequest))
+#2 C:\gitrepos\cakeoncall\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: पृष्ठ नहीं मिला। in C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(app\components\SiteRequest))
+#1 C:\gitrepos\cakeoncall\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2024-02-27 16:52:38 [127.0.0.1][-][6rtfjfmht53nvu5581jp7g1opb][warning][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'app' does not exist: C:\gitrepos\cakeoncall/messages/hi/app.php
+    in C:\gitrepos\cakeoncall\views\layouts\_topNav.php:20
+    in C:\gitrepos\cakeoncall\views\layouts\main.php:34
+2024-02-27 16:52:38 [127.0.0.1][-][6rtfjfmht53nvu5581jp7g1opb][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '6rtfjfmht53nvu5581jp7g1opb'
+    '_csrf' => '297f82ef1c7583024dd8e2e135d02ef9797148dd1af1b94e9da440dc7c96c8c2a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"UjHVF5VeeZhsmOJKqV--kbyL0-3qJENT\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'luyashop.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0'
+    'HTTP_ACCEPT' => 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://luyashop.local/css/main.css'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=6rtfjfmht53nvu5581jp7g1opb; _csrf=297f82ef1c7583024dd8e2e135d02ef9797148dd1af1b94e9da440dc7c96c8c2a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22UjHVF5VeeZhsmOJKqV--kbyL0-3qJENT%22%3B%7D'
+    'PATH' => 'C:\\Ruby32-x64\\bin;C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Graphviz\\bin;C:\\Users\\pc\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs;C:\\Program Files\\PuTTY\\;C:\\Users\\pc\\scoop\\shims;C:\\Users\\pc\\AppData\\Local\\Programs\\Python\\Python311\\Scripts\\;C:\\Users\\pc\\AppData\\Local\\Programs\\Python\\Python311\\;C:\\Users\\pc\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\pc\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\pc\\AppData\\Roaming\\npm;C:\\xampp\\php;C:\\Users\\pc\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\pc\\.dotnet\\tools;C:\\Users\\pc\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\pc\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4 Server at luyashop.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4'
+    'SERVER_NAME' => 'luyashop.local'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/gitrepos/cakeoncall/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/gitrepos/cakeoncall/web'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/gitrepos/cakeoncall/web/index.php'
+    'REMOTE_PORT' => '64111'
+    'REDIRECT_URL' => '/images/footerbg.jpg'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/images/footerbg.jpg'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1709049158.4887
+    'REQUEST_TIME' => 1709049158
+]
+2024-02-27 16:56:32 [127.0.0.1][-][6rtfjfmht53nvu5581jp7g1opb][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "img/payment.png". in C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\base\Module.php:561
+Stack trace:
+#0 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('img/payment.png', Array)
+#1 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(app\components\SiteRequest))
+#2 C:\gitrepos\cakeoncall\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: पृष्ठ नहीं मिला। in C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(app\components\SiteRequest))
+#1 C:\gitrepos\cakeoncall\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2024-02-27 16:56:32 [127.0.0.1][-][6rtfjfmht53nvu5581jp7g1opb][warning][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'app' does not exist: C:\gitrepos\cakeoncall/messages/hi/app.php
+    in C:\gitrepos\cakeoncall\views\layouts\_topNav.php:20
+    in C:\gitrepos\cakeoncall\views\layouts\main.php:34
+2024-02-27 16:56:32 [127.0.0.1][-][6rtfjfmht53nvu5581jp7g1opb][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '6rtfjfmht53nvu5581jp7g1opb'
+    '_csrf' => '297f82ef1c7583024dd8e2e135d02ef9797148dd1af1b94e9da440dc7c96c8c2a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"UjHVF5VeeZhsmOJKqV--kbyL0-3qJENT\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'luyashop.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0'
+    'HTTP_ACCEPT' => 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://luyashop.local/catalog'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=6rtfjfmht53nvu5581jp7g1opb; _csrf=297f82ef1c7583024dd8e2e135d02ef9797148dd1af1b94e9da440dc7c96c8c2a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22UjHVF5VeeZhsmOJKqV--kbyL0-3qJENT%22%3B%7D'
+    'PATH' => 'C:\\Ruby32-x64\\bin;C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Graphviz\\bin;C:\\Users\\pc\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs;C:\\Program Files\\PuTTY\\;C:\\Users\\pc\\scoop\\shims;C:\\Users\\pc\\AppData\\Local\\Programs\\Python\\Python311\\Scripts\\;C:\\Users\\pc\\AppData\\Local\\Programs\\Python\\Python311\\;C:\\Users\\pc\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\pc\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\pc\\AppData\\Roaming\\npm;C:\\xampp\\php;C:\\Users\\pc\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\pc\\.dotnet\\tools;C:\\Users\\pc\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\pc\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4 Server at luyashop.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4'
+    'SERVER_NAME' => 'luyashop.local'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/gitrepos/cakeoncall/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/gitrepos/cakeoncall/web'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/gitrepos/cakeoncall/web/index.php'
+    'REMOTE_PORT' => '64150'
+    'REDIRECT_URL' => '/img/payment.png'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/img/payment.png'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1709049392.4573
+    'REQUEST_TIME' => 1709049392
+]
+2024-02-27 16:56:32 [127.0.0.1][-][6rtfjfmht53nvu5581jp7g1opb][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "images/footerbg.jpg". in C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\base\Module.php:561
+Stack trace:
+#0 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('images/footerbg...', Array)
+#1 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(app\components\SiteRequest))
+#2 C:\gitrepos\cakeoncall\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: पृष्ठ नहीं मिला। in C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(app\components\SiteRequest))
+#1 C:\gitrepos\cakeoncall\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2024-02-27 16:56:32 [127.0.0.1][-][6rtfjfmht53nvu5581jp7g1opb][warning][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'app' does not exist: C:\gitrepos\cakeoncall/messages/hi/app.php
+    in C:\gitrepos\cakeoncall\views\layouts\_topNav.php:20
+    in C:\gitrepos\cakeoncall\views\layouts\main.php:34
+2024-02-27 16:56:32 [127.0.0.1][-][6rtfjfmht53nvu5581jp7g1opb][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '6rtfjfmht53nvu5581jp7g1opb'
+    '_csrf' => '297f82ef1c7583024dd8e2e135d02ef9797148dd1af1b94e9da440dc7c96c8c2a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"UjHVF5VeeZhsmOJKqV--kbyL0-3qJENT\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'luyashop.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0'
+    'HTTP_ACCEPT' => 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://luyashop.local/css/main.css'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=6rtfjfmht53nvu5581jp7g1opb; _csrf=297f82ef1c7583024dd8e2e135d02ef9797148dd1af1b94e9da440dc7c96c8c2a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22UjHVF5VeeZhsmOJKqV--kbyL0-3qJENT%22%3B%7D'
+    'PATH' => 'C:\\Ruby32-x64\\bin;C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Graphviz\\bin;C:\\Users\\pc\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs;C:\\Program Files\\PuTTY\\;C:\\Users\\pc\\scoop\\shims;C:\\Users\\pc\\AppData\\Local\\Programs\\Python\\Python311\\Scripts\\;C:\\Users\\pc\\AppData\\Local\\Programs\\Python\\Python311\\;C:\\Users\\pc\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\pc\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\pc\\AppData\\Roaming\\npm;C:\\xampp\\php;C:\\Users\\pc\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\pc\\.dotnet\\tools;C:\\Users\\pc\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\pc\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4 Server at luyashop.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4'
+    'SERVER_NAME' => 'luyashop.local'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/gitrepos/cakeoncall/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/gitrepos/cakeoncall/web'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/gitrepos/cakeoncall/web/index.php'
+    'REMOTE_PORT' => '64153'
+    'REDIRECT_URL' => '/images/footerbg.jpg'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/images/footerbg.jpg'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1709049392.5242
+    'REQUEST_TIME' => 1709049392
+]
+2024-02-27 16:56:34 [127.0.0.1][-][6rtfjfmht53nvu5581jp7g1opb][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "img/payment.png". in C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\base\Module.php:561
+Stack trace:
+#0 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('img/payment.png', Array)
+#1 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(app\components\SiteRequest))
+#2 C:\gitrepos\cakeoncall\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: पृष्ठ नहीं मिला। in C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(app\components\SiteRequest))
+#1 C:\gitrepos\cakeoncall\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2024-02-27 16:56:34 [127.0.0.1][-][6rtfjfmht53nvu5581jp7g1opb][warning][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'app' does not exist: C:\gitrepos\cakeoncall/messages/hi/app.php
+    in C:\gitrepos\cakeoncall\views\layouts\_topNav.php:20
+    in C:\gitrepos\cakeoncall\views\layouts\main.php:34
+2024-02-27 16:56:34 [127.0.0.1][-][6rtfjfmht53nvu5581jp7g1opb][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '6rtfjfmht53nvu5581jp7g1opb'
+    '_csrf' => '297f82ef1c7583024dd8e2e135d02ef9797148dd1af1b94e9da440dc7c96c8c2a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"UjHVF5VeeZhsmOJKqV--kbyL0-3qJENT\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'luyashop.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0'
+    'HTTP_ACCEPT' => 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://luyashop.local/catalog'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=6rtfjfmht53nvu5581jp7g1opb; _csrf=297f82ef1c7583024dd8e2e135d02ef9797148dd1af1b94e9da440dc7c96c8c2a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22UjHVF5VeeZhsmOJKqV--kbyL0-3qJENT%22%3B%7D'
+    'PATH' => 'C:\\Ruby32-x64\\bin;C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Graphviz\\bin;C:\\Users\\pc\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs;C:\\Program Files\\PuTTY\\;C:\\Users\\pc\\scoop\\shims;C:\\Users\\pc\\AppData\\Local\\Programs\\Python\\Python311\\Scripts\\;C:\\Users\\pc\\AppData\\Local\\Programs\\Python\\Python311\\;C:\\Users\\pc\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\pc\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\pc\\AppData\\Roaming\\npm;C:\\xampp\\php;C:\\Users\\pc\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\pc\\.dotnet\\tools;C:\\Users\\pc\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\pc\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4 Server at luyashop.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4'
+    'SERVER_NAME' => 'luyashop.local'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/gitrepos/cakeoncall/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/gitrepos/cakeoncall/web'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/gitrepos/cakeoncall/web/index.php'
+    'REMOTE_PORT' => '64151'
+    'REDIRECT_URL' => '/img/payment.png'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/img/payment.png'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1709049394.5582
+    'REQUEST_TIME' => 1709049394
+]
+2024-02-27 16:56:34 [127.0.0.1][-][6rtfjfmht53nvu5581jp7g1opb][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "images/footerbg.jpg". in C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\base\Module.php:561
+Stack trace:
+#0 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('images/footerbg...', Array)
+#1 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(app\components\SiteRequest))
+#2 C:\gitrepos\cakeoncall\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: पृष्ठ नहीं मिला। in C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(app\components\SiteRequest))
+#1 C:\gitrepos\cakeoncall\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2024-02-27 16:56:34 [127.0.0.1][-][6rtfjfmht53nvu5581jp7g1opb][warning][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'app' does not exist: C:\gitrepos\cakeoncall/messages/hi/app.php
+    in C:\gitrepos\cakeoncall\views\layouts\_topNav.php:20
+    in C:\gitrepos\cakeoncall\views\layouts\main.php:34
+2024-02-27 16:56:34 [127.0.0.1][-][6rtfjfmht53nvu5581jp7g1opb][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '6rtfjfmht53nvu5581jp7g1opb'
+    '_csrf' => '297f82ef1c7583024dd8e2e135d02ef9797148dd1af1b94e9da440dc7c96c8c2a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"UjHVF5VeeZhsmOJKqV--kbyL0-3qJENT\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'luyashop.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0'
+    'HTTP_ACCEPT' => 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://luyashop.local/css/main.css'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=6rtfjfmht53nvu5581jp7g1opb; _csrf=297f82ef1c7583024dd8e2e135d02ef9797148dd1af1b94e9da440dc7c96c8c2a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22UjHVF5VeeZhsmOJKqV--kbyL0-3qJENT%22%3B%7D'
+    'PATH' => 'C:\\Ruby32-x64\\bin;C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Graphviz\\bin;C:\\Users\\pc\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs;C:\\Program Files\\PuTTY\\;C:\\Users\\pc\\scoop\\shims;C:\\Users\\pc\\AppData\\Local\\Programs\\Python\\Python311\\Scripts\\;C:\\Users\\pc\\AppData\\Local\\Programs\\Python\\Python311\\;C:\\Users\\pc\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\pc\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\pc\\AppData\\Roaming\\npm;C:\\xampp\\php;C:\\Users\\pc\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\pc\\.dotnet\\tools;C:\\Users\\pc\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\pc\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4 Server at luyashop.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4'
+    'SERVER_NAME' => 'luyashop.local'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/gitrepos/cakeoncall/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/gitrepos/cakeoncall/web'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/gitrepos/cakeoncall/web/index.php'
+    'REMOTE_PORT' => '64158'
+    'REDIRECT_URL' => '/images/footerbg.jpg'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/images/footerbg.jpg'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1709049394.6221
+    'REQUEST_TIME' => 1709049394
+]
+2024-02-27 16:56:40 [127.0.0.1][-][-][warning][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'app' does not exist: C:\gitrepos\cakeoncall/messages/hi/app.php
+    in C:\gitrepos\cakeoncall\views\layouts\_topNav.php:20
+    in C:\gitrepos\cakeoncall\views\layouts\main.php:34
+    in C:\gitrepos\cakeoncall\controllers\SiteController.php:64
+2024-02-27 16:56:40 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '6rtfjfmht53nvu5581jp7g1opb'
+    '_csrf' => '297f82ef1c7583024dd8e2e135d02ef9797148dd1af1b94e9da440dc7c96c8c2a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"UjHVF5VeeZhsmOJKqV--kbyL0-3qJENT\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'luyashop.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=6rtfjfmht53nvu5581jp7g1opb; _csrf=297f82ef1c7583024dd8e2e135d02ef9797148dd1af1b94e9da440dc7c96c8c2a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22UjHVF5VeeZhsmOJKqV--kbyL0-3qJENT%22%3B%7D'
+    'PATH' => 'C:\\Ruby32-x64\\bin;C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Graphviz\\bin;C:\\Users\\pc\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs;C:\\Program Files\\PuTTY\\;C:\\Users\\pc\\scoop\\shims;C:\\Users\\pc\\AppData\\Local\\Programs\\Python\\Python311\\Scripts\\;C:\\Users\\pc\\AppData\\Local\\Programs\\Python\\Python311\\;C:\\Users\\pc\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\pc\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\pc\\AppData\\Roaming\\npm;C:\\xampp\\php;C:\\Users\\pc\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\pc\\.dotnet\\tools;C:\\Users\\pc\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\pc\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4 Server at luyashop.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4'
+    'SERVER_NAME' => 'luyashop.local'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/gitrepos/cakeoncall/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/gitrepos/cakeoncall/web'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/gitrepos/cakeoncall/web/index.php'
+    'REMOTE_PORT' => '64159'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1709049400.8733
+    'REQUEST_TIME' => 1709049400
+]
+2024-02-27 16:56:41 [127.0.0.1][-][6rtfjfmht53nvu5581jp7g1opb][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "img/featur-2.jpg". in C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\base\Module.php:561
+Stack trace:
+#0 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('img/featur-2.jp...', Array)
+#1 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(app\components\SiteRequest))
+#2 C:\gitrepos\cakeoncall\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: पृष्ठ नहीं मिला। in C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(app\components\SiteRequest))
+#1 C:\gitrepos\cakeoncall\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2024-02-27 16:56:41 [127.0.0.1][-][6rtfjfmht53nvu5581jp7g1opb][warning][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'app' does not exist: C:\gitrepos\cakeoncall/messages/hi/app.php
+    in C:\gitrepos\cakeoncall\views\layouts\_topNav.php:20
+    in C:\gitrepos\cakeoncall\views\layouts\main.php:34
+2024-02-27 16:56:41 [127.0.0.1][-][6rtfjfmht53nvu5581jp7g1opb][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '6rtfjfmht53nvu5581jp7g1opb'
+    '_csrf' => '297f82ef1c7583024dd8e2e135d02ef9797148dd1af1b94e9da440dc7c96c8c2a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"UjHVF5VeeZhsmOJKqV--kbyL0-3qJENT\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'luyashop.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0'
+    'HTTP_ACCEPT' => 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://luyashop.local/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=6rtfjfmht53nvu5581jp7g1opb; _csrf=297f82ef1c7583024dd8e2e135d02ef9797148dd1af1b94e9da440dc7c96c8c2a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22UjHVF5VeeZhsmOJKqV--kbyL0-3qJENT%22%3B%7D'
+    'PATH' => 'C:\\Ruby32-x64\\bin;C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Graphviz\\bin;C:\\Users\\pc\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs;C:\\Program Files\\PuTTY\\;C:\\Users\\pc\\scoop\\shims;C:\\Users\\pc\\AppData\\Local\\Programs\\Python\\Python311\\Scripts\\;C:\\Users\\pc\\AppData\\Local\\Programs\\Python\\Python311\\;C:\\Users\\pc\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\pc\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\pc\\AppData\\Roaming\\npm;C:\\xampp\\php;C:\\Users\\pc\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\pc\\.dotnet\\tools;C:\\Users\\pc\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\pc\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4 Server at luyashop.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4'
+    'SERVER_NAME' => 'luyashop.local'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/gitrepos/cakeoncall/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/gitrepos/cakeoncall/web'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/gitrepos/cakeoncall/web/index.php'
+    'REMOTE_PORT' => '64159'
+    'REDIRECT_URL' => '/img/featur-2.jpg'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/img/featur-2.jpg'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1709049401.0102
+    'REQUEST_TIME' => 1709049401
+]
+2024-02-27 16:56:43 [127.0.0.1][-][-][warning][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'app' does not exist: C:\gitrepos\cakeoncall/messages/hi/app.php
+    in C:\gitrepos\cakeoncall\views\layouts\_topNav.php:20
+    in C:\gitrepos\cakeoncall\views\layouts\main.php:34
+    in C:\gitrepos\cakeoncall\controllers\SiteController.php:64
+2024-02-27 16:56:43 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '6rtfjfmht53nvu5581jp7g1opb'
+    '_csrf' => '297f82ef1c7583024dd8e2e135d02ef9797148dd1af1b94e9da440dc7c96c8c2a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"UjHVF5VeeZhsmOJKqV--kbyL0-3qJENT\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'luyashop.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_REFERER' => 'http://luyashop.local/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=6rtfjfmht53nvu5581jp7g1opb; _csrf=297f82ef1c7583024dd8e2e135d02ef9797148dd1af1b94e9da440dc7c96c8c2a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22UjHVF5VeeZhsmOJKqV--kbyL0-3qJENT%22%3B%7D'
+    'PATH' => 'C:\\Ruby32-x64\\bin;C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Graphviz\\bin;C:\\Users\\pc\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs;C:\\Program Files\\PuTTY\\;C:\\Users\\pc\\scoop\\shims;C:\\Users\\pc\\AppData\\Local\\Programs\\Python\\Python311\\Scripts\\;C:\\Users\\pc\\AppData\\Local\\Programs\\Python\\Python311\\;C:\\Users\\pc\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\pc\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\pc\\AppData\\Roaming\\npm;C:\\xampp\\php;C:\\Users\\pc\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\pc\\.dotnet\\tools;C:\\Users\\pc\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\pc\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4 Server at luyashop.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4'
+    'SERVER_NAME' => 'luyashop.local'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/gitrepos/cakeoncall/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/gitrepos/cakeoncall/web'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/gitrepos/cakeoncall/web/index.php'
+    'REMOTE_PORT' => '64160'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1709049403.7455
+    'REQUEST_TIME' => 1709049403
+]
+2024-02-27 16:56:43 [127.0.0.1][-][6rtfjfmht53nvu5581jp7g1opb][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "img/featur-2.jpg". in C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\base\Module.php:561
+Stack trace:
+#0 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('img/featur-2.jp...', Array)
+#1 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(app\components\SiteRequest))
+#2 C:\gitrepos\cakeoncall\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: पृष्ठ नहीं मिला। in C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(app\components\SiteRequest))
+#1 C:\gitrepos\cakeoncall\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2024-02-27 16:56:43 [127.0.0.1][-][6rtfjfmht53nvu5581jp7g1opb][warning][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'app' does not exist: C:\gitrepos\cakeoncall/messages/hi/app.php
+    in C:\gitrepos\cakeoncall\views\layouts\_topNav.php:20
+    in C:\gitrepos\cakeoncall\views\layouts\main.php:34
+2024-02-27 16:56:43 [127.0.0.1][-][6rtfjfmht53nvu5581jp7g1opb][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '6rtfjfmht53nvu5581jp7g1opb'
+    '_csrf' => '297f82ef1c7583024dd8e2e135d02ef9797148dd1af1b94e9da440dc7c96c8c2a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"UjHVF5VeeZhsmOJKqV--kbyL0-3qJENT\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'luyashop.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0'
+    'HTTP_ACCEPT' => 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://luyashop.local/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=6rtfjfmht53nvu5581jp7g1opb; _csrf=297f82ef1c7583024dd8e2e135d02ef9797148dd1af1b94e9da440dc7c96c8c2a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22UjHVF5VeeZhsmOJKqV--kbyL0-3qJENT%22%3B%7D'
+    'PATH' => 'C:\\Ruby32-x64\\bin;C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Graphviz\\bin;C:\\Users\\pc\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs;C:\\Program Files\\PuTTY\\;C:\\Users\\pc\\scoop\\shims;C:\\Users\\pc\\AppData\\Local\\Programs\\Python\\Python311\\Scripts\\;C:\\Users\\pc\\AppData\\Local\\Programs\\Python\\Python311\\;C:\\Users\\pc\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\pc\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\pc\\AppData\\Roaming\\npm;C:\\xampp\\php;C:\\Users\\pc\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\pc\\.dotnet\\tools;C:\\Users\\pc\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\pc\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4 Server at luyashop.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4'
+    'SERVER_NAME' => 'luyashop.local'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/gitrepos/cakeoncall/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/gitrepos/cakeoncall/web'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/gitrepos/cakeoncall/web/index.php'
+    'REMOTE_PORT' => '64160'
+    'REDIRECT_URL' => '/img/featur-2.jpg'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/img/featur-2.jpg'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1709049403.8424
+    'REQUEST_TIME' => 1709049403
+]
+2024-02-27 16:56:51 [127.0.0.1][-][6rtfjfmht53nvu5581jp7g1opb][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "img/payment.png". in C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\base\Module.php:561
+Stack trace:
+#0 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('img/payment.png', Array)
+#1 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(app\components\SiteRequest))
+#2 C:\gitrepos\cakeoncall\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: पृष्ठ नहीं मिला। in C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(app\components\SiteRequest))
+#1 C:\gitrepos\cakeoncall\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2024-02-27 16:56:51 [127.0.0.1][-][6rtfjfmht53nvu5581jp7g1opb][warning][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'app' does not exist: C:\gitrepos\cakeoncall/messages/hi/app.php
+    in C:\gitrepos\cakeoncall\views\layouts\_topNav.php:20
+    in C:\gitrepos\cakeoncall\views\layouts\main.php:34
+2024-02-27 16:56:51 [127.0.0.1][-][6rtfjfmht53nvu5581jp7g1opb][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '6rtfjfmht53nvu5581jp7g1opb'
+    '_csrf' => '297f82ef1c7583024dd8e2e135d02ef9797148dd1af1b94e9da440dc7c96c8c2a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"UjHVF5VeeZhsmOJKqV--kbyL0-3qJENT\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'luyashop.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0'
+    'HTTP_ACCEPT' => 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://luyashop.local/catalog'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=6rtfjfmht53nvu5581jp7g1opb; _csrf=297f82ef1c7583024dd8e2e135d02ef9797148dd1af1b94e9da440dc7c96c8c2a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22UjHVF5VeeZhsmOJKqV--kbyL0-3qJENT%22%3B%7D'
+    'PATH' => 'C:\\Ruby32-x64\\bin;C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Graphviz\\bin;C:\\Users\\pc\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs;C:\\Program Files\\PuTTY\\;C:\\Users\\pc\\scoop\\shims;C:\\Users\\pc\\AppData\\Local\\Programs\\Python\\Python311\\Scripts\\;C:\\Users\\pc\\AppData\\Local\\Programs\\Python\\Python311\\;C:\\Users\\pc\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\pc\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\pc\\AppData\\Roaming\\npm;C:\\xampp\\php;C:\\Users\\pc\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\pc\\.dotnet\\tools;C:\\Users\\pc\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\pc\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4 Server at luyashop.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4'
+    'SERVER_NAME' => 'luyashop.local'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/gitrepos/cakeoncall/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/gitrepos/cakeoncall/web'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/gitrepos/cakeoncall/web/index.php'
+    'REMOTE_PORT' => '64162'
+    'REDIRECT_URL' => '/img/payment.png'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/img/payment.png'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1709049411.5406
+    'REQUEST_TIME' => 1709049411
+]
+2024-02-27 16:56:51 [127.0.0.1][-][6rtfjfmht53nvu5581jp7g1opb][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "images/footerbg.jpg". in C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\base\Module.php:561
+Stack trace:
+#0 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('images/footerbg...', Array)
+#1 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(app\components\SiteRequest))
+#2 C:\gitrepos\cakeoncall\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: पृष्ठ नहीं मिला। in C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(app\components\SiteRequest))
+#1 C:\gitrepos\cakeoncall\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2024-02-27 16:56:51 [127.0.0.1][-][6rtfjfmht53nvu5581jp7g1opb][warning][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'app' does not exist: C:\gitrepos\cakeoncall/messages/hi/app.php
+    in C:\gitrepos\cakeoncall\views\layouts\_topNav.php:20
+    in C:\gitrepos\cakeoncall\views\layouts\main.php:34
+2024-02-27 16:56:51 [127.0.0.1][-][6rtfjfmht53nvu5581jp7g1opb][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '6rtfjfmht53nvu5581jp7g1opb'
+    '_csrf' => '297f82ef1c7583024dd8e2e135d02ef9797148dd1af1b94e9da440dc7c96c8c2a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"UjHVF5VeeZhsmOJKqV--kbyL0-3qJENT\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'luyashop.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0'
+    'HTTP_ACCEPT' => 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://luyashop.local/css/main.css'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=6rtfjfmht53nvu5581jp7g1opb; _csrf=297f82ef1c7583024dd8e2e135d02ef9797148dd1af1b94e9da440dc7c96c8c2a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22UjHVF5VeeZhsmOJKqV--kbyL0-3qJENT%22%3B%7D'
+    'PATH' => 'C:\\Ruby32-x64\\bin;C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Graphviz\\bin;C:\\Users\\pc\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs;C:\\Program Files\\PuTTY\\;C:\\Users\\pc\\scoop\\shims;C:\\Users\\pc\\AppData\\Local\\Programs\\Python\\Python311\\Scripts\\;C:\\Users\\pc\\AppData\\Local\\Programs\\Python\\Python311\\;C:\\Users\\pc\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\pc\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\pc\\AppData\\Roaming\\npm;C:\\xampp\\php;C:\\Users\\pc\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\pc\\.dotnet\\tools;C:\\Users\\pc\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\pc\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4 Server at luyashop.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4'
+    'SERVER_NAME' => 'luyashop.local'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/gitrepos/cakeoncall/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/gitrepos/cakeoncall/web'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/gitrepos/cakeoncall/web/index.php'
+    'REMOTE_PORT' => '64165'
+    'REDIRECT_URL' => '/images/footerbg.jpg'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/images/footerbg.jpg'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1709049411.5906
+    'REQUEST_TIME' => 1709049411
+]
+2024-02-27 17:00:34 [127.0.0.1][-][6rtfjfmht53nvu5581jp7g1opb][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "img/payment.png". in C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\base\Module.php:561
+Stack trace:
+#0 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('img/payment.png', Array)
+#1 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(app\components\SiteRequest))
+#2 C:\gitrepos\cakeoncall\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: पृष्ठ नहीं मिला। in C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(app\components\SiteRequest))
+#1 C:\gitrepos\cakeoncall\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2024-02-27 17:00:34 [127.0.0.1][-][6rtfjfmht53nvu5581jp7g1opb][warning][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'app' does not exist: C:\gitrepos\cakeoncall/messages/hi/app.php
+    in C:\gitrepos\cakeoncall\views\layouts\_topNav.php:20
+    in C:\gitrepos\cakeoncall\views\layouts\main.php:34
+2024-02-27 17:00:34 [127.0.0.1][-][6rtfjfmht53nvu5581jp7g1opb][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '6rtfjfmht53nvu5581jp7g1opb'
+    '_csrf' => '297f82ef1c7583024dd8e2e135d02ef9797148dd1af1b94e9da440dc7c96c8c2a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"UjHVF5VeeZhsmOJKqV--kbyL0-3qJENT\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'luyashop.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0'
+    'HTTP_ACCEPT' => 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://luyashop.local/catalog'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=6rtfjfmht53nvu5581jp7g1opb; _csrf=297f82ef1c7583024dd8e2e135d02ef9797148dd1af1b94e9da440dc7c96c8c2a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22UjHVF5VeeZhsmOJKqV--kbyL0-3qJENT%22%3B%7D'
+    'PATH' => 'C:\\Ruby32-x64\\bin;C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Graphviz\\bin;C:\\Users\\pc\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs;C:\\Program Files\\PuTTY\\;C:\\Users\\pc\\scoop\\shims;C:\\Users\\pc\\AppData\\Local\\Programs\\Python\\Python311\\Scripts\\;C:\\Users\\pc\\AppData\\Local\\Programs\\Python\\Python311\\;C:\\Users\\pc\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\pc\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\pc\\AppData\\Roaming\\npm;C:\\xampp\\php;C:\\Users\\pc\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\pc\\.dotnet\\tools;C:\\Users\\pc\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\pc\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4 Server at luyashop.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4'
+    'SERVER_NAME' => 'luyashop.local'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/gitrepos/cakeoncall/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/gitrepos/cakeoncall/web'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/gitrepos/cakeoncall/web/index.php'
+    'REMOTE_PORT' => '64184'
+    'REDIRECT_URL' => '/img/payment.png'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/img/payment.png'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1709049634.521
+    'REQUEST_TIME' => 1709049634
+]
+2024-02-27 17:00:34 [127.0.0.1][-][6rtfjfmht53nvu5581jp7g1opb][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "images/footerbg.jpg". in C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\base\Module.php:561
+Stack trace:
+#0 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('images/footerbg...', Array)
+#1 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(app\components\SiteRequest))
+#2 C:\gitrepos\cakeoncall\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: पृष्ठ नहीं मिला। in C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(app\components\SiteRequest))
+#1 C:\gitrepos\cakeoncall\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2024-02-27 17:00:34 [127.0.0.1][-][6rtfjfmht53nvu5581jp7g1opb][warning][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'app' does not exist: C:\gitrepos\cakeoncall/messages/hi/app.php
+    in C:\gitrepos\cakeoncall\views\layouts\_topNav.php:20
+    in C:\gitrepos\cakeoncall\views\layouts\main.php:34
+2024-02-27 17:00:34 [127.0.0.1][-][6rtfjfmht53nvu5581jp7g1opb][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '6rtfjfmht53nvu5581jp7g1opb'
+    '_csrf' => '297f82ef1c7583024dd8e2e135d02ef9797148dd1af1b94e9da440dc7c96c8c2a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"UjHVF5VeeZhsmOJKqV--kbyL0-3qJENT\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'luyashop.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0'
+    'HTTP_ACCEPT' => 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://luyashop.local/css/main.css'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=6rtfjfmht53nvu5581jp7g1opb; _csrf=297f82ef1c7583024dd8e2e135d02ef9797148dd1af1b94e9da440dc7c96c8c2a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22UjHVF5VeeZhsmOJKqV--kbyL0-3qJENT%22%3B%7D'
+    'PATH' => 'C:\\Ruby32-x64\\bin;C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Graphviz\\bin;C:\\Users\\pc\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs;C:\\Program Files\\PuTTY\\;C:\\Users\\pc\\scoop\\shims;C:\\Users\\pc\\AppData\\Local\\Programs\\Python\\Python311\\Scripts\\;C:\\Users\\pc\\AppData\\Local\\Programs\\Python\\Python311\\;C:\\Users\\pc\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\pc\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\pc\\AppData\\Roaming\\npm;C:\\xampp\\php;C:\\Users\\pc\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\pc\\.dotnet\\tools;C:\\Users\\pc\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\pc\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4 Server at luyashop.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4'
+    'SERVER_NAME' => 'luyashop.local'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/gitrepos/cakeoncall/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/gitrepos/cakeoncall/web'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/gitrepos/cakeoncall/web/index.php'
+    'REMOTE_PORT' => '64185'
+    'REDIRECT_URL' => '/images/footerbg.jpg'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/images/footerbg.jpg'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1709049634.6819
+    'REQUEST_TIME' => 1709049634
+]
+2024-02-28 05:31:26 [127.0.0.1][-][-][warning][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'app' does not exist: C:\gitrepos\cakeoncall/messages/hi/app.php
+    in C:\gitrepos\cakeoncall\views\layouts\_topNav.php:20
+    in C:\gitrepos\cakeoncall\views\layouts\main.php:34
+    in C:\gitrepos\cakeoncall\controllers\SiteController.php:64
+2024-02-28 05:31:25 [127.0.0.1][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '6rtfjfmht53nvu5581jp7g1opb'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'luyashop.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=6rtfjfmht53nvu5581jp7g1opb'
+    'PATH' => 'C:\\Ruby32-x64\\bin;C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Graphviz\\bin;C:\\Users\\pc\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs;C:\\Program Files\\PuTTY\\;C:\\Users\\pc\\scoop\\shims;C:\\Users\\pc\\AppData\\Local\\Programs\\Python\\Python311\\Scripts\\;C:\\Users\\pc\\AppData\\Local\\Programs\\Python\\Python311\\;C:\\Users\\pc\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\pc\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\pc\\AppData\\Roaming\\npm;C:\\xampp\\php;C:\\Users\\pc\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\pc\\.dotnet\\tools;C:\\Users\\pc\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\pc\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4 Server at luyashop.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4'
+    'SERVER_NAME' => 'luyashop.local'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/gitrepos/cakeoncall/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/gitrepos/cakeoncall/web'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/gitrepos/cakeoncall/web/index.php'
+    'REMOTE_PORT' => '51325'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1709094685.0485
+    'REQUEST_TIME' => 1709094685
+]
+2024-02-28 05:31:27 [127.0.0.1][-][6rtfjfmht53nvu5581jp7g1opb][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "img/featur-2.jpg". in C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\base\Module.php:561
+Stack trace:
+#0 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\web\Application.php(103): yii\base\Module->runAction('img/featur-2.jp...', Array)
+#1 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(app\components\SiteRequest))
+#2 C:\gitrepos\cakeoncall\web\index.php(12): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: पृष्ठ नहीं मिला। in C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\web\Application.php:115
+Stack trace:
+#0 C:\gitrepos\cakeoncall\vendor\yiisoft\yii2\base\Application.php(384): yii\web\Application->handleRequest(Object(app\components\SiteRequest))
+#1 C:\gitrepos\cakeoncall\web\index.php(12): yii\base\Application->run()
+#2 {main}
+2024-02-28 05:31:27 [127.0.0.1][-][6rtfjfmht53nvu5581jp7g1opb][warning][yii\i18n\PhpMessageSource::loadMessages] The message file for category 'app' does not exist: C:\gitrepos\cakeoncall/messages/hi/app.php
+    in C:\gitrepos\cakeoncall\views\layouts\_topNav.php:20
+    in C:\gitrepos\cakeoncall\views\layouts\main.php:34
+2024-02-28 05:31:27 [127.0.0.1][-][6rtfjfmht53nvu5581jp7g1opb][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'PHPSESSID' => '6rtfjfmht53nvu5581jp7g1opb'
+    '_csrf' => '1effdbd251039dd657220fc56b285445fcc48fe6c9e1db2264d15491289e6039a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"ykCzbVVwCo8KfLjjmUhL7-jSgiXh3ZyD\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'REDIRECT_MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'REDIRECT_MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'REDIRECT_OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'REDIRECT_PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'REDIRECT_PHPRC' => '\\xampp\\php'
+    'REDIRECT_TMP' => '\\xampp\\tmp'
+    'REDIRECT_STATUS' => '200'
+    'MIBDIRS' => 'C:/xampp/php/extras/mibs'
+    'MYSQL_HOME' => '\\xampp\\mysql\\bin'
+    'OPENSSL_CONF' => 'C:/xampp/apache/bin/openssl.cnf'
+    'PHP_PEAR_SYSCONF_DIR' => '\\xampp\\php'
+    'PHPRC' => '\\xampp\\php'
+    'TMP' => '\\xampp\\tmp'
+    'HTTP_HOST' => 'luyashop.local'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36 Edg/122.0.0.0'
+    'HTTP_ACCEPT' => 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://luyashop.local/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'en-US,en;q=0.9'
+    'HTTP_COOKIE' => 'PHPSESSID=6rtfjfmht53nvu5581jp7g1opb; _csrf=1effdbd251039dd657220fc56b285445fcc48fe6c9e1db2264d15491289e6039a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22ykCzbVVwCo8KfLjjmUhL7-jSgiXh3ZyD%22%3B%7D'
+    'PATH' => 'C:\\Ruby32-x64\\bin;C:\\Program Files\\Common Files\\Oracle\\Java\\javapath;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;C:\\Program Files\\Git\\cmd;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\dotnet\\;C:\\Program Files\\Graphviz\\bin;C:\\Users\\pc\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs;C:\\Program Files\\PuTTY\\;C:\\Users\\pc\\scoop\\shims;C:\\Users\\pc\\AppData\\Local\\Programs\\Python\\Python311\\Scripts\\;C:\\Users\\pc\\AppData\\Local\\Programs\\Python\\Python311\\;C:\\Users\\pc\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\pc\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\Users\\pc\\AppData\\Roaming\\npm;C:\\xampp\\php;C:\\Users\\pc\\AppData\\Roaming\\Composer\\vendor\\bin;C:\\Users\\pc\\.dotnet\\tools;C:\\Users\\pc\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\pc\\AppData\\Roaming\\nvm;C:\\Program Files\\nodejs'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4 Server at luyashop.local Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.56 (Win64) OpenSSL/1.1.1t PHP/8.2.4'
+    'SERVER_NAME' => 'luyashop.local'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'C:/gitrepos/cakeoncall/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'C:/gitrepos/cakeoncall/web'
+    'SERVER_ADMIN' => 'postmaster@localhost'
+    'SCRIPT_FILENAME' => 'C:/gitrepos/cakeoncall/web/index.php'
+    'REMOTE_PORT' => '51326'
+    'REDIRECT_URL' => '/img/featur-2.jpg'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/img/featur-2.jpg'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1709094687.3535
+    'REQUEST_TIME' => 1709094687
+]

@@ -52,6 +52,11 @@ $config = [
             'whitelistExtensions' => ['jpg', 'png'],
             'whitelistMimeTypes' => ['text/plain', 'image/svg+xml'], // as this is the mime type for csv files
         ],
+        'composition' => [
+            'class' => 'luya\web\Composition',
+            //'hidden' => true, // no languages in your url (most case for pages which are not multi lingual)
+            'default' => ['langShortCode' => 'en'], // the default language for the composition should match your default language shortCode in the language table.
+        ],
         'db' => $db,
         'urlManager' => [
             'class' => 'app\components\SiteUrlManager',

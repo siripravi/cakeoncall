@@ -17,8 +17,7 @@ AppAsset::register($this);
 $this->beginPage();
 ?>
 <!DOCTYPE html>
-<html lang="<?= Yii::$app->language;?>">
-
+<html lang="<?= Yii::$app->composition->langShortCode; ?>">
 <head>
   <title><?= $this->title; ?></title>
   <meta charset="utf-8">

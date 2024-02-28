@@ -108,7 +108,7 @@ class Item extends ItemAbstract
             if (Yii::$app->storage->autoFixMissingImageSources === false) {
                 return false;
             }   
-
+           
             Yii::trace('info',$this->getFileId());
 
             // The image source does not exist, probably it has been deleted due to filter changes.
