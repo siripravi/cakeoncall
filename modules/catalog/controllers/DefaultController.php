@@ -14,9 +14,9 @@ use yii\bootstrap5\Tabs;
 use yii\web\NotFoundHttpException;
 use Exception;
 use app\modules\catalog\components\BaseController;
-use luya\admin\filters\MediumCrop;
-use luya\admin\filters\TinyFilter;
-use luya\admin\filters\LargeCrop;
+use app\modules\storage\filters\TinyCrop;
+
+
 use luya\helpers\Html;
 use luya\helpers\Json;
 use luya\helpers\Url;
@@ -28,6 +28,7 @@ use app\modules\catalogmodels\Order;
 use app\modules\shopcart\models\CartOrder;
 use app\modules\cart\widgets\CartWidget;
 use luya\cms\models\Block;
+use app\modules\storage\filters\TinyXrop;
 use yii\data\ActiveDataProvider;
 use CacheableTrait;
 
@@ -532,19 +533,11 @@ class DefaultController extends BaseController
                 $article = Article::findOne(['id' => $aid, 'enabled' => 1]);
                 if ($article) {
                     foreach ($article->images as $id => $photo) {
-                        $thumbnails[$id] = ['thumb' => $photo->image->applyFilter(MediumCrop::identifier())->source];
-                        $ps = $photo->image->applyFilter(TinyFilter::identifier())->getSourceAbsolute();
+                        $thumbnails[$id] = ['thumb' => $photo->image->source];
+                        //->applyFilter(MediumCrop::identifier())->source];
+                        $ps = $photo->image->getSourceAbsolute();
+                       // $ps =Yii::$app->storage->getImage($album->cover_image_id)->applyFilter(MediumThumbnail::identifier())->source;
                         $src = str_replace("\\", "/", $ps);
-
-                        /* $images[] = [
-                            'src' => $src,
-                            // 'src' => 'https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Vertical/'.$im[$id].'a.webp', //$src,
-                            'content' => Html::img($src, ['data-mdb-img' => $src, 'class' => 'w-100']),
-                            'options' => [
-                                // 'title' => $photo->alt,
-                                'class' => ''
-                            ],
-                        ]; */
                         $images[] = [
                             'src' => $src,
                             // 'src' => 'https://mdbcdn.b-cdn.net/img/Photos/Horizontal/E-commerce/Vertical/'.$im[$id].'a.webp', //$src,
@@ -568,19 +561,12 @@ class DefaultController extends BaseController
             $articleImages[$aid]['images'] = $images;
         }
         $items = [];
-
-        /* foreach ($product->articles as $index => $article) {
-          
-        }*/
-
-        // Get the block by its ID
-       // $blockId = 66;
-       // $block = Block::findOne(['id' => $blockId]);
         $phpBlock = Yii::createObject('app\modules\catalog\widgets\ArticleOptionsWidget');
 
         $blockConfig = [];
         foreach ($product->articles as $index => $article) {
-            $thumb =  \Yii::$app->storage->getImage($article->image_id)->source;
+           // $thumb =  \Yii::$app->storage->getImage($article->image_id)->source;
+           $thumb = Yii::$app->storage->getImage($article->image_id)->applyFilter(TinyCrop::identifier())->source;
             $blockConfig = [
                 'aId' => $article->id,
                 'image' => $thumb,
@@ -593,8 +579,7 @@ class DefaultController extends BaseController
                 'selection' => $selection[$article->id]
             ];
             $phpBlock->setCfgValues($blockConfig);
-            //  echo "<pre>"; print_r($blockConfig); die;
-            // Check if the block exists
+        
             if ($phpBlock) {
                 // Render the block content
                 $items[] = [
@@ -607,8 +592,8 @@ class DefaultController extends BaseController
                 echo "Block not found";
             }
         }
-        echo "<pre>";
-        print_r($articleImages);die;
+      /*  echo "<pre>";
+        print_r($articleImages);die;*/
         return $this->render('article_info',['items' => $items]);
     }
 }

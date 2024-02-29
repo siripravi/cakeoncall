@@ -9,6 +9,7 @@ use yii\behaviors\TimestampBehavior;
 use yii\db\Expression;
 use app\modules\catalog\behaviors\ManyToManyBehavior;
 use app\modules\catalog\models\Album;
+
 use yii\helpers\Url;
 use yii\helpers\ArrayHelper;
 use app\modules\catalog\behaviors\JsonBehavior;
@@ -144,7 +145,9 @@ public $jsonObject;
      */
     public function getImages()
     {
-        return $this->album->albumImages;
+        if(!empty($this->getAlbum()))
+            return $this->album->albumImages;
+        return false;
     }
 
     public function getGroups()
