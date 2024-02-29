@@ -72,6 +72,16 @@ $config = [
                 $params['files_dir'] . '/<dir:[a-zA-Z0-9-_\/]+>/<name:[a-zA-Z0-9-_\.]+>' => 'file/open',
             ],
         ],
+       /* 'view' => [
+            'theme' => [
+               'pathMap' => [ 
+                  '@app/views' => [ 
+                      '@webroot/themes/demo/views',
+
+                   ]
+               ],
+             ],
+            ], */// here demo is your folder name
         'user' => [
             'class' => 'yii\web\User',
             'identityClass' => app\modules\userauth\models\User::class,

@@ -327,7 +327,8 @@ public $jsonObject;
      */
     public function getDetailUrl()
     {
-        return Url::toRoute(['/product-info', 'aID' => $this->id, 'aTitle' => Inflector::slug($this->name)]);
+        //return Url::toRoute(['/product-info', 'aID' => $this->id, 'aTitle' => Inflector::slug($this->name)]);
+        return Url::toRoute(['/product-info/.'. $this->id. '/'. Inflector::slug($this->name)]);
     }
 
     public static function getFeaturesFormData($id)

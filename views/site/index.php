@@ -107,7 +107,7 @@ foreach ($slides as $sld) {
         </div>
     </div>
     <div class="row">
-        <div class="container">]
+        <div class="container">
             <?php echo app\modules\catalog\widgets\GroupWidget::widget();?>
     </div>
 </div>
