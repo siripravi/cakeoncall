@@ -27,9 +27,9 @@ class AppAsset extends AssetBundle
       'css/vendors/animate-css/animate.css',
       'css/vendors/owl-carousel/owl.carousel.min.css',
       'css/vendors/magnifc-popup/magnific-popup.css',
-      'css/style.css',
-      'css/responsive.css'
-      // 'css/style.css'    //YII_ENV_DEV ?  YII_ENV_DEV ?
+     'css/style.css',
+    //!  'css/responsive.css'
+      
    ];
    public $js = [
       '//unpkg.com/aos@2.3.1/dist/aos.js',
