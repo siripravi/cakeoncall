@@ -61,7 +61,7 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-        $this->layout = "@app/themes/demo/layouts/theme";
+        $this->layout = "@app/themes/baker/layouts/main";
         return $this->render('index');
     }
 

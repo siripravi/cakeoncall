@@ -18,7 +18,7 @@ class AppAsset extends AssetBundle
       'css/font-awesome.min.css',
       'css/vendors/linearicons/style.css',
       'css/vendors/flat-icon/flaticon.css',
-      'css/bootstrap.min.css',
+    //  'css/bootstrap.min.css',
       // "//cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css", 
       'css/vendors/revolution/css/settings.css',
       'css/vendors/revolution/css/layers.css',
@@ -28,7 +28,7 @@ class AppAsset extends AssetBundle
       'css/vendors/owl-carousel/owl.carousel.min.css',
       'css/vendors/magnifc-popup/magnific-popup.css',
      'css/style.css',
-    //!  'css/responsive.css'
+     'css/responsive.css'
       
    ];
    public $js = [
@@ -60,7 +60,7 @@ class AppAsset extends AssetBundle
    public $depends = [
       'yii\web\YiiAsset',
       'yii\web\JqueryAsset',
-      // 'yii\bootstrap\BootstrapAsset',
+       'yii\bootstrap5\BootstrapAsset',
       // 'yii\bootstrap\BootstrapPluginAsset',
      // 'yidas\yii\fontawesome\FontawesomeAsset',
     //  'yii\materialicons\AssetBundle'

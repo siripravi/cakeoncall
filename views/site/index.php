@@ -44,9 +44,35 @@ foreach ($slides as $sld) {
     ]
 ); */
 ?>
+ <div id="loader"><img src="../../themes/baker/images/cake/loadingcake.gif" alt="" /></div>
+ <section id="home">
+       
+        <h1 class="h-primary aos-init" data-aos="fade-down"><span>WELCOME TO </span><span class="welcome">THE-OSAB-BAKERY</span></h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At rem aut ea cupiditate, magni quas! Inventore
+
+        </p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere pariatur, accusantium et odi</p>
+        <!-- <button class="btn" data-aos="zoom-in">ORDER FOOD</button> -->
+        <button class="btn aos-init" data-aos="zoom-in" type="button">
+            <strong>ORDER</strong>
+            <div id="container-stars">
+                <div id="stars"></div>
+            </div>
+            
+            <div id="glow">
+                <div class="circle"></div>
+                <div class="circle"></div>
+            </div>
+        </button>
+
+    </section>
+<!-- SECTION CODE START ****************************************************************************** -->
+
+<!-- SECTION CODE END ********************************************************************************************* -->
+
 <div class="site-index">
     <?php
-  /*  echo Carousel::widget([
+    /*  echo Carousel::widget([
         'id' => 'home-slider',
         'items' => $sitems,
         'showIndicators' => false,
@@ -72,43 +98,43 @@ foreach ($slides as $sld) {
     </div>
 
     <div class="body-content">
-   
 
-    <div class="row">
-        <div class="col-lg-4 mb-3">
-            <h2>Heading</h2>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                fugiat nulla pariatur.</p>
+        <div class="row">
+            <div class="col-lg-4 mb-3">
+                <h2>Heading</h2>
 
-            <p><a class="btn btn-outline-secondary" href="https://www.yiiframework.com/doc/">Yii Documentation &raquo;</a></p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                    fugiat nulla pariatur.</p>
+
+                <p><a class="btn btn-outline-secondary" href="https://www.yiiframework.com/doc/">Yii Documentation &raquo;</a></p>
+            </div>
+            <div class="col-lg-4 mb-3">
+                <h2>Heading</h2>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                    fugiat nulla pariatur.</p>
+
+                <p><a class="btn btn-outline-secondary" href="https://www.yiiframework.com/forum/">Yii Forum &raquo;</a></p>
+            </div>
+            <div class="col-lg-4">
+                <h2>Heading</h2>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                    ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                    fugiat nulla pariatur.</p>
+
+                <p><a class="btn btn-outline-secondary" href="https://www.yiiframework.com/extensions/">Yii Extensions &raquo;</a></p>
+            </div>
         </div>
-        <div class="col-lg-4 mb-3">
-            <h2>Heading</h2>
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                fugiat nulla pariatur.</p>
-
-            <p><a class="btn btn-outline-secondary" href="https://www.yiiframework.com/forum/">Yii Forum &raquo;</a></p>
-        </div>
-        <div class="col-lg-4">
-            <h2>Heading</h2>
-
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                fugiat nulla pariatur.</p>
-
-            <p><a class="btn btn-outline-secondary" href="https://www.yiiframework.com/extensions/">Yii Extensions &raquo;</a></p>
+        <div class="row">
+            <div class="container">
+                <?php echo app\modules\catalog\widgets\GroupWidget::widget(); ?>
+            </div>
         </div>
     </div>
-    <div class="row">
-        <div class="container">
-            <?php echo app\modules\catalog\widgets\GroupWidget::widget();?>
-    </div>
-</div>
-</div>

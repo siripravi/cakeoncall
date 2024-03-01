@@ -1,0 +1,226 @@
+/* navbar section start******************* */
+/* @media only screen and (max-width:px) */
+#navbar{
+    flex-direction: column;
+}
+#navbar li{
+font-size: 1.4rem;
+}
+#navbar ul li a{
+    
+    padding: 1px 14px;
+    /* margin: 3px 10px; */
+}
+/* home section start******************* */
+#home{
+    height: 290px;
+    padding: 3px 38px;
+}
+#home::before{
+    height: 400px;
+}
+#home p{
+    font-size: 12px;
+    
+}
+/* services section start******************* */
+
+#services{
+    /* flex-direction: column */
+}
+#services .box{
+    
+        padding: 5px;
+        margin: 5px 8px;
+        
+}
+#services .box img {
+    height: 80px;
+    display: block;
+    margin: auto;
+
+
+}
+#services .box p {
+    font-size:.9rem;
+
+}
+
+@media only screen and (max-width:880px){
+    #services {
+            flex-direction: column
+        }
+    
+        #services .box {
+    
+            padding: 5px;
+            margin: 5px 0px;
+    
+        }
+    
+        #services .box img {
+            height: 100px;
+            display: block;
+            margin: auto;
+    
+    
+        }
+    
+        #services .box p {
+            font-size: .9rem;
+    
+        }
+    }
+
+
+
+/* services */
+@media only screen and  (max-width:1020px) {
+    #about-container {
+        
+            grid-template-areas:
+                'about-section about-section about-section about-section '
+                'about-img about-img about-img about-img'
+        }
+                          
+   
+    }
+        @media only screen and (max-width:1200px){
+            #about-img video {
+                    margin-top: 100px;
+                    padding: 2px;
+                    
+                }
+        }
+
+/* client section start******************* */
+#clients{
+    flex-wrap: wrap;
+
+}
+#clients img{
+     width: 66px;
+    /* padding: 0px 56px; */ 
+    
+
+}
+
+/* contact section start******************* */
+#contact-box form{
+    width: 80%;
+}
+
+/* UTILITY CLASSES*************************************** */
+@media only screen and (max-width:350px){
+.h-primary{
+    font-size: 1.8rem;
+        padding: 8px;
+}
+}
+@media only screen and (max-width:350px){
+.h-primary{
+    font-size: 1.3rem;
+        padding:5px;
+}
+}
+/* .h-primary{
+    font-size: 26px;
+} */
+.btn{
+    font-size: 13px;
+    padding: 4px 8px;
+}
+.h-secondary {
+    font-size: 1.5rem;
+    padding: 5px;
+    font-family: 'Bebas Neue', sans-serif;
+    /* font-family: 'Bree Serif', serif; */
+}
+@media only screen and (max-width:720px) {
+    #navbar {
+        flex-direction: column;
+    }
+
+    #navbar li {
+        font-size: 1.3rem;
+    }
+
+    #navbar ul li a {
+
+        padding: 1px 7px;
+        /* margin: 3px 10px; */
+    }
+
+}
+
+
+
+@media only screen and (max-width:530px) {
+    #navbar {
+        flex-direction: column;
+    }
+
+    #navbar li {
+        font-size: .9rem;
+    }
+
+    #navbar ul li a {
+
+        padding: 1px 8px;
+        /* margin: 3px 10px; */
+    }
+
+}
+
+
+@media only screen and (max-width:440px) {
+    
+    #navbar {
+        flex-direction: column;
+        
+    }
+
+    #navbar li {
+        font-size: .8rem;
+    }
+
+    #navbar ul li a {
+
+        padding: 1px 5px;
+        /* margin: 3px 10px; */
+    }
+
+}
+@media only screen and (max-width:350px) {
+    #navbar {
+        flex-direction: column;
+    }
+
+    #navbar li {
+        font-size: .6rem;
+    }
+
+    #navbar ul li a {
+
+        padding: 1px 5px;
+        /* margin: 3px 10px; */
+    }
+
+}
+
+
+
+
+
+
+@media only screen and (max-width:500px){
+    #navbar{
+        overflow: hidden;
+    }
+        #home{
+            overflow: hidden;
+        }
+                #about-container{
+                    overflow: hidden;
+                }
+}
