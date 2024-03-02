@@ -86,3 +86,33 @@ window.onclick = function (event) {
     }
 }
 // signin modal end
+const testAjax = function(code, url){
+    $.ajax({
+        type: "POST",
+        url: url,
+        dataType : 'json',
+        data: {code: code},
+        complete: function(){
+            console.log('ajax call complete');
+            $.pjax.reload({container: '#tab-content'});
+        },
+        success: function(data){
+            console.log('ajax call success - '+data.code);
+        },
+    });
+}
+
+$(document).on('pjax:send', function() {
+    $('#loading').show();
+    //$('#tab2').addClass('active');
+    console.log('pjax send');
+  })
+  $(document).on('pjax:complete', function() {
+    $('#loading').hide()
+    //$('#tab2').addClass('active');
+    console.log('pjax complete');
+  })
+  $(document).on('pjax:end', function() {
+    $('#tab2').addClass('active');
+    console.log('pjax end');
+  })

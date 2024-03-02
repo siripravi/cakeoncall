@@ -7,7 +7,7 @@ $config = [
     'id' => 'basic',
     'language' => 'hi',
     'basePath' => dirname(__DIR__),
-    'bootstrap' => ['log'],
+    'bootstrap' => ['log'],//,'pjaxmodal'],
     'aliases' => [
         '@bower' => '@vendor/bower-asset',
         '@npm'   => '@vendor/npm-asset',
@@ -25,13 +25,18 @@ $config = [
         'cache' => [
             'class' => 'yii\caching\FileCache',
         ],
-      /*  'user' => [
+        /*  'user' => [
             'identityClass' => 'app\models\User',
             'enableAutoLogin' => true,
         ],*/
         'errorHandler' => [
             'errorAction' => 'site/error',
         ],
+
+        'pjaxmodal' => [
+            'class' => app\components\PjaxModal::class
+        ],
+
         'mailer' => [
             'class' => \yii\symfonymailer\Mailer::class,
             'viewPath' => '@app/mail',
@@ -72,7 +77,8 @@ $config = [
                 $params['files_dir'] . '/<dir:[a-zA-Z0-9-_\/]+>/<name:[a-zA-Z0-9-_\.]+>' => 'file/open',
             ],
         ],
-       /* 'view' => [
+
+        /* 'view' => [
             'theme' => [
                'pathMap' => [ 
                   '@app/views' => [ 
@@ -81,7 +87,7 @@ $config = [
                    ]
                ],
              ],
-            ], */// here demo is your folder name
+            ], */ // here demo is your folder name
         'user' => [
             'class' => 'yii\web\User',
             'identityClass' => app\modules\userauth\models\User::class,
@@ -99,7 +105,7 @@ $config = [
                 //  if (Yii::$app->cart->saveToDataBase) Yii::$app->cart->transportSessionDataToDB();
             },
         ],
-       
+
     ],
     'modules'  =>  [
         'slider' => [
@@ -111,14 +117,14 @@ $config = [
         'catalog' => [
             'class' => 'app\modules\catalog\Module',
         ],
-       
+
         'nyiixta' => [
             'class' => 'siripravi\nyiixta\Module',
         ],
-     
+
         'user' => [
             'class' => 'siripravi\userhelper\Module',
-         //   'layout' => '@app/themes/cakeBaker/views/layouts/auth',
+            //   'layout' => '@app/themes/cakeBaker/views/layouts/auth',
             'modelMap' => [
                 'RegistrationForm' => app\modules\userauth\models\RegistrationForm::class,
                 'RecoveryForm' => app\modules\userauth\models\RecoveryForm::class,
@@ -168,7 +174,7 @@ $config = [
                 'nyiixta' => [
                     'class' => 'siripravi\nyiixta\Module',
                 ],
-              /* 'catalog' => [
+                /* 'catalog' => [
                     'class' => 'app\modules\catalog\Module',
                 ],*/
             ],

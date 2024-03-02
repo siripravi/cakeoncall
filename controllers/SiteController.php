@@ -65,6 +65,17 @@ class SiteController extends Controller
         return $this->render('index');
     }
 
+    function getPjaxPage(){
+        $items = [
+            ['label'=>'L1', 'content'=>'C1','headerOptions'=>['id'=>'tab1']],// 'active'=>true],
+            ['label'=>'L2', 'content'=>$this->renderPartial('pages/_pjax-tab-content'),'headerOptions'=>['id'=>'tab2']],// 'active'=>false],
+        ];
+        return $items;
+    }
+
+    public function actionTestAjax(){
+        return "Testing Success";
+    }
     /**
      * Login action.
      *

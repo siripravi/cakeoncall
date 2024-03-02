@@ -1,4 +1,6 @@
 <?php
+
+use yii\helpers\Url;
 /*
  * Created on Mon Nov 20 2023
  *
@@ -44,28 +46,28 @@ foreach ($slides as $sld) {
     ]
 ); */
 ?>
- <div id="loader"><img src="../../themes/baker/images/cake/loadingcake.gif" alt="" /></div>
- <section id="home">
-       
-        <h1 class="h-primary aos-init" data-aos="fade-down"><span>WELCOME TO </span><span class="welcome">THE-OSAB-BAKERY</span></h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At rem aut ea cupiditate, magni quas! Inventore
+<div id="loader"><img src="../../themes/baker/images/cake/loadingcake.gif" alt="" /></div>
+<section id="home">
 
-        </p>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere pariatur, accusantium et odi</p>
-        <!-- <button class="btn" data-aos="zoom-in">ORDER FOOD</button> -->
-        <button class="btn aos-init" data-aos="zoom-in" type="button">
-            <strong>ORDER</strong>
-            <div id="container-stars">
-                <div id="stars"></div>
-            </div>
-            
-            <div id="glow">
-                <div class="circle"></div>
-                <div class="circle"></div>
-            </div>
-        </button>
+    <h1 class="h-primary aos-init" data-aos="fade-down"><span>WELCOME TO </span><span class="welcome">THE-OSAB-BAKERY</span></h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At rem aut ea cupiditate, magni quas! Inventore
 
-    </section>
+    </p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere pariatur, accusantium et odi</p>
+    <!-- <button class="btn" data-aos="zoom-in">ORDER FOOD</button> -->
+    <button class="btn aos-init" data-aos="zoom-in" type="button">
+        <strong>ORDER</strong>
+        <div id="container-stars">
+            <div id="stars"></div>
+        </div>
+
+        <div id="glow">
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+    </button>
+
+</section>
 <!-- SECTION CODE START ****************************************************************************** -->
 
 <!-- SECTION CODE END ********************************************************************************************* -->
@@ -137,4 +139,23 @@ foreach ($slides as $sld) {
                 <?php echo app\modules\catalog\widgets\GroupWidget::widget(); ?>
             </div>
         </div>
+        <div class="row">
+            <div class="container">
+                <?php echo app\modules\catalog\widgets\TopProductsWidget::widget(); ?>
+            </div>
+        </div>
+        <div class="row">
+            <div id="loading" style="display: none">LOADING</div>
+            <?php
+                 $tUrl = Url::to(['/site/test-ajax']);
+            ?>
+            <?= yii\bootstrap5\Tabs::widget(['items' => $this->context->getPjaxPage()]); ?>
+        </div>
+        <div class="row">
+            <button id='addButton' onclick="$.pjax.reload({container:'#tab-content'});" type="button" class='btn btn-success'>Pjax reload</button>
+            <button id='ajaxButton' data-pjax='#tab-content' onclick="testAjax('CODICE', '<?=$tUrl;  ?>');" type="button" class='btn btn-success'>Pjax after ajax</button>
+            <?= Html::a('a Pjax after ajax', null, ['data-pjax' => '#tab-content', 'class' => 'btn btn-primary', 'onclick' => 'testAjax("CODE", "'.$tUrl.'");']) ?>
+        </div>
+
+    
     </div>
