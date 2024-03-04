@@ -135,6 +135,7 @@ class SiteController extends Controller
      */
     public function actionAbout()
     {
+        $this->layout = "@app/themes/baker/layouts/main";
         return $this->render('about');
     }
 

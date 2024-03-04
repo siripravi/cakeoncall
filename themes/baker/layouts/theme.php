@@ -52,18 +52,18 @@ $this->beginPage();
         'class' => 'main_header_area',
         'style' => ['background' => $bannerBg, "background-size" => "cover;"],
     ]) ?>
-    <?php echo $this->render('_mainhdr') ?>
+    <!--php echo $this->render('_mainhdr') ?-->
     <!--?= Yii::$app->getRequest()->getQueryParam('slug') ?-->
     <div class="main_menu_area"> <?php echo $this->render('_nav') ?> </div>
     </header>
-
+    <?php echo $this->render('_slider') ?>
     <!--====== PRELOADER PART ENDS ======-->
     <!--?php echo $this->render('_mobileNavbar') ?-->
     <!--?php echo $this->render('_header') ?-->
     <!--?php echo $this->render('_header3') ?-->
    
    
-    <?php echo $this->render('_header3') ?>
+    <!--php echo $this->render('_header3') ?-->
     <?php echo $content ?>
     <?php echo $this->render('_about') ?>
     <?php echo $this->render('_contact') ?>

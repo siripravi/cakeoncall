@@ -10,3 +10,18 @@ echo Tabs::widget([
     'encodeLabels'  => false
 
 ]);
+
+?>
+
+<?php
+echo \kartik\widgets\SwitchInput::widget([
+    'name' => 'status_12',
+    'type' => \kartik\widgets\SwitchInput::RADIO,
+    'items' => [
+        ['label' => 'Low', 'value' => 1],
+        ['label' => 'Medium', 'value' => 2],
+        ['label' => 'High', 'value' => 3],
+    ],
+    'pluginOptions' => ['size' => 'mini'],
+    'labelOptions' => ['style' => 'font-size: 12px'],
+]);

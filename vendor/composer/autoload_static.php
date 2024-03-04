@@ -22,9 +22,7 @@ class ComposerStaticInit2188b2a24effa70dac906d91eb393da3
         '0d59ee240a4cd96ddbb4ff164fccea4d' => __DIR__ . '/..' . '/symfony/polyfill-php73/bootstrap.php',
         '742b7e606e92b28dd726e835467f413a' => __DIR__ . '/..' . '/herrera-io/json/src/lib/json_version.php',
         'f0e9d233388e461ee3c460665eb265f0' => __DIR__ . '/..' . '/herrera-io/phar-update/src/lib/constants.php',
-        '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
         '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
-        'db356362850385d08a5381de2638b5fd' => __DIR__ . '/..' . '/mpdf/mpdf/src/functions.php',
         'decc78cc4436b1292c6c0d151b19445c' => __DIR__ . '/..' . '/phpseclib/phpseclib/phpseclib/bootstrap.php',
     );
 
@@ -42,7 +40,6 @@ class ComposerStaticInit2188b2a24effa70dac906d91eb393da3
             'yii\\bootstrap4\\' => 15,
             'yii\\authclient\\' => 15,
             'yii\\' => 4,
-            'yii2ajaxcrud\\ajaxcrud\\' => 22,
         ),
         'u' => 
         array (
@@ -51,7 +48,6 @@ class ComposerStaticInit2188b2a24effa70dac906d91eb393da3
         's' => 
         array (
             'siripravi\\userhelper\\' => 21,
-            'setasign\\Fpdi\\' => 14,
         ),
         'p' => 
         array (
@@ -73,6 +69,7 @@ class ComposerStaticInit2188b2a24effa70dac906d91eb393da3
             'kartik\\typeahead\\' => 17,
             'kartik\\touchspin\\' => 17,
             'kartik\\time\\' => 12,
+            'kartik\\tabs\\' => 12,
             'kartik\\switchinput\\' => 19,
             'kartik\\spinner\\' => 15,
             'kartik\\sidenav\\' => 15,
@@ -80,17 +77,15 @@ class ComposerStaticInit2188b2a24effa70dac906d91eb393da3
             'kartik\\rating\\' => 14,
             'kartik\\range\\' => 13,
             'kartik\\popover\\' => 15,
+            'kartik\\plugins\\tabs\\' => 20,
             'kartik\\plugins\\popover\\' => 23,
             'kartik\\plugins\\fileinput\\' => 25,
             'kartik\\plugins\\depdrop\\' => 23,
-            'kartik\\mpdf\\' => 12,
             'kartik\\icons\\' => 13,
             'kartik\\growl\\' => 13,
-            'kartik\\grid\\' => 12,
             'kartik\\form\\' => 12,
             'kartik\\file\\' => 12,
             'kartik\\editable\\' => 16,
-            'kartik\\dialog\\' => 14,
             'kartik\\depdrop\\' => 15,
             'kartik\\datetime\\' => 16,
             'kartik\\date\\' => 12,
@@ -99,6 +94,11 @@ class ComposerStaticInit2188b2a24effa70dac906d91eb393da3
             'kartik\\base\\' => 12,
             'kartik\\alert\\' => 13,
             'kartik\\affix\\' => 13,
+        ),
+        'e' => 
+        array (
+            'exocet\\composer\\' => 16,
+            'exocet\\bootstrap5md\\' => 20,
         ),
         'c' => 
         array (
@@ -154,12 +154,6 @@ class ComposerStaticInit2188b2a24effa70dac906d91eb393da3
             'Psr\\Cache\\' => 10,
             'PHPMailer\\PHPMailer\\' => 20,
         ),
-        'M' => 
-        array (
-            'Mpdf\\PsrLogAwareTrait\\' => 22,
-            'Mpdf\\PsrHttpMessageShim\\' => 24,
-            'Mpdf\\' => 5,
-        ),
         'J' => 
         array (
             'JsonSchema\\' => 11,
@@ -182,7 +176,6 @@ class ComposerStaticInit2188b2a24effa70dac906d91eb393da3
             'Doctrine\\Common\\Lexer\\' => 22,
             'Deployer\\Component\\PharUpdate\\' => 30,
             'Deployer\\' => 9,
-            'DeepCopy\\' => 9,
         ),
     );
 
@@ -231,10 +224,6 @@ class ComposerStaticInit2188b2a24effa70dac906d91eb393da3
         array (
             0 => __DIR__ . '/..' . '/yiisoft/yii2',
         ),
-        'yii2ajaxcrud\\ajaxcrud\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/biladina/yii2-ajaxcrud-bs4/src',
-        ),
         'unglue\\client\\' => 
         array (
             0 => __DIR__ . '/..' . '/unglue/client/src',
@@ -242,10 +231,6 @@ class ComposerStaticInit2188b2a24effa70dac906d91eb393da3
         'siripravi\\userhelper\\' => 
         array (
             0 => __DIR__ . '/..' . '/siripravi/yii2-user-helper/src',
-        ),
-        'setasign\\Fpdi\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/setasign/fpdi/src',
         ),
         'phpseclib\\' => 
         array (
@@ -295,6 +280,10 @@ class ComposerStaticInit2188b2a24effa70dac906d91eb393da3
         array (
             0 => __DIR__ . '/..' . '/kartik-v/yii2-widget-timepicker/src',
         ),
+        'kartik\\tabs\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/kartik-v/yii2-tabs-x/src',
+        ),
         'kartik\\switchinput\\' => 
         array (
             0 => __DIR__ . '/..' . '/kartik-v/yii2-widget-switchinput',
@@ -323,6 +312,10 @@ class ComposerStaticInit2188b2a24effa70dac906d91eb393da3
         array (
             0 => __DIR__ . '/..' . '/kartik-v/yii2-popover-x/src',
         ),
+        'kartik\\plugins\\tabs\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/kartik-v/bootstrap-tabs-x',
+        ),
         'kartik\\plugins\\popover\\' => 
         array (
             0 => __DIR__ . '/..' . '/kartik-v/bootstrap-popover-x',
@@ -335,10 +328,6 @@ class ComposerStaticInit2188b2a24effa70dac906d91eb393da3
         array (
             0 => __DIR__ . '/..' . '/kartik-v/dependent-dropdown',
         ),
-        'kartik\\mpdf\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/kartik-v/yii2-mpdf/src',
-        ),
         'kartik\\icons\\' => 
         array (
             0 => __DIR__ . '/..' . '/kartik-v/yii2-icons/src',
@@ -346,10 +335,6 @@ class ComposerStaticInit2188b2a24effa70dac906d91eb393da3
         'kartik\\growl\\' => 
         array (
             0 => __DIR__ . '/..' . '/kartik-v/yii2-widget-growl/src',
-        ),
-        'kartik\\grid\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/kartik-v/yii2-grid/src',
         ),
         'kartik\\form\\' => 
         array (
@@ -362,10 +347,6 @@ class ComposerStaticInit2188b2a24effa70dac906d91eb393da3
         'kartik\\editable\\' => 
         array (
             0 => __DIR__ . '/..' . '/kartik-v/yii2-editable/src',
-        ),
-        'kartik\\dialog\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/kartik-v/yii2-dialog/src',
         ),
         'kartik\\depdrop\\' => 
         array (
@@ -398,6 +379,14 @@ class ComposerStaticInit2188b2a24effa70dac906d91eb393da3
         'kartik\\affix\\' => 
         array (
             0 => __DIR__ . '/..' . '/kartik-v/yii2-widget-affix',
+        ),
+        'exocet\\composer\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/exocet/yii2-bootstrap-material-design/composer',
+        ),
+        'exocet\\bootstrap5md\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/exocet/yii2-bootstrap-material-design/src',
         ),
         'cebe\\markdown\\' => 
         array (
@@ -567,18 +556,6 @@ class ComposerStaticInit2188b2a24effa70dac906d91eb393da3
         array (
             0 => __DIR__ . '/..' . '/phpmailer/phpmailer/src',
         ),
-        'Mpdf\\PsrLogAwareTrait\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/mpdf/psr-log-aware-trait/src',
-        ),
-        'Mpdf\\PsrHttpMessageShim\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/mpdf/psr-http-message-shim/src',
-        ),
-        'Mpdf\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/mpdf/mpdf/src',
-        ),
         'JsonSchema\\' => 
         array (
             0 => __DIR__ . '/..' . '/justinrainbow/json-schema/src/JsonSchema',
@@ -610,10 +587,6 @@ class ComposerStaticInit2188b2a24effa70dac906d91eb393da3
         'Deployer\\' => 
         array (
             0 => __DIR__ . '/..' . '/deployer/deployer/src',
-        ),
-        'DeepCopy\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy',
         ),
     );
 

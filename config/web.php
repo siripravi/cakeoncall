@@ -11,6 +11,7 @@ $config = [
     'aliases' => [
         '@bower' => '@vendor/bower-asset',
         '@npm'   => '@vendor/npm-asset',
+        '@baker' => '@app/themes/baker'
     ],
     'components' => [
         /*'request' => [
@@ -36,7 +37,19 @@ $config = [
         'pjaxmodal' => [
             'class' => app\components\PjaxModal::class
         ],
+        'assetManager' => [
+            'bundles' => [
+                'yii\bootstrap5\BootstrapAsset' => [
+                    'class' => \exocet\bootstrap5md\BootstrapAsset::class,
+                  //  'css' => ['css/mdb-pro.min.css','css/mdb.ecommerce.min.css'],
+                  //  'js' => ['js/mdb.min.js','js/mdb.ecommerce.min.js']
+                ],
+                'yii\bootstrap5\BootstrapPluginAsset' => [
+                    'class' => \exocet\bootstrap5md\BootstrapPluginAsset::class,
 
+                ],
+            ],
+        ],
         'mailer' => [
             'class' => \yii\symfonymailer\Mailer::class,
             'viewPath' => '@app/mail',

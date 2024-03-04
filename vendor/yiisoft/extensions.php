@@ -22,15 +22,6 @@ return array (
     ),
     'bootstrap' => 'yii\\bootstrap5\\i18n\\TranslationBootstrap',
   ),
-  'kartik-v/yii2-mpdf' => 
-  array (
-    'name' => 'kartik-v/yii2-mpdf',
-    'version' => '1.0.6.0',
-    'alias' => 
-    array (
-      '@kartik/mpdf' => $vendorDir . '/kartik-v/yii2-mpdf/src',
-    ),
-  ),
   'kartik-v/yii2-krajee-base' => 
   array (
     'name' => 'kartik-v/yii2-krajee-base',
@@ -38,24 +29,6 @@ return array (
     'alias' => 
     array (
       '@kartik/base' => $vendorDir . '/kartik-v/yii2-krajee-base/src',
-    ),
-  ),
-  'kartik-v/yii2-dialog' => 
-  array (
-    'name' => 'kartik-v/yii2-dialog',
-    'version' => '1.0.6.0',
-    'alias' => 
-    array (
-      '@kartik/dialog' => $vendorDir . '/kartik-v/yii2-dialog/src',
-    ),
-  ),
-  'kartik-v/yii2-grid' => 
-  array (
-    'name' => 'kartik-v/yii2-grid',
-    'version' => '3.5.3.0',
-    'alias' => 
-    array (
-      '@kartik/grid' => $vendorDir . '/kartik-v/yii2-grid/src',
     ),
   ),
   'kartik-v/yii2-widget-activeform' => 
@@ -84,25 +57,6 @@ return array (
     array (
       '@kartik/editable' => $vendorDir . '/kartik-v/yii2-editable/src',
     ),
-  ),
-  'kartik-v/yii2-bootstrap5-dropdown' => 
-  array (
-    'name' => 'kartik-v/yii2-bootstrap5-dropdown',
-    'version' => '1.0.2.0',
-    'alias' => 
-    array (
-      '@kartik/bs5dropdown' => $vendorDir . '/kartik-v/yii2-bootstrap5-dropdown/src',
-    ),
-  ),
-  'biladina/yii2-ajaxcrud-bs4' => 
-  array (
-    'name' => 'biladina/yii2-ajaxcrud-bs4',
-    'version' => '3.0.0.0',
-    'alias' => 
-    array (
-      '@yii2ajaxcrud/ajaxcrud' => $vendorDir . '/biladina/yii2-ajaxcrud-bs4/src',
-    ),
-    'bootstrap' => 'yii2ajaxcrud\\ajaxcrud\\Bootstrap',
   ),
   'yiisoft/yii2-jui' => 
   array (
@@ -364,6 +318,34 @@ return array (
     'alias' => 
     array (
       '@paulzi/jsonBehavior' => $vendorDir . '/paulzi/yii2-json-behavior/src',
+    ),
+  ),
+  'exocet/yii2-bootstrap-material-design' => 
+  array (
+    'name' => 'exocet/yii2-bootstrap-material-design',
+    'version' => '2.4.0.0',
+    'alias' => 
+    array (
+      '@exocet/composer' => $vendorDir . '/exocet/yii2-bootstrap-material-design/composer',
+      '@exocet/bootstrap5md' => $vendorDir . '/exocet/yii2-bootstrap-material-design/src',
+    ),
+  ),
+  'kartik-v/yii2-tabs-x' => 
+  array (
+    'name' => 'kartik-v/yii2-tabs-x',
+    'version' => 'dev-master',
+    'alias' => 
+    array (
+      '@kartik/tabs' => $vendorDir . '/kartik-v/yii2-tabs-x/src',
+    ),
+  ),
+  'kartik-v/yii2-bootstrap5-dropdown' => 
+  array (
+    'name' => 'kartik-v/yii2-bootstrap5-dropdown',
+    'version' => 'dev-master',
+    'alias' => 
+    array (
+      '@kartik/bs5dropdown' => $vendorDir . '/kartik-v/yii2-bootstrap5-dropdown/src',
     ),
   ),
 );

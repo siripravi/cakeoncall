@@ -5,8 +5,8 @@ use yii\bootstrap5\Accordion;
 use kartik\date\DatePicker;
 use yii\helpers\Html;
 use app\modules\catalog\widgets\Carousel;
-
-$articleOptions = $this->context->getCfgValues(); 
+use kartik\affix\Affix;
+$articleOptions = $this->context->getCfgValues();
 //$this->extraValue('articleOptions');
 //echo "<pre>";print_r($articleOptions); die;
 $aid = $articleOptions['aId'];
@@ -23,22 +23,25 @@ $items = [];
 $output = "";
 $idx = 1;
 ?>
+
+
+
 <div class="row" data-key="<?= $aid; ?>">
   <div class="col-md-6">
-    <div class=" popup-gallery pro-zoom">
-      <?php echo Carousel::widget([
+   
+    <?php echo Carousel::widget([
         'items' =>
         $imageInfo['images'],
         'thumbnails'  => $imageInfo['thumbnails'],
         'options' => [
           'data-interval' => 3, 'data-bs-ride' => 'scroll', 'class' => 'carousel product_img_slide',
         ],
-        //'options'  => ['class' => 'carousel product_img_slide','ride'=>true]
+        'options'  => ['class' => 'carousel product_img_slide','ride'=>true]
 
       ]);
+       
+    ?>
 
-      ?>
-    </div>
   </div>
   <div class="col-md-6">
     <div class="mypanel_chkzipcod panel1">
@@ -65,10 +68,10 @@ $idx = 1;
         //  'type' => ActiveForm::TYPE_INLINE,
         'fieldConfig' => ['options' => ['class' => 'form-group mb-3 mr-2 me-2']] // spacing form field groups
       ]);
-      echo Html::hiddenInput('article_id', $aid,['id'=>'art-'.$aid]);
-      echo $form->field($cartOrder,'['.$aid. ']image')->hiddenInput(['value'=> $image])->label(false);
+      echo Html::hiddenInput('article_id', $aid, ['id' => 'art-' . $aid]);
+      echo $form->field($cartOrder, '[' . $aid . ']image')->hiddenInput(['value' => $image])->label(false);
       //echo $form->field($cartOrder,'['.$aid. ']price')->hiddenInput(['value'=> $price])->label(false);
-      echo $form->field($cartOrder,'['.$aid. ']name')->hiddenInput(['value'=> $name])->label(false);
+      echo $form->field($cartOrder, '[' . $aid . ']name')->hiddenInput(['value' => $name])->label(false);
       //echo $form->field($cartOrder,'['.$aid. ']featureText')->hiddenInput(['value'=> $featureText])->label(false);
       foreach ($selection['radioList'] as $id => $feature) {
         $fName = $feature['name'];
@@ -80,7 +83,7 @@ $idx = 1;
   </label>';
       $output .=  '<div class="grop-product-product collapse show">  */
         $output .= '<div class="card card-body">';
-        $output .= $form->field($cartOrder, '[' . $aid . ']'.'selFeatures' . '[' . $id . ']')->radioList(
+        $output .= $form->field($cartOrder, '[' . $aid . ']' . 'selFeatures' . '[' . $id . ']')->radioList(
           $feature['rList'],
           [
             'item' => function ($index, $label, $name, $checked, $value) use ($fId, $fName) {
@@ -121,9 +124,9 @@ $idx = 1;
       echo '<label class="form-label">DELIVERY DATE</label>';
       echo DatePicker::widget([
         'model' => $cartOrder,
-        'attribute'  => '['.$aid.']delDate',
-       // 'name' => 'Delivery Date',
-      //  'value' => '01/29/2014',
+        'attribute'  => '[' . $aid . ']delDate',
+        // 'name' => 'Delivery Date',
+        //  'value' => '01/29/2014',
         'type' => DatePicker::TYPE_COMPONENT_APPEND,
         'pickerIcon' => '<i class="fas fa-calendar-alt text-primary"></i>',
         'removeIcon' => '<i class="fas fa-trash text-danger"></i>',
@@ -142,7 +145,7 @@ $idx = 1;
       </div>
 
       <div class="form-group" id="buttons-cart-functions">
-       
+
         <p id="oos-message"></p>
         <p id="oos-email-notify"></p>
         <p id="wishlist-notify-message"></p>
