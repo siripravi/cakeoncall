@@ -3,14 +3,14 @@
 /** @var yii\web\View $this */
 /** @var string $content */
 
-//use app\themes\baker\AppAsset;
+use app\themes\baker\AppAsset;
 use app\widgets\Alert;
 use yii\bootstrap5\Breadcrumbs;
 use yii\bootstrap5\Html;
 
-//AppAsset::register($this);
-\exocet\bootstrap5md\MaterialAsset::register($this); // include css and js
-\exocet\bootstrap5md\FontawesomeAsset::register($this); // include icons (optional)
+AppAsset::register($this);
+//\exocet\bootstrap5md\MaterialAsset::register($this); // include css and js
+//\exocet\bootstrap5md\FontawesomeAsset::register($this); // include icons (optional)
 $this->registerCsrfMetaTags();
 $this->registerMetaTag(['charset' => Yii::$app->charset], 'charset');
 $this->registerMetaTag(['name' => 'viewport', 'content' => 'width=device-width, initial-scale=1, shrink-to-fit=no']);

@@ -12,7 +12,7 @@ class AppAsset extends AssetBundle
      
    //   'css/topbar.css',
     
-   //  'css/style.css',
+     'css/style.css',
    
     // '//unpkg.com/aos@2.3.1/dist/aos.css'
 
@@ -26,17 +26,17 @@ class AppAsset extends AssetBundle
 
    public $depends = [
        // include mdb assets
-    'exocet\bootstrap5md\MaterialAsset',
+    //'exocet\bootstrap5md\MaterialAsset',
     
     // include Fontawesome icons (optional)
-    'exocet\bootstrap5md\FontawesomeAsset',
+    //'exocet\bootstrap5md\FontawesomeAsset',
 
     // include material icons (optional)
-    'exocet\bootstrap5md\MaterialIconsAsset',
-     // 'yii\web\YiiAsset',
+   // 'exocet\bootstrap5md\MaterialIconsAsset',
+      'yii\web\YiiAsset',
     //  'yii\web\JqueryAsset',
-    //  'yii\bootstrap5\BootstrapAsset',
-      // 'yii\bootstrap\BootstrapPluginAsset',
+      'yii\bootstrap5\BootstrapAsset',
+       'yii\bootstrap5\BootstrapPluginAsset',
       // 'yidas\yii\fontawesome\FontawesomeAsset',
       //  'yii\materialicons\AssetBundle'
    ];

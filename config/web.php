@@ -37,19 +37,17 @@ $config = [
         'pjaxmodal' => [
             'class' => app\components\PjaxModal::class
         ],
-        'assetManager' => [
+       /* 'assetManager' => [
             'bundles' => [
                 'yii\bootstrap5\BootstrapAsset' => [
-                    'class' => \exocet\bootstrap5md\BootstrapAsset::class,
-                  //  'css' => ['css/mdb-pro.min.css','css/mdb.ecommerce.min.css'],
-                  //  'js' => ['js/mdb.min.js','js/mdb.ecommerce.min.js']
+                    'class' => \exocet\bootstrap5md\BootstrapAsset::class,              
                 ],
                 'yii\bootstrap5\BootstrapPluginAsset' => [
                     'class' => \exocet\bootstrap5md\BootstrapPluginAsset::class,
 
                 ],
             ],
-        ],
+        ],*/
         'mailer' => [
             'class' => \yii\symfonymailer\Mailer::class,
             'viewPath' => '@app/mail',

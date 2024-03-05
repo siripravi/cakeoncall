@@ -60,12 +60,7 @@
     }
   },
   "scripts": {
-    "post-install-cmd": [
-        "@composer run-script post-install-cmd --working-dir=vendor/exocet/yii2-bootstrap-material-design"
-    ],
-    "post-update-cmd": [
-        "@composer run-script post-update-cmd --working-dir=vendor/exocet/yii2-bootstrap-material-design"
-    ]
+    
 },
   "repositories": [
     {
