@@ -4,6 +4,7 @@ use app\helpers\ImageHelper;
 
 use app\modules\storage\filters\MediumCrop;
 use yii\helpers\Url;
+use yii\helpers\Html;
 
 /**
  * View file for block: GroupBlock
@@ -25,35 +26,22 @@ use yii\helpers\Url;
         </div>
 
         <section class="py-5">
-            <div class="container px-4 px-lg-5 mt-5">
-                <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
-                    <?php foreach ($data['elements']['categories'] as $item) : ?>
-                        <div class="col mb-5">
-                            <div class="card h-100">
-                                <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem"><?= $item->slug; ?></div>
-                                <!-- Product image-->
-                                <img src="<?= Yii::$app->storage->getImage($item->cover_image_id)->source; ?>" class="card-img-top" />
-
-                                <!-- Product details-->
-                                <div class="card-body p-4">
-                                    <div class="text-center">
-                                        <!-- Product name-->
-                                        <h5 class="fw-bolder"><?= $item->name; ?></h5>
-                                        <!-- Product price-->
-
-                                    </div>
-                                </div>
-                                <!-- Product actions-->
-                                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                    <div class="text-center">
-                                        <a class="btn btn-outline-dark mt-auto" href="<?= $item->detailUrl; ?>">View Detail</a>
-                                    </div>
-                                </div>
-                            </div>
+            <div class="container">
+                <div class="row">
+                <?php foreach ($data['elements']['categories'] as $item) : ?>
+                    <div class="col-sm-4 col-xs-12 col-md-4 col">
+                    <div class="img-wrapper text-center">
+                        <a data-catid="<?= $item->id; ?>" href="<?= $item->detailUrl; ?>">
+                            <?php echo Html::img(
+                                Yii::$app->storage->getImage($item->cover_image_id)->source,
+                                ["width" => 292, "height" => 204, "class" => 'rounded-circle']
+                            ) ?>
+                        </a>
+                        <h1 class="display-5"><?= $item->name; ?> </h1>
                         </div>
-                    <?php endforeach; ?>
+                    </div>
+                <?php endforeach; ?>
                 </div>
-
             </div>
         </section>
 
