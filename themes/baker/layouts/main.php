@@ -29,6 +29,7 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
 
 <body class="d-flex flex-column h-100 skin-light" data-bs-theme="dark">
     <?php $this->beginBody() ?>
+    
     <div style="margin-top:2px;">
         <?php echo $this->render("_topNav"); ?>
     </div>

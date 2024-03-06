@@ -46,15 +46,14 @@ foreach ($slides as $sld) {
     ]
 ); */
 ?>
-<div id="loader"><img src="../../themes/baker/images/cake/loadingcake.gif" alt="" /></div>
+<!--
 <section id="home">
-
     <h1 class="h-primary aos-init" data-aos="fade-down"><span>WELCOME TO </span><span class="welcome">THE-OSAB-BAKERY</span></h1>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At rem aut ea cupiditate, magni quas! Inventore
 
     </p>
     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere pariatur, accusantium et odi</p>
-    <!-- <button class="btn" data-aos="zoom-in">ORDER FOOD</button> -->
+   
     <button class="btn aos-init" data-aos="zoom-in" type="button">
         <strong>ORDER</strong>
         <div id="container-stars">
@@ -68,6 +67,7 @@ foreach ($slides as $sld) {
     </button>
 
 </section>
+-->
 <!-- SECTION CODE START ****************************************************************************** -->
 
 <!-- SECTION CODE END ********************************************************************************************* -->
