@@ -1,0 +1,349 @@
+body{
+	margin: 0px;
+}
+/* --------------- NavBar---------------------------*/
+.logo-img{
+	width: 20vh;
+	height: auto;
+}
+.logo-img-scroll{
+	width: 10vh;
+	height: auto;	
+	content:url("/image/site/BulkanBSmall.png");
+}
+.header{
+	background-image: url("/image/site/BackgorundBW.jpg"); 
+	background-size: cover;
+	background-position: 0% 50%;
+	padding: 0px !important; 
+}
+.header-scroll{
+	padding-top: 20vh !important;	
+}
+.header .navbar{
+  	background-color: rgba(0,0,0,.95) !important;
+}
+.navbar{
+	border-bottom-style: solid;
+	border-width: 2px;
+  	padding: 0% 7.5% 0% 7.5%;	
+  	margin: 0px;
+}
+
+.cart{
+	color: #aaaaaa;
+}
+.cart:hover{
+	color: #cccccc;	
+}
+
+@keyframes highlight{
+	0% {opacity: 1;}
+	50% {opacity: 0.5;}
+	100% {opacity: 1;}
+}
+.cart-full{
+	display: block;
+	opacity: 1;
+	color: #4d9156;
+    animation: highlight 2s infinite;
+}
+
+#cart-link{
+	display: block;
+	font-size: 3vh;
+}
+#cart-link-resp{
+	display: none;
+}
+@media (max-width: 992px) {
+	#cart-link{
+		display: none;
+	}
+	#cart-link-resp{
+		display: block;	
+		margin: 0% 5% 0% 5%;
+		font-size: 4vh;
+	}
+	.cart-link-resp-scroll{
+		font-size: 3vh !important;
+	}
+}
+
+/*---------------- Header ---------------------------*/
+#background-intro{
+	text-align: center;
+	padding: 10% 5% 10% 5%;
+}
+.whats-btn{
+	text-decoration: none;
+	background-color: #61CE70;
+	font-size: 3vh;
+	color: #eeeeee;
+	border-radius: 3px;
+	padding: 12px 25px 12px 25px;
+	transition: all 0.3s;
+}
+.whats-btn:hover{	
+	background-color: #4d9156;
+	color: #ffffff;
+}
+.white-title{
+	color: white;
+	font-size: 7vh;
+	margin-bottom: 3vh;
+	font-weight: bold;
+}
+.white-subtitle{
+	color: white;
+	font-size: 6vh;
+	margin-bottom: 3vh;
+}
+.grey-sub{
+	color: rgb(150,150,150);
+	font-size: 3vh;
+	margin-bottom: 5vh;
+}
+.nav-item{
+	font-size: 2.8vh;
+	margin: 0vh 1vh 0vh 1vh;
+}
+.navbar-toggler .navbar-toggler-icon{
+	height: 3vh;
+	width: 3vh;
+}
+
+/* ---------------Services Cards---------------------------*/
+#service-row{
+	margin-left: 5%;
+	margin-right: 5%;
+}
+.service-card{
+	height: 85%;
+	text-align: center;
+	padding: 3vh; 
+	margin: 5vh 3vh 0vh 3vh;
+}
+.service-sub{
+	color: rgb(100,100,100);
+	margin: 0px;
+	font-size: 2.5vh;
+}
+.service-title{
+	font-size: 4vh;
+	font-weight: bold;
+}
+.service-img{
+	width: 25%;
+	height: auto;
+}
+
+/* ---------------Container Products Carrousels---------------------------*/
+.container-carrousel{
+	padding-top: 13vh;
+	padding-bottom: 2vh;
+	text-align: center;
+}
+.container-title{
+	font-size: 6vh;
+	margin-bottom: 3vh;
+}
+.carrousel-card{
+	height: 100%;
+	font-size: 3vh;
+}
+@media(max-width: 992px){
+	.carrousel-card{
+		height: 100%;
+		font-size: 3vh;
+		margin: 0% 10%;
+	}
+}
+.card-title{
+	font-size: 2.5vh;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	width: 100%;
+	display: block;
+}
+.card-subtitle{
+	font-size: 2.25vh;
+	color: rgb(100,100,100);
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	width: 100%;
+	display: block;
+}
+.card-text{
+	font-size: 2.4vh;
+}
+.price-text{
+	font-size: 2vh !important;
+}
+.card-btn{
+	font-size: 2vh !important;
+	border-radius: 20px !important;
+	margin-bottom: 1vh;
+}
+.img-select{
+	opacity: 0.9;
+	filter: grayscale(20%);
+	width: 100%;
+	max-width: 100%;
+    height: auto;
+    transition: all 0.3s;
+    overflow: hidden;
+    transform: scale(.975);
+}
+.img-select:hover{
+	opacity: 1;
+	filter: grayscale(0%);
+	transform: scale(1.025);
+}
+
+/* ---------------Product Modals---------------------------*/
+.img-modal{
+	width: 100%;
+}
+.title-prod{
+	font-size: 4vh;
+}
+.subtitle-prod{
+	font-size: 3vh;
+}
+.text-prod{
+	font-size: 2vh;
+}
+.input-group{
+	width: 60% !important;
+}
+.modal-rlg{
+	max-width: 50% !important;
+	width: 50% !important;
+	text-align: left;
+}
+@media (max-width: 992px) {
+	.input-group{
+		width: 50% !important;
+		height: 7% !important;
+		margin: auto;
+	}
+	.form-control, .btn-minus, .btn-plus{
+		font-size: 3vh !important;
+	}
+	.modal-rlg{
+		max-width: 80% !important;
+		width: 80% !important;
+		text-align: center;
+		margin: auto !important;
+	}
+}
+
+/*---------------- Cart ---------------------------*/
+@media (max-width: 992px) {
+	.offcanvas-end{
+		text-align: center ;
+	}
+}
+@media (max-width: 768px) {
+	.offcanvas-end{
+		width: 60% !important;
+		text-align: center ;
+	}
+	.cart-button{
+		text-align: center;
+	}
+}
+.cart-button{
+	text-align: left;
+}
+
+.buy-btn{
+	display: block;
+  	width: 100%;
+  	text-align: center;
+}
+.cart-prods{
+	background-color: #eeeeee;
+}
+
+.line-divider-bot{
+	margin: 0 0 10px 0;
+}
+.line-divider-top{
+	margin: 0;
+}
+
+/* ---------------About Information and Contact---------------------------*/
+.info-row{
+	background-color: rgb(0,0,0);
+	padding: 10%;
+}
+.info-img{
+	text-align: center;
+	width: 100%;
+}
+.info-paragraph{
+	font-size: 2.7vh;
+	color: #686868;
+}
+.info-about{
+	text-align: center;
+}
+.info-contact{
+	text-align: center;		
+}
+@media (min-width: 992px) {
+	.info-about{
+		text-align: left;
+	}
+	.info-contact{
+		text-align: left;
+
+	}
+}
+
+.contact-paragraph{
+	font-size: 2.7vh;
+	color: white;
+	padding-left: 2%;
+}
+.info-btn{
+	text-align: center;
+	background-color: #505050;
+	color: #ffffff;
+	padding: 6px 10px;
+	font-size: 3vh;
+    transition: all 0.3s;
+}
+.info-btn:hover{
+	background-color:  #ffffff;
+	color: #000000;
+}
+.contact-form{
+	background-color: #dddddd !important;
+	width: 100%;
+}
+.contact-btn{
+	font-style: bold;
+	background-color:#686868;
+	color: #ffffff;
+	width: 100%;
+	border-radius: 10px;
+	border-color: #686868;
+	border-width: 2px;
+	border-style: solid;
+    transition: all 0.3s;
+}
+.contact-btn:hover{
+	font-style: bold;
+	background-color:  #ffffff;
+	color: #000000;
+}
+
+/* ---------------Checkout---------------------------*/
+.checkout-form{
+	padding: 1rem;
+}

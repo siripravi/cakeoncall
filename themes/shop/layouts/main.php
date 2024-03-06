@@ -31,41 +31,31 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
     <?php $this->head() ?>
 </head>
 
-<body class="d-flex flex-column h-100 skin-light" data-bs-theme="light">
+<body data-bs-spy="scroll" data-bs-target="#navbar-links-nav">
     <?php $this->beginBody() ?>
-    <nav class="navbar">
-        <div class="top-left">
-          <img class="logo-img" src="/image/site/logo.png" alt="">
-          <div class="logo">
-            <a href="../Hero+Navbar/hero.html"><u>E-BAKERY</u></a>
-          </div>
+    <header class="container-fluid header header-scroll" id="header">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <a class="navbar-brand" href="#"><img class="logo-img logo-img-scroll" src="/image/site//BulkanB.png"></a>
+            <a type="button" id="cart-link-resp" class="nav-link ms-auto cart-link-resp" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight">
+                <i id="cart-icon-resp" class="fas fa-shopping-cart cart"></i>
+            </a>
+            <?php echo $this->render("_navBar"); ?>         
+        </nav>
+        <div id="background-intro">
+            <h1 class="white-title"> Licores a Domicilio en Pasto 24/7</h1>
+            <h2 class="grey-sub"> REALIZA TU PEDIDO POR WHATSAPP </h2>
+            <a class="whats-btn" href="https://bit.ly/3wIzm2M">
+                <span>
+                    <i class="fab fa-whatsapp"></i>
+                    <strong>3193200490</strong>
+                </span>
+            </a>
         </div>
-
-        <div class="right">
-        <?php echo $this->render("_navBar"); ?>
-            <div class="user">
-                <!-- <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
-                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
-                    <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
-                </svg> -->
-                <i class="fa-solid fa-user logo-user"></i>
-            </div>
-          
-        </div>
-    </nav>
+    </header>
     <!--<div style="margin-top:2px;">
         <php echo $this->render("_topNav"); >
     </div>  -->
-    <header id="header" style="margin-top:4px;">
-      
-        <div class="container px-4 px-lg-5 my-5">
-                <div class="text-center text-white">
-              
-                    <h1 class="display-4 fw-bolder">Shop in style</h1>
-                    <p class="lead fw-normal text-white-50 mb-0">With this shop hompeage template</p>
-                </div>
-            </div>
-    </header>
+   
 
     <main id="main" class="flex-shrink-0" role="main" style="margin-top:13px;">
         <div class="container">
@@ -79,7 +69,7 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
     <?php echo $this->render("_footer"); ?>
     <?php $this->endBody() ?>
 
-    
+
 </body>
 
 </html>

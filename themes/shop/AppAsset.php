@@ -22,7 +22,9 @@ class AppAsset extends AssetBundle
     //public $baseUrl = '@web';
     public $css = [
         'css/styles.css',
-        'css/custom.css'
+      //  'css/custom.css',
+      'css/navbar.css',
+       // 'css/owl.carousel.min.css'
       
     ];
     public $js = [
