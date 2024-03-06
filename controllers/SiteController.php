@@ -61,7 +61,7 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-        $this->layout = "@app/themes/baker/layouts/main";
+        $this->layout = "@app/themes/shop/layouts/main";
         return $this->render('index');
     }
 
@@ -135,7 +135,7 @@ class SiteController extends Controller
      */
     public function actionAbout()
     {
-        $this->layout = "@app/themes/baker/layouts/main";
+        $this->layout = "@app/themes/shop/layouts/main";
         return $this->render('about');
     }
 

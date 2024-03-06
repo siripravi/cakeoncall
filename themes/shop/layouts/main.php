@@ -3,7 +3,7 @@
 /** @var yii\web\View $this */
 /** @var string $content */
 
-use app\themes\baker\AppAsset;
+use app\themes\shop\AppAsset;
 use app\widgets\Alert;
 use yii\bootstrap5\Breadcrumbs;
 use yii\bootstrap5\Html;
@@ -33,7 +33,14 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
         <?php echo $this->render("_topNav"); ?>
     </div>
     <header id="header" style="margin-top:4px;">
-        <?php echo $this->render("_navBar"); ?>
+      
+        <div class="container px-4 px-lg-5 my-5">
+                <div class="text-center text-white">
+                <?php echo $this->render("_navBar"); ?>
+                    <h1 class="display-4 fw-bolder">Shop in style</h1>
+                    <p class="lead fw-normal text-white-50 mb-0">With this shop hompeage template</p>
+                </div>
+            </div>
     </header>
 
     <main id="main" class="flex-shrink-0" role="main" style="margin-top:13px;">
