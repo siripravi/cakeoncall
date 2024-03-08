@@ -10,7 +10,7 @@ use yii\helpers\Url;
             'options' => ['class' => 'navbar-expand-md navbar-dark bg-dark',"id"=> 'navbar-links']
         ]);*/
         echo Nav::widget([
-            'options' => ['class' => 'navbar-nav ms-auto'],
+            'options' => ['class' => 'menu-ul justify-content-between mw-100 w-100 navbar-nav me-auto mb-2 mb-lg-0'],
             'items' => [
                 ['label' => 'Home', 'url' => ['/site/index']],
                 ['label' => 'About', 'url' => ['/site/about']],

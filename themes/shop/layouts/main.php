@@ -33,14 +33,35 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
 
 <body data-bs-spy="scroll" data-bs-target="#navbar-links-nav">
     <?php $this->beginBody() ?>
-    <header class="container-fluid header header-scroll" id="header">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-            <a class="navbar-brand" href="#"><img class="logo-img logo-img-scroll" src="/image/site//BulkanB.png"></a>
-            <a type="button" id="cart-link-resp" class="nav-link ms-auto cart-link-resp" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight">
-                <i id="cart-icon-resp" class="fas fa-shopping-cart cart"></i>
-            </a>
-            <?php echo $this->render("_navBar"); ?>         
-        </nav>
+    <main role="main">
+    <!--php echo $this->render("_topNav"); ?-->
+        <header class="container-fluid header header-scroll" id="header">
+            <nav class="nav-container navbar navbar-expand-lg bg-light p-0 fixed-x-top">
+                <a class="navbar-brand" href="#"><img class="logo-img logo-img-scroll" src="/image/site//coc_logo_act.jpg"></a>
+                <a type="button" id="cart-link-resp" class="nav-link ms-auto cart-link-resp" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight">
+                    <i id="cart-icon-resp" class="fas fa-shopping-cart cart"></i>
+                </a>
+                <?php echo $this->render("_navBar"); ?>
+            </nav>
+        </header>
+
+        <!-- main Header image -->
+        <div class="container-fluid main-background p-0">
+            <div class="main-shadow p-0 container-fluid">
+                <div class="main container" id="Main">
+                    <h1 _msttexthash="758498" _msthash="10">Baking Workshop<br>
+                        No. 1 in your City</h1>
+                    <p _msttexthash="7157254" _msthash="11">Every day we hold master classes in baking for children and adults. organization of creative events and holidays.</p>
+
+                    <form method="get" action="#Form">
+                        <button class="MainButton" _msttexthash="79027" _msthash="12">Sign up</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="wave container-fluid p-0 pb-5">
+            <img class="wave-img" src="/image/site/volna.svg">
+        </div>
         <div id="background-intro">
             <h1 class="white-title"> Licores a Domicilio en Pasto 24/7</h1>
             <h2 class="grey-sub"> REALIZA TU PEDIDO POR WHATSAPP </h2>
@@ -51,22 +72,47 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
                 </span>
             </a>
         </div>
-    </header>
-    <!--<div style="margin-top:2px;">
+
+        <!--<div style="margin-top:2px;">
         <php echo $this->render("_topNav"); >
     </div>  -->
-   
 
-    <main id="main" class="flex-shrink-0" role="main" style="margin-top:13px;">
-        <div class="container">
-            <?php if (!empty($this->params['breadcrumbs'])) : ?>
-                <?= Breadcrumbs::widget(['links' => $this->params['breadcrumbs']]) ?>
-            <?php endif ?>
-            <?= Alert::widget() ?>
-            <?= $content ?>
+
+        <div class="background-container">
+
+            <div class="work-background p-0 container-fluid" id="WorkOffer">
+                <div class="work-container d-flex justify-content-center flex-column text-center align-items-center" id="#WorkOffer">
+                    <h4 _msttexthash="986401" _msthash="90">Do you want to become a part of our team?</h4>
+                    <p _msttexthash="208884" _msthash="91">Call <a href="tel:+91 8331852700" _istranslated="1">+91 8331852700</a></p>
+                    <p _msttexthash="1298050" _msthash="92">Send an e-mail to <a href="mailto:jobs@cakeoncall.in" _istranslated="1">jobs@cakeoncall.in</a></p>
+                </div>
+            </div>
         </div>
+
+        <div class="form-container" id="Form">
+            <div class="form-head text-center form-blob d-flex flex-column justify-content-center">
+                <h2>Have any Queries?</h2>
+                <p>Please fill out the form and we will contact you!</p>
+            </div>
+            <div class="d-flex justify-content-end">
+                <div class="form-background container-fluid p-0"></div>
+                <form id="feedback-form" class="feedback-form  d-flex flex-column align-items-end justify-content-center" action="<?php echo \yii\helpers\Url::to('feedback_form/create') ?>" method="POST">
+                    <input maxlength="60" required type="text" name="name" id="name" placeholder="Your Name">
+                    <input maxlength="20" required type="tel" class="form-tel" name="tel" id="tel" placeholder="Your Phone Number">
+                    <select required name="services" id="services">
+                        <option value="training" selected>Baking Course</option>
+                        <option value="jobs">Jobs</option>
+                        <option value="bulk">Bulk Order</option>
+                        <option value="others">Others</option>
+                    </select>
+                    <button class="align-self-center" type="submit">Submit</button>
+                </form>
+
+            </div>
+        </div>
+        <?php echo $this->render("_footer"); ?>
+
     </main>
-    <?php echo $this->render("_footer"); ?>
     <?php $this->endBody() ?>
 
 

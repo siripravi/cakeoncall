@@ -1,6 +1,73 @@
 body{
 	margin: 0px;
 }
+@font-face {
+    font-family: "YanoneKaffeesatz-Regular";
+    src: url("../fonts/YanoneKaffeesatz/YanoneKaffeesatz-Regular.ttf");
+}
+
+@font-face {
+    font-family: "YanoneKaffeesatz-Bold";
+    src: url("../fonts/YanoneKaffeesatz/YanoneKaffeesatz-Bold.ttf ");
+}
+
+@font-face {
+    font-family: "Montserrat-Regular";
+    src: url("../fonts/Montserrat/Montserrat-Regular.ttf");
+}
+
+h1,
+h2,
+h3 {
+    font-family: "YanoneKaffeesatz-Bold";
+    color: black;
+    margin: 0 !important;
+}
+
+p {
+    color: black;
+    font-family: "Montserrat-Regular";
+    font-size: 18px;
+}
+.nav-container {
+    width: 1110px;
+    max-width: 100%;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+a.nav-link {
+    font-family: "YanoneKaffeesatz-Bold";
+    font-size: 28px;
+    color: black;
+    background-position: center;
+}
+
+a.nav-link:not(hover) {
+    transition: 0.35s ease-in-out;
+    background-position: center;
+    background-size: 0% 0%;
+    background-repeat: no-repeat;
+    background-image: url("/img/site/Vector.svg");
+}
+
+a.nav-link:hover {
+    color: black;
+    transition: 0.35s ease-in-out;
+    background-image: url("/iamge/site/Vector.svg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+a.navber-brand {
+    width: 106px !important;
+}
+
+.menu-ul {
+    margin-left: 43px;
+}
+
 /* --------------- NavBar---------------------------*/
 .logo-img{
 	width: 20vh;
@@ -9,18 +76,18 @@ body{
 .logo-img-scroll{
 	width: 10vh;
 	height: auto;	
-	content:url("/image/site/BulkanBSmall.png");
+	content:url("/image/site/coc_logo_act.jpg");
 }
-.header{
+/*.header{
 	background-image: url("/image/site/BackgorundBW.jpg"); 
 	background-size: cover;
 	background-position: 0% 50%;
 	padding: 0px !important; 
-}
+}*/
 .header-scroll{
 	padding-top: 20vh !important;	
 }
-.header .navbar{
+/*.header .navbar{
   	background-color: rgba(0,0,0,.95) !important;
 }
 .navbar{
@@ -29,7 +96,76 @@ body{
   	padding: 0% 7.5% 0% 7.5%;	
   	margin: 0px;
 }
+*/
 
+/** Main Banner  **/
+
+.main-background {
+    background-image: url("/image/site/cover.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.main-shadow {
+    background: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0) 10.63%),
+    linear-gradient(180deg, rgba(131, 131, 131, 0) 77.46%, #c7b1a4 100%);
+    background-size: cover;
+}
+
+.main {
+    height: 583px;
+    color: white;
+    text-align: center;
+}
+
+.main h1 {
+    padding-top: 65px;
+    font-family: "YanoneKaffeesatz-Regular";
+    font-size: 72px;
+    margin: 0;
+    color: white;
+}
+
+.main p {
+    padding-top: 25px;
+    padding-bottom: 50px;
+    margin: 0;
+    font-family: "Montserrat-Regular";
+    font-size: 18px;
+    color: white;
+    width: 400px;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+.MainButton {
+    width: 220px;
+    height: 50px;
+    background: linear-gradient(180deg, #c7b1a4 -108.33%, #000000 263.89%);
+    box-shadow: 0px 5px 10px rgba(199, 177, 164, 0.4);
+    border-radius: 25px;
+    margin-bottom: 60px;
+    text-decoration: none;
+    color: white;
+    border: none;
+    font-family: "Montserrat-Regular";
+    font-size: 22px;
+}
+
+.MainButton:hover {
+    transition: 0.2s ease-in-out;
+    box-shadow: 0px 5px 10px rgba(230, 204, 190, 0.863);
+}
+
+.MainButton:not(:hover) {
+    transition: 0.2s ease-in-out;
+    box-shadow: 0px 5px 10px rgba(199, 177, 164, 0.4);
+}
+
+.wave-img {
+    width: 100%;
+}
 .cart{
 	color: #aaaaaa;
 }
@@ -347,3 +483,266 @@ body{
 .checkout-form{
 	padding: 1rem;
 }
+
+/** Footer  **/
+footer {
+    height: 200px;
+    max-height: 100%;
+    background-color: black;
+    margin-top: 100px;
+}
+
+footer a,
+li {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+footer a:focus,
+footer a:active,
+footer a:hover,
+footer a:focus {
+    color: white !important;
+}
+
+.footer-container {
+    width: 1110px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.contacts-social {
+    height: 200px;
+    max-height: 100%;
+}
+
+.footer-container a {
+    color: white;
+}
+
+.footer-container h3 {
+    color: white;
+    text-align: center;
+    font-size: 28px;
+    font-family: "YanoneKaffeesatz-Regular";
+    padding-bottom: 20px;
+}
+
+.footer-container .contacts-social ul,
+.contacts-social li,
+.contacts-social a,
+.contacts-social p {
+    font-family: "Montserrat-Regular";
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-size: 14px;
+}
+
+.contacts-social li:not(:last-of-type, :first-of-type) {
+    padding-bottom: 10px;
+}
+
+.copyright {
+    padding-top: 20px !important;
+    text-align: center;
+    font-family: "YanoneKaffeesatz-Regular" !important;
+    font-size: 14px;
+    color: white;
+}
+
+@media screen and (max-width: 991px) {
+    header button {
+        margin-right: 20px;
+    }
+}
+
+@media screen and (max-width: 920px) {
+    .container-items {
+        background-image: none;
+    }
+
+    .event-card {
+        display: flex;
+        flex-direction: column;
+        width: 500px;
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+
+    .event-card img {
+        order: -1;
+        border-radius: 25px;
+    }
+
+    .event-card .event-description {
+        padding-bottom: 20px;
+    }
+
+    .form-background {
+        display: none;
+    }
+
+    .feedback-form {
+        margin: 0 auto;
+    }
+
+    footer {
+        height: 100%;
+    }
+
+    .contacts-social {
+        padding: 20px;
+        height: 100%;
+        gap: 50px;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .main p {
+        padding-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 407px) {
+    .row-about-us {
+        flex-wrap: wrap;
+    }
+
+    .row-about-us-2 {
+        flex-wrap: wrap;
+    }
+}
+
+/** WORK container **/
+.work-background {
+    background-color: #c6715a;
+    height: 170px;
+    max-height: 100%;
+}
+
+.work-container {
+    height: 170px;
+    max-height: 100%;
+}
+
+.work-container h4 {
+    font-size: 28px;
+    font-family: "YanoneKaffeesatz-Regular";
+    padding-bottom: 10px;
+    color: #ffffff;
+    font-weight: 400 !important;
+    margin: 0;
+}
+
+.work-container p {
+    color: white;
+    margin: 0;
+}
+
+.work-container p:last-child {
+    padding-top: 10px;
+}
+
+.work-container p a {
+    color: white;
+}
+/** FORM **/
+.form-background {
+    background-repeat: no-repeat;
+    background-image: url("/image/site/formbackground.jpg");  
+    background-size: contain;
+    pointer-events: none;
+    user-select: none;
+}
+
+.form-container {
+    margin: 0 auto;
+    width: 1110px;
+    max-width: 100%;
+    margin-top: 100px;
+}
+
+.form-blob {
+    background-repeat: no-repeat;
+    height: 110px;
+    max-height: 100%;
+    background-image: url("/image/site/blobForm.svg");
+    background-size: 100% 100%;
+    margin-bottom: 40px;
+}
+
+.form-container .form-head h2 {
+    padding-bottom: 10px;
+}
+
+.form-container .form-head p {
+    font-size: 28px;
+    font-family: "YanoneKaffeesatz-Regular";
+}
+
+.form-container .feedback-form {
+    width: 500px;
+    max-width: 100%;
+}
+
+.form-container .feedback-form input,
+select {
+    padding-left: 25px;
+    margin-bottom: 40px;
+    outline: none;
+    width: 500px;
+    max-width: 100%;
+    height: 45px;
+    border: 0;
+    background: #ffffff;
+    border: 1px solid #c6715a;
+    border-radius: 30px;
+}
+
+.form-container .feedback-form input:focus,
+select:focus {
+    transition: 0.35s ease-in-out;
+    filter: drop-shadow(0px 5px 20px #c4a99a);
+}
+
+.form-container .feedback-form input::placeholder {
+    color: black;
+    font-family: "Montserrat-Regular";
+    font-size: 16px;
+}
+
+.form-container .feedback-form select {
+    color: black;
+    font-family: "Montserrat-Regular";
+    font-size: 16px;
+    padding-right: 17px;
+    margin-top: 40px;
+}
+
+.form-container .feedback-form input:last-of-type {
+    margin: 0;
+}
+
+.form-container .feedback-form button {
+    background: #c6715a;
+    width: 350px;
+    height: 59px;
+    font-size: 24px;
+    font-family: "Montserrat-Regular";
+    margin-top: 40px;
+    border: 0;
+    color: white;
+    border-radius: 25px;
+}
+
+.form-container .feedback-form button:hover {
+    transition: 0.25s ease-in-out;
+    box-shadow: 0px 4px 7px rgba(224, 129, 103, 0.8);
+}
+
+.form-container .feedback-form button:not(:hover) {
+    transition: 0.25s ease-in-out;
+}
+
