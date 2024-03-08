@@ -17,7 +17,7 @@ class TopProductsWidget extends Widget
      * @var string The module where this block belongs to in order to find the view files.
      */
     public $module = 'catalog';
-    public $product_ids = [28, 4];
+    public $product_ids = [28, 29,30];
     /**
      * @var bool Choose whether a block can be cached trough the caching component. Be carefull with caching container blocks.
      */

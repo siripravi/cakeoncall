@@ -34,7 +34,7 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
 <body data-bs-spy="scroll" data-bs-target="#navbar-links-nav">
     <?php $this->beginBody() ?>
     <main role="main">
-    <!--php echo $this->render("_topNav"); ?-->
+        <!--php echo $this->render("_topNav"); ?-->
         <header class="container-fluid header header-scroll" id="header">
             <nav class="nav-container navbar navbar-expand-lg bg-light p-0 fixed-x-top">
                 <a class="navbar-brand" href="#"><img class="logo-img logo-img-scroll" src="/image/site//coc_logo_act.jpg"></a>
@@ -72,14 +72,25 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
                 </span>
             </a>
         </div>
-
+        <?php echo $this->render('_ourcakes')?>
         <!--<div style="margin-top:2px;">
         <php echo $this->render("_topNav"); >
     </div>  -->
+        <!-- start INFO-->
+       <?php echo $this->render('_foodmenu')?>
+        <!--Last section-->
+        <div class="howtoget container p-0" id="HowToGet">
+            <div class="howtoget-head text-center howtoget-blob d-flex flex-column justify-content-center">
+                <h2 _msttexthash="132769" _msthash="20">We are here</h2>
+            </div>
+        </div>
+        <div class="map">
+            <iframe width="100%" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=Shop%201,%20H%2014-1-90/517,%20Gayatri%20Nagar,%20Allapur,%20Madhapur,%20Hyderabad&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
 
+        </div>
 
         <div class="background-container">
-
+              
             <div class="work-background p-0 container-fluid" id="WorkOffer">
                 <div class="work-container d-flex justify-content-center flex-column text-center align-items-center" id="#WorkOffer">
                     <h4 _msttexthash="986401" _msthash="90">Do you want to become a part of our team?</h4>

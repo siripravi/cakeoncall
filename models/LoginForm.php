@@ -6,7 +6,7 @@ use siripravi\authhelper\Finder;
 use siripravi\authhelper\helpers\Password;
 use Yii;
 use yii\base\Model;
-use siripravi\authhelper\traits\ModuleTrait;
+use siripravi\userhelper\traits\ModuleTrait;
 
 /**
  * This file is part of the Dektrium project.

@@ -271,13 +271,13 @@ echo ListView::widget([
     'dataProvider' => $data['products']['dataProvider'],
     'itemView' => '_item',
     'layout' => '
-		 <div class="row featured">{items}</div>',
+		 <section class="cake-container">{items}</section>',
     'emptyTextOptions' => [
         'class' => 'alert alert-danger',
     ],
-    'options' => ['class' => 'products home-products container'],
+    'options' => ['class' => 'cake-container'],
     'itemOptions' => [
-        'class' => 'col-sm-6 col',
+      //  'class' => 'col-sm-6 col',
     ]
 ]);
 
