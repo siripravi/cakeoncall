@@ -22,11 +22,11 @@ $this->params['breadcrumbs'][] = $this->title;
 <div class="admin-index">
 
     <h1 class="text-center"><?= Html::encode($this->title) ?></h1>
-    <p class="text-center text-secondary"><?= Html::encode('Добро пожаловать '.Yii::$app->user->identity->email) ?></p>
+    <p class="text-center text-secondary"><?= Html::encode('Welcome '.Yii::$app->user->identity->email) ?></p>
     <div class="row justify-content-center ">
         <div class="col-4 flex-wrap m-2 d-flex flex-column justify-content-center  border rounded shadow-sm">
-            <h2 id="counter" class="text-danger"><?= Html::encode(\app\admin\models\FeedbackForm::find()->where(['is_solved'=>0])->count()) ?></h2>
-            <p>Вопросов <span style="text-decoration: underline;"> в данный момент</span> ожидают обратной связи</p>
+            <h2 id="counter" class="text-danger"><?= Html::encode(\app\admin\models\EnquiryForm::find()->where(['is_solved'=>0])->count()) ?></h2>
+            <p>Questions <span style="text-decoration: underline;"> At the moment</span> Waiting for feedback</p>
             <p class="mt-auto">
                 <?= Html::a('Feedback Management', ['/admin/enquiry'], ['class' => 'btn btn-outline-primary']) ?>
             </p>
@@ -42,7 +42,7 @@ $this->params['breadcrumbs'][] = $this->title;
             <h2 class="text-primary"><?= Html::encode(\app\admin\models\MasterClass::find()->count()) ?></h2>
             <p>Total master classes on the site</p>
             <p class="mt-auto">
-                <?= Html::a('Управление мастер-классами', ['/admin/master_class'], ['class' => 'btn btn-outline-primary']) ?>
+                <?= Html::a('Masterclass Management', ['/admin/master_class'], ['class' => 'btn btn-outline-primary']) ?>
             </p>
         </div>
         <div class="col-4 m-2 d-flex flex-column justify-content-center  border rounded shadow-sm">

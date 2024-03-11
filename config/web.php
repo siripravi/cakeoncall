@@ -2,12 +2,12 @@
 
 $params = require __DIR__ . '/params.php';
 $db = require __DIR__ . '/db.php';
-
+//$webroot = Yii::getPathOfAlias('webroot');
 $config = [
     'id' => 'basic',
     'language' => 'hi',
     'basePath' => dirname(__DIR__),
-    'bootstrap' => ['log'],//,'pjaxmodal'],
+    'bootstrap' => ['log','app\components\Bootstrap'],//,'pjaxmodal'],
     'aliases' => [
         '@bower' => '@vendor/bower-asset',
         '@npm'   => '@vendor/npm-asset',
@@ -18,6 +18,18 @@ $config = [
             // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
             'cookieValidationKey' => 'xElL896xtETlBBwfxqmdZBkNvkeBeTgy',
         ],*/
+        'gallery' => [
+            'class' => 'siripravi\gallery\components\ImgManager',
+            'fkName' => 'fk_id',
+            'imgTable' => '{{%image}}',
+            'thumbVer'  => 'medium',
+            'imagePath' => '\files\images\\',
+            'versions' => [
+                'small' => ['width' => 72, 'height' => 72],
+                'medium' => ['width' => 200, 'height' => 150],
+                'large' => ['width' => 1920, 'height' => 566],
+            ],
+        ],
         'request' => [
             'class' => 'app\components\SiteRequest',
             'cookieValidationKey' => 'I-mmzHGFYAx9EnbueCBRo4W4HQBKHA_-',
@@ -128,6 +140,9 @@ $config = [
         'catalog' => [
             'class' => 'app\modules\catalog\Module',
         ],
+        'gallery' => [
+            'class' => 'siripravi\gallery\Module',
+        ],
 
         'nyiixta' => [
             'class' => 'siripravi\nyiixta\Module',
@@ -185,9 +200,9 @@ $config = [
                 'nyiixta' => [
                     'class' => 'siripravi\nyiixta\Module',
                 ],
-                /* 'catalog' => [
-                    'class' => 'app\modules\catalog\Module',
-                ],*/
+                'gallery' => [
+                    'class' => 'siripravi\gallery\Module',
+                ],
             ],
         ],
 
@@ -203,7 +218,9 @@ if (YII_ENV_DEV) {
         // uncomment the following to add your IP if you are not connecting from localhost.
         //'allowedIPs' => ['127.0.0.1', '::1'],
     ];
-
+    $config['modules']['gallery'] = [
+        'class' => 'siripravi\gallery\Module'
+    ];
     $config['bootstrap'][] = 'gii';
     $config['modules']['gii'] = [
         'class' => 'yii\gii\Module',

@@ -48,6 +48,7 @@ class ComposerStaticInit2188b2a24effa70dac906d91eb393da3
         's' => 
         array (
             'siripravi\\userhelper\\' => 21,
+            'siripravi\\gallery\\' => 18,
         ),
         'p' => 
         array (
@@ -231,6 +232,10 @@ class ComposerStaticInit2188b2a24effa70dac906d91eb393da3
         'siripravi\\userhelper\\' => 
         array (
             0 => __DIR__ . '/..' . '/siripravi/yii2-user-helper/src',
+        ),
+        'siripravi\\gallery\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/siripravi/yii2-image-gallery/src',
         ),
         'phpseclib\\' => 
         array (

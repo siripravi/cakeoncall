@@ -19,6 +19,7 @@ return array(
     'yii\\' => array($vendorDir . '/yiisoft/yii2'),
     'unglue\\client\\' => array($vendorDir . '/unglue/client/src'),
     'siripravi\\userhelper\\' => array($vendorDir . '/siripravi/yii2-user-helper/src'),
+    'siripravi\\gallery\\' => array($vendorDir . '/siripravi/yii2-image-gallery/src'),
     'phpseclib\\' => array($vendorDir . '/phpseclib/phpseclib/phpseclib'),
     'paulzi\\jsonBehavior\\' => array($vendorDir . '/paulzi/yii2-json-behavior/src'),
     'luya\\yii\\' => array($vendorDir . '/luyadev/yii-helpers/src'),

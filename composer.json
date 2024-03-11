@@ -39,7 +39,8 @@
     "kartik-v/yii2-tabs-x": "@dev",
     "kartik-v/yii2-bootstrap5-dropdown": "@dev",
     "exocet/yii2-bootstrap-material-design":"~2.4.0",
-    "kartik-v/yii2-widget-affix": "*"
+    "kartik-v/yii2-widget-affix": "*",
+    "siripravi/yii2-image-gallery": "dev-main"
 
   },
   "require-dev": {

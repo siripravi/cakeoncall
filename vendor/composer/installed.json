@@ -2,17 +2,17 @@
     "packages": [
         {
             "name": "bower-asset/bootstrap",
-            "version": "v5.3.3",
-            "version_normalized": "5.3.3.0",
+            "version": "v5.2.3",
+            "version_normalized": "5.2.3.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/twbs/bootstrap.git",
-                "reference": "6e1f75f420f68e1d52733b8e407fc7c3766c9dba"
+                "url": "git@github.com:twbs/bootstrap.git",
+                "reference": "cb021439c683d9805e2864c58095b92d405e9b11"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twbs/bootstrap/zipball/6e1f75f420f68e1d52733b8e407fc7c3766c9dba",
-                "reference": "6e1f75f420f68e1d52733b8e407fc7c3766c9dba"
+                "url": "https://api.github.com/repos/twbs/bootstrap/zipball/cb021439c683d9805e2864c58095b92d405e9b11",
+                "reference": "cb021439c683d9805e2864c58095b92d405e9b11"
             },
             "type": "bower-asset",
             "installation-source": "dist",
@@ -5066,6 +5066,55 @@
                 "source": "https://github.com/select2/select2/tree/4.0.13"
             },
             "install-path": "../select2/select2"
+        },
+        {
+            "name": "siripravi/yii2-image-gallery",
+            "version": "dev-main",
+            "version_normalized": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/siripravi/yii2-image-gallery.git",
+                "reference": "d92642c5b58716d58ea361d4d7ddbc2c38769a31"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/siripravi/yii2-image-gallery/zipball/d92642c5b58716d58ea361d4d7ddbc2c38769a31",
+                "reference": "d92642c5b58716d58ea361d4d7ddbc2c38769a31",
+                "shasum": ""
+            },
+            "require": {
+                "yiisoft/yii2": "~2.0"
+            },
+            "time": "2024-02-08T12:08:24+00:00",
+            "default-branch": true,
+            "type": "yii2-extension",
+            "installation-source": "dist",
+            "autoload": {
+                "psr-4": {
+                    "siripravi\\gallery\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Purnachandra Rao Valluri",
+                    "email": "provdigi@gmail.com"
+                }
+            ],
+            "description": "Image Gallery upload for yii2",
+            "keywords": [
+                "extension",
+                "products",
+                "yii2"
+            ],
+            "support": {
+                "issues": "https://github.com/siripravi/yii2-image-gallery/issues",
+                "source": "https://github.com/siripravi/yii2-image-gallery/tree/main"
+            },
+            "install-path": "../siripravi/yii2-image-gallery"
         },
         {
             "name": "siripravi/yii2-user-helper",

@@ -348,4 +348,13 @@ return array (
       '@kartik/bs5dropdown' => $vendorDir . '/kartik-v/yii2-bootstrap5-dropdown/src',
     ),
   ),
+  'siripravi/yii2-image-gallery' => 
+  array (
+    'name' => 'siripravi/yii2-image-gallery',
+    'version' => 'dev-main',
+    'alias' => 
+    array (
+      '@siripravi/gallery' => $vendorDir . '/siripravi/yii2-image-gallery/src',
+    ),
+  ),
 );

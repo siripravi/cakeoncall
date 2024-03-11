@@ -3,7 +3,7 @@
         'name' => 'yiisoft/yii2-app-basic',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => 'f1457d6b48f9113c9d416ce288fea14fe859eac3',
+        'reference' => '773f1ddbe241298b4ab5b688356be71c3cd077b2',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -11,9 +11,9 @@
     ),
     'versions' => array(
         'bower-asset/bootstrap' => array(
-            'pretty_version' => 'v5.3.3',
-            'version' => '5.3.3.0',
-            'reference' => '6e1f75f420f68e1d52733b8e407fc7c3766c9dba',
+            'pretty_version' => 'v5.2.3',
+            'version' => '5.2.3.0',
+            'reference' => 'cb021439c683d9805e2864c58095b92d405e9b11',
             'type' => 'bower-asset',
             'install_path' => __DIR__ . '/../bower-asset/bootstrap',
             'aliases' => array(),
@@ -871,6 +871,17 @@
             'aliases' => array(),
             'dev_requirement' => false,
         ),
+        'siripravi/yii2-image-gallery' => array(
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
+            'reference' => 'd92642c5b58716d58ea361d4d7ddbc2c38769a31',
+            'type' => 'yii2-extension',
+            'install_path' => __DIR__ . '/../siripravi/yii2-image-gallery',
+            'aliases' => array(
+                0 => '9999999-dev',
+            ),
+            'dev_requirement' => false,
+        ),
         'siripravi/yii2-user-helper' => array(
             'pretty_version' => 'v1.0.0',
             'version' => '1.0.0.0',
@@ -1135,7 +1146,7 @@
         'yiisoft/yii2-app-basic' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => 'f1457d6b48f9113c9d416ce288fea14fe859eac3',
+            'reference' => '773f1ddbe241298b4ab5b688356be71c3cd077b2',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
