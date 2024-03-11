@@ -1,44 +1,60 @@
-  <!--starting of our crousal -->
-     <!--search image in unsplash using https://source.unsplash.com/1600x600/?chocolate,cake -->
-     <div class="container-fluid px-0" >
-        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
-        <ol class="carousel-indicators">
-            <li data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"></li>
-            <li data-bs-target="#carouselExampleDark" data-bs-slide-to="1"></li>
-            <li data-bs-target="#carouselExampleDark" data-bs-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-            <div class="carousel-item active" data-bs-interval="10000">
-            <img src="image/banner1.jpeg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-                <h1>Garnish your every moment</h1>
-                <p>A Moments Full of Crunchiness</p>
-            </div>
-            </div>
-            <div class="carousel-item" data-bs-interval="2000">
-            <img src="image/banner2.jpeg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-                <h1>   Sweet cookies to make your moments sweeter</h1>
-                <p>Enjoy the Treat of the day.</p>
-            </div>
-            </div>
-            <div class="carousel-item">
-            <img src="image/banner3.jpeg" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-                <h1> Our mouthwatering desert</h1>
-                <p>Adding a Treat in Every Occasion.</p>
-            </div>
-            </div>
-        </div>
-        <a class="carousel-control-prev" href="#carouselExampleDark" role="button" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleDark" role="button" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </a>
-        </div>
 
-    </div>
-    <!--ending of our crousal -->
+<?php
+/*
+ * Created on Mon Nov 20 2023
+ *
+ * Copyright (c) 2023 Your Company
+ */
+
+/** @var yii\web\View $this */
+
+use siripravi\slideradmin\models\Slider;
+use siripravi\slideradmin\models\SliderImage;
+use yii\bootstrap5\Html;
+use app\widgets\Carousel;
+
+$model = Slider::find()->one();
+$slides = $model->slides;
+foreach ($slides as $sld) {
+    if (($image = SliderImage::find()->where(['id' => $sld->id])->multilingual()->one()) !== null) {
+        $sitems[] = [
+            'content' => '<div class="home_slider_container">
+                     <div class="text-center p-0"><div class="">' .
+                $image->render($sld->filename, "large", ["class" => "slider-img"]) .
+                '</div>',
+            'caption' => '<div class="slide-text">' .
+                Html::tag('h1', $image->title, ['class' => 'h1 text-light']) .
+                '<h3 class="h2"></h3><p>' . $image->html . '</p></div></div></div>',
+            'captionOptions' => ['class' => ['mb-0 d-flex align-items-center']],
+
+        ];
+    }
+}
+?>
+<div class="container-fluid main-x-background p-0"> 
+   
+<?php
+    echo Carousel::widget([
+        'id' => 'home-slider',
+        'items' => $sitems,
+        'showIndicators' => false,
+        /* 'controls' => [
+                            '<span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Previous</span>',
+                            '<span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Next</span>',
+                        ],  */
+        'options' => [
+            'data-interval' => 8,
+            'data-bs-ride' => 'scroll'
+        ],
+        'controls' => [
+            '<span class="carousel-control-prev-icon"></span>',
+            '<span class="carousel-control-next-icon"></span>',
+        ],
+    ]) ?>
+       
+
+</div>
+
+<div class="wave container-fluid p-0 pb-5">
+            <img class="wave-img" src="/image/site/volna.svg">
+        </div>

@@ -44,9 +44,9 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
                 <?php echo $this->render("_navBar"); ?>
             </nav>
         </header>
-
+        <?php echo $this->render('_slider')?>
         <!-- main Header image -->
-        <div class="container-fluid main-background p-0">
+        <!-- <div class="container-fluid main-background p-0">
             <div class="main-shadow p-0 container-fluid">
                 <div class="main container" id="Main">
                     <h1 _msttexthash="758498" _msthash="10">Baking Workshop<br>
@@ -58,10 +58,8 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
                     </form>
                 </div>
             </div>
-        </div>
-        <div class="wave container-fluid p-0 pb-5">
-            <img class="wave-img" src="/image/site/volna.svg">
-        </div>
+        </div>  -->
+      <!-- 
         <div id="background-intro">
             <h1 class="white-title"> Licores a Domicilio en Pasto 24/7</h1>
             <h2 class="grey-sub"> REALIZA TU PEDIDO POR WHATSAPP </h2>
@@ -71,7 +69,7 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
                     <strong>3193200490</strong>
                 </span>
             </a>
-        </div>
+        </div>  -->
         <?php echo $this->render('_ourcakes')?>
         <!--<div style="margin-top:2px;">
         <php echo $this->render("_topNav"); >

@@ -357,4 +357,31 @@ return array (
       '@siripravi/gallery' => $vendorDir . '/siripravi/yii2-image-gallery/src',
     ),
   ),
+  'omgdef/yii2-multilingual-behavior' => 
+  array (
+    'name' => 'omgdef/yii2-multilingual-behavior',
+    'version' => '2.1.2.0',
+    'alias' => 
+    array (
+      '@omgdef/multilingual' => $vendorDir . '/omgdef/yii2-multilingual-behavior/src',
+    ),
+  ),
+  '2amigos/yii2-ckeditor-widget' => 
+  array (
+    'name' => '2amigos/yii2-ckeditor-widget',
+    'version' => '2.1.0.0',
+    'alias' => 
+    array (
+      '@dosamigos/ckeditor' => $vendorDir . '/2amigos/yii2-ckeditor-widget/src',
+    ),
+  ),
+  'siripravi/yii2-slideradmin' => 
+  array (
+    'name' => 'siripravi/yii2-slideradmin',
+    'version' => '1.1.0.0',
+    'alias' => 
+    array (
+      '@siripravi/slideradmin' => $vendorDir . '/siripravi/yii2-slideradmin',
+    ),
+  ),
 );

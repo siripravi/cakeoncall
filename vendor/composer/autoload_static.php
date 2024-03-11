@@ -48,12 +48,17 @@ class ComposerStaticInit2188b2a24effa70dac906d91eb393da3
         's' => 
         array (
             'siripravi\\userhelper\\' => 21,
+            'siripravi\\slideradmin\\' => 22,
             'siripravi\\gallery\\' => 18,
         ),
         'p' => 
         array (
             'phpseclib\\' => 10,
             'paulzi\\jsonBehavior\\' => 20,
+        ),
+        'o' => 
+        array (
+            'omgdef\\multilingual\\' => 20,
         ),
         'l' => 
         array (
@@ -100,6 +105,10 @@ class ComposerStaticInit2188b2a24effa70dac906d91eb393da3
         array (
             'exocet\\composer\\' => 16,
             'exocet\\bootstrap5md\\' => 20,
+        ),
+        'd' => 
+        array (
+            'dosamigos\\ckeditor\\' => 19,
         ),
         'c' => 
         array (
@@ -233,6 +242,10 @@ class ComposerStaticInit2188b2a24effa70dac906d91eb393da3
         array (
             0 => __DIR__ . '/..' . '/siripravi/yii2-user-helper/src',
         ),
+        'siripravi\\slideradmin\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/siripravi/yii2-slideradmin',
+        ),
         'siripravi\\gallery\\' => 
         array (
             0 => __DIR__ . '/..' . '/siripravi/yii2-image-gallery/src',
@@ -244,6 +257,10 @@ class ComposerStaticInit2188b2a24effa70dac906d91eb393da3
         'paulzi\\jsonBehavior\\' => 
         array (
             0 => __DIR__ . '/..' . '/paulzi/yii2-json-behavior/src',
+        ),
+        'omgdef\\multilingual\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/omgdef/yii2-multilingual-behavior/src',
         ),
         'luya\\yii\\' => 
         array (
@@ -392,6 +409,10 @@ class ComposerStaticInit2188b2a24effa70dac906d91eb393da3
         'exocet\\bootstrap5md\\' => 
         array (
             0 => __DIR__ . '/..' . '/exocet/yii2-bootstrap-material-design/src',
+        ),
+        'dosamigos\\ckeditor\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/2amigos/yii2-ckeditor-widget/src',
         ),
         'cebe\\markdown\\' => 
         array (
