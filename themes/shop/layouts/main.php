@@ -70,6 +70,7 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => Yii
                 </span>
             </a>
         </div>  -->
+        <?php echo $this->render('_categories')?>
         <?php echo $this->render('_ourcakes')?>
         <!--<div style="margin-top:2px;">
         <php echo $this->render("_topNav"); >
