@@ -55,6 +55,7 @@
     "unglue/client": "^1.5"
   },
   "config": {
+    "vendor-dir": "callcake/vendor",
     "platform-check": false,
     "fxp-asset": {
       "enabled": false
