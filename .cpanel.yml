@@ -2,4 +2,4 @@
 deployment:
  tasks:
  - export DEPLOYPATH=/home/cakeonc1/callcake/
- - /bin/cp -R public_html $DEPLOYPATH
+ - /bin/cp -R callcake $DEPLOYPATH
