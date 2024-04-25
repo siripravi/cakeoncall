@@ -50,6 +50,7 @@ class ComposerStaticInit2188b2a24effa70dac906d91eb393da3
             'siripravi\\userhelper\\' => 21,
             'siripravi\\slideradmin\\' => 22,
             'siripravi\\gallery\\' => 18,
+            'siripravi\\ecommerce\\' => 20,
         ),
         'p' => 
         array (
@@ -63,8 +64,12 @@ class ComposerStaticInit2188b2a24effa70dac906d91eb393da3
         'l' => 
         array (
             'luya\\yii\\' => 9,
+            'luya\\headless\\tests\\' => 20,
+            'luya\\headless\\cms\\api\\' => 22,
+            'luya\\headless\\' => 14,
             'luya\\deployer\\tests\\' => 20,
             'luya\\composer\\' => 14,
+            'luya\\cms\\' => 9,
             'luya\\' => 5,
             'libphonenumber\\' => 15,
             'lav45\\widget\\' => 13,
@@ -157,6 +162,7 @@ class ComposerStaticInit2188b2a24effa70dac906d91eb393da3
         'P' => 
         array (
             'Pure\\' => 5,
+            'Psr\\SimpleCache\\' => 16,
             'Psr\\Log\\' => 8,
             'Psr\\Http\\Message\\' => 17,
             'Psr\\EventDispatcher\\' => 20,
@@ -250,6 +256,10 @@ class ComposerStaticInit2188b2a24effa70dac906d91eb393da3
         array (
             0 => __DIR__ . '/..' . '/siripravi/yii2-image-gallery/src',
         ),
+        'siripravi\\ecommerce\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/siripravi/luya-module-ecommerce/src',
+        ),
         'phpseclib\\' => 
         array (
             0 => __DIR__ . '/..' . '/phpseclib/phpseclib/phpseclib',
@@ -266,6 +276,18 @@ class ComposerStaticInit2188b2a24effa70dac906d91eb393da3
         array (
             0 => __DIR__ . '/..' . '/luyadev/yii-helpers/src',
         ),
+        'luya\\headless\\tests\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/luyadev/luya-headless/tests',
+        ),
+        'luya\\headless\\cms\\api\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/luyadev/luya-headless-cms-api/src',
+        ),
+        'luya\\headless\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/luyadev/luya-headless/src',
+        ),
         'luya\\deployer\\tests\\' => 
         array (
             0 => __DIR__ . '/..' . '/luyadev/luya-deployer/tests',
@@ -273,6 +295,10 @@ class ComposerStaticInit2188b2a24effa70dac906d91eb393da3
         'luya\\composer\\' => 
         array (
             0 => __DIR__ . '/..' . '/luyadev/luya-composer/src',
+        ),
+        'luya\\cms\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/luyadev/luya-module-cms/src',
         ),
         'luya\\' => 
         array (
@@ -557,6 +583,10 @@ class ComposerStaticInit2188b2a24effa70dac906d91eb393da3
         'Pure\\' => 
         array (
             0 => __DIR__ . '/..' . '/elfet/pure/src',
+        ),
+        'Psr\\SimpleCache\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/simple-cache/src',
         ),
         'Psr\\Log\\' => 
         array (

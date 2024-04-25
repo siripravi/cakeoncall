@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "579bc1871bc20c64681c1e77457dda5d",
+    "content-hash": "24e04c2f5c0aaacc8d83c408dce40c58",
     "packages": [
         {
             "name": "2amigos/yii2-ckeditor-widget",
@@ -70,16 +70,16 @@
         },
         {
             "name": "bower-asset/bootstrap",
-            "version": "v5.2.3",
+            "version": "v5.3.3",
             "source": {
                 "type": "git",
-                "url": "git@github.com:twbs/bootstrap.git",
-                "reference": "cb021439c683d9805e2864c58095b92d405e9b11"
+                "url": "https://github.com/twbs/bootstrap.git",
+                "reference": "6e1f75f420f68e1d52733b8e407fc7c3766c9dba"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twbs/bootstrap/zipball/cb021439c683d9805e2864c58095b92d405e9b11",
-                "reference": "cb021439c683d9805e2864c58095b92d405e9b11"
+                "url": "https://api.github.com/repos/twbs/bootstrap/zipball/6e1f75f420f68e1d52733b8e407fc7c3766c9dba",
+                "reference": "6e1f75f420f68e1d52733b8e407fc7c3766c9dba"
             },
             "type": "bower-asset"
         },
@@ -313,16 +313,16 @@
         },
         {
             "name": "components/flag-icon-css",
-            "version": "v7.1.0",
+            "version": "v7.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lipis/flag-icons.git",
-                "reference": "bf57446752a771ce32b3a37ed198e195484f4c37"
+                "reference": "05059f9cde4a872f1692cb017abb1140e9aceae9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lipis/flag-icons/zipball/bf57446752a771ce32b3a37ed198e195484f4c37",
-                "reference": "bf57446752a771ce32b3a37ed198e195484f4c37",
+                "url": "https://api.github.com/repos/lipis/flag-icons/zipball/05059f9cde4a872f1692cb017abb1140e9aceae9",
+                "reference": "05059f9cde4a872f1692cb017abb1140e9aceae9",
                 "shasum": ""
             },
             "type": "library",
@@ -348,9 +348,9 @@
             ],
             "support": {
                 "issues": "https://github.com/lipis/flag-icons/issues",
-                "source": "https://github.com/lipis/flag-icons/tree/v7.1.0"
+                "source": "https://github.com/lipis/flag-icons/tree/v7.2.1"
             },
-            "time": "2023-12-11T18:14:25+00:00"
+            "time": "2024-03-26T21:00:42+00:00"
         },
         {
             "name": "curl/curl",
@@ -669,22 +669,25 @@
         },
         {
             "name": "giggsey/libphonenumber-for-php",
-            "version": "8.13.31",
+            "version": "8.13.35",
             "source": {
                 "type": "git",
                 "url": "https://github.com/giggsey/libphonenumber-for-php.git",
-                "reference": "a4934bddda4672d12f21728e08bd575913bdc310"
+                "reference": "cd52d7b27572ee45d31ca0d61b394638ed9a6bae"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/giggsey/libphonenumber-for-php/zipball/a4934bddda4672d12f21728e08bd575913bdc310",
-                "reference": "a4934bddda4672d12f21728e08bd575913bdc310",
+                "url": "https://api.github.com/repos/giggsey/libphonenumber-for-php/zipball/cd52d7b27572ee45d31ca0d61b394638ed9a6bae",
+                "reference": "cd52d7b27572ee45d31ca0d61b394638ed9a6bae",
                 "shasum": ""
             },
             "require": {
                 "giggsey/locale": "^1.7|^2.0",
                 "php": ">=5.3.2",
                 "symfony/polyfill-mbstring": "^1.17"
+            },
+            "replace": {
+                "giggsey/libphonenumber-for-php-lite": "self.version"
             },
             "require-dev": {
                 "pear/pear-core-minimal": "^1.9",
@@ -737,20 +740,20 @@
                 "issues": "https://github.com/giggsey/libphonenumber-for-php/issues",
                 "source": "https://github.com/giggsey/libphonenumber-for-php"
             },
-            "time": "2024-02-26T08:31:45+00:00"
+            "time": "2024-04-19T12:41:30+00:00"
         },
         {
             "name": "giggsey/locale",
-            "version": "2.5",
+            "version": "2.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/giggsey/Locale.git",
-                "reference": "e6d4540109a01dd2bc7334cdc842d6a6a67cf239"
+                "reference": "37874fa473131247c348059fb7b8985efc18b5ea"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/giggsey/Locale/zipball/e6d4540109a01dd2bc7334cdc842d6a6a67cf239",
-                "reference": "e6d4540109a01dd2bc7334cdc842d6a6a67cf239",
+                "url": "https://api.github.com/repos/giggsey/Locale/zipball/37874fa473131247c348059fb7b8985efc18b5ea",
+                "reference": "37874fa473131247c348059fb7b8985efc18b5ea",
                 "shasum": ""
             },
             "require": {
@@ -789,9 +792,9 @@
             "description": "Locale functions required by libphonenumber-for-php",
             "support": {
                 "issues": "https://github.com/giggsey/Locale/issues",
-                "source": "https://github.com/giggsey/Locale/tree/2.5"
+                "source": "https://github.com/giggsey/Locale/tree/2.6"
             },
-            "time": "2023-11-01T17:19:48+00:00"
+            "time": "2024-04-18T19:31:19+00:00"
         },
         {
             "name": "imagine/imagine",
@@ -857,16 +860,16 @@
         },
         {
             "name": "kartik-v/bootstrap-fileinput",
-            "version": "v5.5.3",
+            "version": "v5.5.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kartik-v/bootstrap-fileinput.git",
-                "reference": "f01aab0069ae20bb2419eb491281fa9c89051807"
+                "reference": "8de1bed638823c70272b2578847e2b31e42677ba"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kartik-v/bootstrap-fileinput/zipball/f01aab0069ae20bb2419eb491281fa9c89051807",
-                "reference": "f01aab0069ae20bb2419eb491281fa9c89051807",
+                "url": "https://api.github.com/repos/kartik-v/bootstrap-fileinput/zipball/8de1bed638823c70272b2578847e2b31e42677ba",
+                "reference": "8de1bed638823c70272b2578847e2b31e42677ba",
                 "shasum": ""
             },
             "type": "library",
@@ -908,7 +911,7 @@
             ],
             "support": {
                 "issues": "https://github.com/kartik-v/bootstrap-fileinput/issues",
-                "source": "https://github.com/kartik-v/bootstrap-fileinput/tree/v5.5.3"
+                "source": "https://github.com/kartik-v/bootstrap-fileinput/tree/v5.5.4"
             },
             "funding": [
                 {
@@ -916,20 +919,20 @@
                     "type": "open_collective"
                 }
             ],
-            "time": "2024-03-11T07:28:01+00:00"
+            "time": "2024-04-09T03:30:45+00:00"
         },
         {
             "name": "kartik-v/bootstrap-popover-x",
-            "version": "v1.5.3",
+            "version": "v1.5.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kartik-v/bootstrap-popover-x.git",
-                "reference": "341ac721f076e916fa089d35d911c749404facd4"
+                "reference": "879def62529797833e10885b6e77864e83e9e240"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kartik-v/bootstrap-popover-x/zipball/341ac721f076e916fa089d35d911c749404facd4",
-                "reference": "341ac721f076e916fa089d35d911c749404facd4",
+                "url": "https://api.github.com/repos/kartik-v/bootstrap-popover-x/zipball/879def62529797833e10885b6e77864e83e9e240",
+                "reference": "879def62529797833e10885b6e77864e83e9e240",
                 "shasum": ""
             },
             "type": "library",
@@ -967,7 +970,7 @@
             ],
             "support": {
                 "issues": "https://github.com/kartik-v/bootstrap-popover-x/issues",
-                "source": "https://github.com/kartik-v/bootstrap-popover-x/tree/v1.5.3"
+                "source": "https://github.com/kartik-v/bootstrap-popover-x/tree/v1.5.4"
             },
             "funding": [
                 {
@@ -975,7 +978,7 @@
                     "type": "open_collective"
                 }
             ],
-            "time": "2024-03-11T05:39:07+00:00"
+            "time": "2024-03-12T13:23:15+00:00"
         },
         {
             "name": "kartik-v/bootstrap-star-rating",
@@ -2784,6 +2787,187 @@
             "time": "2024-02-07T13:19:25+00:00"
         },
         {
+            "name": "luyadev/luya-headless",
+            "version": "2.10.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/luyadev/luya-headless.git",
+                "reference": "ebcac322e8f8e99206600fdc475ac781ab15bdb3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/luyadev/luya-headless/zipball/ebcac322e8f8e99206600fdc475ac781ab15bdb3",
+                "reference": "ebcac322e8f8e99206600fdc475ac781ab15bdb3",
+                "shasum": ""
+            },
+            "require": {
+                "curl/curl": "^2.0",
+                "luyadev/yii-helpers": "^1.4",
+                "psr/simple-cache": "^1.0"
+            },
+            "require-dev": {
+                "luyadev/luya-testsuite": "^2.0",
+                "nadar/github-markdown-fixer": "^1.0"
+            },
+            "suggest": {
+                "symfony/cache": "A very fast PSR-16 caching library easy to setup for caching API responses."
+            },
+            "type": "luya-core",
+            "autoload": {
+                "psr-4": {
+                    "luya\\headless\\": "src/",
+                    "luya\\headless\\tests\\": "tests/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Basil Suter",
+                    "email": "git@nadar.io",
+                    "homepage": "https://github.com/nadar"
+                }
+            ],
+            "description": "LUYA headless API client",
+            "homepage": "https://luya.io",
+            "keywords": [
+                "headless",
+                "luya",
+                "php",
+                "yii2"
+            ],
+            "support": {
+                "issues": "https://github.com/luyadev/luya-headless/issues",
+                "source": "https://github.com/luyadev/luya-headless/tree/2.10.1"
+            },
+            "time": "2023-09-13T08:46:20+00:00"
+        },
+        {
+            "name": "luyadev/luya-headless-cms-api",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/luyadev/luya-headless-cms-api.git",
+                "reference": "999e48dd943d1f57e8bd59083f6a9dd0a7037c06"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/luyadev/luya-headless-cms-api/zipball/999e48dd943d1f57e8bd59083f6a9dd0a7037c06",
+                "reference": "999e48dd943d1f57e8bd59083f6a9dd0a7037c06",
+                "shasum": ""
+            },
+            "require": {
+                "luyadev/luya-module-cms": ">3.0"
+            },
+            "require-dev": {
+                "luyadev/luya-testsuite": "^2.0"
+            },
+            "default-branch": true,
+            "type": "luya-module",
+            "autoload": {
+                "psr-4": {
+                    "luya\\headless\\cms\\api\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Basil",
+                    "email": "git@nadar.io"
+                }
+            ],
+            "description": "The bridge between your SPA application and the LUYA CMS Module.",
+            "keywords": [
+                "Bridge",
+                "api",
+                "cms",
+                "headless",
+                "luya"
+            ],
+            "support": {
+                "issues": "https://github.com/luyadev/luya-headless-cms-api/issues",
+                "source": "https://github.com/luyadev/luya-headless-cms-api/tree/master"
+            },
+            "time": "2022-06-14T13:09:32+00:00"
+        },
+        {
+            "name": "luyadev/luya-module-cms",
+            "version": "5.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/luyadev/luya-module-cms.git",
+                "reference": "1f93592ddfe881f4ccfc42938611ff5ede3a5d80"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/luyadev/luya-module-cms/zipball/1f93592ddfe881f4ccfc42938611ff5ede3a5d80",
+                "reference": "1f93592ddfe881f4ccfc42938611ff5ede3a5d80",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^3.2",
+                "luyadev/luya-module-admin": "^5.0.0",
+                "luyadev/luya-testsuite": "^3.1.4",
+                "phpstan/phpstan": "^1.7",
+                "rector/rector": "^0.14.2",
+                "twbs/bootstrap": "^4.3.0",
+                "unglue/client": "^1.3"
+            },
+            "type": "luya-core",
+            "extra": {
+                "luya": {
+                    "bootstrap": [
+                        "\\luya\\cms\\frontend\\Bootstrap"
+                    ],
+                    "blocks": [
+                        "src{{DS}}frontend{{DS}}blocks"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "luya\\cms\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Basil Suter",
+                    "email": "git@nadar.io",
+                    "homepage": "https://github.com/nadar"
+                }
+            ],
+            "description": "The LUYA CMS module provides a full functional Content Management System for adding contents based on blocks.",
+            "homepage": "https://luya.io",
+            "keywords": [
+                "cms",
+                "content",
+                "contentmanager",
+                "luya",
+                "module",
+                "php",
+                "yii",
+                "yii2",
+                "yii2-cms"
+            ],
+            "support": {
+                "issues": "https://github.com/luyadev/luya-module-cms/issues",
+                "source": "https://github.com/luyadev/luya-module-cms/tree/5.1.1"
+            },
+            "time": "2024-03-28T11:13:30+00:00"
+        },
+        {
             "name": "luyadev/yii-helpers",
             "version": "1.6.0",
             "source": {
@@ -2843,10 +3027,10 @@
         },
         {
             "name": "npm-asset/fortawesome--fontawesome-free",
-            "version": "6.5.1",
+            "version": "6.5.2",
             "dist": {
                 "type": "tar",
-                "url": "https://registry.npmjs.org/@fortawesome/fontawesome-free/-/fontawesome-free-6.5.1.tgz"
+                "url": "https://registry.npmjs.org/@fortawesome/fontawesome-free/-/fontawesome-free-6.5.2.tgz"
             },
             "type": "npm-asset",
             "license": [
@@ -3259,6 +3443,57 @@
             "time": "2021-05-03T11:20:27+00:00"
         },
         {
+            "name": "psr/simple-cache",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/simple-cache.git",
+                "reference": "408d5eafb83c57f6365a3ca330ff23aa4a5fa39b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/simple-cache/zipball/408d5eafb83c57f6365a3ca330ff23aa4a5fa39b",
+                "reference": "408d5eafb83c57f6365a3ca330ff23aa4a5fa39b",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\SimpleCache\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interfaces for simple caching",
+            "keywords": [
+                "cache",
+                "caching",
+                "psr",
+                "psr-16",
+                "simple-cache"
+            ],
+            "support": {
+                "source": "https://github.com/php-fig/simple-cache/tree/master"
+            },
+            "time": "2017-10-23T01:57:42+00:00"
+        },
+        {
             "name": "select2/select2",
             "version": "4.0.13",
             "source": {
@@ -3299,6 +3534,46 @@
                 "source": "https://github.com/select2/select2/tree/4.0.13"
             },
             "time": "2020-01-28T05:01:22+00:00"
+        },
+        {
+            "name": "siripravi/luya-module-ecommerce",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/siripravi/luya-module-ecommerce.git",
+                "reference": "6116e13d2464bed05db0f7603a1da3e555c9b99c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/siripravi/luya-module-ecommerce/zipball/6116e13d2464bed05db0f7603a1da3e555c9b99c",
+                "reference": "6116e13d2464bed05db0f7603a1da3e555c9b99c",
+                "shasum": ""
+            },
+            "type": "luya-module",
+            "autoload": {
+                "psr-4": {
+                    "siripravi\\ecommerce\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "purnachandra",
+                    "email": "provdigi@gmail.com"
+                }
+            ],
+            "description": "Luya module for E commerce",
+            "keywords": [
+                "luya"
+            ],
+            "support": {
+                "issues": "https://github.com/siripravi/luya-module-ecommerce/issues",
+                "source": "https://github.com/siripravi/luya-module-ecommerce/tree/v1.0.0"
+            },
+            "time": "2024-01-30T17:49:56+00:00"
         },
         {
             "name": "siripravi/yii2-image-gallery",
@@ -3583,16 +3858,16 @@
         },
         {
             "name": "symfony/event-dispatcher-contracts",
-            "version": "v3.4.0",
+            "version": "v3.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/event-dispatcher-contracts.git",
-                "reference": "a76aed96a42d2b521153fb382d418e30d18b59df"
+                "reference": "4e64b49bf370ade88e567de29465762e316e4224"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/event-dispatcher-contracts/zipball/a76aed96a42d2b521153fb382d418e30d18b59df",
-                "reference": "a76aed96a42d2b521153fb382d418e30d18b59df",
+                "url": "https://api.github.com/repos/symfony/event-dispatcher-contracts/zipball/4e64b49bf370ade88e567de29465762e316e4224",
+                "reference": "4e64b49bf370ade88e567de29465762e316e4224",
                 "shasum": ""
             },
             "require": {
@@ -3639,7 +3914,7 @@
                 "standards"
             ],
             "support": {
-                "source": "https://github.com/symfony/event-dispatcher-contracts/tree/v3.4.0"
+                "source": "https://github.com/symfony/event-dispatcher-contracts/tree/v3.4.2"
             },
             "funding": [
                 {
@@ -3655,20 +3930,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-05-23T14:45:45+00:00"
+            "time": "2024-01-23T14:51:35+00:00"
         },
         {
             "name": "symfony/mailer",
-            "version": "v7.0.4",
+            "version": "v7.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/mailer.git",
-                "reference": "72e16d87bf50a3ce195b9470c06bb9d7b816ea85"
+                "reference": "eb0c3187c7ddfde12d8aa0e1fa5fb29e730a41e0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/mailer/zipball/72e16d87bf50a3ce195b9470c06bb9d7b816ea85",
-                "reference": "72e16d87bf50a3ce195b9470c06bb9d7b816ea85",
+                "url": "https://api.github.com/repos/symfony/mailer/zipball/eb0c3187c7ddfde12d8aa0e1fa5fb29e730a41e0",
+                "reference": "eb0c3187c7ddfde12d8aa0e1fa5fb29e730a41e0",
                 "shasum": ""
             },
             "require": {
@@ -3719,7 +3994,7 @@
             "description": "Helps sending emails",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/mailer/tree/v7.0.4"
+                "source": "https://github.com/symfony/mailer/tree/v7.0.6"
             },
             "funding": [
                 {
@@ -3735,20 +4010,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-02-03T21:34:19+00:00"
+            "time": "2024-03-28T09:20:36+00:00"
         },
         {
             "name": "symfony/mime",
-            "version": "v7.0.3",
+            "version": "v7.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/mime.git",
-                "reference": "c1ffe24ba6fdc3e3f0f3fcb93519103b326a3716"
+                "reference": "99362408c9abdf8c7cadcf0529b6fc8b16f5ace2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/mime/zipball/c1ffe24ba6fdc3e3f0f3fcb93519103b326a3716",
-                "reference": "c1ffe24ba6fdc3e3f0f3fcb93519103b326a3716",
+                "url": "https://api.github.com/repos/symfony/mime/zipball/99362408c9abdf8c7cadcf0529b6fc8b16f5ace2",
+                "reference": "99362408c9abdf8c7cadcf0529b6fc8b16f5ace2",
                 "shasum": ""
             },
             "require": {
@@ -3768,6 +4043,7 @@
                 "league/html-to-markdown": "^5.0",
                 "phpdocumentor/reflection-docblock": "^3.0|^4.0|^5.0",
                 "symfony/dependency-injection": "^6.4|^7.0",
+                "symfony/process": "^6.4|^7.0",
                 "symfony/property-access": "^6.4|^7.0",
                 "symfony/property-info": "^6.4|^7.0",
                 "symfony/serializer": "^6.4|^7.0"
@@ -3802,7 +4078,7 @@
                 "mime-type"
             ],
             "support": {
-                "source": "https://github.com/symfony/mime/tree/v7.0.3"
+                "source": "https://github.com/symfony/mime/tree/v7.0.6"
             },
             "funding": [
                 {
@@ -3818,7 +4094,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-01-30T08:34:29+00:00"
+            "time": "2024-03-21T19:37:36+00:00"
         },
         {
             "name": "symfony/polyfill-intl-idn",
@@ -4140,16 +4416,16 @@
         },
         {
             "name": "symfony/service-contracts",
-            "version": "v2.5.2",
+            "version": "v2.5.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/service-contracts.git",
-                "reference": "4b426aac47d6427cc1a1d0f7e2ac724627f5966c"
+                "reference": "a2329596ddc8fd568900e3fc76cba42489ecc7f3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/service-contracts/zipball/4b426aac47d6427cc1a1d0f7e2ac724627f5966c",
-                "reference": "4b426aac47d6427cc1a1d0f7e2ac724627f5966c",
+                "url": "https://api.github.com/repos/symfony/service-contracts/zipball/a2329596ddc8fd568900e3fc76cba42489ecc7f3",
+                "reference": "a2329596ddc8fd568900e3fc76cba42489ecc7f3",
                 "shasum": ""
             },
             "require": {
@@ -4203,7 +4479,7 @@
                 "standards"
             ],
             "support": {
-                "source": "https://github.com/symfony/service-contracts/tree/v2.5.2"
+                "source": "https://github.com/symfony/service-contracts/tree/v2.5.3"
             },
             "funding": [
                 {
@@ -4219,7 +4495,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-05-30T19:17:29+00:00"
+            "time": "2023-04-21T15:04:16+00:00"
         },
         {
             "name": "yiisoft/yii2",
@@ -6722,16 +6998,16 @@
         },
         {
             "name": "symfony/cache-contracts",
-            "version": "v2.5.2",
+            "version": "v2.5.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/cache-contracts.git",
-                "reference": "64be4a7acb83b6f2bf6de9a02cee6dad41277ebc"
+                "reference": "fee6db04d913094e2fb55ff8e7db5685a8134463"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/cache-contracts/zipball/64be4a7acb83b6f2bf6de9a02cee6dad41277ebc",
-                "reference": "64be4a7acb83b6f2bf6de9a02cee6dad41277ebc",
+                "url": "https://api.github.com/repos/symfony/cache-contracts/zipball/fee6db04d913094e2fb55ff8e7db5685a8134463",
+                "reference": "fee6db04d913094e2fb55ff8e7db5685a8134463",
                 "shasum": ""
             },
             "require": {
@@ -6781,7 +7057,7 @@
                 "standards"
             ],
             "support": {
-                "source": "https://github.com/symfony/cache-contracts/tree/v2.5.2"
+                "source": "https://github.com/symfony/cache-contracts/tree/v2.5.3"
             },
             "funding": [
                 {
@@ -6797,7 +7073,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-01-02T09:53:40+00:00"
+            "time": "2024-01-23T13:51:25+00:00"
         },
         {
             "name": "symfony/console",
@@ -7898,7 +8174,8 @@
         "kartik-v/yii2-widget-select2": 20,
         "kartik-v/yii2-tabs-x": 20,
         "kartik-v/yii2-bootstrap5-dropdown": 20,
-        "siripravi/yii2-image-gallery": 20
+        "siripravi/yii2-image-gallery": 20,
+        "luyadev/luya-headless-cms-api": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

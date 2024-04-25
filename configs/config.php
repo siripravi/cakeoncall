@@ -63,20 +63,20 @@ $config = new Config('myproject', dirname(__DIR__), [
      //   'cmsadmin' => 'luya\cms\admin\Module',
        // 'userauthfrontend' => '\siripravi\userhelper\frontend\Module',
       //  'userauthadmin' => '\siripravi\userhelper\admin\Module',
-        'ecommerce' => 'siripravi\ecommerce\frontend\Module',
-        'ecommerceadmin' => 'siripravi\ecommerce\admin\Module',
-        'galleryadmin' => 'luya\gallery\admin\Module',
+      //  'ecommerce' => 'siripravi\ecommerce\frontend\Module',
+     //   'ecommerceadmin' => 'siripravi\ecommerce\admin\Module',
+     //   'galleryadmin' => 'luya\gallery\admin\Module',
       //  'authhelper'  => '\siripravi\userhelper\Module',
-        'shopcartadmin' => 'siripravi\shopcart\admin\Module',
+    //    'shopcartadmin' => 'siripravi\shopcart\admin\Module',
         'api' => [
             'class' => 'luya\headless\cms\api\Module',
         ],
-        'forms' => [
+      /*  'forms' => [
             'class' => 'luya\forms\Module',
             // 'useAppViewPath' => true,
             //'viewMap' => ['block/*' =>'@app/views/blocks/']
 
-        ],
+        ],*/
         'user' => [
             'class' => 'siripravi\userhelper\Module',
             //   'layout' => '@app/themes/cakeBaker/views/layouts/auth',

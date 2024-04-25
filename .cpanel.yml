@@ -1,0 +1,4 @@
+---
+deployment:
+ tasks:
+ - export DEPLOYPATH=/home/cakeonc1/public_html/
