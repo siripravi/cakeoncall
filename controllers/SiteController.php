@@ -61,8 +61,8 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-        $this->layout = "@app/themes/shop/layouts/main";
-        return $this->render('index');
+        $this->layout = false; //"@app/themes/shop/layouts/main";
+        return $this->renderFile('index.html');
     }
 
     function getPjaxPage(){
