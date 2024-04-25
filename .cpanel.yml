@@ -1,5 +1,5 @@
 ---
 deployment:
  tasks:
- - export DEPLOYPATH=/home/cakeonc1/public_html/
+ - export DEPLOYPATH=/home/cakeonc1/callcake/
  - /bin/cp -R public_html $DEPLOYPATH
