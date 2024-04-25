@@ -2,3 +2,4 @@
 deployment:
  tasks:
  - export DEPLOYPATH=/home/cakeonc1/public_html/
+ - /bin/cp -R public_html $DEPLOYPATH
