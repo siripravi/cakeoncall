@@ -52,13 +52,13 @@ $config = new Config('myproject', dirname(__DIR__), [
         ],
     ],
     'modules' => [
-        /*'admin' => [
+        'admin' => [
             'class' => 'luya\admin\Module',
             'secureLogin' => false, // when enabling secure login, the mail component must be proper configured otherwise the auth token mail will not send.
             'strongPasswordPolicy' => false, // If enabled, the admin user passwords require strength input with special chars, lower, upper, digits and numbers
             'interfaceLanguage' => 'en', // Admin interface default language. Currently supported: en, de, ru, es, fr, ua, it, el, vi, pt, fa
             'autoBootstrapQueue' => true, // Enables the fake cronjob by default, read more about queue/scheduler: https://luya.io/guide/app-queue
-        ],*/
+        ],
        // 'cms' => 'luya\cms\frontend\Module',
      //   'cmsadmin' => 'luya\cms\admin\Module',
        // 'userauthfrontend' => '\siripravi\userhelper\frontend\Module',
